@@ -239,7 +239,13 @@
       evento.campana = "La campaña que le corresponde aún no está publicada: la Conselleria la publica antes del otoño.";
       return evento;
     }
-    return null; // Nacido antes de las campañas publicadas: ya no le corresponde por edad.
+    // Nacido antes de la primera campaña publicada: su temporada ya no está en la web de la
+    // Conselleria. No se inventan reglas: se remite a la cartilla.
+    evento.id = "vrs-anterior";
+    evento.titulo = "VRS (bronquiolitis): campaña de su temporada";
+    evento.campana = "Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web de " +
+      "la Conselleria. Si se le puso, figura en la cartilla.";
+    return evento;
   }
 
   function construirLinea(nacimiento, datos, idComunidad, hoy) {
@@ -698,7 +704,7 @@
         }
         porId.vacunas.filas[0].push(marca);
       } else if (e.tipo === "campaña") {
-        marca.corto = e.id.indexOf("vrs") === 0 ? "VRS" : "Gripe";
+        marca.corto = e.id === "vrs-anterior" ? "VRS · su temporada: mira la cartilla" : e.id.indexOf("vrs") === 0 ? "VRS" : "Gripe";
         if (e.fechaConocida) {
           marca.forma = "barra";
           marca.hasta = e.fin ? mesesDesde(nacimiento, e.fin) : null;
@@ -977,7 +983,7 @@
               g.appendChild(s("text", {
                 x: x(mk.desde) + (aLaIzquierda ? -12 : 12), y: centro + 4, class: "texto-barra",
                 "text-anchor": aLaIzquierda ? "end" : "start",
-                texto: mk.corto + (mk.sinFecha && c.id !== "escuela" ? " · sin publicar" : ""),
+                texto: mk.corto + (mk.sinFecha && c.id !== "escuela" && mk.corto.indexOf("cartilla") < 0 ? " · sin publicar" : ""),
               }));
             }
           } else {
