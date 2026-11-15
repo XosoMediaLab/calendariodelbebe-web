@@ -1,0 +1,133 @@
+/* Calendario del Bebé: estilos sin dependencias, pensados primero para móvil. */
+:root {
+  --texto: #1f2933;
+  --suave: #52606d;
+  --fondo: #fbfaf7;
+  --acento: #2f6f73;
+  --aviso: #fff4d6;
+  --aep: #f3ecff;
+  --campana: #e8f4f2;
+  --borde: #d9d4c7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+}
+header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+header { padding-top: 1.5rem; }
+.marca { color: var(--acento); font-weight: 700; margin: 0; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: .3rem 0 .6rem; }
+h2 { font-size: 1.3rem; margin-top: 2rem; }
+h3 { font-size: 1.05rem; margin: 1.4rem 0 .4rem; }
+a { color: var(--acento); }
+.aviso { background: var(--aviso); border-left: 4px solid #e0a800; padding: .7rem .9rem; border-radius: 4px; }
+.aviso-aep { background: var(--aep); border-left: 4px solid #7c5cbf; padding: .6rem .9rem; border-radius: 4px; }
+.nota { color: var(--suave); font-size: .93rem; }
+.privacidad { color: var(--suave); font-size: .9rem; }
+.error { color: #b42318; font-weight: 600; min-height: 1em; }
+.formulario { background: #fff; border: 1px solid var(--borde); border-radius: 8px; padding: .4rem 1rem; }
+.formulario label { display: block; font-weight: 600; margin-bottom: .25rem; }
+input, select, button { font: inherit; padding: .5rem .6rem; border-radius: 6px; border: 1px solid var(--borde); max-width: 100%; }
+button { background: var(--acento); color: #fff; border: 0; cursor: pointer; font-weight: 600; }
+button:hover { filter: brightness(1.1); }
+.linea { list-style: none; padding: 0; margin: 0; }
+.evento { background: #fff; border: 1px solid var(--borde); border-left: 5px solid var(--acento); border-radius: 6px; padding: .6rem .9rem; margin: .7rem 0; }
+.evento h3 { margin: .1rem 0 .3rem; }
+.evento ul { margin: .3rem 0; padding-left: 1.2rem; }
+.evento.revision { border-left-color: #3b82c4; }
+.evento.campana { border-left-color: #2f9e88; background: var(--campana); }
+.evento.aep { border-left-color: #7c5cbf; background: var(--aep); }
+.evento.pasado { opacity: .55; }
+.cuando { margin: 0; color: var(--suave); font-size: .93rem; }
+.cuando strong { color: var(--texto); }
+.proximo .evento { border-width: 2px; }
+.tabla { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: #fff; font-size: .93rem; }
+th, td { border: 1px solid var(--borde); padding: .4rem .5rem; text-align: left; vertical-align: top; }
+th { background: #f1eee6; }
+.completo li { margin: .35rem 0; }
+footer { border-top: 1px solid var(--borde); margin-top: 2.5rem; padding-bottom: 2rem; color: var(--suave); font-size: .93rem; }
+
+/* Vista gráfica: carriles de 0 a 36 meses. Colores validados (paleta categórica,
+   orden fijo); cada carril lleva su nombre, así que el color nunca va solo. */
+:root {
+  --c-revisiones: #2a78d6;
+  --c-vacunas: #eb6834;
+  --c-campanas: #1baf7a;
+  --c-aep: #6250d6;
+  --c-empezar: #008300;
+  --c-evitar: #e34948;
+}
+.vista { position: relative; margin: .5rem 0; }
+.vista-marco { display: flex; background: #fff; border: 1px solid var(--borde); border-radius: 8px; overflow: hidden; }
+.vista-carriles { flex: 0 0 5.6rem; border-right: 1px solid var(--borde); background: #fff; }
+.vista-carril { display: flex; align-items: center; padding: 0 .45rem; font-size: .78rem; font-weight: 700; line-height: 1.15; border-left: 4px solid; }
+.vista-carril.c-revisiones { border-color: var(--c-revisiones); }
+.vista-carril.c-vacunas { border-color: var(--c-vacunas); }
+.vista-carril.c-campanas { border-color: var(--c-campanas); }
+.vista-carril.c-aep { border-color: var(--c-aep); }
+.vista-carril.c-empezar { border-color: var(--c-empezar); }
+.vista-carril.c-evitar { border-color: var(--c-evitar); }
+.vista-desplazable { overflow-x: auto; flex: 1 1 auto; -webkit-overflow-scrolling: touch; }
+.vista-desplazable svg { display: block; font-family: inherit; }
+.vista .banda { fill: #f7f5ef; }
+.vista .rejilla { stroke: #e4e0d5; stroke-width: 1; }
+.vista .rejilla.menor { stroke: #efece4; }
+.vista .rejilla.anio { stroke: #c9c3b3; }
+.vista .eje-edad { font-size: 11px; font-weight: 700; fill: var(--texto); }
+.vista .eje-fecha { font-size: 10px; fill: var(--suave); }
+.vista .hoy { stroke: var(--texto); stroke-width: 2; stroke-dasharray: 4 3; }
+.vista .hoy-texto { font-size: 11px; font-weight: 700; fill: var(--texto); }
+.vista .marca { cursor: pointer; outline: none; }
+.vista .marca .zona { fill: transparent; }
+.vista .marca .punto { stroke: #fff; stroke-width: 2; }
+.vista .marca .barra { stroke: #fff; stroke-width: 1; }
+.vista .marca:focus-visible .punto, .vista .marca:focus-visible .barra, .vista .marca:hover .punto, .vista .marca:hover .barra { stroke: var(--texto); stroke-width: 2; }
+.vista .c-revisiones .punto, .vista .c-revisiones .barra { fill: var(--c-revisiones); }
+.vista .c-vacunas .punto, .vista .c-vacunas .barra { fill: var(--c-vacunas); }
+.vista .c-campanas .punto, .vista .c-campanas .barra { fill: var(--c-campanas); }
+.vista .c-aep .punto, .vista .c-aep .barra { fill: var(--c-aep); }
+.vista .c-empezar .barra, .vista .c-empezar .flecha { fill: var(--c-empezar); }
+.vista .c-evitar .flecha { fill: var(--c-evitar); }
+.vista .c-vacunas .flecha { fill: var(--c-vacunas); }
+.vista .c-aep .punto, .vista .c-aep .barra { fill-opacity: .25; stroke: var(--c-aep); stroke-width: 2; stroke-dasharray: 3 2; }
+.vista .sin-fecha .punto { fill: #fff; stroke: var(--c-campanas); stroke-width: 2; stroke-dasharray: 3 2; }
+.vista .pasado { opacity: .4; }
+.vista .cuenta { font-size: 11px; font-weight: 800; fill: #fff; pointer-events: none; }
+.vista .texto-barra { font-size: 11px; fill: var(--texto); pointer-events: none; }
+.vista .texto-barra.suave { fill: var(--suave); font-style: italic; }
+.vista-detalle { position: absolute; z-index: 2; width: 17.5rem; max-width: 100%; background: #fff; border: 1px solid var(--borde); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.12); padding: .55rem .7rem; font-size: .88rem; }
+.vista-detalle strong, .vista-detalle span, .vista-detalle em { display: block; }
+.vista-detalle span { color: var(--suave); }
+.vista-detalle ul { margin: .3rem 0 0; padding-left: 1.1rem; }
+.vista-detalle em { margin-top: .3rem; color: var(--acento); font-size: .82rem; }
+.vista-leyenda { list-style: none; padding: 0; margin: .5rem 0 0; display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .85rem; color: var(--suave); }
+.vista-leyenda span { display: inline-block; vertical-align: middle; margin-right: .2rem; }
+.ley-punto { width: 12px; height: 12px; border-radius: 50%; background: var(--c-vacunas); }
+.ley-barra { width: 22px; height: 9px; border-radius: 4px; background: var(--c-empezar); }
+.ley-evitar { width: 22px; height: 9px; border-radius: 4px; background: repeating-linear-gradient(45deg, var(--c-evitar) 0 2px, #fbe3e2 2px 5px); }
+.ley-sin { width: 12px; height: 12px; border-radius: 50%; border: 2px dashed var(--c-campanas); }
+.ley-flecha { width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 8px solid var(--suave); }
+/* En pantallas anchas la vista sale de la columna de texto para que quepan los 36 meses. */
+@media (min-width: 60rem) {
+  .vista { width: min(calc(100vw - 3rem), 76rem); left: 50%; transform: translateX(-50%); }
+}
+@media (max-width: 30rem) {
+  .vista-carriles { flex-basis: 4.7rem; }
+  .vista-carril { font-size: .7rem; padding: 0 .3rem; }
+}
+.marca a { color: inherit; text-decoration: none; }
+.enlaces-legales a { color: var(--suave); }
+.evento .google { margin: .3rem 0 0; font-size: .9rem; }
+/* Carriles de trámites y escuela (siguientes colores de la paleta, con su nombre al lado). */
+:root { --c-tramites: #eda100; --c-escuela: #e87ba4; }
+.vista-carril.c-tramites { border-color: var(--c-tramites); }
+.vista-carril.c-escuela { border-color: var(--c-escuela); }
+.vista .c-tramites .barra, .vista .c-tramites .flecha { fill: var(--c-tramites); }
+.vista .c-escuela .barra, .vista .c-escuela .punto, .vista .c-escuela .flecha { fill: var(--c-escuela); }
+.vista .c-escuela.sin-fecha .punto { fill: #fff; stroke: var(--c-escuela); }
+.evento.tramite { border-left-color: var(--c-tramites); }
+.evento.escuela { border-left-color: var(--c-escuela); }
