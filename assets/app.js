@@ -1134,6 +1134,7 @@
       });
       resultado.hidden = false;
       pintarVista(construirVista(actuales, datos, n, hoy), document.getElementById("vista"));
+      if (ev && ev.type === "submit" && resultado.scrollIntoView) resultado.scrollIntoView({ block: "start" });
     }
 
     form.addEventListener("submit", calcular);
@@ -1151,6 +1152,234 @@
       document.body.removeChild(a);
       setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
     });
+  }
+
+  // ---------- Presupuesto del primer año ----------
+  //
+  // Solo las partidas con importe oficial traen un importe; el resto lo escribe la familia.
+  // Nada se guarda: al recargar la página se pierde (se puede descargar en CSV).
+
+  function numero(v) {
+    if (v === null || v === undefined || v === "") return 0;
+    // Los campos numéricos dan el valor con punto decimal; se admite también la coma.
+    var n = typeof v === "number" ? v : parseFloat(String(v).replace(",", "."));
+    return isFinite(n) && n > 0 ? n : 0;
+  }
+
+  function redondear(n) {
+    return Math.round(n * 100) / 100;
+  }
+
+  function formatearEuros(n) {
+    var negativo = n < 0;
+    var partes = Math.abs(redondear(n)).toFixed(2).split(".");
+    var entero = partes[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    var texto = partes[1] === "00" ? entero : entero + "," + partes[1];
+    return (negativo ? "−" : "") + texto + " €";
+  }
+
+  // `valores`: { id: { importe, meses, marcada, opcion } } con lo que ha escrito la familia.
+  // `extra`: partidas añadidas por la familia ({ id, nombre, periodicidad, importe, meses }).
+  function calcularPresupuesto(partidas, valores, extra) {
+    valores = valores || {};
+    var todas = partidas.concat((extra || []).map(function (x) {
+      return { id: x.id, nombre: x.nombre || "Otro gasto", bloque: "gasto", periodicidad: x.periodicidad, importe: null, meses: x.meses };
+    }));
+    var extraPorId = {};
+    (extra || []).forEach(function (x) { extraPorId[x.id] = x; });
+    function valor(p) { return valores[p.id] || extraPorId[p.id] || {}; }
+    function meses(p) {
+      var v = valor(p);
+      var m = v.meses !== undefined && v.meses !== "" ? numero(v.meses) : (p.meses || 0);
+      return Math.min(12, m);
+    }
+
+    var lineas = [];
+    var porId = {};
+    // Primero los gastos: algunas deducciones dependen de lo que se paga en un gasto.
+    todas.filter(function (p) { return p.bloque === "gasto"; }).forEach(function (p) {
+      var importe = numero(valor(p).importe);
+      var total = p.periodicidad === "mensual" ? importe * meses(p) : importe;
+      var l = { id: p.id, nombre: p.nombre, bloque: "gasto", total: redondear(total), cuenta: total > 0 };
+      lineas.push(l);
+      porId[p.id] = l;
+    });
+    todas.filter(function (p) { return p.bloque === "ayuda"; }).forEach(function (p) {
+      var v = valor(p);
+      var total = 0;
+      if (p.sobre) {
+        var base = porId[p.sobre] ? porId[p.sobre].total : 0;
+        total = Math.min(p.tope, base * p.porcentaje / 100);
+      } else if (p.opciones) {
+        var op = p.opciones[v.opcion === undefined ? 0 : Number(v.opcion)];
+        total = op ? op.importe : 0;
+      } else {
+        var importe = p.importe !== null && p.importe !== undefined ? p.importe : numero(v.importe);
+        total = p.periodicidad === "mensual" ? importe * meses(p) : importe;
+      }
+      var l = { id: p.id, nombre: p.nombre, bloque: "ayuda", total: redondear(total), cuenta: !!v.marcada };
+      lineas.push(l);
+      porId[p.id] = l;
+    });
+
+    var avisos = [];
+    partidas.forEach(function (p) {
+      if (!porId[p.id] || !porId[p.id].cuenta) return;
+      if (p.requiere && !(porId[p.requiere] && porId[p.requiere].cuenta)) {
+        avisos.push("«" + p.nombre + "» solo se aplica si tienes derecho a «" + porId[p.requiere].nombre + "».");
+      }
+      if (p.incompatible_con && porId[p.incompatible_con] && porId[p.incompatible_con].cuenta) {
+        avisos.push("«" + p.nombre + "» y «" + porId[p.incompatible_con].nombre + "» no se cobran por el mismo hijo los mismos meses: el total puede ser menor.");
+      }
+      if (p.sobre && porId[p.sobre] && porId[p.sobre].total === 0) {
+        avisos.push("«" + p.nombre + "» se calcula con lo que escribas en «" + porId[p.sobre].nombre + "».");
+      }
+    });
+
+    var gastos = 0;
+    var ayudas = 0;
+    lineas.forEach(function (l) {
+      if (!l.cuenta) return;
+      if (l.bloque === "gasto") gastos += l.total;
+      else ayudas += l.total;
+    });
+    gastos = redondear(gastos);
+    ayudas = redondear(ayudas);
+    var neto = redondear(gastos - ayudas);
+    return { lineas: lineas, gastos: gastos, ayudas: ayudas, neto: neto, porMes: redondear(neto / 12), avisos: avisos };
+  }
+
+  function campoCSV(t) {
+    t = String(t);
+    return /[";\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
+  }
+
+  function importeCSV(n) {
+    return redondear(n).toFixed(2).replace(".", ",");
+  }
+
+  // CSV para hojas de cálculo en español: separador «;», coma decimal y BOM para los acentos.
+  function generarCSV(resultado, aviso) {
+    var filas = [["Tipo", "Partida", "Total primer año (€)"]];
+    resultado.lineas.forEach(function (l) {
+      if (!l.cuenta) return;
+      filas.push([l.bloque === "gasto" ? "Gasto" : "Ayuda", l.nombre, importeCSV(l.bloque === "gasto" ? l.total : -l.total)]);
+    });
+    filas.push(["", "Total gastos", importeCSV(resultado.gastos)]);
+    filas.push(["", "Total ayudas", importeCSV(-resultado.ayudas)]);
+    filas.push(["", "Coste neto del primer año", importeCSV(resultado.neto)]);
+    filas.push(["", "Media al mes", importeCSV(resultado.porMes)]);
+    if (aviso) filas.push(["", aviso, ""]);
+    return "﻿" + filas.map(function (f) { return f.map(campoCSV).join(";"); }).join("\r\n") + "\r\n";
+  }
+
+  function descargar(texto, tipo, nombre) {
+    var blob = new Blob([texto], { type: tipo });
+    var url = URL.createObjectURL(blob);
+    var a = el("a", { href: url, download: nombre });
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function iniciarPresupuesto() {
+    var nodo = document.getElementById("datos-presupuesto");
+    if (!nodo) return;
+    var datosPresupuesto = JSON.parse(nodo.textContent);
+    var partidas = datosPresupuesto.partidas;
+    var raiz = document.getElementById("presupuesto");
+    var lista = document.getElementById("otros-gastos");
+    var extra = [];
+    var siguiente = 1;
+    var ultimo = null;
+
+    function leer() {
+      var valores = {};
+      raiz.querySelectorAll("[data-partida]").forEach(function (fila) {
+        var id = fila.getAttribute("data-partida");
+        var v = {};
+        fila.querySelectorAll("[data-campo]").forEach(function (c) {
+          var campo = c.getAttribute("data-campo");
+          v[campo] = c.type === "checkbox" ? c.checked : c.value;
+        });
+        valores[id] = v;
+      });
+      extra.forEach(function (x) {
+        var v = valores[x.id] || {};
+        x.nombre = v.nombre;
+        x.periodicidad = v.periodicidad;
+        x.importe = v.importe;
+        x.meses = v.meses;
+      });
+      return valores;
+    }
+
+    function actualizar() {
+      var valores = leer();
+      ultimo = calcularPresupuesto(partidas, valores, extra);
+      ultimo.lineas.forEach(function (l) {
+        var fila = raiz.querySelector('[data-partida="' + l.id + '"]');
+        var salida = fila && fila.querySelector(".subtotal");
+        if (!salida) return;
+        salida.textContent = l.total ? formatearEuros(l.total) : "—";
+        fila.classList.toggle("activa", l.cuenta && l.total > 0);
+        fila.classList.toggle("sin-contar", l.bloque === "ayuda" && !l.cuenta);
+      });
+      raiz.querySelectorAll(".fila-meses").forEach(function (m) {
+        var sel = m.closest("[data-partida]").querySelector('[data-campo="periodicidad"]');
+        if (sel) m.hidden = sel.value !== "mensual";
+      });
+      document.getElementById("total-gastos").textContent = formatearEuros(ultimo.gastos);
+      document.getElementById("total-ayudas").textContent = formatearEuros(ultimo.ayudas);
+      document.getElementById("total-neto").textContent = formatearEuros(ultimo.neto);
+      document.getElementById("total-mes").textContent = formatearEuros(ultimo.porMes);
+      var avisos = document.getElementById("avisos-presupuesto");
+      avisos.textContent = "";
+      ultimo.avisos.forEach(function (a) { avisos.appendChild(el("li", { texto: a })); });
+      avisos.hidden = !ultimo.avisos.length;
+    }
+
+    document.getElementById("anadir-gasto").addEventListener("click", function () {
+      var id = "otro-" + siguiente++;
+      extra.push({ id: id });
+      var fila = el("li", { class: "partida otra", "data-partida": id }, [
+        el("div", { class: "partida-cabeza" }, [
+          el("label", { class: "visualmente-oculto", for: id + "-nombre", texto: "Nombre del gasto" }),
+          el("input", { type: "text", id: id + "-nombre", "data-campo": "nombre", placeholder: "Otro gasto", autocomplete: "off" }),
+          el("output", { class: "subtotal", texto: "—" }),
+        ]),
+        el("div", { class: "partida-campos" }, [
+          el("label", {}, [el("span", { texto: "Importe (€)" }), el("input", { type: "number", min: "0", step: "0.01", inputmode: "decimal", "data-campo": "importe" })]),
+          el("label", {}, [el("span", { texto: "Cada" }), (function () {
+            var s = el("select", { "data-campo": "periodicidad" }, [
+              el("option", { value: "unico", texto: "Una vez" }),
+              el("option", { value: "mensual", texto: "Mes" }),
+            ]);
+            return s;
+          })()]),
+          el("label", { class: "fila-meses", hidden: "" }, [el("span", { texto: "Meses" }), el("input", { type: "number", min: "0", max: "12", step: "1", value: "12", "data-campo": "meses" })]),
+          el("button", { type: "button", class: "boton-quitar", texto: "Quitar" }),
+        ]),
+      ]);
+      fila.querySelector(".boton-quitar").addEventListener("click", function () {
+        extra = extra.filter(function (x) { return x.id !== id; });
+        fila.parentNode.removeChild(fila);
+        actualizar();
+      });
+      lista.appendChild(fila);
+      fila.querySelector("input").focus();
+      actualizar();
+    });
+
+    raiz.addEventListener("input", actualizar);
+    raiz.addEventListener("change", actualizar);
+    document.getElementById("descargar-csv").addEventListener("click", function () {
+      actualizar();
+      descargar(generarCSV(ultimo, datosPresupuesto.aviso), "text/csv;charset=utf-8", "presupuesto-primer-ano.csv");
+    });
+    document.getElementById("imprimir-presupuesto").addEventListener("click", function () { window.print(); });
+    actualizar();
   }
 
   var api = {
@@ -1174,11 +1403,15 @@
     plegar: plegar,
     generarICS: generarICS,
     AVISO: AVISO,
+    calcularPresupuesto: calcularPresupuesto,
+    formatearEuros: formatearEuros,
+    generarCSV: generarCSV,
   };
   global.CalendarioBebe = api;
 
   if (typeof document !== "undefined") {
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar);
-    else iniciar();
+    var arrancar = function () { iniciar(); iniciarPresupuesto(); };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", arrancar);
+    else arrancar();
   }
 })(typeof window !== "undefined" ? window : this);
