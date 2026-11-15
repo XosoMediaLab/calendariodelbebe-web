@@ -337,7 +337,7 @@
         meses: enMeses(r.edad_desde),
         hastaMeses: enMeses(r.edad_hasta),
         rango: true,
-        elementos: [{ id: r.id, nombre: r.nombre, nota: r.nota || "", fuente: citaDe(r) }],
+        elementos: [{ id: r.id, nombre: r.nombre, nota: r.nota || "", fuente: citaDe(r), calculadora: r.calculadora }],
         fechaConocida: true,
       });
     });
@@ -495,6 +495,7 @@
       if (el.nota) t += ". " + el.nota;
       lineas.push(t);
       lineas.push("  Fuente: " + el.fuente.documento + ", " + el.fuente.apartado + ". " + el.fuente.fuente);
+      if (el.calculadora) lineas.push("  Calculadora: " + el.calculadora);
     });
     if (e.nota) lineas.push(e.nota);
     lineas.push(AVISO);
@@ -837,7 +838,12 @@
   }
 
   function detalleRevision(x) {
-    return el("p", { class: "nota" }, [x.nota ? x.nota + " " : "", enlaceFuente(x.fuente)]);
+    return el("p", { class: "nota" }, [
+      x.nota ? x.nota + " " : "",
+      enlaceFuente(x.fuente),
+      x.calculadora ? " · " : null,
+      x.calculadora ? el("a", { href: x.calculadora, rel: "noopener", target: "_blank", texto: "Calcúlalo con tus fechas en calendariohabil.com" }) : null,
+    ]);
   }
 
   function pintarEvento(e) {

@@ -131,3 +131,8 @@ footer { border-top: 1px solid var(--borde); margin-top: 2.5rem; padding-bottom:
 .vista .c-escuela.sin-fecha .punto { fill: #fff; stroke: var(--c-escuela); }
 .evento.tramite { border-left-color: var(--c-tramites); }
 .evento.escuela { border-left-color: var(--c-escuela); }
+/* Páginas por mes */
+.cta { font-weight: 600; }
+.navegacion-meses { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; }
+.lista-meses { columns: 2; padding-left: 1.2rem; }
+@media (min-width: 40rem) { .lista-meses { columns: 3; } }
