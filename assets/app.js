@@ -118,7 +118,7 @@
     if (edad.horas === 0 || edad.dias === 0) return "el nacimiento";
     if (edad.horas !== undefined) return "las " + edad.horas + " horas";
     if (edad.dias !== undefined) return "los " + edad.dias + " días";
-    if (edad.semanas !== undefined) return "las " + edad.semanas + " semanas";
+    if (edad.semanas !== undefined) return edad.semanas === 1 ? "la primera semana" : "las " + edad.semanas + " semanas";
     var m = edad.meses;
     if (m >= 24 && m % 12 === 0) return "los " + m / 12 + " años";
     return "los " + m + " meses";
@@ -150,14 +150,15 @@
     return null;
   }
 
-  function eventoGripe(vacuna, campanas, nacimiento, hoy) {
+  // `aut`: quién publica las campañas en la comunidad («la Conselleria», «la Consejería»).
+  function eventoGripe(vacuna, campanas, nacimiento, hoy, aut) {
     var seisMeses = fechaEdad(nacimiento, vacuna.edad_desde);
     var limite = fechaEdad(nacimiento, vacuna.edad_hasta);
     var referencia = seisMeses > hoy ? seisMeses : hoy;
     if (referencia > limite) return null;
     var temporada = temporadaDe(referencia);
     var c = campanaPublicada(campanas, "gripe", temporada);
-    var nota = vacuna.nota + " Las fechas de cada campaña las publica la Conselleria en otoño.";
+    var nota = vacuna.nota + " Las fechas de cada campaña las publica " + aut + " en otoño.";
     var evento = {
       id: "gripe-" + temporada,
       tipo: "campaña",
@@ -172,6 +173,8 @@
       var regla = c.regla || {};
       var nacidoDesde = regla.nacidos_desde ? desdeISO(regla.nacidos_desde) : null;
       if (nacidoDesde && nacimiento < nacidoDesde) return null;
+      // Edad máxima de la campaña (p. ej. «hasta los 7 años incluidos»): fuera si ya la pasó al empezar.
+      if (regla.edad_maxima && fechaEdad(nacimiento, regla.edad_maxima) < desdeISO(c.inicio)) return null;
       var inicio = desdeISO(c.inicio);
       var fin = c.fin ? desdeISO(c.fin) : null;
       if (fin && seisMeses > fin) {
@@ -190,12 +193,12 @@
         evento.fin = fin;
       }
     } else {
-      evento.campana = "La campaña " + temporada + " aún no está publicada: la Conselleria publica las fechas en otoño.";
+      evento.campana = "La campaña " + temporada + " aún no está publicada: " + aut + " publica las fechas en otoño.";
     }
     return evento;
   }
 
-  function eventoVRS(vacuna, campanas, nacimiento) {
+  function eventoVRS(vacuna, campanas, nacimiento, aut) {
     var aplicable = null;
     for (var i = 0; i < campanas.length; i++) {
       var c = campanas[i];
@@ -236,15 +239,15 @@
       }
     }
     if (ultima && nacimiento > ultima) {
-      evento.campana = "La campaña que le corresponde aún no está publicada: la Conselleria la publica antes del otoño.";
+      evento.campana = "La campaña que le corresponde aún no está publicada: " + aut + " la publica antes del otoño.";
       return evento;
     }
     // Nacido antes de la primera campaña publicada: su temporada ya no está en la web de la
-    // Conselleria. No se inventan reglas: se remite a la cartilla.
+    // comunidad. No se inventan reglas: se remite a la cartilla.
     evento.id = "vrs-anterior";
     evento.titulo = "VRS (bronquiolitis): campaña de su temporada";
     evento.campana = "Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web de " +
-      "la Conselleria. Si se le puso, figura en la cartilla.";
+      aut + ". Si se le puso, figura en la cartilla.";
     return evento;
   }
 
@@ -296,8 +299,8 @@
         });
       } else if (v.tipo === "campaña") {
         var ev = v.campana === "gripe"
-          ? eventoGripe(v, com.campanas, nacimiento, hoy)
-          : eventoVRS(v, com.campanas, nacimiento);
+          ? eventoGripe(v, com.campanas, nacimiento, hoy, com.autoridad || "la consejería")
+          : eventoVRS(v, com.campanas, nacimiento, com.autoridad || "la consejería");
         if (ev) eventos.push(ev);
       }
     });
@@ -350,7 +353,8 @@
 
     eventosEscuela(com, nacimiento).forEach(function (e) { eventos.push(e); });
 
-    datos.comunes.vacunas_aep.forEach(function (a) {
+    // Las diferencias con la AEP dependen del calendario de cada comunidad.
+    (com.vacunas_aep || datos.comunes.vacunas_aep || []).forEach(function (a) {
       var desde = a.tipo === "edad" ? a.edad : a.edad_desde;
       eventos.push({
         id: a.id,
@@ -443,8 +447,8 @@
         fecha: fechaEdad(nacimiento, segundo.edad_desde),
         edadTexto: "desde los 3 años",
         elementos: [{ id: segundo.id, nombre: segundo.nombre, nota: segundo.nota, fuente: citaDe(segundo) }],
-        campana: "Qué curso le toca y cuándo se pide plaza lo fija la Conselleria cada año en la " +
-          "resolución de admisión del DOGV; la de su curso aún no está publicada.",
+        campana: "Qué curso le toca y cuándo se pide plaza se fija cada año en la resolución de " +
+          "admisión del " + (com.boletin || "boletín oficial") + "; la de su curso aún no está publicada.",
         fechaConocida: false,
       });
     }
@@ -661,12 +665,18 @@
     });
   }
 
-  function gripeTemporadas(eventos, datos, nacimiento, carril, max) {
+  // Comunidad de la vista: la indicada o, si no, la primera verificada.
+  function comunidadDe(datos, idComunidad) {
+    if (idComunidad && datos.comunidades[idComunidad]) return datos.comunidades[idComunidad];
+    for (var id in datos.comunidades) if (datos.comunidades[id].estado === "verificada") return datos.comunidades[id];
+    return null;
+  }
+
+  function gripeTemporadas(eventos, datos, nacimiento, carril, max, idComunidad) {
     var gripe = null;
     eventos.forEach(function (e) { if (e.id.indexOf("gripe-") === 0) gripe = e; });
     if (!gripe) return;
-    var com = null;
-    for (var id in datos.comunidades) if (datos.comunidades[id].campanas) com = datos.comunidades[id];
+    var com = comunidadDe(datos, idComunidad);
     var limite = sumarMeses(nacimiento, max);
     var fila = null;
     carril.filas.forEach(function (f) { if (f.length && f[0].corto === "Gripe") fila = f; });
@@ -692,7 +702,7 @@
     }
   }
 
-  function construirVista(eventos, datos, nacimiento, hoy) {
+  function construirVista(eventos, datos, nacimiento, hoy, idComunidad) {
     var max = EDAD_MAXIMA_MESES;
     var hoyMeses = mesesDesde(nacimiento, hoy);
     var carriles = [
@@ -782,8 +792,8 @@
     });
 
     // Escuela: etapas de la LOE como barras y admisiones publicadas como puntos.
-    var escuela = null;
-    for (var idc in datos.comunidades) if (datos.comunidades[idc].escolarizacion) escuela = datos.comunidades[idc].escolarizacion;
+    var comVista = comunidadDe(datos, idComunidad);
+    var escuela = comVista ? comVista.escolarizacion : null;
     if (escuela) {
       escuela.etapas.forEach(function (r) {
         if (enMeses(r.edad_desde) >= max) return; // el cole empieza a los 3 años: lo marca el punto
@@ -818,7 +828,7 @@
     // Gripe: una dosis cada temporada otoño-invierno. Las temporadas siguientes a la del
     // evento, hasta los 36 meses, se marcan aparte: con la campaña si está publicada y,
     // si no, como «sin publicar», situadas en octubre solo como referencia visual.
-    gripeTemporadas(eventos, datos, nacimiento, porId.campanas, max);
+    gripeTemporadas(eventos, datos, nacimiento, porId.campanas, max, idComunidad);
 
     // Recorta a 0-36 meses (lo que sigue más allá se marca como «corta»).
     carriles.forEach(function (c) {
@@ -1143,6 +1153,10 @@
       enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e)); });
       if (p) nodoProximo.appendChild(pintarEvento(p));
       else nodoProximo.appendChild(el("p", { texto: "No queda nada con fecha en el calendario oficial hasta los 36 meses." }));
+      var avisoCom = document.getElementById("aviso-comunidad");
+      var aviso = datos.comunidades[comunidad.value].aviso_revisiones || "";
+      avisoCom.textContent = aviso;
+      avisoCom.hidden = !aviso;
       var linea = document.getElementById("linea");
       linea.textContent = "";
       var aparte = { aep: 1, tramite: 1, escuela: 1, suplemento: 1 };
@@ -1173,7 +1187,7 @@
         aep.appendChild(nodo);
       });
       resultado.hidden = false;
-      pintarVista(construirVista(actuales, datos, n, hoy), document.getElementById("vista"));
+      pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value), document.getElementById("vista"));
       if (ev && ev.type === "submit" && resultado.scrollIntoView) resultado.scrollIntoView({ block: "start" });
     }
 
