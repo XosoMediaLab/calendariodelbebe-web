@@ -332,7 +332,7 @@
       });
     });
 
-    (datos.comunes.tramites || []).forEach(function (r) {
+    (datos.comunes.tramites || []).concat(com.tramites || []).forEach(function (r) {
       eventos.push({
         id: r.id,
         tipo: "tramite",

@@ -804,6 +804,24 @@
      "verificado": "2026-11-14"
     }
    ],
+   "tramites": [
+    {
+     "apartado": "«Inclusión de beneficiarios/as de un asegurado/a por el INSS» → «Recién nacido/a»",
+     "documento": "Conselleria de Sanidad, Tarjeta Sanitaria: «Preguntas frecuentes» (consultada el 16/11/2026)",
+     "edad_desde": {
+      "dias": 0
+     },
+     "edad_hasta": {
+      "meses": 3
+     },
+     "fuente": "https://www.san.gva.es/es/web/tarjeta-sanitaria/preguntas-frecuentes",
+     "id": "tarjeta-sip",
+     "nombre": "Tarjeta sanitaria SIP del bebé",
+     "nota": "Lo más probable es que el hospital le haya dado de alta en la tarjeta SIP provisional de 3 meses. Antes de que caduque, inclúyelo como beneficiario en el INSS (por internet o con cita) y lleva ese documento al centro de salud, que le da de alta en el SIP y le expide la tarjeta. Si el hospital no hizo el alta provisional, ve al centro de salud con un documento que identifique al bebé.",
+     "tipo": "rango",
+     "verificado": "2026-11-16"
+    }
+   ],
    "vacunas": [
     {
      "apartado": "Anexo 1, apartados 1 (hepatitis B), 2 (difteria, tétanos, tosferina) y 3 (poliomielitis), p. 4",
