@@ -291,6 +291,11 @@ main > ul:not([class]) li::marker { color: var(--acento); }
 .resumen .botones { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 .4rem; }
 .avisos { margin: .8rem 0 0; padding: .6rem .8rem .6rem 1.8rem; background: var(--aviso); border-radius: 10px; font-size: .88rem; }
 
+/* Enlaces de afiliado */
+.afiliado { font-family: system-ui, sans-serif; font-size: .78rem; font-weight: 600; margin-left: .5rem; padding: .1rem .55rem; border-radius: 999px; border: 1px solid var(--borde); text-decoration: none; white-space: nowrap; vertical-align: middle; }
+.afiliado:hover { background: var(--acento-claro); }
+.aviso-afiliados { font-size: .82rem; }
+
 /* Imprimibles */
 .hoja-datos { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; }
 .linea-escribir { display: inline-block; min-width: 12rem; border-bottom: 1px solid var(--texto); height: 1.2em; }
