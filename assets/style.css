@@ -55,7 +55,7 @@ a:hover { color: var(--acento-oscuro); text-decoration-thickness: 2px; }
 @media (max-width: 40rem) {
   .barra-dentro { padding: .45rem .75rem; }
   .menu { margin-left: 0; width: 100%; gap: .1rem; }
-  .menu a { padding: .35rem .6rem; font-size: .9rem; }
+  .menu a { padding: .32rem .5rem; font-size: .84rem; }
 }
 
 /* Cabecera de cada página */
