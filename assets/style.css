@@ -228,6 +228,14 @@ tbody tr:nth-child(even) { background: #fcfaf6; }
 .vista .c-escuela.sin-fecha .punto { fill: #fff; stroke: var(--c-escuela); }
 .evento.tramite { border-left-color: var(--c-tramites); }
 .evento.escuela { border-left-color: var(--c-escuela); }
+/* Suplementos (carril y tarjetas) */
+:root { --c-suplementos: #0e8fa3; }
+.vista-carril.c-suplementos { border-color: var(--c-suplementos); }
+.vista .c-suplementos .barra, .vista .c-suplementos .flecha { fill: var(--c-suplementos); }
+.evento.suplemento { border-left-color: var(--c-suplementos); }
+.pautas { padding-left: 1.2rem; }
+.pautas li { margin: .45rem 0; }
+
 /* Páginas por mes */
 .navegacion-meses { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
 .navegacion-meses a { padding: .45rem .9rem; border-radius: 999px; background: var(--superficie); border: 1px solid var(--borde); text-decoration: none; font-weight: 600; }

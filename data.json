@@ -284,6 +284,62 @@
     "verificado": "2026-11-14"
    }
   ],
+  "suplementos": [
+   {
+    "apartado": "Apartados «Población pediátrica» y «Toxicidad por vitamina D» (pág. 10 del PDF)",
+    "condicion": "toma únicamente leche materna, o menos de 1 litro al día de leche suplementada con vitamina D",
+    "documento": "Conselleria de Sanidad (Dirección General de Farmacia y Productos Sanitarios): Boletín farmacoterapéutico 2023, n.º 8, «Vitamina D: más allá de la latitud N 37º 51’ 57.28’’»",
+    "edad_desde": {
+     "dias": 0
+    },
+    "edad_hasta": {
+     "meses": 12
+    },
+    "fuente": "https://www.san.gva.es/documents/d/farmacia-i-productes-sanitaris/boletin-farmacoterapeutico-8-vitamina-d-mas-alla-de-la-latitud-n37",
+    "id": "vitamina-d-primer-ano",
+    "nombre": "Vitamina D",
+    "nota": "La leche materna tiene poca vitamina D. A los menores de 1 año que toman solo pecho se les indica vitamina D3 por boca, y también a los que toman menos de 1 litro al día de leche suplementada. Ha habido intoxicaciones por errores de dosis: usa solo el producto y la dosis que te indique el pediatra. Después del año, el pediatra valora si hace falta.",
+    "tipo": "rango",
+    "verificado": "2026-11-16"
+   },
+   {
+    "apartado": "Apartado 6 (alimentación de 1 a 3 años), pág. 31",
+    "documento": "AESAN: Documento de consenso sobre la alimentación saludable y sostenible en el primer ciclo de Educación Infantil (2025, NIPO 236-25-031-0)",
+    "edad_desde": {
+     "meses": 12
+    },
+    "edad_hasta": {
+     "meses": 36
+    },
+    "fuente": "https://aesan.gob.es/AECOSAN/docs/documentos/nutricion/entorno_escolar/ALIMENTACION_PRIMER_CICLO_EI.pdf",
+    "id": "sin-suplementos-1-3",
+    "linea": false,
+    "nombre": "Otros suplementos de vitaminas o minerales",
+    "nota": "En general no hacen falta suplementos de vitaminas ni de minerales como el hierro, salvo que los prescriba el pediatra.",
+    "tipo": "rango",
+    "verificado": "2026-11-16"
+   },
+   {
+    "apartado": "Apartado 7 (alimentación vegetariana), pág. 35, y «Mensajes claves»",
+    "documento": "AESAN: Documento de consenso sobre la alimentación saludable y sostenible en el primer ciclo de Educación Infantil (2025, NIPO 236-25-031-0)",
+    "fuente": "https://aesan.gob.es/AECOSAN/docs/documentos/nutricion/entorno_escolar/ALIMENTACION_PRIMER_CICLO_EI.pdf",
+    "id": "vitamina-b12-vegetariana",
+    "nombre": "Vitamina B12 si el bebé es vegetariano o vegano",
+    "nota": "Los bebés vegetarianos y veganos tienen que tomar suplementos de vitamina B12 de forma regular desde que empiezan la alimentación complementaria, o desde el nacimiento si la madre que amamanta no toma suplementos de B12, y durante toda la vida. Se recomienda que un equipo experto supervise su alimentación.",
+    "tipo": "pauta",
+    "verificado": "2026-11-16"
+   },
+   {
+    "apartado": "«Cuida la salud de su boca y dientes», págs. 14-15",
+    "documento": "Conselleria de Sanidad, Cartilla de Salud Infantil 2024 (castellano), enlazada desde la página del Programa de Supervisión de la Salud Infantil",
+    "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-salud-infantil-esp_r4",
+    "id": "pasta-fluor",
+    "nombre": "Pasta de dientes con flúor",
+    "nota": "En cuanto salgan los dientes, cepíllalos con un cepillo infantil y pasta de 1000 ppm de flúor: hasta los 3 años, un barrillo de pasta, en el cepillado de la noche el primer año y después de las comidas desde el año; a partir de los 3 años, la cantidad de un guisante.",
+    "tipo": "pauta",
+    "verificado": "2026-11-16"
+   }
+  ],
   "texto_aep": "Recomendación de la AEP, no incluida en el calendario de tu comunidad; consúltalo con tu pediatra.",
   "tramites": [
    {
@@ -1182,5 +1238,5 @@
    "nombre": "País Vasco"
   }
  },
- "ultima_revision": "2026-11-14"
+ "ultima_revision": "2026-11-16"
 }

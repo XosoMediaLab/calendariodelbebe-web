@@ -368,6 +368,25 @@
       });
     });
 
+    // Suplementos con edad (vitamina D...): un periodo, no una cita. No van al .ics ni a
+    // Google Calendar; el producto y la dosis los indica el pediatra.
+    (datos.comunes.suplementos || []).forEach(function (r) {
+      if (r.tipo !== "rango" || r.linea === false) return;
+      eventos.push({
+        id: r.id,
+        tipo: "suplemento",
+        titulo: r.nombre,
+        fecha: fechaEdad(nacimiento, r.edad_desde),
+        fechaHasta: fechaEdad(nacimiento, r.edad_hasta),
+        edadTexto: textoRango(r.edad_desde, r.edad_hasta),
+        meses: enMeses(r.edad_desde),
+        hastaMeses: enMeses(r.edad_hasta),
+        rango: true,
+        elementos: [{ id: r.id, nombre: r.nombre, nota: r.nota, fuente: citaDe(r), soloSi: r.condicion }],
+        fechaConocida: true,
+      });
+    });
+
     var limite = sumarMeses(nacimiento, EDAD_MAXIMA_MESES);
     eventos = eventos.filter(function (e) {
       return e.fecha <= limite || e.tipo === "campaña" || e.tipo === "tramite";
@@ -375,7 +394,7 @@
     eventos.forEach(function (e) {
       // Una campaña ya empezada sigue abierta mientras no pase su fecha de fin (si se conoce).
       e.enCurso = e.tipo === "campaña" && e.fechaConocida && e.fecha < hoy && !(e.fin && e.fin < hoy);
-      e.pasado = e.fecha < hoy && !e.enCurso;
+      e.pasado = e.tipo === "suplemento" ? e.fechaHasta < hoy : e.fecha < hoy && !e.enCurso;
       e.diaNacimiento = e.fecha.getTime() === nacimiento.getTime();
       e.dias = diasEntre(hoy, e.fecha);
     });
@@ -386,7 +405,7 @@
   }
 
   function orden(tipo) {
-    return { revision: 0, cribado: 1, vacunas: 2, "campaña": 3, aep: 4, tramite: 5, escuela: 6 }[tipo];
+    return { revision: 0, cribado: 1, vacunas: 2, "campaña": 3, aep: 4, tramite: 5, escuela: 6, suplemento: 7 }[tipo];
   }
 
   // Escuela: admisiones publicadas para el año de nacimiento y, si el cole (segundo ciclo)
@@ -441,7 +460,7 @@
   function proximo(eventos, hoy) {
     for (var i = 0; i < eventos.length; i++) {
       var e = eventos[i];
-      var salud = e.tipo !== "aep" && e.tipo !== "tramite" && e.tipo !== "escuela";
+      var salud = e.tipo !== "aep" && e.tipo !== "tramite" && e.tipo !== "escuela" && e.tipo !== "suplemento";
       if (salud && e.fechaConocida && e.fecha >= hoy) return e;
     }
     return null;
@@ -521,7 +540,7 @@
       "X-WR-CALNAME:Calendario del bebé",
     ];
     eventos.forEach(function (e) {
-      if (!e.fechaConocida) return;
+      if (!e.fechaConocida || e.tipo === "suplemento") return;
       if (desde && e.fecha < desde) return;
       var titulo = e.tipo === "aep" ? "Recomendación AEP: " + e.titulo : e.titulo;
       lineas.push(
@@ -547,7 +566,7 @@
   // citas pasadas, sin fecha publicada, campañas ya en curso ni las que caen el mismo
   // día del nacimiento.
   function enlaceGoogle(e) {
-    if (!e.fechaConocida || e.pasado || e.enCurso || e.diaNacimiento) return null;
+    if (!e.fechaConocida || e.pasado || e.enCurso || e.diaNacimiento || e.tipo === "suplemento") return null;
     if (e.tipo === "cribado") return null; // en la maternidad; su fecha delataría la de nacimiento
     var titulo = (e.tipo === "aep" ? "Recomendación AEP: " : "") + e.titulo +
       (e.rango ? " (" + e.edadTexto + ")" : "");
@@ -685,6 +704,7 @@
       { id: "evitar", nombre: "Comer: evitar", filas: [] },
       { id: "tramites", nombre: "Trámites y permisos", filas: [] },
       { id: "escuela", nombre: "Escuela", filas: [] },
+      { id: "suplementos", nombre: "Suplementos", filas: [] },
     ];
     var porId = {};
     carriles.forEach(function (c) { porId[c.id] = c; });
@@ -784,6 +804,17 @@
       if (puntos.length) porId.escuela.filas.push(puntos);
     }
 
+    // Suplementos con edad: barra del periodo.
+    eventos.forEach(function (e) {
+      if (e.tipo !== "suplemento") return;
+      porId.suplementos.filas.push([{
+        ref: e.id, forma: "barra",
+        titulo: e.titulo + (e.elementos[0].soloSi ? " (si " + e.elementos[0].soloSi + ")" : ""),
+        detalle: e.edadTexto + ". El producto y la dosis te los indica el pediatra.",
+        desde: e.meses, hasta: e.hastaMeses, pasado: !!e.pasado, elementos: [],
+      }]);
+    });
+
     // Gripe: una dosis cada temporada otoño-invierno. Las temporadas siguientes a la del
     // evento, hasta los 36 meses, se marcan aparte: con la campaña si está publicada y,
     // si no, como «sin publicar», situadas en octubre solo como referencia visual.
@@ -831,6 +862,7 @@
     if (!e.fechaConocida) return "Fecha sin publicar";
     // Las citas las fija el centro de salud: la fecha es la primera posible, no la de la cita.
     if (e.tipo === "tramite") return "Hasta el " + formatear(e.fecha);
+    if (e.tipo === "suplemento") return "Del " + formatear(e.fecha) + " al " + formatear(e.fechaHasta);
     if (e.admision) return "Desde el " + formatear(e.fecha);
     return (e.tipo === "revision" || e.tipo === "cribado" ? "Hacia el " : "A partir del ") + formatear(e.fecha);
   }
@@ -845,6 +877,7 @@
 
   function detalleRevision(x) {
     return el("p", { class: "nota" }, [
+      x.soloSi ? el("strong", { texto: "Solo si " + x.soloSi + ". " }) : null,
       x.nota ? x.nota + " " : "",
       enlaceFuente(x.fuente),
       x.calculadora ? " · " : null,
@@ -875,7 +908,7 @@
       el("h3", { texto: e.titulo }),
       e.campana ? el("p", { class: "campana-texto" }, [e.campana, e.fuenteCampana ? " " : "", e.fuenteCampana ? enlaceFuente(e.fuenteCampana) : null]) : null,
       e.notaCampana ? el("p", { class: "nota", texto: e.notaCampana }) : null,
-      ["revision", "cribado", "tramite", "escuela"].indexOf(e.tipo) >= 0 ? detalleRevision(e.elementos[0]) : lista,
+      ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ? detalleRevision(e.elementos[0]) : lista,
       enlaceGoogle(e) ? el("p", { class: "google" }, [
         el("a", { href: enlaceGoogle(e), target: "_blank", rel: "noopener noreferrer", texto: "Añadir a Google Calendar" }),
       ]) : null,
@@ -990,7 +1023,7 @@
             var x1 = x(mk.desde);
             var abierto = mk.abierto && c.id === "campanas";
             var x2 = abierto ? Math.min(x(vista.maxMeses), x1 + 2.5 * PX_MES) : x(mk.hasta === null || mk.hasta === undefined ? vista.maxMeses : mk.hasta);
-            var conTexto = ["empezar", "evitar", "tramites", "escuela"].indexOf(c.id) >= 0;
+            var conTexto = ["empezar", "evitar", "tramites", "escuela", "suplementos"].indexOf(c.id) >= 0;
             var yb = conTexto ? yf + hf - 13 : centro - 7;
             var hb = conTexto ? 9 : 14;
             g.appendChild(s("rect", { x: x1, y: yf + 2, width: Math.max(x2 - x1, 16), height: hf - 4, class: "zona" }));
@@ -1112,7 +1145,7 @@
       else nodoProximo.appendChild(el("p", { texto: "No queda nada con fecha en el calendario oficial hasta los 36 meses." }));
       var linea = document.getElementById("linea");
       linea.textContent = "";
-      var aparte = { aep: 1, tramite: 1, escuela: 1 };
+      var aparte = { aep: 1, tramite: 1, escuela: 1, suplemento: 1 };
       actuales.filter(function (e) { return !aparte[e.tipo]; }).forEach(function (e) {
         var nodo = pintarEvento(e);
         nodo.id = "ev-" + e.id;
@@ -1124,6 +1157,13 @@
         var nodo = pintarEvento(e);
         nodo.id = "ev-" + e.id;
         lineaTramites.appendChild(nodo);
+      });
+      var lineaSup = document.getElementById("linea-suplementos");
+      lineaSup.textContent = "";
+      actuales.filter(function (e) { return e.tipo === "suplemento"; }).forEach(function (e) {
+        var nodo = pintarEvento(e);
+        nodo.id = "ev-" + e.id;
+        lineaSup.appendChild(nodo);
       });
       var aep = document.getElementById("linea-aep");
       aep.textContent = "";
