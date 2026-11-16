@@ -246,8 +246,8 @@
     // comunidad. No se inventan reglas: se remite a la cartilla.
     evento.id = "vrs-anterior";
     evento.titulo = "VRS (bronquiolitis): campaña de su temporada";
-    evento.campana = "Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web de " +
-      aut + ". Si se le puso, figura en la cartilla.";
+    evento.campana = "Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web " +
+      (aut.indexOf("el ") === 0 ? "del " + aut.slice(3) : "de " + aut) + ". Si se le puso, figura en la cartilla.";
     return evento;
   }
 
