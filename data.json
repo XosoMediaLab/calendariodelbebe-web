@@ -1177,8 +1177,805 @@
    ]
   },
   "aragon": {
-   "estado": "proximamente",
-   "nombre": "Aragón"
+   "autoridad": "el Departamento de Sanidad",
+   "aviso_revisiones": "En Aragón solo se publica la fecha del primer control (en la primera semana de vida); las demás revisiones te las programa el pediatra en cada consulta.",
+   "boletin": "BOA",
+   "campanas": [
+    {
+     "apartado": "Apartado 3 «Cronograma inicial de la campaña», tabla 1 («5 de octubre: Comienzo vacunación infantil escolar»; «19 de octubre: Comienzo vacunación infantil en centros de salud y centros de vacunación privados acreditados»), p. 5; apartado 4, punto A.2 («Población infantil entre 6 meses y 11 años de edad (incluidos)»), p. 6; apartado 17 «Aclaraciones» («Los niños se incorporarán a la población diana… según vayan cumpliendo 6 meses de edad»), p. 16; vacunas por edad, p. 2",
+     "campana": "gripe",
+     "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a gripe. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 20 págs.",
+     "fin": null,
+     "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_gripe_aragon_2026-11-09-pdf",
+     "fuente_poblacion": {
+      "apartado": "Apartado A, punto 2 («Población infantil entre 6 meses a 11 años de edad (incluidos)»)",
+      "documento": "Departamento de Sanidad: «Personas a las que se recomienda vacunarse frente a gripe» (Población diana vacunación gripe 2026-2027), 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/indicaciones_vacunacion_gripe_aragon_2026-27-pdf-1",
+      "verificado": "2026-11-17"
+     },
+     "fuente_web": {
+      "apartado": "Texto inicial («se recomienda la vacunación de gripe entre los 6 meses y los 11 años de edad»; «Actualmente pueden solicitar cita… los niños entre 6 meses y hasta doce años»)",
+      "documento": "Gobierno de Aragón, Departamento de Sanidad: «Vacunación frente a la gripe» (página actualizada el 10/11/2026, consultada el 17/11/2026)",
+      "fuente": "https://www.aragon.es/salud-publica/vacunaciones/gripe",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "En el centro de salud (o centro de vacunación privado acreditado) desde el 19/10/2026; la vacunación en los colegios empezó el 05/10/2026. Los bebés entran en la campaña según van cumpliendo 6 meses. Inyectable de 6 a 23 meses e intranasal de 2 a 11 años. Se puede pedir cita en Salud Informa.",
+     "poblacion": "Niños y niñas de 6 meses a 11 años de edad, incluidos.",
+     "regla": {
+      "edad_maxima": {
+       "meses": 143
+      },
+      "edad_minima": {
+       "meses": 6
+      }
+     },
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 1 («La campaña de inmunización comenzará en Aragón el día 1 de octubre»), p. 5; apartado 3, punto 3 (población diana por fecha de nacimiento), p. 6; apartado 12 «Procedimiento de inmunización», puntos 1 y 2 y «Repesca / 2.ª oportunidad», pp. 11-12",
+     "campana": "vrs",
+     "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Inmunización pasiva frente a VRS con nirsevimab en población infantil. Aragón. Temporada 2026/27» (versión de 21 de septiembre de 2026), 14 págs.",
+     "fin": null,
+     "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_inmunizacion_infantil_vrs_-aragon_2026-09-21-pdf",
+     "fuente_indicaciones": {
+      "apartado": "Grupo 3 «Menores 6 meses»: «Ya nacidos entre 1/04/2026 y 30/09/2026» y «Nacidos desde 1/10/2026 hasta 31/03/2027», y nota **",
+      "documento": "Dirección General de Salud Pública: «Indicaciones y uso nirsevimab Aragón 2026/27» (21/09/2026), 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/indicaciones_nirsevimab_-aragon_2026-27-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_web": {
+      "apartado": "«Información para la ciudadanía. ¿Dónde vacunan a mi bebé?»",
+      "documento": "Gobierno de Aragón, Departamento de Sanidad: «Inmunización infantil VRS. Campaña de inmunización en Aragón» (página actualizada el 17/11/2026, consultada el 17/11/2026)",
+      "fuente": "https://www.aragon.es/salud-publica/vacunaciones/vrs-poblacion-infantil",
+      "verificado": "2026-11-17"
+     },
+     "id": "vrs-2026-2027",
+     "inicio": "2026-10-01",
+     "nota": "Una dosis de nirsevimab. Nacidos del 01/10/2026 al 31/03/2027: en el hospital, en las primeras 24-48 horas de vida y siempre antes del alta (en todos los hospitales de Aragón, públicos y privados). Nacidos del 01/04/2026 al 30/09/2026: en el centro de salud o centro de vacunación privado acreditado, sobre todo en octubre. Haber cumplido 6 meses no excluye si se nació en esas fechas. Si no se le puso al nacer, se ofrece en la primera visita al centro de salud. Prematuros y niños de alto riesgo tienen otras reglas: lo indica el pediatra.",
+     "poblacion": "Lactantes nacidos entre el 01/04/2026 y el 31/03/2027.",
+     "regla": {
+      "nacidos_desde": "2026-04-01",
+      "nacidos_hasta": "2027-03-31"
+     },
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "cribados": [
+    {
+     "apartado": "Art. 1.2 (gratuito y voluntario) y art. 2.2.d («La toma de muestra se realizará entre las 24 y las 72 horas tras el nacimiento y antes del alta hospitalaria del recién nacido, siempre que sea técnicamente posible»), pp. 1656-1657 (2-3 del PDF)",
+     "documento": "ORDEN SAN/1728/2024, de 19 de diciembre, por la que se regula el programa de cribado neonatal en la Comunidad Autónoma de Aragón. BOA n.º 10, de 16/01/2025 (CSV BOA20250116001)",
+     "edad_desde": {
+      "horas": 24
+     },
+     "edad_hasta": {
+      "horas": 72
+     },
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1372343740404",
+     "fuente_folleto": {
+      "apartado": "«¿Cuándo y dónde se hace?» y «¿Cómo se informan los resultados?», p. 1",
+      "documento": "Salud Informa (Servicio Aragonés de Salud): «Folleto cribado neonatal de enfermedades congénitas en prueba de talón» (revisado el 06/08/2026), 2 págs.",
+      "fuente": "https://www.saludinforma.es/portalsi/documents/10179/10861/Folleto+cribado+neonatal+de+enfermedades+cong%C3%A9nitas+en+prueba+de+tal%C3%B3n+-+2026-08-06/eaafbf38-1ef4-41b6-8df2-e9cf5ede4b74?version=1.1",
+      "verificado": "2026-11-17"
+     },
+     "fuente_web": {
+      "apartado": "«¿Cuándo y dónde se hace?», «¿A quién va dirigido?» y «¿Cómo se informan los resultados?»",
+      "documento": "Salud Informa (Servicio Aragonés de Salud): «Programa de cribado neonatal de enfermedades congénitas en prueba de talón» (actualizada el 06/08/2026, consultada el 17/11/2026)",
+      "fuente": "https://www.saludinforma.es/portalsi/web/salud/temas-salud/programas-cribado/neonatal-endocrino-metabolico",
+      "verificado": "2026-11-17"
+     },
+     "id": "cribado-talon",
+     "nombre": "Prueba del talón (cribado neonatal de enfermedades endocrino-metabólicas)",
+     "nota": "Unas gotas de sangre del talón, en el hospital donde nace, entre las 24 y las 72 horas de vida y antes del alta. Es gratuita y voluntaria (se pide el consentimiento por escrito). Si el resultado es normal, llega una carta a casa en unas 3 semanas.",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "escolarizacion": {
+    "admision": [
+     {
+      "apartado": "Base primera, punto 1 (calendarios del anexo II a), p. 5 del PDF; base duodécima, punto 2.1 «Requisito de edad» (no nacidos con parto previsto antes del 01/07/2026; incorporación con 18 semanas como máximo), p. 22; Anexo II a) «Calendario del proceso de escolarización de alumnado de educación infantil, educación primaria, educación especial y educación secundaria obligatoria. Curso 2026-2027», fase 5 («Desde las 9 h. del jueves 16 de abril hasta las 14 h. del miércoles 22 de abril, ambos inclusive»), p. 42 del PDF; fase 15 (matrícula de Educación Infantil), p. 43",
+      "ciclo": "primer",
+      "curso": "2026-2027",
+      "documento": "ORDEN ECD/471/2026, de 13 de marzo, por la que se convoca el procedimiento de escolarización del alumnado de los centros docentes sostenidos con fondos públicos de la Comunidad Autónoma de Aragón en las enseñanzas de educación infantil, educación primaria, educación especial, educación secundaria obligatoria y bachillerato, para el curso escolar 2026/2027. BOA n.º 57, de 24/03/2026 (CSV BOA20260324014)",
+      "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1441021310505",
+      "fuente_ambito": {
+       "apartado": "«Cuándo solicitar plaza» (la convocatoria del BOA regula «las de educación infantil de primer ciclo que se imparten en las 11 Escuelas de Educación Infantil del Gobierno de Aragón y en unidades para niños y niñas de 2 a 3 años en determinados centros de educación infantil y primaria»)",
+       "documento": "Gobierno de Aragón: «Solicitar plaza» en la Red de Escuelas de Educación Infantil del Gobierno de Aragón (página actualizada el 15/07/2026, consultada el 17/11/2026)",
+       "fuente": "https://www.aragon.es/escolarizar-en-centros-educativos/red-de-escuelas-infantiles/solicitar-plaza",
+       "verificado": "2026-11-17"
+      },
+      "fuente_web": {
+       "apartado": "Apartado 2 «Desarrollo del proceso de escolarización»: «Desde las 9 h del jueves 16 de abril a las 14 h del miércoles 22 de abril: presentación de solicitudes» y vídeo «Solicitudes Escuelas de Educación Infantil del Gobierno de Aragón y aulas de dos años en colegios públicos»",
+       "documento": "Departamento de Educación, portal educa.aragon.es: «1.6. Proceso de Escolarización en Educación Infantil, Educación Primaria, Educación Secundaria Obligatoria y Educación Especial. Periodo ordinario 2026 - 2027» (consultada el 17/11/2026)",
+       "fuente": "https://educa.aragon.es/-/escolarizacioneiepeeyeso",
+       "verificado": "2026-11-17"
+      },
+      "id": "admision-primer-ciclo-2026-2027",
+      "niveles": {},
+      "nota": "Para las 11 Escuelas de Educación Infantil del Gobierno de Aragón y las aulas de 2 años de algunos colegios públicos: solicitud solo por internet, desde las 9:00 del 16/04/2026 hasta las 14:00 del 22/04/2026. Se podía pedir plaza para el primer curso antes de nacer si el parto estaba previsto antes del 01/07/2026 (con certificado médico); el bebé no puede incorporarse con más de 18 semanas. Matrícula del 26/05/2026 al 01/06/2026. Esta convocatoria es solo para esas escuelas y aulas: en otras escuelas infantiles, pregunta en la propia escuela.",
+      "solicitudes_desde": "2026-04-16",
+      "solicitudes_hasta": "2026-04-22",
+      "verificado": "2026-11-17"
+     },
+     {
+      "apartado": "Anexo II a) «Calendario del proceso de escolarización de alumnado de educación infantil, educación primaria, educación especial y educación secundaria obligatoria. Curso 2026-2027», fase 5 («Desde las 9 h. del jueves 16 de abril hasta las 14 h. del miércoles 22 de abril, ambos inclusive»), p. 42 del PDF; fases 11 y 13 (listas provisionales y definitivas) y 15 (matrícula), p. 43 del PDF",
+      "ciclo": "segundo",
+      "curso": "2026-2027",
+      "documento": "ORDEN ECD/471/2026, de 13 de marzo, por la que se convoca el procedimiento de escolarización del alumnado de los centros docentes sostenidos con fondos públicos de la Comunidad Autónoma de Aragón en las enseñanzas de educación infantil, educación primaria, educación especial, educación secundaria obligatoria y bachillerato, para el curso escolar 2026/2027. BOA n.º 57, de 24/03/2026 (CSV BOA20260324014)",
+      "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1441021310505",
+      "fuente_web": {
+       "apartado": "Apartado 2 «Desarrollo del proceso de escolarización» (presentación de solicitudes)",
+       "documento": "Departamento de Educación, portal educa.aragon.es: «1.6. Proceso de Escolarización en Educación Infantil, Educación Primaria, Educación Secundaria Obligatoria y Educación Especial. Periodo ordinario 2026 - 2027» (consultada el 17/11/2026)",
+       "fuente": "https://educa.aragon.es/-/escolarizacioneiepeeyeso",
+       "verificado": "2026-11-17"
+      },
+      "id": "admision-segundo-ciclo-2026-2027",
+      "niveles": {},
+      "nota": "Primer curso del segundo ciclo de Educación Infantil (3 años) en colegios públicos y concertados: solicitud solo por internet, desde las 9:00 del 16/04/2026 hasta las 14:00 del 22/04/2026. Listas provisionales el 11/05/2026 y definitivas el 15/05/2026; matrícula del 26/05/2026 al 01/06/2026.",
+      "solicitudes_desde": "2026-04-16",
+      "solicitudes_hasta": "2026-04-22",
+      "verificado": "2026-11-17"
+     }
+    ],
+    "etapas": [
+     {
+      "apartado": "Artículos 12.3 y 14.1",
+      "documento": "Ley Orgánica 2/2006, de 3 de mayo, de Educación (BOE, texto consolidado)",
+      "edad_desde": {
+       "dias": 0
+      },
+      "edad_hasta": {
+       "meses": 36
+      },
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+      "id": "infantil-primer-ciclo",
+      "nombre": "Escuela infantil (primer ciclo de Educación Infantil)",
+      "nota": "Hasta los 3 años. Toda la Educación Infantil es voluntaria.",
+      "tipo": "rango",
+      "verificado": "2026-11-17"
+     },
+     {
+      "apartado": "Artículos 12.3 y 14.1",
+      "documento": "Ley Orgánica 2/2006, de 3 de mayo, de Educación (BOE, texto consolidado)",
+      "edad_desde": {
+       "meses": 36
+      },
+      "edad_hasta": {
+       "meses": 72
+      },
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+      "id": "infantil-segundo-ciclo",
+      "nombre": "Cole: segundo ciclo de Educación Infantil",
+      "nota": "De los 3 a los 6 años. Toda la Educación Infantil es voluntaria.",
+      "tipo": "rango",
+      "verificado": "2026-11-17"
+     }
+    ]
+   },
+   "estado": "verificada",
+   "nombre": "Aragón",
+   "revisiones": [
+    {
+     "apartado": "Apartado «Primer control y revisiones médicas»",
+     "documento": "Gobierno de Aragón, Momentos vitales «Tener un hijo o hija»: «Salud y bienestar» (consultada el 17/11/2026)",
+     "edad_desde": {
+      "dias": 0
+     },
+     "edad_hasta": {
+      "dias": 7
+     },
+     "fuente": "https://www.aragon.es/momentos-vitales/tener-un-hijo-o-hija/salud-y-bienestar",
+     "id": "revision-primera-semana",
+     "nombre": "Primer control del bebé en el centro de salud",
+     "nota": "En el centro de salud, durante la primera semana de vida. Las siguientes revisiones te las programa el pediatra (según el calendario de vacunas o lo que necesite tu bebé). Lleva siempre el Documento de Salud Infantil que te dan al nacer.",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "tramites": [],
+   "vacunas": [
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): filas «2 meses», «4 meses» y «11 meses» («Antihepatitis B, DTPa, VPI, Haemophilus influenzae b»)",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_vacuna": {
+      "apartado": "Punto 2 «Edades habituales de uso en calendario de inmunizaciones de Aragón»: Infanrix-Hexa a los 2, 4 y 11 meses",
+      "documento": "Dirección General de Salud Pública: «Información sobre cambio vacuna hexavalente. Aragón julio 2026», 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/aragon_instrucciones_uso_infanrix_hexa_2026-07-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-2m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): filas «2 meses», «4 meses» y «11 meses» («Antihepatitis B, DTPa, VPI, Haemophilus influenzae b»)",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_vacuna": {
+      "apartado": "Punto 2 «Edades habituales de uso en calendario de inmunizaciones de Aragón»: Infanrix-Hexa a los 2, 4 y 11 meses",
+      "documento": "Dirección General de Salud Pública: «Información sobre cambio vacuna hexavalente. Aragón julio 2026», 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/aragon_instrucciones_uso_infanrix_hexa_2026-07-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-4m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): filas «2 meses», «4 meses» y «11 meses» («Antihepatitis B, DTPa, VPI, Haemophilus influenzae b»)",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 11
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_vacuna": {
+      "apartado": "Punto 2 «Edades habituales de uso en calendario de inmunizaciones de Aragón»: Infanrix-Hexa a los 2, 4 y 11 meses",
+      "documento": "Dirección General de Salud Pública: «Información sobre cambio vacuna hexavalente. Aragón julio 2026», 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/aragon_instrucciones_uso_infanrix_hexa_2026-07-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-11m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "Refuerzo.",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Neumococo(2)» a los 2, 4, 6 y 11 meses y nota 2",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Neumococo» primera (2 meses), segunda (4 meses) y tercera (6 meses), p. 12 impresa (14 del PDF); cuarta (11 meses), p. 14 impresa (16 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_pauta": {
+      "apartado": "Apartado 1 «Calendario sistemático infantil», p. 1: «Se sustituye la vacuna conjugada de 15 serotipos (VNC-15) por la vacuna conjugada de 20 serotipos (VNC-20)… pauta primaria de 3 dosis (2, 4 y 6 meses de edad) y una dosis de refuerzo a los 11 meses de edad»",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 02/2024 «Actualización vacunación antineumocócica Aragón 2024» (firmada el 11/04/2024), 6 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/circular_dgsp_02-2024_actualizacion_vacunacion_neumococo_2024-def-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-2m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Con la vacuna de 20 serotipos (VNC20, desde la circular de abril de 2024) son 4 dosis: 2, 4, 6 y 11 meses.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Neumococo(2)» a los 2, 4, 6 y 11 meses y nota 2",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Neumococo» primera (2 meses), segunda (4 meses) y tercera (6 meses), p. 12 impresa (14 del PDF); cuarta (11 meses), p. 14 impresa (16 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_pauta": {
+      "apartado": "Apartado 1 «Calendario sistemático infantil», p. 1: «Se sustituye la vacuna conjugada de 15 serotipos (VNC-15) por la vacuna conjugada de 20 serotipos (VNC-20)… pauta primaria de 3 dosis (2, 4 y 6 meses de edad) y una dosis de refuerzo a los 11 meses de edad»",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 02/2024 «Actualización vacunación antineumocócica Aragón 2024» (firmada el 11/04/2024), 6 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/circular_dgsp_02-2024_actualizacion_vacunacion_neumococo_2024-def-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-4m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Con la vacuna de 20 serotipos (VNC20, desde la circular de abril de 2024) son 4 dosis: 2, 4, 6 y 11 meses.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Neumococo(2)» a los 2, 4, 6 y 11 meses y nota 2",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 6
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Neumococo» primera (2 meses), segunda (4 meses) y tercera (6 meses), p. 12 impresa (14 del PDF); cuarta (11 meses), p. 14 impresa (16 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_pauta": {
+      "apartado": "Apartado 1 «Calendario sistemático infantil», p. 1: «Se sustituye la vacuna conjugada de 15 serotipos (VNC-15) por la vacuna conjugada de 20 serotipos (VNC-20)… pauta primaria de 3 dosis (2, 4 y 6 meses de edad) y una dosis de refuerzo a los 11 meses de edad»",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 02/2024 «Actualización vacunación antineumocócica Aragón 2024» (firmada el 11/04/2024), 6 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/circular_dgsp_02-2024_actualizacion_vacunacion_neumococo_2024-def-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-6m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Tercera dosis de la pauta con VNC20. Los bebés que empezaron antes con la vacuna de 15 serotipos y ya tenían las dosis de 2 y 4 meses no la necesitan.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Neumococo(2)» a los 2, 4, 6 y 11 meses y nota 2",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 11
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Neumococo» primera (2 meses), segunda (4 meses) y tercera (6 meses), p. 12 impresa (14 del PDF); cuarta (11 meses), p. 14 impresa (16 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_pauta": {
+      "apartado": "Apartado 1 «Calendario sistemático infantil», p. 1: «Se sustituye la vacuna conjugada de 15 serotipos (VNC-15) por la vacuna conjugada de 20 serotipos (VNC-20)… pauta primaria de 3 dosis (2, 4 y 6 meses de edad) y una dosis de refuerzo a los 11 meses de edad»",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 02/2024 «Actualización vacunación antineumocócica Aragón 2024» (firmada el 11/04/2024), 6 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/circular_dgsp_02-2024_actualizacion_vacunacion_neumococo_2024-def-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-11m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Refuerzo.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Meningococo B» a los 2, 4 y 12 meses y nota 4 («Nacidos a partir del 1 de enero de 2023»)",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cohorte": {
+      "apartado": "Nota 2: «Meningococo B, nacidos a partir 1/01/2023», p. 2",
+      "documento": "Dirección General de Salud Pública, Programa de Vacunaciones: «Calendario de mano. Vacunación Infantil Aragón 2024» (versión 20/12/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/calendario-mano-infantil-2024-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-2m",
+     "nombre": "Meningococo B",
+     "nota": "A los 2, 4 y 12 meses para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Meningococo B» a los 2, 4 y 12 meses y nota 4 («Nacidos a partir del 1 de enero de 2023»)",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cohorte": {
+      "apartado": "Nota 2: «Meningococo B, nacidos a partir 1/01/2023», p. 2",
+      "documento": "Dirección General de Salud Pública, Programa de Vacunaciones: «Calendario de mano. Vacunación Infantil Aragón 2024» (versión 20/12/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/calendario-mano-infantil-2024-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-4m",
+     "nombre": "Meningococo B",
+     "nota": "A los 2, 4 y 12 meses para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Meningococo B» a los 2, 4 y 12 meses y nota 4 («Nacidos a partir del 1 de enero de 2023»)",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cohorte": {
+      "apartado": "Nota 2: «Meningococo B, nacidos a partir 1/01/2023», p. 2",
+      "documento": "Dirección General de Salud Pública, Programa de Vacunaciones: «Calendario de mano. Vacunación Infantil Aragón 2024» (versión 20/12/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/calendario-mano-infantil-2024-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-12m",
+     "nombre": "Meningococo B",
+     "nota": "A los 2, 4 y 12 meses para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Meningococo ACWY» a los 4 y 12 meses; art. 1.1, p. 27372",
+     "condicion": {
+      "cumple_edad_desde": "2024-10-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad meningocócica A, C, W e Y"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cambio": {
+      "apartado": "Apartado 1 «Calendario sistemático de vacunación», p. 1: «A partir del 1 de octubre… 4 meses de edad: vacuna MenACWY, Nimenrix, tras agotar previamente las dosis de Neisvac C disponibles en los centros. 12 meses de edad: vacuna MenACWY, Menquadfi»; tabla 2, p. 2",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 06/2024 «Instrucciones vacunación frente a meningococo ACWY» (firmada el 07/10/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/dgsp_06_2024_vacuna_meningoacwy_2024-09-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "menacwy-4m",
+     "nombre": "Meningococo ACWY",
+     "nota": "Sustituye a la vacuna del meningococo C desde el 01/10/2024 (al principio se gastaron antes las dosis de meningococo C que quedaban en los centros).",
+     "siglas": "MenACWY",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Meningococo ACWY» a los 4 y 12 meses; art. 1.1, p. 27372",
+     "condicion": {
+      "cumple_edad_desde": "2024-10-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "enfermedad meningocócica A, C, W e Y"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cambio": {
+      "apartado": "Apartado 1 «Calendario sistemático de vacunación», p. 1: «A partir del 1 de octubre… 4 meses de edad: vacuna MenACWY, Nimenrix, tras agotar previamente las dosis de Neisvac C disponibles en los centros. 12 meses de edad: vacuna MenACWY, Menquadfi»; tabla 2, p. 2",
+      "documento": "Dirección General de Salud Pública: Circular DGSP 06/2024 «Instrucciones vacunación frente a meningococo ACWY» (firmada el 07/10/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/dgsp_06_2024_vacuna_meningoacwy_2024-09-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "menacwy-12m",
+     "nombre": "Meningococo ACWY",
+     "nota": "Sustituye a la vacuna del meningococo C de los 12 meses desde el 01/10/2024.",
+     "siglas": "MenACWY",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Rotavirus(2)» a los 2, 4 y 6 meses y nota 2 («a los 2 y 4 meses, o a los 2, 4 y 6 meses, según la vacuna utilizada. Rotavirus nacidos a partir del 1 de agosto de 2024»)",
+     "condicion": {
+      "nacidos_desde": "2024-08-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Rotavirus» primera (2 meses), segunda (4 meses) y tercera «(Según vacuna utilizada)» (6 meses), p. 12 impresa (14 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_cohorte": {
+      "apartado": "Art. 1.1, p. 27372 (p. 2 del PDF): «Se incorpora a partir de octubre de 2024 la vacunación frente a rotavirus para los lactantes nacidos a partir del 1 de agosto de 2024; a los 2 y 4 meses, o a los 2, 4 y 6 meses de edad, en función de la vacuna a utilizar»",
+      "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+      "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-2m",
+     "nombre": "Rotavirus (oral)",
+     "nota": "Oral. Para los nacidos desde el 01/08/2024. Según la vacuna, son 2 dosis (2 y 4 meses) o 3 (2, 4 y 6 meses).",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Rotavirus(2)» a los 2, 4 y 6 meses y nota 2 («a los 2 y 4 meses, o a los 2, 4 y 6 meses, según la vacuna utilizada. Rotavirus nacidos a partir del 1 de agosto de 2024»)",
+     "condicion": {
+      "nacidos_desde": "2024-08-01"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Rotavirus» primera (2 meses), segunda (4 meses) y tercera «(Según vacuna utilizada)» (6 meses), p. 12 impresa (14 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_cohorte": {
+      "apartado": "Art. 1.1, p. 27372 (p. 2 del PDF): «Se incorpora a partir de octubre de 2024 la vacunación frente a rotavirus para los lactantes nacidos a partir del 1 de agosto de 2024; a los 2 y 4 meses, o a los 2, 4 y 6 meses de edad, en función de la vacuna a utilizar»",
+      "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+      "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-4m",
+     "nombre": "Rotavirus (oral)",
+     "nota": "Oral. Para los nacidos desde el 01/08/2024. Según la vacuna, son 2 dosis (2 y 4 meses) o 3 (2, 4 y 6 meses).",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Rotavirus(2)» a los 2, 4 y 6 meses y nota 2 («a los 2 y 4 meses, o a los 2, 4 y 6 meses, según la vacuna utilizada. Rotavirus nacidos a partir del 1 de agosto de 2024»)",
+     "condicion": {
+      "nacidos_desde": "2024-08-01",
+      "solo_si": "vacuna de rotavirus de 3 dosis"
+     },
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 6
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_cartilla": {
+      "apartado": "«Inmunizaciones sistemáticas»: «Rotavirus» primera (2 meses), segunda (4 meses) y tercera «(Según vacuna utilizada)» (6 meses), p. 12 impresa (14 del PDF)",
+      "documento": "Departamento de Sanidad, Dirección General de Salud Pública: «Documento de Salud Infantil. Actualización 2026» (PDF de febrero de 2026, 24 págs.)",
+      "fuente": "https://www.aragon.es/documents/d/guest/documento_salud_infantil_aragon-pdf",
+      "verificado": "2026-11-17"
+     },
+     "fuente_cohorte": {
+      "apartado": "Art. 1.1, p. 27372 (p. 2 del PDF): «Se incorpora a partir de octubre de 2024 la vacunación frente a rotavirus para los lactantes nacidos a partir del 1 de agosto de 2024; a los 2 y 4 meses, o a los 2, 4 y 6 meses de edad, en función de la vacuna a utilizar»",
+      "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+      "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-6m",
+     "nombre": "Rotavirus (oral)",
+     "nota": "Tercera dosis, solo si la vacuna que se usa es de 3 dosis. Con la de 2 dosis, la pauta termina a los 4 meses. En el centro de salud te dirán cuál es.",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Triple vírica» a los 12 meses y a los 3 años",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "id": "triple-virica-12m",
+     "nombre": "Triple vírica (sarampión, rubeola y parotiditis)",
+     "nota": "Primera dosis.",
+     "siglas": "SRP",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Varicela» a los 15 meses y a los 3 años",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 15
+     },
+     "enfermedades": [
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "id": "varicela-15m",
+     "nombre": "Varicela",
+     "nota": "Primera dosis.",
+     "siglas": "VVZ",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Triple vírica» a los 12 meses y a los 3 años; Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Varicela» a los 15 meses y a los 3 años",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad": {
+      "meses": 36
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis",
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_producto": {
+      "apartado": "Nota 3: «para segunda dosis, a los 3 años de edad, administrar vacuna tetravírica», p. 2",
+      "documento": "Dirección General de Salud Pública, Programa de Vacunaciones: «Calendario de mano. Vacunación Infantil Aragón 2024» (versión 20/12/2024), 2 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/calendario-mano-infantil-2024-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "srp-varicela-3a",
+     "nombre": "Tetravírica (sarampión, rubeola, parotiditis y varicela)",
+     "nota": "Segunda dosis de triple vírica y de varicela, a los 3 años, con la vacuna tetravírica.",
+     "siglas": "SRPV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «Gripe (3)» a los 6-59 meses y nota 3 («1 dosis en cada campaña»)",
+     "campana": "gripe",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "edad_desde": {
+      "meses": 6
+     },
+     "edad_hasta": {
+      "meses": 59
+     },
+     "enfermedades": [
+      "gripe"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_campana": {
+      "apartado": "Cambios de la primera versión, p. 2: «En la vacunación infantil se incorporan las cohortes de niños hasta 11 años de edad, incluidos (se usará prioritariamente la vacuna intranasal, Fluenz)»; vacunas: Flucelvax de 6 a 23 meses y Fluenz de 24 meses a 11 años",
+      "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a gripe. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 20 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_gripe_aragon_2026-11-09-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cada campaña. El calendario la pone de los 6 a los 59 meses; en la campaña 2026-2027 se amplía hasta los 11 años incluidos: inyectable de 6 a 23 meses e intranasal de 2 a 11 años.",
+     "siglas": "Gripe",
+     "tipo": "campaña",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I «Calendario de vacunación e inmunización sistemática en la edad pediátrica y adolescencia», p. 27374 (p. 4 del PDF): «VRS*» («Al nacer, menores 6 meses») y nota «* VRS»",
+     "campana": "vrs",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "enfermedades": [
+      "bronquiolitis por virus respiratorio sincitial"
+     ],
+     "financiada": true,
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "id": "vrs",
+     "nombre": "Virus respiratorio sincitial (anticuerpo monoclonal nirsevimab)",
+     "nota": "No es una vacuna sino un anticuerpo monoclonal (nirsevimab). Una dosis en la primera temporada de VRS: al nacer, si nace durante la campaña, o en el centro de salud si tiene menos de 6 meses cuando empieza.",
+     "siglas": "VRS",
+     "tipo": "campaña",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "vacunas_aep": [
+    {
+     "apartado": "Tablas del calendario AEP 2026 → Inmunización sistemática, nota (11) «Vacuna frente a la hepatitis A»",
+     "documento": "Comité Asesor de Vacunas e Inmunizaciones de la AEP (CAV-AEP): Calendario de Vacunaciones e Inmunizaciones AEP 2026 (publicado el 01/01/2026)",
+     "edad_desde": {
+      "meses": 12
+     },
+     "edad_hasta": {
+      "meses": 15
+     },
+     "enfermedades": [
+      "hepatitis A"
+     ],
+     "financiada": false,
+     "fuente": "https://vacunasaep.org/profesionales/calendario-de-vacunaciones-e-inmunizaciones-aep-2026",
+     "id": "aep-hepatitis-a-12-15m",
+     "nombre": "Hepatitis A",
+     "nota": "Una sola dosis entre los 12 y los 15 meses (novedad del calendario AEP 2026). En Aragón no está en el calendario sistemático.",
+     "relacion": "no_incluida",
+     "siglas": "HA",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tablas del calendario AEP 2026 → Inmunización sistemática, notas (12) «Vacuna frente al sarampión, la rubeola y la parotiditis» y (13) «Vacuna frente a la varicela»",
+     "documento": "Comité Asesor de Vacunas e Inmunizaciones de la AEP (CAV-AEP): Calendario de Vacunaciones e Inmunizaciones AEP 2026 (publicado el 01/01/2026)",
+     "edad": {
+      "meses": 24
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis",
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://vacunasaep.org/profesionales/calendario-de-vacunaciones-e-inmunizaciones-aep-2026",
+     "id": "aep-srp-varicela-24m",
+     "nombre": "Segunda dosis de triple vírica y varicela (puede ser tetravírica)",
+     "nota": "La AEP recomienda la segunda dosis a los 24 meses. En Aragón se pone a los 3 años, con la vacuna tetravírica.",
+     "relacion": "edad_distinta",
+     "siglas": "SRP + Var / SRPV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    }
+   ]
   },
   "asturias": {
    "estado": "proximamente",
@@ -5197,8 +5994,933 @@
    ]
   },
   "illes-balears": {
-   "estado": "proximamente",
-   "nombre": "Illes Balears"
+   "autoridad": "la Consejería",
+   "aviso_revisiones": "",
+   "boletin": "BOIB",
+   "campanas": [
+    {
+     "apartado": "Apartado 1 «Introducción» (disponible «hasta la finalización de la temporada epidémica (normalmente a finales de marzo de 2027)», p. 2); apartado 5.A («Población infantil: niños de 6 meses a 10 años (hasta cumplir los 11 años) (novedad en la campaña de las Illes Balears)», p. 3); apartado 6 «Inicio de la campaña» («se inicia la primera semana de octubre (5 de octubre)», p. 4; «A partir del 19 de octubre, la cita estará abierta para toda la población», p. 5); apartado 7 (Flucelvax de 6 a 23 meses, Fluenz de 24 meses a 10 años, p. 5); apartado 10 («una sola dosis por temporada», p. 7)",
+     "campana": "gripe",
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía técnica de vacunación contra la gripe. Illes Balears. Campaña 2026-2027» (V1, 28/09/2026)",
+     "fin": null,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/569361",
+     "id": "gripe-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "Cita abierta en el centro de salud desde el 19/10/2026; en los colegios (segundo ciclo de Infantil) se vacuna desde el 05/10/2026. Novedad de esta campaña: llega hasta los 10 años. De 6 a 23 meses, inyectable (Flucelvax); de 2 a 10 años, intranasal (Fluenz) si no está contraindicada. Una sola dosis por temporada. No hay fecha de fin: se puede vacunar hasta que acabe la temporada de gripe.",
+     "poblacion": "Niños y niñas de 6 meses a 10 años (hasta cumplir los 11 años).",
+     "regla": {
+      "edad_maxima": {
+       "meses": 131
+      },
+      "edad_minima": {
+       "meses": 6
+      }
+     },
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3.1 «Menores de 6 meses», a) «Protección al nacer» y b) «Al inicio de temporada (desde el 1 de octubre, primeras semanas de octubre)» (p. 2); apartado 3.3 «Anticuerpo monoclonal y vacunación materna» (p. 3); apartado 4.4, tabla de periodos de nacimiento (p. 4)",
+     "campana": "vrs",
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía de inmunización frente al virus respiratorio sincitial en población nacida entre el 1 de octubre de 2026 y el 31 de marzo de 2027, y menores con condiciones de riesgo. Illes Balears. Temporada 2026-2027» (septiembre de 2026; publicada el 29/09/2026)",
+     "fin": "2027-03-31",
+     "fuente": "https://www.caib.es/sites/vacunacions/f/569399",
+     "fuente_calendario": {
+      "apartado": "Nota 9.1 de la tabla del calendario (p. 2)",
+      "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+      "verificado": "2026-11-17"
+     },
+     "fuente_familias": {
+      "apartado": "«¿Quiénes deben recibirlo?» y «¿Dónde y cuándo se administra?» (p. 1); «Cómo pedir cita» (p. 2)",
+      "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Campaña de protección contra la bronquiolitis producida por el virus respiratorio sincitial (VRS) 2026-2027» (información para familias, abril de 2026)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/501490",
+      "verificado": "2026-11-17"
+     },
+     "id": "vrs-2026-2027",
+     "inicio": "2026-10-01",
+     "nota": "Una dosis de nirsevimab. Nacidos del 01/04/2026 al 30/09/2026: en el centro de salud o la consulta de pediatría desde el 01/10/2026, con cita lo antes posible a principios de octubre (cumplir 6 meses no les excluye). Nacidos del 01/10/2026 al 31/03/2027: en el hospital (público o privado) antes del alta, normalmente en las primeras 24-48 horas; si no, pide cita a tu equipo de pediatría. Se pone también aunque la madre se vacunara frente al VRS en el embarazo. Prematuros y niños con condiciones de riesgo tienen otras reglas: lo indica el pediatra.",
+     "poblacion": "Bebés nacidos entre el 01/04/2026 y el 31/03/2027.",
+     "regla": {
+      "nacidos_desde": "2026-04-01",
+      "nacidos_hasta": "2027-03-31"
+     },
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "cribados": [
+    {
+     "apartado": "«¿Cuándo se realiza la extracción de sangre?» («Entre las 48 y 72 horas tras el nacimiento y una vez que haya empezado a tomar alimento») y respuesta siguiente (dónde se hace y cita si se va de alta sin la muestra)",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública, web de Salud Infantil: «Preguntas frecuentes» del Programa de Cribado Neonatal de Enfermedades Congénitas en Prueba de Talón (consultada el 17/11/2026)",
+     "edad_desde": {
+      "horas": 48
+     },
+     "edad_hasta": {
+      "horas": 72
+     },
+     "fuente": "https://www.caib.es/sites/salutinfantil/es/preguntas_frecuentes_metabolopatias/",
+     "fuente_programa": {
+      "apartado": "Presentación del programa (dirigido a todos los recién nacidos en centros públicos, privados o partos domiciliarios)",
+      "documento": "Conselleria de Salut, Dirección General de Salud Pública, web de Salud Infantil: «Programa de Cribado Neonatal de Enfermedades Congénitas en Prueba de Talón» (consultada el 17/11/2026)",
+      "fuente": "https://www.caib.es/sites/salutinfantil/es/programa_deteccion_enfermedades_metabolicas/",
+      "verificado": "2026-11-17"
+     },
+     "id": "cribado-talon",
+     "nombre": "Prueba del talón (cribado neonatal de enfermedades congénitas)",
+     "nota": "Unas gotas de sangre del talón entre las 48 y las 72 horas de vida, cuando el bebé ya ha empezado a comer, en el hospital o clínica donde nace y antes del alta. Si os vais antes, os darán cita; si nace en casa, la hace la matrona que atendió el parto.",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "escolarizacion": {
+    "admision": [
+     {
+      "apartado": "Anexo 2 «Calendario de los procesos de admisión y matriculación de alumnos», puntos 1 a 5 (pág. 11970 del BOIB) y «Tipología de centros participantes» (pág. 11971)",
+      "ciclo": "primer",
+      "curso": "2026-2027",
+      "documento": "Resolución de la directora general de Planificación y Gestión Educativas por la que se aprueban el calendario, las zonas escolares, los criterios operativos y la documentación necesaria para el desarrollo de los procesos de admisión y matriculación de alumnos en los centros sostenidos total o parcialmente con fondos públicos en el primer ciclo de educación infantil en las Illes Balears para el curso 2026-2027. BOIB n.º 29, de 05/03/2026 (registro 2133)",
+      "fuente": "https://www.caib.es/eboibfront/pdf/es/2026/29/1214117",
+      "fuente_niveles": {
+       "apartado": "Resolución, punto 2 (corrige el anexo 5, apartado primero, punto 1: «los niños nacidos en el año 2026 corresponden a 1º de educación infantil, los niños nacidos en 2025 corresponden a 2º de educación infantil y los niños nacidos en 2024 corresponden a 3º de educación infantil») (pág. 16129)",
+       "documento": "Corrección de errores en la publicación de la Resolución de la directora general de Planificación y Gestión Educativas (calendario y criterios del primer ciclo de educación infantil, curso 2026-2027). BOIB n.º 37, de 24/03/2026 (registro 2875)",
+       "fuente": "https://www.caib.es/eboibfront/pdf/es/2026/37/1215601",
+       "verificado": "2026-11-17"
+      },
+      "fuente_web": {
+       "apartado": "«Niño nacido en 2026: 1r curso de infantil; Niño nacido en 2025: 2n curso de infantil; Niño nacido en 2024: 3r curso de infantil»",
+       "documento": "Consejería de Educación y Universidades, Servicio de Escolarización, web «Escolarización 0-3»: «Normativa y resoluciones del proceso de admisión y matriculación (1r ciclo de Ed. Infantil)», curso 2026-2027 (consultada el 17/11/2026)",
+       "fuente": "https://www.caib.es/sites/escolaritzacio03/es/normativa/",
+       "verificado": "2026-11-17"
+      },
+      "id": "admision-primer-ciclo-2026-2027",
+      "niveles": {
+       "2024": "3.º de Educación Infantil (tercer curso del primer ciclo)",
+       "2025": "2.º de Educación Infantil (segundo curso del primer ciclo)",
+       "2026": "1.º de Educación Infantil (primer curso del primer ciclo)"
+      },
+      "nota": "Escuelas infantiles públicas y demás centros sostenidos con fondos públicos: solicitudes del 13/04/2026 al 21/04/2026. Listas definitivas el 29/05/2026 y matrícula del 01/06/2026 al 12/06/2026. Desde el 22/04/2026 se pueden presentar solicitudes fuera de plazo.",
+      "solicitudes_desde": "2026-04-13",
+      "solicitudes_hasta": "2026-04-21",
+      "verificado": "2026-11-17"
+     },
+     {
+      "apartado": "Anexo 2, apartado segundo «Calendario del proceso de admisión del segundo ciclo de educación infantil, educación primaria, educación secundaria obligatoria y educación especial» (pág. 11900 del BOIB)",
+      "ciclo": "segundo",
+      "curso": "2026-2027",
+      "documento": "Resolución de la directora general de Planificación y Gestión Educativas por la que se aprueban el calendario, las zonas escolares, las adscripciones, los criterios operativos y la documentación necesaria para el desarrollo de los procesos de adscripción, admisión y matriculación de alumnos en los centros sostenidos total o parcialmente con fondos públicos en los niveles de segundo ciclo de educación infantil, educación primaria, educación secundaria obligatoria, bachillerato y educación especial en las Illes Balears para el curso escolar 2026-2027. BOIB n.º 29, de 05/03/2026 (registro 2116)",
+      "fuente": "https://www.caib.es/eboibfront/pdf/es/2026/29/1214083",
+      "fuente_niveles": {
+       "apartado": "«Consideraciones»: «Para los nacidos el 2023 se tiene que participar en el proceso de admisión Infantil 3-6 años»; tabla «Escolarización 2026-2027» (Admisión, Ed. Infantil: 04/05-14/05)",
+       "documento": "Consejería de Educación y Universidades, Servicio de Escolarización, web «Escolarización curso 2026-2027»: «Calendarios Proceso 2026-2027» (consultada el 17/11/2026)",
+       "fuente": "https://www.caib.es/sites/escolaritzaciocurs/es/calendario/",
+       "verificado": "2026-11-17"
+      },
+      "id": "admision-segundo-ciclo-2026-2027",
+      "niveles": {
+       "2023": "Segundo ciclo de Educación Infantil (proceso de admisión «Infantil 3-6 años»)"
+      },
+      "nota": "Solicitudes para el colegio (centros públicos y concertados) del 04/05/2026 al 14/05/2026. Listas definitivas el 19/06/2026 y matrícula de Infantil del 22/06/2026 al 26/06/2026.",
+      "solicitudes_desde": "2026-05-04",
+      "solicitudes_hasta": "2026-05-14",
+      "verificado": "2026-11-17"
+     }
+    ],
+    "etapas": [
+     {
+      "apartado": "Anexo 1, apartado primero «Requisitos de acceso», puntos 2 y 3 (p. 3 del PDF [pág. 11966 del BOIB]); apartado noveno «Admisión de niños no nacidos», punto 1 (pág. 11967)",
+      "documento": "Resolución de la directora general de Planificación y Gestión Educativas por la que se aprueban el calendario, las zonas escolares, los criterios operativos y la documentación necesaria para el desarrollo de los procesos de admisión y matriculación de alumnos en los centros sostenidos total o parcialmente con fondos públicos en el primer ciclo de educación infantil en las Illes Balears para el curso 2026-2027. BOIB n.º 29, de 05/03/2026 (registro 2133)",
+      "edad_desde": {
+       "semanas": 17
+      },
+      "edad_hasta": {
+       "meses": 36
+      },
+      "fuente": "https://www.caib.es/eboibfront/pdf/es/2026/29/1214117",
+      "fuente_etapa": {
+       "apartado": "Artículos 12.3 y 14.1",
+       "documento": "Ley Orgánica 2/2006, de 3 de mayo, de Educación (BOE, texto consolidado)",
+       "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+       "verificado": "2026-11-17"
+      },
+      "id": "infantil-primer-ciclo",
+      "nombre": "Escuela infantil (primer ciclo de Educación Infantil)",
+      "nota": "Hasta los 3 años. En las Illes Balears el bebé puede empezar con 17 semanas (excepcionalmente, con autorización, desde las 8). Se puede pedir plaza antes de nacer si el nacimiento está previsto antes del 1 de enero del año siguiente. Toda la Educación Infantil es voluntaria.",
+      "tipo": "rango",
+      "verificado": "2026-11-17"
+     },
+     {
+      "apartado": "Artículos 12.3 y 14.1",
+      "documento": "Ley Orgánica 2/2006, de 3 de mayo, de Educación (BOE, texto consolidado)",
+      "edad_desde": {
+       "meses": 36
+      },
+      "edad_hasta": {
+       "meses": 72
+      },
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+      "id": "infantil-segundo-ciclo",
+      "nombre": "Cole: segundo ciclo de Educación Infantil",
+      "nota": "De los 3 a los 6 años. Toda la Educación Infantil es voluntaria.",
+      "tipo": "rango",
+      "verificado": "2026-11-17"
+     }
+    ]
+   },
+   "estado": "verificada",
+   "nombre": "Illes Balears",
+   "revisiones": [
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «< 10 días · Recién nacido»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad_desde": {
+      "dias": 0
+     },
+     "edad_hasta": {
+      "dias": 10
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-recien-nacido",
+     "nombre": "Visita del recién nacido",
+     "nota": "Antes de los 10 días de vida. Visita conjunta de enfermería y pediatría.",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «1 mes · Adaptación familiar»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 1
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-1m",
+     "nombre": "Visita del primer mes (adaptación familiar)",
+     "nota": "Visita conjunta de enfermería y pediatría.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «2 meses · Primeras vacunas»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 2
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-2m",
+     "nombre": "Visita de los 2 meses (primeras vacunas)",
+     "nota": "Coincide con las primeras vacunas. Visita conjunta de enfermería y pediatría.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «4 meses · Desarrollo del interés»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 4
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-4m",
+     "nombre": "Visita de los 4 meses (desarrollo del interés)",
+     "nota": "Coincide con vacunas. Visita de enfermería.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «6 meses · Alimentación complementaria»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 6
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-6m",
+     "nombre": "Visita de los 6 meses (alimentación complementaria)",
+     "nota": "Visita conjunta de enfermería y pediatría.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «12 meses · Primeros pasos»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 12
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-12m",
+     "nombre": "Visita de los 12 meses (primeros pasos)",
+     "nota": "Coincide con vacunas. Visita conjunta de enfermería y pediatría.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «18 meses · Pequeño explorador»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 18
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-18m",
+     "nombre": "Visita de los 18 meses (pequeño explorador)",
+     "nota": "Visita de enfermería.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «24 meses · Explosión del lenguaje»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad": {
+      "meses": 24
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-24m",
+     "nombre": "Visita de los 24 meses (explosión del lenguaje)",
+     "nota": "Visita conjunta de enfermería y pediatría.",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla «Cuadro de visitas y vacunas» (p. 1), fila «3-4 años · Escolarización»",
+     "documento": "Conselleria de Salut y Gerencia de Atención Primaria de Mallorca (IB-Salut): «Cuadro de visitas y vacunas. Programa de Salud Infantil y de la Adolescencia» (infografía, junio de 2018; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/18683)",
+     "edad_desde": {
+      "meses": 36
+     },
+     "edad_hasta": {
+      "meses": 48
+     },
+     "fuente": "https://docusalut.com/bitstreams/846b88a6-9e70-4dc0-83c1-511805007255/download",
+     "id": "revision-3-4a",
+     "nombre": "Visita de los 3-4 años (escolarización)",
+     "nota": "Coincide con vacunas. Visita de enfermería.",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "tramites": [],
+   "vacunas": [
+    {
+     "apartado": "Tabla del calendario (p. 1): filas Poliomielitis (VPI), Difteria-tétano-tosferina (DTPa), Haemophilus influenzae b (Hib) y Hepatitis B (HB) a los 2, 4 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-2m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): filas Poliomielitis (VPI), Difteria-tétano-tosferina (DTPa), Haemophilus influenzae b (Hib) y Hepatitis B (HB) a los 2, 4 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-4m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): filas Poliomielitis (VPI), Difteria-tétano-tosferina (DTPa), Haemophilus influenzae b (Hib) y Hepatitis B (HB) a los 2, 4 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 11
+     },
+     "enfermedades": [
+      "hepatitis B",
+      "difteria",
+      "tétanos",
+      "tosferina",
+      "poliomielitis",
+      "Haemophilus influenzae tipo b"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "hexavalente-11m",
+     "nombre": "Hexavalente (difteria, tétanos, tosferina, polio, Haemophilus influenzae tipo b y hepatitis B)",
+     "nota": "Refuerzo.",
+     "siglas": "DTPa-VPI-Hib-HB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Neumococo, VNC20 a los 2, 4, 6 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "«Pauta de vacunación única»: VNC20 en el calendario infantil desde abril de 2024; dosis a los 2, 4 y 6 meses y refuerzo a los 11 meses para «todos los lactantes» (p. 1)",
+      "documento": "Instrucción de la directora general de Salud Pública sobre la vacunación contra el neumococo en población infantil en las Illes Balears (febrero de 2026; firmada el 23/02/2026)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/462529",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-2m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Neumococo, VNC20 a los 2, 4, 6 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "«Pauta de vacunación única»: VNC20 en el calendario infantil desde abril de 2024; dosis a los 2, 4 y 6 meses y refuerzo a los 11 meses para «todos los lactantes» (p. 1)",
+      "documento": "Instrucción de la directora general de Salud Pública sobre la vacunación contra el neumococo en población infantil en las Illes Balears (febrero de 2026; firmada el 23/02/2026)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/462529",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-4m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Neumococo, VNC20 a los 2, 4, 6 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 6
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "«Pauta de vacunación única»: VNC20 en el calendario infantil desde abril de 2024; dosis a los 2, 4 y 6 meses y refuerzo a los 11 meses para «todos los lactantes» (p. 1)",
+      "documento": "Instrucción de la directora general de Salud Pública sobre la vacunación contra el neumococo en población infantil en las Illes Balears (febrero de 2026; firmada el 23/02/2026)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/462529",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-6m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Pauta de 4 dosis con la vacuna de 20 serotipos (en el calendario desde abril de 2024). Si tu bebé empezó con otra vacuna, consulta la cartilla.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Neumococo, VNC20 a los 2, 4, 6 y 11 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 11
+     },
+     "enfermedades": [
+      "enfermedad neumocócica"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "«Pauta de vacunación única»: VNC20 en el calendario infantil desde abril de 2024; dosis a los 2, 4 y 6 meses y refuerzo a los 11 meses para «todos los lactantes» (p. 1)",
+      "documento": "Instrucción de la directora general de Salud Pública sobre la vacunación contra el neumococo en población infantil en las Illes Balears (febrero de 2026; firmada el 23/02/2026)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/462529",
+      "verificado": "2026-11-17"
+     },
+     "id": "neumococo-11m",
+     "nombre": "Neumococo (conjugada 20-valente)",
+     "nota": "Refuerzo.",
+     "siglas": "VNC20",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Meningococo, MenB a los 2 meses y «MenB - MACWY» a los 4 y 12 meses",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Instrucció, guiones 1 y 3: «Incloure la vacunació sistemàtica contra el meningococ del grup B de tots els infants nascuts a partir de dia 1er de gener de 2023» y «3 dosis (pauta 2+1), als 2, 4 i 12 mesos d'edat» (p. 1)",
+      "documento": "Instrucció de la directora general de Salut Pública i Participació en relació amb la inclusió de la vacunació sistemàtica contra el meningococ del grup B en el programa de vacunacions de les Illes [sic] (en catalán; firmada el 20/03/2023)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/418187",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-2m",
+     "nombre": "Meningococo B",
+     "nota": "Financiada para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Meningococo, MenB a los 2 meses y «MenB - MACWY» a los 4 y 12 meses",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Instrucció, guiones 1 y 3: «Incloure la vacunació sistemàtica contra el meningococ del grup B de tots els infants nascuts a partir de dia 1er de gener de 2023» y «3 dosis (pauta 2+1), als 2, 4 i 12 mesos d'edat» (p. 1)",
+      "documento": "Instrucció de la directora general de Salut Pública i Participació en relació amb la inclusió de la vacunació sistemàtica contra el meningococ del grup B en el programa de vacunacions de les Illes [sic] (en catalán; firmada el 20/03/2023)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/418187",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-4m",
+     "nombre": "Meningococo B",
+     "nota": "Financiada para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Meningococo, MenB a los 2 meses y «MenB - MACWY» a los 4 y 12 meses",
+     "condicion": {
+      "nacidos_desde": "2023-01-01"
+     },
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "enfermedad meningocócica B"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Instrucció, guiones 1 y 3: «Incloure la vacunació sistemàtica contra el meningococ del grup B de tots els infants nascuts a partir de dia 1er de gener de 2023» y «3 dosis (pauta 2+1), als 2, 4 i 12 mesos d'edat» (p. 1)",
+      "documento": "Instrucció de la directora general de Salut Pública i Participació en relació amb la inclusió de la vacunació sistemàtica contra el meningococ del grup B en el programa de vacunacions de les Illes [sic] (en catalán; firmada el 20/03/2023)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/418187",
+      "verificado": "2026-11-17"
+     },
+     "id": "menb-12m",
+     "nombre": "Meningococo B",
+     "nota": "Refuerzo. Financiada para los nacidos desde el 01/01/2023.",
+     "siglas": "MenB",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Meningococo, «MenB - MACWY» a los 4 y 12 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "enfermedad meningocócica A, C, W e Y"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Instrucción: «Sustituir la vacuna antimeningocócica C conjugada monovalente —que se administra a los cuatro meses de vida— por la vacuna antimeningocócica conjugada ACWY» (p. 1)",
+      "documento": "Instrucción de la directora general de Salud Pública en relación con la vacuna antimeningocócica conjugada tetravalente (MACWY) en el calendario de inmunizaciones para toda la vida de las Illes Balears (firmada el 26/04/2024)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/462080",
+      "verificado": "2026-11-17"
+     },
+     "id": "menacwy-4m",
+     "nombre": "Meningococo ACWY",
+     "nota": "Sustituyó en 2024 a la vacuna del meningococo C de los 4 meses.",
+     "siglas": "MenACWY",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Meningococo, «MenB - MACWY» a los 4 y 12 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "enfermedad meningocócica A, C, W e Y"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "menacwy-12m",
+     "nombre": "Meningococo ACWY",
+     "nota": "",
+     "siglas": "MenACWY",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Rotavirus, RV a los 2, 4 y 6 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 2
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Apartado 3.A «Población infantil general» («todos los lactantes sanos a partir de las 6 semanas de vida») (p. 1) y apartado 4 «Vacuna disponible y pauta posológica (RotaTeq)»: «3 dosis administradas por vía oral», pauta estándar «2, 4 y 6 meses de edad», límite para la 3.ª dosis a las 32 semanas (págs. 2-3)",
+      "documento": "Instrucción de la Dirección General de Salud Pública por la que se aprueba el Manual de vacunación contra el rotavirus con RotaTeq en la población infantil y recién nacidos prematuros (firmada el 24/08/2026 por la directora general de Salud Pública)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565941",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-2m",
+     "nombre": "Rotavirus (oral, RotaTeq)",
+     "nota": "Oral. Tres dosis (2, 4 y 6 meses). Si tu bebé nació antes de 2026, pregunta en tu centro de salud si le correspondía.",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Rotavirus, RV a los 2, 4 y 6 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 4
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Apartado 3.A «Población infantil general» («todos los lactantes sanos a partir de las 6 semanas de vida») (p. 1) y apartado 4 «Vacuna disponible y pauta posológica (RotaTeq)»: «3 dosis administradas por vía oral», pauta estándar «2, 4 y 6 meses de edad», límite para la 3.ª dosis a las 32 semanas (págs. 2-3)",
+      "documento": "Instrucción de la Dirección General de Salud Pública por la que se aprueba el Manual de vacunación contra el rotavirus con RotaTeq en la población infantil y recién nacidos prematuros (firmada el 24/08/2026 por la directora general de Salud Pública)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565941",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-4m",
+     "nombre": "Rotavirus (oral, RotaTeq)",
+     "nota": "Oral. Tres dosis (2, 4 y 6 meses). Si tu bebé nació antes de 2026, pregunta en tu centro de salud si le correspondía.",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Rotavirus, RV a los 2, 4 y 6 meses",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 6
+     },
+     "enfermedades": [
+      "rotavirus"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "fuente_instruccion": {
+      "apartado": "Apartado 3.A «Población infantil general» («todos los lactantes sanos a partir de las 6 semanas de vida») (p. 1) y apartado 4 «Vacuna disponible y pauta posológica (RotaTeq)»: «3 dosis administradas por vía oral», pauta estándar «2, 4 y 6 meses de edad», límite para la 3.ª dosis a las 32 semanas (págs. 2-3)",
+      "documento": "Instrucción de la Dirección General de Salud Pública por la que se aprueba el Manual de vacunación contra el rotavirus con RotaTeq en la población infantil y recién nacidos prematuros (firmada el 24/08/2026 por la directora general de Salud Pública)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565941",
+      "verificado": "2026-11-17"
+     },
+     "id": "rotavirus-6m",
+     "nombre": "Rotavirus (oral, RotaTeq)",
+     "nota": "Tercera y última dosis (antes de las 32 semanas de vida).",
+     "siglas": "RV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Sarampión-rubeola-parotiditis, SRP a los 12 meses y a los 3 años",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 12
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "triple-virica-12m",
+     "nombre": "Triple vírica (sarampión, rubeola y parotiditis)",
+     "nota": "Primera dosis.",
+     "siglas": "SRP",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Varicela, VVZ a los 15 meses y a los 3 años",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 15
+     },
+     "enfermedades": [
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano): «¿Cuándo se vacunan?» y «Vacunas principales»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "varicela-15m",
+     "nombre": "Varicela",
+     "nota": "Primera dosis.",
+     "siglas": "VVZ",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila Sarampión-rubeola-parotiditis, SRP a los 12 meses y a los 3 años; Tabla del calendario (p. 1): fila Varicela, VVZ a los 15 meses y a los 3 años",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad": {
+      "meses": 36
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis",
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano), «Calendario vacunal»: «3 AÑOS: tetravírica (SRP-VVZ: rubeola, sarampión, parotiditis + varicela) 1 inyección IM»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños y niñas de 3 a 6 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565075",
+      "verificado": "2026-11-17"
+     },
+     "id": "tetravirica-3a",
+     "nombre": "Tetravírica (sarampión, rubeola, parotiditis y varicela)",
+     "nota": "Segunda dosis de triple vírica y de varicela, en una sola inyección.",
+     "siglas": "SRP-VVZ",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila «Gripe (10.1)»; nota 10.1 «Consultar el manual de la campaña» (p. 2)",
+     "campana": "gripe",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "edad_desde": {
+      "meses": 6
+     },
+     "edad_hasta": {
+      "meses": 72
+     },
+     "edad_hasta_abierta": true,
+     "enfermedades": [
+      "gripe"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_folleto": {
+      "apartado": "p. 2 (castellano), recuadro «Vacuna antigripal»: «de 6 m a 2 años, IM; >2 años, intranasal* (*con convivientes inmunodeprimidos, IM)»",
+      "documento": "Conselleria de Salut: folleto «Vacunación en niños de 0 a 3 años» (mayo de 2026; p. 1 en catalán y p. 2 en castellano), publicado el 05/08/2026 en la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/565072",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis cada temporada. De 6 a 23 meses, inyectable; desde los 2 años, intranasal (inyectable si hay convivientes inmunodeprimidos).",
+     "siglas": "Gripe",
+     "tipo": "campaña",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla del calendario (p. 1): fila «Virus respiratorio sincitial», AcVRS en las columnas de 0 a 4 meses; nota 9.1 «Niños nacidos del 1 de abril al 30 de septiembre del año en curso» (p. 2)",
+     "campana": "vrs",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "enfermedades": [
+      "bronquiolitis por virus respiratorio sincitial"
+     ],
+     "financiada": true,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "id": "vrs",
+     "nombre": "Virus respiratorio sincitial (anticuerpo monoclonal nirsevimab)",
+     "nota": "No es una vacuna sino un anticuerpo monoclonal (nirsevimab), en dosis única. Los nacidos de abril a septiembre, al inicio de la temporada (en octubre), en el centro de salud; los nacidos de octubre a marzo, en el hospital antes del alta.",
+     "siglas": "AcVRS",
+     "tipo": "campaña",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "vacunas_aep": [
+    {
+     "apartado": "Tablas del calendario AEP 2026 → Inmunización sistemática, nota (11) «Vacuna frente a la hepatitis A», y «Hechos destacables» → novedades",
+     "documento": "Comité Asesor de Vacunas e Inmunizaciones de la AEP (CAV-AEP): Calendario de Vacunaciones e Inmunizaciones AEP 2026 (publicado el 01/01/2026)",
+     "edad_desde": {
+      "meses": 12
+     },
+     "edad_hasta": {
+      "meses": 15
+     },
+     "enfermedades": [
+      "hepatitis A"
+     ],
+     "financiada": false,
+     "fuente": "https://vacunasaep.org/profesionales/calendario-de-vacunaciones-e-inmunizaciones-aep-2026",
+     "fuente_comunidad": {
+      "apartado": "Tabla del calendario (p. 1): no hay fila de hepatitis A",
+      "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+      "verificado": "2026-11-17"
+     },
+     "id": "aep-hepatitis-a-12-15m",
+     "nombre": "Hepatitis A",
+     "nota": "Una sola dosis entre los 12 y los 15 meses (novedad del calendario AEP 2026). No está en el calendario de las Illes Balears.",
+     "relacion": "no_incluida",
+     "siglas": "HA",
+     "tipo": "rango",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tablas del calendario AEP 2026 → Inmunización sistemática, notas (12) «Vacuna frente al sarampión, la rubeola y la parotiditis» y (13) «Vacuna frente a la varicela»",
+     "documento": "Comité Asesor de Vacunas e Inmunizaciones de la AEP (CAV-AEP): Calendario de Vacunaciones e Inmunizaciones AEP 2026 (publicado el 01/01/2026)",
+     "edad": {
+      "meses": 24
+     },
+     "enfermedades": [
+      "sarampión",
+      "rubeola",
+      "parotiditis",
+      "varicela"
+     ],
+     "financiada": true,
+     "fuente": "https://vacunasaep.org/profesionales/calendario-de-vacunaciones-e-inmunizaciones-aep-2026",
+     "id": "aep-srp-varicela-24m",
+     "nombre": "Segunda dosis de triple vírica y varicela (puede ser tetravírica)",
+     "nota": "La AEP recomienda la segunda dosis a los 24 meses. En las Illes Balears se pone a los 3 años (tetravírica).",
+     "relacion": "edad_distinta",
+     "siglas": "SRP + Var / SRPV",
+     "tipo": "edad",
+     "verificado": "2026-11-17"
+    }
+   ]
   },
   "la-rioja": {
    "estado": "proximamente",
@@ -6800,5 +8522,5 @@
    ]
   }
  },
- "ultima_revision": "2026-11-16"
+ "ultima_revision": "2026-11-17"
 }
