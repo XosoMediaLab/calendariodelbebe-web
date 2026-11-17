@@ -1580,9 +1580,13 @@
       if (p.sobre) {
         var base = porId[p.sobre] ? porId[p.sobre].total : 0;
         total = Math.min(p.tope, base * p.porcentaje / 100);
+        // `minora`: otra deducción que, si se aplica, se resta de esta (y de su límite).
+        var resta = p.minora && porId[p.minora] && porId[p.minora].cuenta ? porId[p.minora].total : 0;
+        total = Math.max(0, total - resta);
       } else if (p.opciones) {
         var op = p.opciones[v.opcion === undefined ? 0 : Number(v.opcion)];
         total = op ? op.importe : 0;
+        if (p.periodicidad === "mensual") total *= meses(p);
       } else {
         var importe = p.importe !== null && p.importe !== undefined ? p.importe : numero(v.importe);
         total = p.periodicidad === "mensual" ? importe * meses(p) : importe;
@@ -1741,6 +1745,22 @@
       fila.querySelector("input").focus();
       actualizar();
     });
+
+    // Comunidad: solo se ven (y cuentan) sus ayudas; en régimen foral, sin las del IRPF estatal.
+    var selCom = document.getElementById("comunidad-presupuesto");
+    function ponerComunidad() {
+      var op = selCom.options[selCom.selectedIndex];
+      var foral = !!(op && op.hasAttribute("data-foral"));
+      raiz.querySelectorAll("[data-comunidad], [data-irpf-estatal]").forEach(function (fila) {
+        var oculta = fila.hasAttribute("data-comunidad") ? fila.getAttribute("data-comunidad") !== selCom.value : foral;
+        fila.hidden = oculta;
+        if (oculta) fila.querySelectorAll('input[type="checkbox"]').forEach(function (c) { c.checked = false; });
+      });
+      document.getElementById("nota-foral").hidden = !foral;
+      document.getElementById("nota-sin-ayudas").hidden = !(op && op.hasAttribute("data-sin-ayudas"));
+      actualizar();
+    }
+    if (selCom) selCom.addEventListener("change", ponerComunidad);
 
     raiz.addEventListener("input", actualizar);
     raiz.addEventListener("change", actualizar);
