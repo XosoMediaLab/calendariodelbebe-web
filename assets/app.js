@@ -847,10 +847,75 @@
     }
   }
 
-  function construirVista(eventos, datos, nacimiento, hoy, idComunidad) {
+  // En la vista, cada mes de embarazo se dibuja ESCALA_EMBARAZO veces más ancho que un mes
+  // del bebé: son solo 9 meses y llevan muchas citas.
+  var ESCALA_EMBARAZO = 2.5;
+
+  // Reparte marcas en filas sin que se pisen (contando lo que ocupa su texto, a unos
+  // 28 px por mes del bebé y 6 px por letra).
+  function empaquetar(marcas) {
+    var filas = [];
+    var fines = [];
+    marcas.slice().sort(function (a, b) { return a.desde - b.desde; }).forEach(function (m) {
+      var texto = ((m.etiqueta || "").length * 6 + 18) / (28 * ESCALA_EMBARAZO);
+      var fin = Math.max(m.hasta === null || m.hasta === undefined ? m.desde : m.hasta, m.desde + texto);
+      for (var i = 0; i < filas.length; i++) {
+        if (fines[i] <= m.desde) break;
+      }
+      if (i === filas.length) { filas.push([]); fines.push(0); }
+      filas[i].push(m);
+      fines[i] = fin + 0.1;
+    });
+    return filas;
+  }
+
+  function recortar(texto, n) {
+    return texto.length > n ? texto.slice(0, n - 1).replace(/[\s,:;.]+$/, "") + "…" : texto;
+  }
+
+  // Marcas del embarazo (antes del parto, en meses negativos desde la fecha probable).
+  function marcasEmbarazo(embarazo, fpp) {
+    var grupos = { visitas: [], pruebas: [], vacunas: [], otros: [] };
+    embarazo.forEach(function (e) {
+      if (e.subtipo === "parto") return;
+      var m = {
+        ref: e.id,
+        titulo: e.titulo,
+        detalle: (e.subtipo === "campaña" ? e.campana : t("Hacia el {fecha}", { fecha: formatear(e.fecha) })) + " · " + e.edadTexto,
+        desde: mesesDesde(fpp, e.fecha),
+        pasado: !!e.pasado,
+        etiqueta: recortar(e.titulo, 30),
+        elementos: e.elementos.map(function (x) { return x.nombre; }),
+      };
+      if (e.subtipo === "campaña") {
+        m.forma = "barra";
+        m.hasta = e.fin && e.fin < fpp ? mesesDesde(fpp, e.fin) : 0;
+        m.abierto = !e.fin;
+      } else if (e.fechaHasta || e.abierto) {
+        m.forma = "barra";
+        m.hasta = e.fechaHasta ? Math.min(0, mesesDesde(fpp, e.fechaHasta)) : 0;
+      } else {
+        m.forma = "punto";
+      }
+      var grupo = e.subtipo === "vacuna" || e.subtipo === "campaña" ? "vacunas"
+        : e.subtipo === "visita" ? "visitas" : e.subtipo === "prueba" ? "pruebas" : "otros";
+      grupos[grupo].push(m);
+    });
+    for (var k in grupos) grupos[k] = empaquetar(grupos[k]);
+    return grupos;
+  }
+
+  function construirVista(eventos, datos, nacimiento, hoy, idComunidad, embarazo) {
     var max = EDAD_MAXIMA_MESES;
+    var min = embarazo && embarazo.length ? -semanasFPP(datos) * 7 / 30.4375 : 0;
     var hoyMeses = mesesDesde(nacimiento, hoy);
-    var carriles = [
+    var emb = min < 0 ? marcasEmbarazo(embarazo, nacimiento) : null;
+    var carriles = (emb ? [
+      { id: "emb-visitas", nombre: t("Embarazo: visitas"), filas: emb.visitas },
+      { id: "emb-pruebas", nombre: t("Embarazo: pruebas"), filas: emb.pruebas },
+      { id: "emb-vacunas", nombre: t("Embarazo: vacunas"), filas: emb.vacunas },
+      { id: "emb-otros", nombre: t("Embarazo: preparación y trámites"), filas: emb.otros },
+    ] : []).concat([
       { id: "revisiones", nombre: t("Revisiones y cribados"), filas: [[]] },
       { id: "vacunas", nombre: t("Vacunas"), filas: [[]] },
       { id: "campanas", nombre: t("Campañas"), filas: [[]] },
@@ -860,7 +925,7 @@
       { id: "tramites", nombre: t("Trámites y permisos"), filas: [] },
       { id: "escuela", nombre: t("Escuela"), filas: [] },
       { id: "suplementos", nombre: t("Suplementos"), filas: [] },
-    ];
+    ]);
     var porId = {};
     carriles.forEach(function (c) { porId[c.id] = c; });
 
@@ -989,7 +1054,8 @@
 
     return {
       maxMeses: max,
-      hoyMeses: hoyMeses >= 0 && hoyMeses <= max ? hoyMeses : null,
+      minMeses: min,
+      hoyMeses: hoyMeses >= min && hoyMeses <= max ? hoyMeses : null,
       nacimiento: nacimiento,
       carriles: carriles,
     };
@@ -1107,16 +1173,22 @@
   function pintarVista(vista, contenedor) {
     contenedor.textContent = "";
     var disponible = contenedor.clientWidth - 100;
-    var PX_MES = Math.max(22, Math.min(40, Math.floor((disponible - MARGEN * 2 - 70) / vista.maxMeses)));
-    var x = function (m) { return MARGEN + Math.max(0, Math.min(vista.maxMeses, m)) * PX_MES; };
-    var ancho = MARGEN * 2 + vista.maxMeses * PX_MES + 70;
+    var min = vista.minMeses || 0;
+    var tramo = vista.maxMeses - min * ESCALA_EMBARAZO;
+    var PX_MES = Math.max(22, Math.min(40, Math.floor((disponible - MARGEN * 2 - 70) / tramo)));
+    var PX_EMB = PX_MES * ESCALA_EMBARAZO;
+    var x = function (m) {
+      m = Math.max(min, Math.min(vista.maxMeses, m));
+      return MARGEN + (m < 0 ? (m - min) * PX_EMB : -min * PX_EMB + m * PX_MES);
+    };
+    var ancho = MARGEN * 2 + tramo * PX_MES + 70;
     var carriles = vista.carriles.filter(function (c) {
       return c.filas.some(function (f) { return f.length; });
     });
     var alto = ALTO_EJE + carriles.reduce(function (t, c) { return t + altoCarril(c) + SEPARACION; }, 0);
 
     var etiquetas = el("div", { class: "vista-carriles", "aria-hidden": "true" }, [el("div", { style: "height:" + ALTO_EJE + "px" })]);
-    var desplazable = el("div", { class: "vista-desplazable", tabindex: "0", "aria-label": t("Línea del tiempo gráfica de 0 a 36 meses; desplázate en horizontal") });
+    var desplazable = el("div", { class: "vista-desplazable", tabindex: "0", "aria-label": min < 0 ? t("Línea del tiempo gráfica del embarazo y de 0 a 36 meses; desplázate en horizontal") : t("Línea del tiempo gráfica de 0 a 36 meses; desplázate en horizontal") });
     var detalle = el("div", { class: "vista-detalle", role: "status", hidden: "hidden" });
 
     var svg = s("svg", { width: ancho, height: alto, viewBox: "0 0 " + ancho + " " + alto, role: "group", "aria-label": t("Vacunas, revisiones, campañas y alimentación de 0 a 36 meses") });
@@ -1125,13 +1197,29 @@
       s("rect", { width: "6", height: "6", fill: "#fbe3e2" }),
       s("line", { x1: "0", y1: "0", x2: "0", y2: "6", stroke: "#e34948", "stroke-width": "2.5" }),
     ]));
-    ["campanas", "empezar"].forEach(function (id) {
+    ["campanas", "empezar", "vacunas"].forEach(function (id) {
       defs.appendChild(s("linearGradient", { id: "difuminado-" + id, x1: "0", x2: "1", y1: "0", y2: "0" }, [
         s("stop", { offset: "0", style: "stop-color:var(--c-" + id + ");stop-opacity:1" }),
         s("stop", { offset: "1", style: "stop-color:var(--c-" + id + ");stop-opacity:0" }),
       ]));
     });
     svg.appendChild(defs);
+
+    // Embarazo: rejilla cada 4 semanas y, cada 8, la semana y su fecha. En el 0, el parto.
+    if (min < 0) {
+      var semanasTotal = Math.round(-min * 30.4375 / 7);
+      for (var w = 4; w < semanasTotal; w += 4) {
+        var mw = (w - semanasTotal) * 7 / 30.4375;
+        var conEtiqueta = w % 8 === 0;
+        svg.appendChild(s("line", { x1: x(mw), x2: x(mw), y1: ALTO_EJE - (conEtiqueta ? 8 : 4), y2: alto, class: conEtiqueta ? "rejilla" : "rejilla menor" }));
+        if (conEtiqueta) {
+          svg.appendChild(s("text", { x: x(mw), y: 14, class: "eje-edad", "text-anchor": "middle", texto: t("sem. {n}", { n: w }) }));
+          var fw = sumarDias(vista.nacimiento, (w - semanasTotal) * 7);
+          svg.appendChild(s("text", { x: x(mw), y: 29, class: "eje-fecha", "text-anchor": "middle", texto: mesCorto(fw.getUTCMonth()) + " " + String(fw.getUTCFullYear()).slice(2) }));
+        }
+      }
+      svg.appendChild(s("rect", { x: x(min), y: ALTO_EJE, width: x(0) - x(min), height: alto - ALTO_EJE, class: "tramo-embarazo" }));
+    }
 
     // Rejilla y eje: edad arriba y, debajo, el mes y el año en que la cumple.
     for (var m = 0; m <= vista.maxMeses; m++) {
@@ -1141,10 +1229,10 @@
         class: m % 12 === 0 ? "rejilla anio" : mayor ? "rejilla" : "rejilla menor",
       }));
       if (mayor) {
-        svg.appendChild(s("text", { x: x(m), y: 14, class: "eje-edad", "text-anchor": m === 0 ? "start" : "middle", texto: etiquetaMeses(m) }));
+        svg.appendChild(s("text", { x: x(m), y: 14, class: "eje-edad", "text-anchor": m === 0 && min === 0 ? "start" : "middle", texto: m === 0 && min < 0 ? t("Parto") : etiquetaMeses(m) }));
         var f = sumarMeses(vista.nacimiento, m);
         svg.appendChild(s("text", {
-          x: x(m), y: 29, class: "eje-fecha", "text-anchor": m === 0 ? "start" : "middle",
+          x: x(m), y: 29, class: "eje-fecha", "text-anchor": m === 0 && min === 0 ? "start" : "middle",
           texto: mesCorto(f.getUTCMonth()) + " " + String(f.getUTCFullYear()).slice(2),
         }));
       }
@@ -1173,7 +1261,10 @@
             g.appendChild(s("circle", { cx: x(mk.desde), cy: centro, r: 14, class: "zona" }));
             g.appendChild(s("circle", { cx: x(mk.desde), cy: centro, r: r, class: "punto" }));
             if (mk.cuenta) g.appendChild(s("text", { x: x(mk.desde), y: centro + 4, class: "cuenta", "text-anchor": "middle", texto: String(mk.cuenta) }));
-            if (mk.corto && (mk.sinFecha || c.id === "escuela")) {
+            var esEmb = c.id.indexOf("emb-") === 0;
+            if (esEmb && mk.etiqueta) {
+              g.appendChild(s("text", { x: x(mk.desde) + 12, y: centro + 4, class: "texto-barra", texto: mk.etiqueta }));
+            } else if (mk.corto && (mk.sinFecha || c.id === "escuela")) {
               var aLaIzquierda = x(mk.desde) > ancho - 190;
               g.appendChild(s("text", {
                 x: x(mk.desde) + (aLaIzquierda ? -12 : 12), y: centro + 4, class: "texto-barra",
@@ -1183,13 +1274,13 @@
             }
           } else {
             var x1 = x(mk.desde);
-            var abierto = mk.abierto && c.id === "campanas";
-            var x2 = abierto ? Math.min(x(vista.maxMeses), x1 + 2.5 * PX_MES) : x(mk.hasta === null || mk.hasta === undefined ? vista.maxMeses : mk.hasta);
-            var conTexto = ["empezar", "evitar", "tramites", "escuela", "suplementos"].indexOf(c.id) >= 0;
+            var abierto = mk.abierto && (c.id === "campanas" || c.id === "emb-vacunas");
+            var x2 = abierto && c.id === "campanas" ? Math.min(x(vista.maxMeses), x1 + 2.5 * PX_MES) : x(mk.hasta === null || mk.hasta === undefined ? vista.maxMeses : mk.hasta);
+            var conTexto = ["empezar", "evitar", "tramites", "escuela", "suplementos"].indexOf(c.id) >= 0 || c.id.indexOf("emb-") === 0;
             var yb = conTexto ? yf + hf - 13 : centro - 7;
             var hb = conTexto ? 9 : 14;
             g.appendChild(s("rect", { x: x1, y: yf + 2, width: Math.max(x2 - x1, 16), height: hf - 4, class: "zona" }));
-            var relleno = c.id === "evitar" ? "url(#rayado-evitar)" : abierto ? "url(#difuminado-campanas)" : null;
+            var relleno = c.id === "evitar" ? "url(#rayado-evitar)" : abierto ? "url(#difuminado-" + (c.id === "campanas" ? "campanas" : "vacunas") + ")" : null;
             var barra = s("rect", { x: x1, y: yb, width: Math.max(x2 - x1, 4), height: hb, rx: 4, class: "barra" });
             if (relleno) barra.setAttribute("fill", relleno);
             g.appendChild(barra);
@@ -1197,7 +1288,7 @@
               g.appendChild(s("path", { d: "M" + (x2 - 1) + " " + (yb - 3) + " l7 " + (hb / 2 + 3) + " l-7 " + (hb / 2 + 3) + "z", class: "flecha" }));
             }
             if (conTexto) {
-              g.appendChild(s("text", { x: x1 + 2, y: yf + 13, class: "texto-barra", texto: mk.titulo }));
+              g.appendChild(s("text", { x: x1 + 2, y: yf + 13, class: "texto-barra", texto: mk.etiqueta || mk.titulo }));
             } else if (mk.corto) {
               g.appendChild(s("text", {
                 x: x2 + 5, y: centro + 4, class: "texto-barra",
@@ -1213,6 +1304,7 @@
       y0 += h + SEPARACION;
     });
 
+    if (min < 0) svg.appendChild(s("line", { x1: x(0), x2: x(0), y1: ALTO_EJE - 8, y2: alto, class: "parto" }));
     if (vista.hoyMeses !== null) {
       svg.appendChild(s("line", { x1: x(vista.hoyMeses), x2: x(vista.hoyMeses), y1: 34, y2: alto, class: "hoy" }));
       svg.appendChild(s("text", { x: x(vista.hoyMeses) + 4, y: 42, class: "hoy-texto", texto: t("Hoy") }));
@@ -1406,7 +1498,8 @@
         aep.appendChild(nodo);
       });
       resultado.hidden = false;
-      pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value), document.getElementById("vista"));
+      pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value, deEmbarazo), document.getElementById("vista"));
+      document.getElementById("vista-nota-embarazo").hidden = modo !== "embarazo";
       if (ev && ev.type === "submit" && resultado.scrollIntoView) resultado.scrollIntoView({ block: "start" });
     }
 

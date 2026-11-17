@@ -354,3 +354,15 @@ main > ul:not([class]) li::marker { color: var(--acento); }
 .semana-actual { font-size: 1.15rem; font-weight: 700; color: var(--acento-oscuro); background: var(--coral-claro); border-radius: var(--radio); padding: .7rem 1rem; }
 .evento.embarazo { border-left-color: #c45a99; }
 .evento.embarazo.parto { border-left-color: var(--coral); background: var(--coral-claro); }
+/* Embarazo en la vista: tramo antes del parto, sus carriles y la línea del parto. */
+:root { --c-emb-pruebas: #b0478f; }
+.vista .tramo-embarazo { fill: #b0478f; fill-opacity: .05; pointer-events: none; }
+.vista .parto { stroke: #b0478f; stroke-width: 2; }
+.vista-carril.c-emb-pruebas { border-color: var(--c-revisiones); }
+.vista-carril.c-emb-vacunas { border-color: var(--c-vacunas); }
+.vista .c-emb-vacunas .punto, .vista .c-emb-vacunas .barra { fill: var(--c-vacunas); }
+.vista-carril.c-emb-visitas { border-color: var(--c-emb-pruebas); }
+.vista-carril.c-emb-otros { border-color: var(--c-tramites); }
+.vista .c-emb-visitas .punto, .vista .c-emb-visitas .barra { fill: var(--c-emb-pruebas); }
+.vista .c-emb-pruebas .punto, .vista .c-emb-pruebas .barra { fill: var(--c-revisiones); }
+.vista .c-emb-otros .punto, .vista .c-emb-otros .barra { fill: var(--c-tramites); }
