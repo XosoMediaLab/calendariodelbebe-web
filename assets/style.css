@@ -342,3 +342,4 @@ main > ul:not([class]) li::marker { color: var(--acento); }
   .partida { break-inside: avoid; padding: 2mm 3mm; }
   .aviso { border: 1px solid #999; background: none; }
 }
+.contador { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
