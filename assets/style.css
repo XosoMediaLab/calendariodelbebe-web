@@ -346,3 +346,11 @@ main > ul:not([class]) li::marker { color: var(--acento); }
   .aviso { border: 1px solid #999; background: none; }
 }
 .contador { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+
+/* Embarazo */
+.formulario .modo { display: grid; grid-template-columns: 1fr 1fr; gap: .3rem; background: rgba(255, 255, 255, .6); border: 1px solid var(--borde); border-radius: 999px; padding: .25rem; margin: 0 0 .9rem; }
+.formulario .modo button { width: auto; font-size: .95rem; padding: .5rem .8rem; background: transparent; color: var(--acento-oscuro); box-shadow: none; }
+.formulario .modo button[aria-pressed="true"] { background: var(--acento); color: #fff; }
+.semana-actual { font-size: 1.15rem; font-weight: 700; color: var(--acento-oscuro); background: var(--coral-claro); border-radius: var(--radio); padding: .7rem 1rem; }
+.evento.embarazo { border-left-color: #c45a99; }
+.evento.embarazo.parto { border-left-color: var(--coral); background: var(--coral-claro); }

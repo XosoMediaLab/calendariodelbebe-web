@@ -495,6 +495,120 @@
     return null;
   }
 
+  // ---------- Embarazo ----------
+  //
+  // Fecha probable de parto (FPP) = primer día de la última regla (FUR) + 40 semanas
+  // (datos.comunes.regla_fpp, guía del INGESA). La semana N empieza N semanas después de
+  // la FUR. Las fechas son orientativas: las citas las da el centro de salud.
+
+  function semanasFPP(datos) {
+    return (datos.comunes.regla_fpp && datos.comunes.regla_fpp.semanas) || 40;
+  }
+
+  function fppDesdeFUR(fur, datos) {
+    return sumarDias(fur, semanasFPP(datos) * 7);
+  }
+
+  function fechaSemana(fpp, semana, datos) {
+    return sumarDias(fpp, (semana.semanas - semanasFPP(datos)) * 7 + (semana.dias || 0));
+  }
+
+  // Semanas y días cumplidos de embarazo en la fecha `f`.
+  function semanaDeEmbarazo(fpp, f, datos) {
+    var dias = semanasFPP(datos) * 7 - diasEntre(f, fpp);
+    return { semanas: Math.floor(dias / 7), dias: dias % 7 };
+  }
+
+  function textoSemana(s) {
+    return s.dias ? t("{n}+{d}", { n: s.semanas, d: s.dias }) : String(s.semanas);
+  }
+
+  function textoSemanas(desde, hasta) {
+    if (!desde && hasta) return t("hasta la semana {b}", { b: textoSemana(hasta) });
+    if (desde && hasta === undefined) return t("semana {a}", { a: textoSemana(desde) });
+    if (desde && hasta === null) return t("desde la semana {a}", { a: textoSemana(desde) });
+    return t("semanas {a} a {b}", { a: textoSemana(desde), b: textoSemana(hasta) });
+  }
+
+  // Registros del embarazo de una comunidad: los comunes que no sustituye y los suyos.
+  function registrosEmbarazo(datos, idComunidad) {
+    var com = comunidadDe(datos, idComunidad);
+    var fuera = com.embarazo_sustituye || [];
+    return (datos.comunes.embarazo || []).filter(function (r) { return fuera.indexOf(r.id) < 0; })
+      .concat(com.embarazo || []);
+  }
+
+  function construirEmbarazo(fpp, datos, idComunidad, hoy) {
+    var com = comunidadDe(datos, idComunidad);
+    var fur = sumarDias(fpp, -semanasFPP(datos) * 7);
+    var eventos = [];
+    registrosEmbarazo(datos, idComunidad).forEach(function (r) {
+      if (r.linea === false || r.cualquier_trimestre) return;
+      var desde = r.semana || r.semana_desde;
+      if (!desde) return; // «hasta la semana N» sin inicio: pauta, no cita
+      var hasta = r.semana ? undefined : r.semana_hasta;
+      var fecha = fechaSemana(fpp, desde, datos);
+      var fechaHasta = hasta ? fechaSemana(fpp, { semanas: hasta.semanas, dias: hasta.dias === undefined ? 6 : hasta.dias }, datos) : null;
+      eventos.push({
+        id: r.id,
+        tipo: "embarazo",
+        subtipo: r.tipo,
+        titulo: r.nombre,
+        fecha: fecha,
+        fechaHasta: fechaHasta,
+        abierto: hasta === null,
+        edadTexto: textoSemanas(desde, hasta),
+        rango: hasta !== undefined,
+        elementos: [{ id: r.id, nombre: r.nombre, nota: r.nota, fuente: citaDe(r), soloSi: r.condicion }],
+        fechaConocida: true,
+      });
+    });
+    // Vacunas de campaña (gripe, COVID-19): solo con las fechas que publica la comunidad.
+    registrosEmbarazo(datos, idComunidad).forEach(function (r) {
+      if (!r.cualquier_trimestre || !r.campana) return;
+      (com.embarazo_campanas || []).forEach(function (c) {
+        if (c.campana !== r.campana) return;
+        var inicio = desdeISO(c.inicio);
+        var fin = c.fin ? desdeISO(c.fin) : null;
+        if (inicio > fpp || (fin && fin < fur) || (fin && fin < hoy)) return;
+        var fecha = inicio > fur ? inicio : fur;
+        eventos.push({
+          id: r.id + "-" + c.temporada,
+          tipo: "embarazo",
+          subtipo: "campaña",
+          titulo: t("{vacuna} en el embarazo: campaña {temporada}", { vacuna: r.nombre, temporada: c.temporada }),
+          fecha: fecha,
+          fin: fin,
+          edadTexto: t("en cualquier trimestre"),
+          campana: c.fin
+            ? t("Campaña {temporada}: desde el {inicio} hasta el {fin}.", { temporada: c.temporada, inicio: formatear(inicio), fin: formatear(fin) })
+            : t("Campaña {temporada}: desde el {inicio} (fecha de fin sin publicar).", { temporada: c.temporada, inicio: formatear(inicio) }),
+          fuenteCampana: citaDe(c),
+          notaCampana: c.nota,
+          elementos: [{ id: r.id, nombre: r.nombre, nota: r.nota, fuente: citaDe(r) }],
+          fechaConocida: true,
+        });
+      });
+    });
+    eventos.push({
+      id: "fecha-probable-parto",
+      tipo: "embarazo",
+      subtipo: "parto",
+      titulo: t("Fecha probable de parto"),
+      fecha: fpp,
+      edadTexto: t("semana {a}", { a: semanasFPP(datos) }),
+      elementos: [{ id: datos.comunes.regla_fpp.id, nombre: t("Fecha probable de parto"), nota: datos.comunes.regla_fpp.nota, fuente: citaDe(datos.comunes.regla_fpp) }],
+      fechaConocida: true,
+    });
+    eventos.forEach(function (e) {
+      e.enCurso = e.subtipo === "campaña" && e.fecha < hoy && !(e.fin && e.fin < hoy);
+      e.pasado = (e.fechaHasta || e.fecha) < hoy && !e.enCurso;
+      e.dias = diasEntre(hoy, e.fecha);
+    });
+    eventos.sort(function (a, b) { return a.fecha - b.fecha || (a.id < b.id ? -1 : 1); });
+    return eventos;
+  }
+
   // ---------- .ics (RFC 5545) ----------
 
   function escaparICS(texto) {
@@ -540,7 +654,7 @@
 
   function descripcionEvento(e) {
     var lineas = [];
-    if (e.rango) lineas.push(t("Edad: {edad}.", { edad: e.edadTexto }));
+    if (e.rango) lineas.push(e.tipo === "embarazo" ? t("Embarazo: {semanas}.", { semanas: e.edadTexto }) : t("Edad: {edad}.", { edad: e.edadTexto }));
     if (e.campana) lineas.push(e.campana);
     e.elementos.forEach(function (el) {
       var t = "• " + el.nombre;
@@ -596,6 +710,7 @@
   // día del nacimiento.
   function enlaceGoogle(e) {
     if (!e.fechaConocida || e.pasado || e.enCurso || e.diaNacimiento || e.tipo === "suplemento") return null;
+    if (e.dias < 0) return null; // ya empezó (rangos del embarazo en curso)
     if (e.tipo === "cribado") return null; // en la maternidad; su fecha delataría la de nacimiento
     var titulo = (e.tipo === "aep" ? t("Recomendación AEP:") + " " : "") + e.titulo +
       (e.rango ? " (" + e.edadTexto + ")" : "");
@@ -901,6 +1016,11 @@
   function textoFecha(e) {
     if (!e.fechaConocida) return t("Fecha sin publicar");
     // Las citas las fija el centro de salud: la fecha es la primera posible, no la de la cita.
+    if (e.tipo === "embarazo") {
+      if (e.fechaHasta) return t("Del {desde} al {hasta}", { desde: formatear(e.fecha), hasta: formatear(e.fechaHasta) });
+      if (e.abierto || e.subtipo === "campaña") return t("Desde el {fecha}", { fecha: formatear(e.fecha) });
+      return t("Hacia el {fecha}", { fecha: formatear(e.fecha) });
+    }
     if (e.tipo === "tramite") return t("Hasta el {fecha}", { fecha: formatear(e.fecha) });
     if (e.tipo === "suplemento") return t("Del {desde} al {hasta}", { desde: formatear(e.fecha), hasta: formatear(e.fechaHasta) });
     if (e.admision) return t("Desde el {fecha}", { fecha: formatear(e.fecha) });
@@ -910,7 +1030,7 @@
   function textoDias(e) {
     if (!e.fechaConocida) return "";
     if (e.enCurso) return t("campaña en curso");
-    if (e.dias === 0) return "hoy";
+    if (e.dias === 0) return t("hoy");
     if (e.dias > 0) return t(e.dias === 1 ? "dentro de {n} día" : "dentro de {n} días", { n: e.dias });
     return "";
   }
@@ -939,7 +1059,8 @@
         enlaceFuente(x.fuente),
       ]));
     }));
-    var clases = "evento " + (e.tipo === "campaña" ? "campana" : e.tipo) + (e.pasado ? " pasado" : "");
+    var clases = "evento " + (e.tipo === "campaña" ? "campana" : e.tipo) +
+      (e.subtipo ? " " + (e.subtipo === "campaña" ? "campana" : e.subtipo) : "") + (e.pasado ? " pasado" : "");
     return el("li", { class: clases }, [
       el("p", { class: "cuando" }, [
         el("strong", { texto: textoFecha(e) }),
@@ -948,7 +1069,8 @@
       el("h3", { texto: e.titulo }),
       e.campana ? el("p", { class: "campana-texto" }, [e.campana, e.fuenteCampana ? " " : "", e.fuenteCampana ? enlaceFuente(e.fuenteCampana) : null]) : null,
       e.notaCampana ? el("p", { class: "nota", texto: e.notaCampana }) : null,
-      ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ? detalleRevision(e.elementos[0]) : lista,
+      ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ||
+        (e.tipo === "embarazo" && e.subtipo !== "campaña") ? detalleRevision(e.elementos[0]) : lista,
       enlaceGoogle(e) ? el("p", { class: "google" }, [
         el("a", { href: enlaceGoogle(e), target: "_blank", rel: "noopener noreferrer", texto: t("Añadir a Google Calendar") }),
       ]) : null,
@@ -1156,34 +1278,100 @@
     var error = document.getElementById("error");
     var resultado = document.getElementById("resultado");
     var botonICS = document.getElementById("descargar-ics");
+    var botonNacido = document.getElementById("modo-nacido");
+    var botonEmbarazo = document.getElementById("modo-embarazo");
+    var etiquetaFecha = document.getElementById("etiqueta-fecha");
+    var campoReferencia = document.getElementById("campo-referencia");
+    var referencia = document.getElementById("referencia");
+    var bloqueEmbarazo = document.getElementById("bloque-embarazo");
     var actuales = null;
+    var deEmbarazo = [];
+    var modo = "nacido";
 
     var hoy = hoyLocal();
-    entrada.min = aISO(sumarMeses(hoy, -EDAD_MAXIMA_MESES));
-    entrada.max = aISO(sumarMeses(hoy, 9));
+
+    // Límites del campo de fecha según el modo: nacido (36 meses atrás), fecha probable de
+    // parto (de hoy a 42 semanas) o primer día de la última regla (42 semanas atrás a hoy).
+    function limites() {
+      if (modo === "nacido") return [sumarMeses(hoy, -EDAD_MAXIMA_MESES), hoy];
+      if (referencia.value === "fur") return [sumarDias(hoy, -42 * 7), hoy];
+      return [hoy, sumarDias(hoy, 42 * 7)];
+    }
+
+    function ponerModo(nuevo) {
+      modo = nuevo;
+      botonNacido.setAttribute("aria-pressed", String(modo === "nacido"));
+      botonEmbarazo.setAttribute("aria-pressed", String(modo === "embarazo"));
+      campoReferencia.hidden = modo !== "embarazo";
+      etiquetaFecha.textContent = etiquetaFecha.getAttribute(modo === "nacido" ? "data-nacido" : "data-" + referencia.value);
+      var l = limites();
+      entrada.min = aISO(l[0]);
+      entrada.max = aISO(l[1]);
+      if (entrada.value) calcular();
+    }
 
     function calcular(ev) {
       if (ev) ev.preventDefault();
       hoy = hoyLocal();
-      var n = desdeISO(entrada.value);
+      var f = desdeISO(entrada.value);
       error.textContent = "";
-      if (!n) {
+      if (!f) {
         error.textContent = t("Escribe una fecha válida.");
         resultado.hidden = true;
         return;
       }
-      if (n < sumarMeses(hoy, -EDAD_MAXIMA_MESES) || n > sumarMeses(hoy, 9)) {
-        error.textContent = t("La fecha ha de ser de los últimos 36 meses o de los próximos 9.");
+      var l = limites();
+      if (f < l[0] || f > l[1]) {
+        error.textContent = modo === "nacido"
+          ? t("La fecha de nacimiento ha de ser de los últimos 36 meses. Si aún no ha nacido, elige «Estoy embarazada».")
+          : referencia.value === "fur"
+          ? t("La última regla ha de ser de las últimas 42 semanas.")
+          : t("La fecha probable de parto ha de estar entre hoy y dentro de 42 semanas. Si ya ha nacido, elige «Ya ha nacido».");
         resultado.hidden = true;
         return;
       }
+      var n = modo === "embarazo" && referencia.value === "fur" ? fppDesdeFUR(f, datos) : f;
+      deEmbarazo = modo === "embarazo" ? construirEmbarazo(n, datos, comunidad.value, hoy) : [];
+      bloqueEmbarazo.hidden = modo !== "embarazo";
+      document.getElementById("semana-actual").hidden = modo !== "embarazo";
+      if (modo === "embarazo") {
+        var sem = semanaDeEmbarazo(n, hoy, datos);
+        document.getElementById("semana-actual").textContent = sem.semanas < 0
+          ? t("Fecha probable de parto: {fpp}.", { fpp: formatear(n) })
+          : (sem.dias === 0
+            ? t("Hoy estás de {s} semanas justas. Fecha probable de parto: {fpp}.", { s: sem.semanas, fpp: formatear(n) })
+            : t(sem.dias === 1 ? "Hoy estás de {s} semanas y {d} día. Fecha probable de parto: {fpp}." : "Hoy estás de {s} semanas y {d} días. Fecha probable de parto: {fpp}.", { s: sem.semanas, d: sem.dias, fpp: formatear(n) }));
+        var avisoEmb = document.getElementById("aviso-embarazo");
+        var comEmb = datos.comunidades[comunidad.value];
+        if (!(comEmb.embarazo || []).length) {
+          avisoEmb.textContent = t("En tu comunidad aún no hemos cotejado el programa de seguimiento del embarazo de la consejería: lo que ves es la guía del Ministerio de Sanidad. Tu matrona te dará el calendario de tu centro.");
+          avisoEmb.hidden = false;
+        } else {
+          avisoEmb.hidden = true;
+        }
+        var lineaEmb = document.getElementById("linea-embarazo");
+        lineaEmb.textContent = "";
+        deEmbarazo.forEach(function (e) {
+          var nodo = pintarEvento(e);
+          nodo.id = "ev-" + e.id;
+          lineaEmb.appendChild(nodo);
+        });
+      }
       actuales = construirLinea(n, datos, comunidad.value, hoy);
-      var p = proximo(actuales, hoy);
       var nodoProximo = document.getElementById("proximo");
       nodoProximo.textContent = "";
-      enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e)); });
-      if (p) nodoProximo.appendChild(pintarEvento(p));
-      else nodoProximo.appendChild(el("p", { texto: t("No queda nada con fecha en el calendario oficial hasta los 36 meses.") }));
+      var siguienteEmb = null;
+      deEmbarazo.forEach(function (e) {
+        if (e.enCurso) nodoProximo.appendChild(pintarEvento(e));
+        else if (!siguienteEmb && e.fecha >= hoy && !e.elementos[0].soloSi) siguienteEmb = e;
+      });
+      var p = proximo(actuales, hoy);
+      if (siguienteEmb) nodoProximo.appendChild(pintarEvento(siguienteEmb));
+      else {
+        enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e)); });
+        if (p) nodoProximo.appendChild(pintarEvento(p));
+        else nodoProximo.appendChild(el("p", { texto: t("No queda nada con fecha en el calendario oficial hasta los 36 meses.") }));
+      }
       var avisoCom = document.getElementById("aviso-comunidad");
       var aviso = datos.comunidades[comunidad.value].aviso_revisiones || "";
       avisoCom.textContent = aviso;
@@ -1223,12 +1411,16 @@
     }
 
     form.addEventListener("submit", calcular);
+    botonNacido.addEventListener("click", function () { ponerModo("nacido"); });
+    botonEmbarazo.addEventListener("click", function () { ponerModo("embarazo"); });
+    referencia.addEventListener("change", function () { ponerModo(modo); });
+    ponerModo("nacido");
     entrada.addEventListener("change", calcular);
     comunidad.addEventListener("change", calcular);
 
     botonICS.addEventListener("click", function () {
       if (!actuales) return;
-      var ics = generarICS(actuales, { desde: hoyLocal() });
+      var ics = generarICS(deEmbarazo.concat(actuales), { desde: hoyLocal() });
       var blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
       var url = URL.createObjectURL(blob);
       var a = el("a", { href: url, download: t("calendario-bebe.ics") });
@@ -1488,6 +1680,10 @@
     plegar: plegar,
     generarICS: generarICS,
     AVISO: AVISO,
+    construirEmbarazo: construirEmbarazo,
+    fppDesdeFUR: fppDesdeFUR,
+    semanaDeEmbarazo: semanaDeEmbarazo,
+    registrosEmbarazo: registrosEmbarazo,
     usarTextos: usarTextos,
     t: t,
     calcularPresupuesto: calcularPresupuesto,

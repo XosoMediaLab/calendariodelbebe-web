@@ -284,6 +284,694 @@
     "verificado": "2026-11-14"
    }
   ],
+  "embarazo": [
+   {
+    "apartado": "Recomendaciones «Organización de los cuidados prenatales» y «Número de visitas», pág. 24 (PDF 26)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-numero-visitas",
+    "linea": false,
+    "nombre": "Entre 6 y 9 visitas en todo el embarazo",
+    "nota": "En un embarazo de bajo riesgo se sugieren entre 6 y 9 visitas. Las lleva sobre todo la matrona con tu médico o médica de familia, con apoyo del hospital.",
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «1ª visita 6-10 sg», pág. 424 (PDF 426)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-1",
+    "nombre": "Primera visita",
+    "nota": "Historia clínica, peso, talla y tensión arterial, revisión de tus vacunas y de tu alimentación, y la primera analítica. Te explican la ecografía y el cribado de cromosomopatías, y cómo evitar infecciones como la toxoplasmosis.",
+    "semana_desde": {
+     "semanas": 6
+    },
+    "semana_hasta": {
+     "semanas": 10
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «11-13 sg», pág. 425 (PDF 427)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-11-13",
+    "nombre": "Visita de las semanas 11 a 13",
+    "nota": "Tensión arterial, ecografía del primer trimestre y cribado combinado.",
+    "semana_desde": {
+     "semanas": 11
+    },
+    "semana_hasta": {
+     "semanas": 13
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «16-17sg», pág. 425 (PDF 427)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-16-17",
+    "nombre": "Visita de las semanas 16 y 17",
+    "nota": "Tensión arterial y revisión de la historia.",
+    "semana_desde": {
+     "semanas": 16
+    },
+    "semana_hasta": {
+     "semanas": 17
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «20-21 sg», pág. 425 (PDF 427)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-20-21",
+    "nombre": "Visita de las semanas 20 y 21",
+    "nota": "Tensión arterial y ecografía del segundo trimestre.",
+    "semana_desde": {
+     "semanas": 20
+    },
+    "semana_hasta": {
+     "semanas": 21
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «25-26 sg», pág. 425 (PDF 427)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-25-26",
+    "nombre": "Visita de las semanas 25 y 26",
+    "nota": "Tensión arterial y altura del útero. Te ofrecen la preparación al nacimiento y empezar los ejercicios de suelo pélvico, e información sobre lactancia.",
+    "semana_desde": {
+     "semanas": 25
+    },
+    "semana_hasta": {
+     "semanas": 26
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «29-30 sg», pág. 426 (PDF 428)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-29-30",
+    "nombre": "Visita de las semanas 29 y 30",
+    "nota": "Tensión arterial y altura del útero. Te informan del plan de parto, del trabajo de parto y de los métodos para aliviar el dolor.",
+    "semana_desde": {
+     "semanas": 29
+    },
+    "semana_hasta": {
+     "semanas": 30
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «34-36 sg», pág. 426 (PDF 428)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-34-36",
+    "nombre": "Visita de las semanas 34 a 36",
+    "nota": "Tensión arterial, altura del útero y posición del bebé. Te ofrecen el cribado del estreptococo del grupo B.",
+    "semana_desde": {
+     "semanas": 34
+    },
+    "semana_hasta": {
+     "semanas": 36
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «38-40 sg», pág. 426 (PDF 428)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-38-40",
+    "nombre": "Visita de las semanas 38 a 40",
+    "nota": "Tensión arterial y altura del útero. Te explican las señales de preparto y de parto y cuándo acudir, los cuidados del bebé y del posparto y las citas después del parto.",
+    "semana_desde": {
+     "semanas": 38
+    },
+    "semana_hasta": {
+     "semanas": 40
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «41 sg», pág. 426 (PDF 428); recomendación «Manejo de la gestación a partir de la semana 41», pág. 37",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-visita-41",
+    "nombre": "Si llegas a la semana 41",
+    "nota": "Tensión arterial y control del bebé. Te ofrecen la posibilidad de inducir el parto a partir de la semana 41 y antes de la 42, tras explicarte beneficios y riesgos.",
+    "semana": {
+     "semanas": 41
+    },
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Anexo II (cartera de atención primaria), apartado 9.3",
+    "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+    "id": "emb-dentista",
+    "linea": false,
+    "nombre": "Visita al dentista",
+    "nota": "La sanidad pública ofrece a las embarazadas al menos una visita de salud bucodental, preferentemente en el primer trimestre: revisión, consejos y, si hace falta, limpieza.",
+    "preferente": "primer trimestre",
+    "tipo": "visita",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 7.1, tabla «Número, contenido y la cronología de las visitas durante el embarazo», fila «1ª visita 6-10 sg», columna «Analíticas, serologías, pruebas», pág. 424 (PDF 426); recomendaciones «Cribado de infecciones», «Cribado de anemia» y «Cribado de isoinmunización Rh», págs. 26-28",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-analitica-1",
+    "nombre": "Primera analítica",
+    "nota": "Hemograma, grupo sanguíneo y Rh, anticuerpos (Coombs indirecto), cultivo de orina y serologías de hepatitis B, VIH, sífilis y rubeola.",
+    "semana_desde": {
+     "semanas": 6
+    },
+    "semana_hasta": {
+     "semanas": 10
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Anexo I (cartera de salud pública), apartado 3.3.5.2",
+    "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+    "id": "emb-cribado-infecciones",
+    "linea": false,
+    "nombre": "Cribado de infecciones (cartera común)",
+    "nota": "A todas las embarazadas se les ofrece el cribado de sífilis, VIH, hepatitis B y estreptococo del grupo B; el de hepatitis C, zika y Chagas, si hay riesgo; y el de rubeola y varicela si no constan la vacuna o la enfermedad.",
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Exploración ecográfica y diagnóstico prenatal → Cronología», pág. 30 (PDF 32)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-ecografia-1t",
+    "nombre": "Ecografía del primer trimestre",
+    "nota": "La primera de las dos ecografías recomendadas en un embarazo sin factores de riesgo.",
+    "semana_desde": {
+     "semanas": 11
+    },
+    "semana_hasta": {
+     "dias": 6,
+     "semanas": 13
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Despistaje de cromosomopatías», pág. 31 (PDF 33); y Real Decreto 1030/2006, anexo I, apartado 3.3.5.1",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "fuente_extra": {
+     "apartado": "Anexo I, apartado 3.3.5.1 (test combinado y ADN fetal libre como prueba de segunda línea)",
+     "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+     "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-cribado-combinado",
+    "nombre": "Cribado combinado del primer trimestre",
+    "nota": "Se te ofrece: combina tu edad, la translucencia nucal de la ecografía y un análisis de sangre (PAPP-A y beta-hCG libre) para estimar el riesgo de síndrome de Down. Si sale riesgo alto, la sanidad pública ofrece el test de ADN fetal en sangre materna.",
+    "semana_desde": {
+     "semanas": 11
+    },
+    "semana_hasta": {
+     "dias": 6,
+     "semanas": 13
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Anexo I, apartado 3.3.5.3",
+    "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+    "id": "emb-cribado-preeclampsia",
+    "linea": false,
+    "nombre": "Cribado de preeclampsia del primer trimestre",
+    "nota": "La cartera común incluye un test combinado del primer trimestre para la preeclampsia (análisis de sangre, ecografía de las arterias del útero y tensión arterial).",
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Despistaje de cromosomopatías», pág. 31 (PDF 33)",
+    "condicion": "no se ha podido hacer el cribado combinado del primer trimestre",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-test-cuadruple",
+    "nombre": "Test cuádruple (si no se hizo el cribado del primer trimestre)",
+    "nota": "Solo si no se te pudo hacer el cribado del primer trimestre.",
+    "semana_desde": {
+     "semanas": 13
+    },
+    "semana_hasta": {
+     "semanas": 17
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Exploración ecográfica y diagnóstico prenatal → Cronología», pág. 30 (PDF 32)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-ecografia-2t",
+    "nombre": "Ecografía del segundo trimestre",
+    "nota": "Alrededor de la semana 20. No se recomienda una ecografía rutinaria en el tercer trimestre.",
+    "semana": {
+     "semanas": 20
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Cribado de isoinmunización Rh», pág. 28 (PDF 30)",
+    "condicion": "eres Rh negativo y hay incompatibilidad Rh",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-anti-rh-24-28",
+    "nombre": "Anticuerpos anti-Rh si eres Rh negativo",
+    "nota": "Se repite el análisis de anticuerpos anti-Rh.",
+    "semana_desde": {
+     "semanas": 24
+    },
+    "semana_hasta": {
+     "semanas": 28
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Cribado de diabetes gestacional», pág. 29 (PDF 31); tabla 7.1, fila «25-26 sg»",
+    "condicion": "tienes factores de riesgo de diabetes gestacional",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-diabetes-24-28",
+    "nombre": "Cribado de diabetes gestacional (test de O'Sullivan)",
+    "nota": "La guía lo sugiere en las semanas 24 a 28 si tienes factores de riesgo (por ejemplo, IMC de 30 o más, un hijo anterior de 4,5 kg o más, diabetes gestacional previa o un familiar de primer grado con diabetes). Con diabetes gestacional previa, también en el primer trimestre.",
+    "semana_desde": {
+     "semanas": 24
+    },
+    "semana_hasta": {
+     "semanas": 28
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Cribado de anemia durante el embarazo», pág. 28 (PDF 30)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-anemia-28",
+    "nombre": "Segundo control de anemia",
+    "nota": "Se repite el análisis de anemia alrededor de la semana 28.",
+    "semana": {
+     "semanas": 28
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Profilaxis anti-D», pág. 28 (PDF 30)",
+    "condicion": "eres Rh negativo y no estás sensibilizada",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-anti-d-28-30",
+    "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+    "nota": "Una dosis única de inmunoglobulina anti-D para evitar la sensibilización.",
+    "semana_desde": {
+     "semanas": 28
+    },
+    "semana_hasta": {
+     "semanas": 30
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendación «Cribado de infecciones durante el embarazo» (estreptococo B, semanas 35 a 37), pág. 27 (PDF 29); la tabla 7.1 lo pone en la fila «34-36 sg»",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-estreptococo-b",
+    "nombre": "Cribado del estreptococo del grupo B",
+    "nota": "Se te ofrece un cultivo para saber si tienes estreptococo B; si sale positivo, se toman medidas en el parto para proteger al bebé.",
+    "semana_desde": {
+     "semanas": 35
+    },
+    "semana_hasta": {
+     "semanas": 37
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Plan de parto y nacimiento», pág. 30 (PDF 32)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-plan-parto",
+    "nombre": "Plan de parto y nacimiento",
+    "nota": "A partir de la semana 28 puedes preparar tu plan de parto para que lo conozca el hospital.",
+    "semana_desde": {
+     "semanas": 28
+    },
+    "semana_hasta": null,
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendación «Preparación al nacimiento», pág. 37 (PDF 39); tabla 7.1, fila «25-26 sg»; Real Decreto 1030/2006, anexo II, apartado 6.3.3.c",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "fuente_extra": {
+     "apartado": "Anexo II, apartado 6.3.3.c (educación maternal, lactancia, incontinencia urinaria y preparación al parto)",
+     "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+     "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-preparacion-nacimiento",
+    "nombre": "Preparación al nacimiento",
+    "nota": "Se te ofrece, con tu pareja, un programa de preparación al nacimiento (embarazo, parto, posparto, cuidados del bebé y lactancia). La sanidad pública lo incluye como «educación maternal».",
+    "semana_desde": {
+     "semanas": 25
+    },
+    "semana_hasta": {
+     "semanas": 26
+    },
+    "tipo": "prueba",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Nota (2) «Difteria, tétanos, tosferina» → «Prenatal (dTpa)», pág. 2",
+    "documento": "Ministerio de Sanidad: Calendario común de vacunación e inmunización a lo largo de toda la vida. Calendario recomendado año 2026 (aprobado por el Consejo Interterritorial del SNS el 12/12/2025)",
+    "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf",
+    "id": "emb-dtpa",
+    "nombre": "Tos ferina (dTpa)",
+    "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Protege a tu bebé en sus primeros meses.",
+    "preferente": {
+     "desde": {
+      "semanas": 27
+     },
+     "hasta": {
+      "semanas": 28
+     }
+    },
+    "semana_desde": {
+     "semanas": 27
+    },
+    "semana_hasta": null,
+    "tipo": "vacuna",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 3 «Grupos de población diana», punto 4, pág. 5; y calendario común 2026, nota (11) «Gripe → Prenatal», pág. 3",
+    "campana": "gripe",
+    "cualquier_trimestre": true,
+    "documento": "Ministerio de Sanidad: Recomendaciones de vacunación frente a la gripe. Temporada 2026-2027, España (aprobado por la Comisión de Salud Pública el 14/05/2026)",
+    "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/gripe_covid19/docs/recomendacionesVacunacionGripe_2026_2027.pdf",
+    "fuente_extra": {
+     "apartado": "Nota (11) «Gripe» → «Prenatal», pág. 3",
+     "documento": "Ministerio de Sanidad: Calendario común de vacunación e inmunización a lo largo de toda la vida. Calendario recomendado año 2026 (aprobado por el Consejo Interterritorial del SNS el 12/12/2025)",
+     "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-gripe",
+    "nombre": "Gripe",
+    "nota": "Una dosis en cada temporada, en cualquier trimestre; mejor durante el embarazo. Si no te vacunaste, puedes hacerlo en el puerperio, hasta 6 meses después del parto. Depende de la campaña: mira las fechas de tu comunidad.",
+    "tipo": "vacuna",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Apartado 3 «Grupos de población diana», punto 5, págs. 5-6; y calendario común 2026, nota (12) «COVID-19 → Prenatal», pág. 4",
+    "campana": "covid",
+    "cualquier_trimestre": true,
+    "documento": "Ministerio de Sanidad: Recomendaciones de vacunación frente a COVID-19 2026-2027, España (aprobado por la Comisión de Salud Pública el 11/06/2026)",
+    "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/gripe_covid19/docs/recomendacionesVacunacionCovid19_2026_2027.pdf",
+    "fuente_extra": {
+     "apartado": "Nota (12) «COVID-19» → «Prenatal», pág. 4",
+     "documento": "Ministerio de Sanidad: Calendario común de vacunación e inmunización a lo largo de toda la vida. Calendario recomendado año 2026 (aprobado por el Consejo Interterritorial del SNS el 12/12/2025)",
+     "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-covid",
+    "nombre": "COVID-19",
+    "nota": "Se recomienda a todas las embarazadas en cada temporada, en cualquier trimestre, aunque es preferible el segundo. Protege también al bebé en sus primeros meses. Depende de la campaña: mira las fechas de tu comunidad.",
+    "preferente": "segundo trimestre",
+    "tipo": "vacuna",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Notas (7) «Sarampión, rubeola y parotiditis» y (8) «Varicela», pág. 3; GPC 2014, recomendaciones «Vacunas durante el embarazo», págs. 31-32",
+    "documento": "Ministerio de Sanidad: Calendario común de vacunación e inmunización a lo largo de toda la vida. Calendario recomendado año 2026 (aprobado por el Consejo Interterritorial del SNS el 12/12/2025)",
+    "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/calendario/docs/CalendarioVacunacion_Todalavida.pdf",
+    "fuente_extra": {
+     "apartado": "Recomendaciones «Vacunas durante el embarazo», págs. 31-32 (PDF 33-34)",
+     "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+     "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-contraindicadas",
+    "linea": false,
+    "nombre": "Vacunas que no se ponen en el embarazo",
+    "nota": "La triple vírica (sarampión, rubeola y paperas) y la de la varicela no se ponen durante el embarazo. Si no estás protegida, te las ofrecen después del parto.",
+    "tipo": "vacuna",
+    "verificado": "2026-11-17"
+   },
+   {
+    "antes": "al menos 1 o 2 meses antes de quedarte embarazada",
+    "apartado": "Recomendaciones «Suplementos farmacológicos» (consulta preconcepcional), pág. 23 (PDF 25), y «Suplementación farmacológica con ácido fólico», pág. 33 (PDF 35)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-acido-folico",
+    "nombre": "Ácido fólico",
+    "nota": "0,4 mg al día desde al menos uno o dos meses antes de la concepción y durante las primeras 12 semanas. En algunos casos (por ejemplo, un hijo anterior con defecto del tubo neural, diabetes o tratamiento antiepiléptico) la dosis es mayor: te la indica tu médico o médica.",
+    "semana_desde": null,
+    "semana_hasta": {
+     "semanas": 12
+    },
+    "tipo": "suplemento",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Suplementación farmacológica con yodo», pág. 33 (PDF 35); consulta preconcepcional, «Nutrición» y «Suplementos farmacológicos», págs. 22-23",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-yodo",
+    "linea": false,
+    "nombre": "Yodo",
+    "nota": "Usa sal yodada. El suplemento de yodo se sugiere solo si con la dieta no llegas a lo recomendado (3 raciones de lácteos y 2 g de sal yodada al día). Antes del embarazo no se recomienda de forma sistemática.",
+    "tipo": "suplemento",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Suplementación farmacológica con hierro» y «… con complejos multivitamínicos», pág. 33 (PDF 35)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-sin-hierro-multivitaminicos",
+    "linea": false,
+    "nombre": "Hierro, multivitamínicos y vitamina A",
+    "nota": "No se recomienda tomar hierro ni complejos multivitamínicos de forma rutinaria. Evita los suplementos de vitamina A de más de 2.500 UI (750 µg). Toma solo los complementos que te indiquen en tu centro de salud.",
+    "tipo": "suplemento",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Bebidas»",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-alcohol",
+    "nombre": "Alcohol",
+    "nota": "No tomes bebidas alcohólicas ni productos que lleven alcohol: cualquier cantidad tiene riesgo para el bebé.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Recomendaciones «Alcohol y tabaco durante el embarazo», pág. 34 (PDF 36)",
+    "documento": "Ministerio de Sanidad, Servicios Sociales e Igualdad: Guía de práctica clínica de atención en el embarazo y puerperio. Guías de Práctica Clínica en el SNS, AETSA 2011/10 (edición de 2014; NIPO 680-13-122-7). Versión completa",
+    "fuente": "https://portal.guiasalud.es/wp-content/uploads/2018/12/GPC_533_Embarazo_AETSA_compl.pdf",
+    "id": "emb-tabaco",
+    "nombre": "Tabaco",
+    "nota": "Se recomienda dejar de fumar por completo; en tu centro de salud te pueden ayudar.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Tabla «Población vulnerable: mujeres embarazadas…» y «Especies», pág. 1",
+    "documento": "AESAN: Recomendaciones de consumo de pescado por presencia de mercurio (2019; NIPO en línea 732-19-013-6)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:37655af5-1ba6-4a9e-a756-79a51810aac7/RECOMENDACIONES_consumo_pescado_MERCURIO_AESAN_WEB.pdf",
+    "id": "emb-mercurio",
+    "nombre": "Pescados con mucho mercurio",
+    "nota": "Evita el pez espada o emperador, el atún rojo (Thunnus thynnus), el tiburón (cazón, marrajo, mielgas, pintarroja y tintorera) y el lucio. El resto de pescado, sí: 3 o 4 raciones a la semana, variando blancos y azules.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Alimentos crudos» y «Otros alimentos»",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-listeria-lacteos",
+    "nombre": "Leche cruda y quesos frescos o blandos sin pasteurizar",
+    "nota": "Leche cruda y quesos frescos o de pasta blanda (brie, camembert, tipo Burgos, latinos, mozzarella, azules) si la etiqueta no dice que son de leche pasteurizada. Quita la corteza de todos los quesos y evita los loncheados o rallados industriales.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Alimentos crudos»",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-crudos",
+    "nombre": "Carne, pescado, marisco y huevo crudos o poco hechos",
+    "nota": "Carne cruda o poco hecha (carpaccio, steak tartar), pescado crudo (sushi, sashimi, ceviche), pescado ahumado refrigerado o marinado, ostras, almejas o mejillones crudos, y huevo crudo (mayonesa casera, tiramisú, mousses, helados caseros…).",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Otros alimentos»",
+    "condicion": "no tienes defensas frente a la toxoplasmosis",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-curados-toxoplasma",
+    "nombre": "Embutidos y jamón curados si no tienes defensas frente a la toxoplasmosis",
+    "nota": "Si no estás inmunizada (pregúntalo en tu centro de salud), evita chorizo, salchichón, salami, jamón curado… crudos. Sí puedes tomarlos cocinados a más de 70 ºC durante 2 minutos (croquetas, pizzas…).",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Alimentos crudos», «Otros alimentos» y «Algunos alimentos envasados»",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-otros-listeria",
+    "nombre": "Patés refrigerados, brotes crudos y algunos envasados",
+    "nota": "Patés que se venden refrigerados, fiambres loncheados, brotes crudos (soja, alfalfa), sándwiches y otros envasados listos para comer con vegetales, huevo, carne, fiambre o pescado, y verduras congeladas sin cocinar si la etiqueta dice que hay que cocinarlas. Los zumos envasados, solo pasteurizados.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Alimentos y bebidas que debes evitar durante el embarazo», pág. 4, «Alimentos crudos» y «Otros alimentos»",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-caza-frutas",
+    "nombre": "Carne de caza y fruta o verdura sin lavar",
+    "nota": "Carne de caza silvestre (jabalí, venado…), y fruta y verdura crudas sin pelar o sin lavar y desinfectar, incluidas las ensaladas de bolsa y las que comas fuera de casa.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Precauciones que tienes que tomar con algunos alimentos», pág. 3, y «Bebidas», pág. 4",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "fuente_extra": {
+     "apartado": "«Bebidas energéticas», pág. 12",
+     "documento": "AESAN: Recomendaciones dietéticas saludables y sostenibles complementadas con recomendaciones de actividad física para la población española (diciembre de 2022)",
+     "fuente": "https://www.aesan.gob.es/dam/jcr:303bc425-0df3-4124-abe9-75499ce573fa/RECOMENDACIONES_DIETETICAS.pdf",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-bebidas-energeticas",
+    "nombre": "Bebidas energéticas y azucaradas; cafeína con moderación",
+    "nota": "Evita las bebidas energéticas y azucaradas y modera la cafeína (café, té, chocolate, cola, mate…).",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Recuerda estas normas básicas de manipulación higiénica», pág. 2, y «Precauciones…», pág. 3",
+    "documento": "AESAN: «Alimentación segura durante el embarazo. Consejos básicos para 40 semanas de tranquilidad», 2.ª edición (2024; NIPO en línea 236-24-004-7). Enlazado desde las preguntas frecuentes de la AESAN («Recomendaciones dietéticas para embarazadas»)",
+    "fuente": "https://www.aesan.gob.es/dam/jcr:6f57a77f-541c-4c54-a124-543d65b1aaf1/alimentacion_segura_embarazo.pdf",
+    "id": "emb-higiene-cocina",
+    "nombre": "Higiene en la cocina",
+    "nota": "Lávate las manos con agua caliente y jabón al menos 20 segundos, cocina bien carne y pescado (más de 70 ºC al menos 2 minutos en el centro), recalienta las sobras a esa temperatura y mantén la nevera a 5 ºC o menos.",
+    "tipo": "evitar",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Artículo 37.3.f",
+    "documento": "Real Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto de los Trabajadores (texto consolidado, última actualización publicada el 21/10/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "fuente_extra": {
+     "apartado": "Artículo 26.5",
+     "documento": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales (texto consolidado, última actualización publicada el 09/04/2026)",
+     "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+     "verificado": "2026-11-17"
+    },
+    "id": "emb-permiso-examenes",
+    "linea": false,
+    "nombre": "Permiso retribuido para exámenes prenatales y preparación al parto",
+    "nota": "Puedes ausentarte del trabajo, con sueldo, el tiempo indispensable para los exámenes prenatales y la preparación al parto que tengan que ser en horario de trabajo, avisando antes y justificándolo.",
+    "tipo": "tramite",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Artículo 26.1 a 26.3",
+    "documento": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales (texto consolidado, última actualización publicada el 09/04/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+    "fuente_extra": [
+     {
+      "apartado": "Artículos 45.1.e y 48.7",
+      "documento": "Real Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto de los Trabajadores (texto consolidado, última actualización publicada el 21/10/2026)",
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+      "verificado": "2026-11-17"
+     },
+     {
+      "apartado": "Artículos 186 y 187",
+      "documento": "Real Decreto Legislativo 8/2015, de 30 de octubre, texto refundido de la Ley General de la Seguridad Social (texto consolidado, última actualización publicada el 11/11/2026)",
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+      "verificado": "2026-11-17"
+     }
+    ],
+    "id": "emb-riesgo-embarazo",
+    "linea": false,
+    "nombre": "Riesgo durante el embarazo",
+    "nota": "Si tu puesto puede afectar al embarazo, la empresa debe adaptarlo o cambiarte de puesto. Si no es posible, se suspende el contrato con una prestación del 100 % de la base reguladora hasta el permiso por nacimiento o la vuelta a un puesto compatible.",
+    "tipo": "tramite",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Artículo 48.4, letra b y párrafo sobre la comunicación con 15 días de antelación",
+    "dias_antes": 28,
+    "documento": "Real Decreto Legislativo 2/2015, de 23 de octubre, texto refundido de la Ley del Estatuto de los Trabajadores (texto consolidado, última actualización publicada el 21/10/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+    "id": "emb-adelantar-permiso",
+    "nombre": "Puedes adelantar parte del permiso por nacimiento",
+    "nota": "La madre biológica puede empezar las 11 semanas no obligatorias del permiso hasta 4 semanas antes de la fecha prevista del parto. Comunícalo a la empresa con al menos 15 días de antelación.",
+    "relativo_a": "fecha probable de parto",
+    "tipo": "tramite",
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "Disposición adicional decimosexta",
+    "condicion": "eres funcionaria y tu Administración lo ha establecido",
+    "documento": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público (texto consolidado, última actualización publicada el 03/10/2026)",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719",
+    "id": "emb-funcionarias-semana-37",
+    "nombre": "Funcionarias: posible permiso desde la semana 37",
+    "nota": "Cada Administración puede dar a sus funcionarias embarazadas un permiso retribuido desde el primer día de la semana 37 hasta el parto. No es automático: pregunta en tu Administración.",
+    "semana_desde": {
+     "semanas": 37
+    },
+    "semana_hasta": null,
+    "tipo": "tramite",
+    "verificado": "2026-11-17"
+   }
+  ],
+  "regla_fpp": {
+   "apartado": "Apartado 3 «Duración y diagnóstico del embarazo», págs. 15-16",
+   "documento": "Instituto Nacional de Gestión Sanitaria (INGESA, Ministerio de Sanidad), Hospital Universitario de Ceuta: Guía de cuidados en el embarazo. Consejos de su matrona (2011; NIPO 865-11-012-7)",
+   "fuente": "https://ingesa.sanidad.gob.es/dam/jcr:165412ee-c778-42a2-9c0e-c4a5948aea76/Guiacuidadosembarazo.pdf",
+   "id": "emb-fecha-probable-parto",
+   "nota": "La fecha probable de parto es el primer día de tu última regla más 40 semanas. Lo normal es dar a luz entre la semana 38 y la 42: la fecha te la ajustan en la ecografía.",
+   "semanas": 40,
+   "verificado": "2026-11-17"
+  },
   "suplementos": [
    {
     "apartado": "Apartados «Población pediátrica» y «Toxicidad por vitamina D» (pág. 10 del PDF)",
@@ -540,6 +1228,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -1274,6 +1965,9 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -2058,6 +2752,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -3056,6 +3753,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -3946,6 +4646,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -4711,6 +5414,455 @@
      "verificado": "2026-11-14"
     }
    ],
+   "embarazo": [
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4 («1ª visita < 10 semanas»)",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "fuente_extra": {
+      "apartado": "«Para un embarazo saludable»",
+      "documento": "Conselleria de Sanidad, web de Salud Pública: Salud reproductiva → Embarazo, parto y puerperio → «Consejos» (consultada el 17/11/2026)",
+      "fuente": "https://www.san.gva.es/es/web/salut-publica/promocion-salud/salud-reproductiva/consejos",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-primera-visita",
+     "nombre": "Ve al centro de salud en cuanto sepas que estás embarazada",
+     "nota": "Pide cita con la matrona lo antes posible: el control debe empezar en el primer trimestre y la primera visita, antes de la semana 10. Te dará la Cartilla del Embarazo, que tienes que llevar a cada visita y a la maternidad.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «1-13+6 semanas»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-bloque-1",
+     "nombre": "Hasta la semana 13+6: 2 visitas de matrona y 1 de obstetricia",
+     "nota": "La primera visita con la matrona, antes de la semana 10.",
+     "semana_desde": {
+      "semanas": 1
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «14-27+6 semanas»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-bloque-2",
+     "nombre": "Semanas 14 a 27+6: 3 visitas de matrona y 1 de obstetricia",
+     "nota": "Con la matrona, cada 4 semanas.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 27
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «28-39+6 semanas» («Visitas a las 28, 32, 36 y 38»)",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-matrona-28",
+     "nombre": "Matrona: semana 28",
+     "nota": "Visita con la matrona.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «28-39+6 semanas»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-matrona-32",
+     "nombre": "Matrona: semana 32",
+     "nota": "Visita con la matrona.",
+     "semana": {
+      "semanas": 32
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «28-39+6 semanas», columna «Obstetricia»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-obstetricia-34-36",
+     "nombre": "Obstetricia: entre las semanas 34 y 36",
+     "nota": "Visita con obstetricia.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «28-39+6 semanas»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-matrona-36",
+     "nombre": "Matrona: semana 36",
+     "nota": "Visita con la matrona.",
+     "semana": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «28-39+6 semanas»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-matrona-38",
+     "nombre": "Matrona: semana 38",
+     "nota": "Visita con la matrona.",
+     "semana": {
+      "semanas": 38
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «40-40+6 semanas» (* matrona de atención hospitalaria)",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-semana-40",
+     "nombre": "Semana 40: matrona del hospital y obstetricia",
+     "nota": "Una visita con la matrona del hospital y otra con obstetricia.",
+     "semana": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«El calendario previsto es el siguiente», pág. 4, fila «41»",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-semana-41",
+     "nombre": "Semana 41: se programa el final del embarazo",
+     "nota": "Visita con la matrona del hospital, y obstetricia programa la finalización del embarazo.",
+     "semana": {
+      "semanas": 41
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5 «Propuesta de cribado prenatal de defectos congénitos en la Comunitat Valenciana», pág. 27",
+     "documento": "Conselleria de Sanitat, Direcció General de Salut Pública: Diagnóstico prenatal en la Comunitat Valenciana. Manual para profesionales (2013)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/diagnostico_prenatal",
+     "id": "cv-emb-cribado-analitica",
+     "nombre": "Cribado combinado: análisis de sangre",
+     "nota": "Análisis de sangre del cribado combinado (beta-hCG libre y PAPP-A). Si se hace el mismo día que la ecografía, entre las semanas 11 y 13.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5, pág. 27",
+     "documento": "Conselleria de Sanitat, Direcció General de Salut Pública: Diagnóstico prenatal en la Comunitat Valenciana. Manual para profesionales (2013)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/diagnostico_prenatal",
+     "fuente_extra": {
+      "apartado": "«Para un embarazo saludable» (ecografías en atención hospitalaria)",
+      "documento": "Conselleria de Sanidad, web de Salud Pública: Salud reproductiva → Embarazo, parto y puerperio → «Consejos» (consultada el 17/11/2026)",
+      "fuente": "https://www.san.gva.es/es/web/salut-publica/promocion-salud/salud-reproductiva/consejos",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-translucencia-nucal",
+     "nombre": "Ecografía del primer trimestre (translucencia nucal)",
+     "nota": "La ecografía y las ecografías siguientes las hace el equipo de obstetricia del hospital.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5, págs. 27-28",
+     "condicion": "empiezas el control del embarazo después de la semana 14",
+     "documento": "Conselleria de Sanitat, Direcció General de Salut Pública: Diagnóstico prenatal en la Comunitat Valenciana. Manual para profesionales (2013)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/diagnostico_prenatal",
+     "id": "cv-emb-triple-test",
+     "nombre": "Triple test (si empiezas el control después de la semana 14)",
+     "nota": "Análisis de sangre del segundo trimestre si no te pudieron hacer el cribado del primero.",
+     "semana_desde": {
+      "semanas": 15
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 17
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2 «Objetivos», pág. 13, y apartado 5, pág. 28",
+     "documento": "Conselleria de Sanitat, Direcció General de Salut Pública: Diagnóstico prenatal en la Comunitat Valenciana. Manual para profesionales (2013)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/diagnostico_prenatal",
+     "id": "cv-emb-ecografia-morfologica",
+     "nombre": "Ecografía morfológica",
+     "nota": "Se ofrece a todas las embarazadas para ver la anatomía del bebé.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Plan de parto», pág. 23, y pág. 4",
+     "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+     "id": "cv-emb-plan-parto",
+     "nombre": "Plan de parto",
+     "nota": "Puedes hacerlo en cualquier momento, aunque un buen momento es entre las semanas 28 y 32. Viene en la cartilla y la matrona te ayuda a rellenarlo.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2 «Población participante», pág. 7, y apartado 4 «Metodología», pág. 9",
+     "documento": "Conselleria de Sanidad, Plan de Acción de Atención Primaria Comunitaria (PRI), Estrategia de Salud Comunitaria 2023-2025: Guía Educación Maternal. Guía de educación para la salud grupal con orientación comunitaria (1.ª edición, 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/assistencia-sanitaria/educacion-maternal-guia-cast",
+     "fuente_extra": {
+      "apartado": "Pág. 4 («Actividades grupales, consultar oferta con la matrona»)",
+      "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+      "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-educacion-maternal",
+     "nombre": "Educación maternal en el centro de salud",
+     "nota": "Sesiones semanales en grupo con la matrona, de 60 a 90 minutos, a las que puedes ir con tu pareja o acompañante. Te incorporas a partir de la semana 26-28 o cuando te diga la matrona. Pregúntale por la oferta de tu centro.",
+     "semana_desde": {
+      "semanas": 26
+     },
+     "semana_hasta": null,
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I, «Sesión 6. Visita a las instalaciones donde tendrá lugar el nacimiento», pág. 24",
+     "documento": "Conselleria de Sanidad, Plan de Acción de Atención Primaria Comunitaria (PRI), Estrategia de Salud Comunitaria 2023-2025: Guía Educación Maternal. Guía de educación para la salud grupal con orientación comunitaria (1.ª edición, 2024)",
+     "fuente": "https://www.san.gva.es/documents/d/assistencia-sanitaria/educacion-maternal-guia-cast",
+     "id": "cv-emb-visita-hospital",
+     "nombre": "Visita a la maternidad",
+     "nota": "Visita a las instalaciones donde vas a dar a luz, con la matrona del centro de salud y la del hospital. Tu matrona te informa de cuándo es.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": null,
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 1, punto 2 «Difteria, tétanos, tosferina», pág. 4",
+     "documento": "Resolución de 13 de marzo de 2026, de la Conselleria de Sanidad, por la que se actualiza el calendario de vacunaciones sistemáticas a lo largo de la vida (2026) en la Comunitat Valenciana. DOGV n.º 10328, de 24/03/2026 (CVE DOGV-C-2026-8802)",
+     "fuente": "https://dogv.gva.es/datos/2026/03/24/pdf/2026_8802_es.pdf",
+     "fuente_extra": {
+      "apartado": "Pág. 4 («La vacuna de la tosferina se administrará entre la 27 y 36 semanas»)",
+      "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+      "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, preferentemente en la semana 27-28. La cartilla la sitúa entre las semanas 27 y 36.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 1, punto 8 «Gripe», pág. 5",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Resolución de 13 de marzo de 2026, de la Conselleria de Sanidad, por la que se actualiza el calendario de vacunaciones sistemáticas a lo largo de la vida (2026) en la Comunitat Valenciana. DOGV n.º 10328, de 24/03/2026 (CVE DOGV-C-2026-8802)",
+     "fuente": "https://dogv.gva.es/datos/2026/03/24/pdf/2026_8802_es.pdf",
+     "fuente_extra": {
+      "apartado": "Pág. 4 («La vacunación de la gripe se podrá realizar en cualquier trimestre (según campaña)»)",
+      "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+      "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En el embarazo, en cualquier trimestre, y en el puerperio. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 1, punto 11 «COVID-19», pág. 5",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Resolución de 13 de marzo de 2026, de la Conselleria de Sanidad, por la que se actualiza el calendario de vacunaciones sistemáticas a lo largo de la vida (2026) en la Comunitat Valenciana. DOGV n.º 10328, de 24/03/2026 (CVE DOGV-C-2026-8802)",
+     "fuente": "https://dogv.gva.es/datos/2026/03/24/pdf/2026_8802_es.pdf",
+     "id": "cv-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "En el embarazo, en cualquier trimestre. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "al menos 1 o 2 meses antes de la concepción (3 meses si tomas anticonceptivos hormonales)",
+     "apartado": "Apartado 5.2.1 «Ácido fólico», págs. 15-16",
+     "documento": "Conselleria de Sanidad, Plan de Acción de las Unidades de Salud Sexual y Reproductiva 2025-2027: Protocolo de atención preconcepcional (1.ª edición, 2025)",
+     "fuente": "https://www.san.gva.es/documents/d/assistencia-sanitaria/260312-protocolo-de-atencion-preconcepcional-cast",
+     "id": "cv-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg al día desde al menos uno o dos meses antes de la concepción hasta la semana 12. Si tomas anticonceptivos hormonales, empieza tres meses antes. En algunos casos (como un IMC de más de 30) la dosis es mayor: te la indican en el centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5.2.2 «Otros suplementos», pág. 16",
+     "documento": "Conselleria de Sanidad, Plan de Acción de las Unidades de Salud Sexual y Reproductiva 2025-2027: Protocolo de atención preconcepcional (1.ª edición, 2025)",
+     "fuente": "https://www.san.gva.es/documents/d/assistencia-sanitaria/260312-protocolo-de-atencion-preconcepcional-cast",
+     "id": "cv-emb-yodo",
+     "linea": false,
+     "nombre": "Yodo",
+     "nota": "No se recomienda el suplemento de yodo para todas: se valora según tu dieta. Se considera suficiente tomar 3 raciones de lácteos al día y usar siempre sal yodada.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Texto de la página",
+     "documento": "Conselleria de Sanidad, web de Salud Pública: «Tabaco, alcohol y otras drogas» (consejos en el embarazo; consultada el 17/11/2026)",
+     "fuente": "https://www.san.gva.es/es/web/salut-publica/tabaco-alcohol-y-otras-drogas",
+     "fuente_extra": {
+      "apartado": "«Durante el embarazo y la lactancia», pág. 20",
+      "documento": "Conselleria de Sanidad, Dirección General de Salud Pública: Cartilla del Embarazo (edición 2026; el nombre del fichero dice 2024)",
+      "fuente": "https://www.san.gva.es/documents/d/salut-publica/cartilla-embarazo-2024-castellano-forros-2",
+      "verificado": "2026-11-17"
+     },
+     "id": "cv-emb-alcohol-tabaco",
+     "nombre": "Alcohol, tabaco y otras drogas",
+     "nota": "Ninguna cantidad de alcohol es segura en el embarazo. Aprovecha para dejar de fumar y evita el humo de otras personas; si te cuesta, pide ayuda a tu médico o matrona. Si tomas alguna droga, díselo al personal sanitario.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Lista «Evita los siguientes alimentos» y recomendaciones sobre la sal",
+     "documento": "Conselleria de Sanidad, web de Salud Pública: «Cuida tu alimentación» (consejos en el embarazo; consultada el 17/11/2026)",
+     "fuente": "https://www.san.gva.es/es/web/salut-publica/consejo-cuida-tu-alimentacion",
+     "id": "cv-emb-alimentos",
+     "nombre": "Alimentos que evitar según la Conselleria",
+     "nota": "Además de lo de la AESAN, la Conselleria pide evitar el paté de línea fría (ni siquiera vegetal; solo de conserva esterilizada), el hígado y las vísceras (mucha vitamina A) y los curados crudos (chorizo, salchichón, jamón curado…). Sal, poca y yodada.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_campanas": [
+    {
+     "apartado": "«Personas a las que se recomienda la vacunación» → A. «Gripe + COVID19» → «Embarazadas en cualquier trimestre de embarazo»; y → «Gripe» → «Mujeres durante el puerperio»",
+     "campana": "gripe",
+     "documento": "Conselleria de Sanidad, web de Vacunaciones: «Campaña de vacunación otoño-invierno 2026-2027» (consultada el 14/11/2026)",
+     "fin": null,
+     "fuente": "https://vacunaciones.san.gva.es/es/campa%C3%B1a-de-vacunaci%C3%B3n-oto%C3%B1o-invierno-2026-2027",
+     "fuente_inicio": {
+      "apartado": "Titular de la noticia",
+      "documento": "Conselleria de Sanidad, web de Vacunaciones: «La Conselleria de Sanitat iniciará el próximo 28 de septiembre la campaña de vacunación e inmunización frente a las enfermedades respiratorias correspondiente a la temporada otoño-invierno 2026-2027»",
+      "fuente": "https://vacunaciones.san.gva.es/es/-/noticia-inicio-campa%C3%B1a-vacunacion-2026-2027",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-09-28",
+     "nota": "La campaña empezó el 28/09/2026. La fecha de fin no está publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Personas a las que se recomienda la vacunación» → A. «Gripe + COVID19» → «Embarazadas en cualquier trimestre de embarazo»",
+     "campana": "covid",
+     "documento": "Conselleria de Sanidad, web de Vacunaciones: «Campaña de vacunación otoño-invierno 2026-2027» (consultada el 14/11/2026)",
+     "fin": null,
+     "fuente": "https://vacunaciones.san.gva.es/es/campa%C3%B1a-de-vacunaci%C3%B3n-oto%C3%B1o-invierno-2026-2027",
+     "fuente_inicio": {
+      "apartado": "Titular de la noticia",
+      "documento": "Conselleria de Sanidad, web de Vacunaciones: «La Conselleria de Sanitat iniciará el próximo 28 de septiembre la campaña de vacunación e inmunización frente a las enfermedades respiratorias correspondiente a la temporada otoño-invierno 2026-2027»",
+      "fuente": "https://vacunaciones.san.gva.es/es/-/noticia-inicio-campa%C3%B1a-vacunacion-2026-2027",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-09-28",
+     "nota": "La campaña empezó el 28/09/2026. La fecha de fin no está publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico",
+    "emb-yodo",
+    "emb-alcohol",
+    "emb-tabaco"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -5475,6 +6627,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -6073,6 +7228,9 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -7053,6 +8211,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
@@ -7704,6 +8865,9 @@
      "verificado": "2026-11-16"
     }
    ],
+   "embarazo": [],
+   "embarazo_campanas": [],
+   "embarazo_sustituye": [],
    "escolarizacion": {
     "admision": [
      {
