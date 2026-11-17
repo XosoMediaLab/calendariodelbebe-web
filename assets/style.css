@@ -366,3 +366,11 @@ main > ul:not([class]) li::marker { color: var(--acento); }
 .vista .c-emb-visitas .punto, .vista .c-emb-visitas .barra { fill: var(--c-emb-pruebas); }
 .vista .c-emb-pruebas .punto, .vista .c-emb-pruebas .barra { fill: var(--c-revisiones); }
 .vista .c-emb-otros .punto, .vista .c-emb-otros .barra { fill: var(--c-tramites); }
+/* Widget para insertar (iframe): solo el formulario, el aviso y lo próximo. */
+.widget .barra, .widget .pie, .widget .sellos, .widget .saltar, .widget .cabecera h1, .widget .cabecera .intro, .widget .idiomas { display: none; }
+.widget .cabecera { padding: .8rem .8rem .2rem; }
+.widget main > :not(#resultado):not(.aviso) { display: none; }
+.widget #resultado > :not(#semana-actual):not(#proximo):not(.widget-mas):not(h2:first-of-type) { display: none; }
+.widget .widget-mas { font-size: .9rem; margin: .8rem 0; }
+.codigo { background: #fff; border: 1px solid var(--borde); border-radius: 8px; padding: .8rem; overflow-x: auto; white-space: pre-wrap; word-break: break-all; font-size: .85rem; }
+.texto-copiar { background: #fff; border-left: 4px solid var(--acento); margin: .5rem 0 1rem; padding: .6rem .9rem; }
