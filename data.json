@@ -1228,9 +1228,607 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "«Descripción general… recorrido de la gestante», p. 23-24 [21-22]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Calendario de visitas del Servicio Andaluz de Salud",
+     "nota": "Tras una primera visita antes de la semana 8, tienes visitas en tu centro de salud (matrona, medicina de familia y enfermería) en las semanas 8-10, 16-18, 24-26, 28-30, 35-37 y 39-40, y con obstetricia en el hospital en las semanas 11-13+6, 18-20+6, 34-36 y, si llegas, 41.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «2º Visita inicial», puntos 2.1, 2.3 y 2.11, p. 27-28 [25-26]; recomendaciones clave, p. 11 [9]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-inicial",
+     "nombre": "Ve al centro de salud en cuanto tengas el test positivo",
+     "nota": "El primer contacto con tu centro de salud, lo antes posible, mejor en las 8 primeras semanas. Te recomendarán el ácido fólico y te darán cita para la primera visita, mejor entre las semanas 8 y 10.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 8
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «3º Visita 1. Semana 9 (8-10 SG)», puntos 3.2 a 3.25, p. 28-36 [26-34]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-1",
+     "nombre": "Primera visita en el centro de salud (semanas 8 a 10)",
+     "nota": "Con la matrona o tu médico o médica de familia: historia clínica, tensión, peso, revisión de tus vacunas y una escala sobre tu estado de ánimo. Te explican el cribado combinado, te piden la primera analítica, te abren el Documento de salud de la embarazada y te recomiendan avisar al servicio de prevención de riesgos laborales de tu empresa.",
+     "semana_desde": {
+      "semanas": 8
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 12 (11-13+6 SG)», puntos 5.4 a 5.17, p. 38-41 [36-39]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-12",
+     "nombre": "Visita con obstetricia y ecografía del primer trimestre (semanas 11 a 13+6)",
+     "nota": "Tensión y peso, ecografía para confirmar la edad del embarazo y, si lo aceptas, el cribado combinado. También se valora tu riesgo de preeclampsia.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 16 (16-18 SG)», puntos 6.1 a 6.14, p. 42-43 [40-41]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-16",
+     "nombre": "Visita en el centro de salud (semanas 16 a 18)",
+     "nota": "Tensión, peso y latido del bebé. Te informan de los movimientos del bebé y de la lactancia.",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "semanas": 18
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 20 (18+0-20+6 SG)», puntos 7.1 a 7.10, p. 43-44 [41-42]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-20",
+     "nombre": "Visita con obstetricia y ecografía del segundo trimestre (semanas 18 a 20+6)",
+     "nota": "Ecografía para revisar la anatomía del bebé, la placenta y el líquido amniótico.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 20
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 24 (24-26 SG)», puntos 8.1 a 8.14, p. 44-45 [42-43]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-24",
+     "nombre": "Visita en el centro de salud (semanas 24 a 26)",
+     "nota": "Tensión, peso, altura del útero y latido del bebé. Se repite la escala del estado de ánimo, te piden la analítica del segundo trimestre (diabetes gestacional, anemia y Coombs) y te dan cita para la vacuna de la tos ferina.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 26
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 28 (28-30 SG)», puntos 9.1 a 9.13, p. 46-47 [44-45]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-28",
+     "nombre": "Visita en el centro de salud (semanas 28 a 30)",
+     "nota": "Resultados de la analítica, exploración y, si eres Rh negativo, la inmunoglobulina anti-D. Hablas de tus preferencias para el parto y del plan de parto.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 34 (34-36 SG)», puntos 11.1 a 11.13, p. 49-50 [47-48]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-34",
+     "nombre": "Visita con obstetricia y ecografía del tercer trimestre (semanas 34 a 36)",
+     "nota": "Ecografía para ver el crecimiento y la posición del bebé, la placenta y el líquido amniótico. Se comprueba si te han puesto la vacuna de la tos ferina.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 36 (35-37 SG)», puntos 12.1 a 12.12, p. 50-52 [48-50]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-36",
+     "nombre": "Visita en el centro de salud (semanas 35 a 37)",
+     "nota": "Exploración y posición del bebé, y la prueba del estreptococo B. Te explican las señales de parto, los cuidados del bebé y del posparto y la visita puerperal.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 39-40», puntos 13.1 a 13.10, p. 52 [50]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-39-40",
+     "nombre": "Visita en el centro de salud (semanas 39 y 40)",
+     "nota": "Exploración y resultado del estreptococo B. Te hablan de las opciones de inducción por si el embarazo se alarga y te recomiendan las visitas después del parto.",
+     "semana_desde": {
+      "semanas": 39
+     },
+     "semana_hasta": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 41», puntos 14.5 a 14.8, p. 53-54 [51-52]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-visita-41",
+     "nombre": "Si llegas a la semana 41: visita con obstetricia",
+     "nota": "Desde la 41+0, controles periódicos del bebé (monitor y ecografía) hasta el parto. Te ofrecen inducir el parto a partir de la semana 41, tras explicarte beneficios y riesgos y teniendo en cuenta tus preferencias.",
+     "semana": {
+      "semanas": 41
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «3º Visita 1», puntos 3.12 y 3.12.1, p. 31 [29]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-dentista",
+     "linea": false,
+     "nombre": "Visita al dentista",
+     "nota": "En la primera visita te informan de la importancia de cuidar tu boca: al menos una visita al dentista en el primer trimestre. El tratamiento es seguro en el embarazo.",
+     "preferente": "primer trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «3º Visita 1», punto 3.14, p. 31-32 [29-30]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "fuente_extra": {
+      "apartado": "«Mi hoja de ruta» → «Analíticas básicas» («Primer trimestre (a las 9-10 semanas)»), p. 7 [6]",
+      "documento": "Consejería de Salud y Familias: «Documento de salud de la embarazada» (8.ª edición, 2020; el Servicio Andaluz de Salud lo publica como vigente en su web de documentos, entrada de 12/05/2025)",
+      "fuente": "https://www.juntadeandalucia.es/export/drupaljda/PDF_Cartilla_embarazada_2020.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-analitica-1",
+     "nombre": "Primera analítica",
+     "nota": "Mejor entre las semanas 9 y 11: glucosa, hemograma, grupo sanguíneo, Rh y Coombs indirecto, orina y urocultivo, y serologías de VIH, sífilis y hepatitis B (rubeola y varicela si no consta que estés vacunada). Si aceptas el cribado combinado, incluye su análisis (PAPP-A y beta-hCG).",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 11
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «3º Visita 1», puntos 3.14 (diabetes mellitus gestacional) y 3.22.4, p. 32 [30] y p. 35 [33]",
+     "condicion": "tienes factores de riesgo de diabetes gestacional",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-diabetes-1t",
+     "nombre": "Test de O'Sullivan en la primera analítica (si tienes factores de riesgo)",
+     "nota": "Por ejemplo, un IMC de 30 o más, un hijo anterior de 4,5 kg o más, diabetes gestacional en otro embarazo o un familiar de primer grado con diabetes. No hace falta ir en ayunas. Si sale negativo, se repite entre las semanas 24 y 28.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 11
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 12 (11-13+6 SG)», puntos 5.5, 5.5.3 y 5.6, p. 38-39 [36-37]; punto 3.13.1, p. 31 [29]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "fuente_extra": {
+      "apartado": "«Cribado prenatal de anomalías cromosómicas», p. 8 [7]",
+      "documento": "Consejería de Salud y Familias: «Documento de salud de la embarazada» (8.ª edición, 2020; el Servicio Andaluz de Salud lo publica como vigente en su web de documentos, entrada de 12/05/2025)",
+      "fuente": "https://www.juntadeandalucia.es/export/drupaljda/PDF_Cartilla_embarazada_2020.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre y cribado combinado",
+     "nota": "Confirma la edad del embarazo y la fecha probable de parto. Si lo aceptas, el cribado combinado junta la translucencia nucal de la ecografía, el análisis de sangre y tu edad para estimar el riesgo de cromosomopatías; si sale riesgo alto, se puede hacer el test de ADN fetal en sangre materna.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 16 (16-18 SG)», punto 6.7, p. 42 [40]",
+     "condicion": "no se te pudo hacer el cribado combinado del primer trimestre",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-cribado-2t",
+     "nombre": "Cribado bioquímico del segundo trimestre (si no se hizo el combinado)",
+     "nota": "Análisis de sangre que se propone en la visita de las semanas 16 a 18, hasta la semana 17+6.",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 17
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 20», punto 7.6, p. 43 [41]; recomendaciones clave, p. 11 [9]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "Para detectar malformaciones del bebé; también se mira la placenta y el líquido amniótico.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 24», puntos 8.6.2 a 8.6.3.1, p. 45 [43]; recomendaciones clave, p. 11 [9]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-diabetes-24-28",
+     "nombre": "Cribado de diabetes gestacional (test de O'Sullivan)",
+     "nota": "A todas las embarazadas, entre las semanas 24 y 28. No hace falta ir en ayunas. Si sale positivo, te hacen la prueba de sobrecarga de glucosa, esta sí en ayunas.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 24», puntos 8.6, 8.6.1 y 8.6.4, p. 44-45 [42-43]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-anemia-coombs-28",
+     "nombre": "Análisis de anemia y test de Coombs indirecto",
+     "nota": "Te lo piden en la visita de las semanas 24 a 26 para la semana 28: control de anemia y repetición del Coombs indirecto a todas las embarazadas.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 28», punto 9.7.3, p. 46 [44]; recomendaciones clave, p. 11 [9]",
+     "condicion": "eres Rh negativo y no estás sensibilizada (Coombs indirecto negativo)",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-anti-d-28",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Una dosis en la semana 28 para evitar la sensibilización.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 34 (34-36 SG)», punto 11.6, p. 49 [47]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Para valorar el crecimiento y la posición del bebé, la placenta y el líquido amniótico.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 36 (35-37 SG)», puntos 12.6 a 12.6.2, p. 51 [49]; recomendaciones clave, p. 11 [9]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "fuente_extra": {
+      "apartado": "«Cómo hacer un exudado vagino-rectal para la detección del estreptococo del grupo B», p. 9 [8]",
+      "documento": "Consejería de Salud y Familias: «Documento de salud de la embarazada» (8.ª edición, 2020; el Servicio Andaluz de Salud lo publica como vigente en su web de documentos, entrada de 12/05/2025)",
+      "fuente": "https://www.juntadeandalucia.es/export/drupaljda/PDF_Cartilla_embarazada_2020.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-estreptococo-b",
+     "nombre": "Cribado del estreptococo del grupo B",
+     "nota": "Una muestra de vagina y recto. Se repite si pasan más de 5 semanas sin que hayas dado a luz. No hace falta si ya salió en la orina o si un hijo anterior tuvo la infección: en esos casos se hace profilaxis durante el parto.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Primera sesión, «Plan de parto y nacimiento», p. 70",
+     "documento": "Consejería de Salud y Familias: «Guía orientadora para la preparación al nacimiento y crianza en Andalucía» (2.ª edición, 2022)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/2022-09/Guia_orientadora_para_el_nacimiento_2022.pdf",
+     "fuente_extra": {
+      "apartado": "Componentes, «Visita Semana 28», puntos 9.9 y 9.9.2, p. 47 [45]",
+      "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+      "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-plan-parto",
+     "nombre": "Plan de parto y nacimiento",
+     "nota": "A partir de la semana 28 te ofrecen hacer tu plan de parto con el equipo de tu centro de salud; la guía de la Consejería lo sitúa sobre las semanas 28 a 32.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Preparación para una gestación saludable (8-12 SG)», puntos 4.1 a 4.9, p. 37 [35]; punto 3.24.1, p. 36 [34]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-preparacion-1t",
+     "nombre": "Preparación para una gestación saludable (primer trimestre)",
+     "nota": "Sesión con la matrona o enfermería, a la que puedes ir con tu pareja o persona de confianza: cambios del embarazo, hábitos saludables, lactancia y vacunas. Te dan la fecha en la primera visita.",
+     "semana_desde": {
+      "semanas": 8
+     },
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Preparación al nacimiento y crianza (28-36 SG)», puntos 10.2 y 10.3, p. 48 [46]; punto 8.12, p. 45 [43]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-preparacion-nacimiento",
+     "nombre": "Preparación al nacimiento y crianza",
+     "nota": "Al menos 3 sesiones en grupo desde la semana 28: relajación, respiración y ejercicio, lactancia, el parto, el posparto y los cuidados del bebé, con visitas presenciales o virtuales a los paritorios. Te dan las fechas en la visita de las semanas 24 a 26.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Nota 2 de la tabla 1 (p. 5 [2]) y apartado 2 «Vacunación sistemática durante el embarazo y el puerperio», puntos clave y 2.3 «Vacuna frente a tosferina», p. 9-10 [6-7]",
+     "documento": "Instrucción DGSPyOF-1/2026, de la Dirección General de Salud Pública y Ordenación Farmacéutica: «Calendario de vacunaciones e inmunizaciones 2026. Vacunación en personas de grupos de riesgo» (actualización de enero de 2026; firmada el 26/01/2026)",
+     "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Calendario_Vacunacion_Andalucia.pdf",
+     "fuente_extra": {
+      "apartado": "Componentes, «Visita Semana 24», punto 8.7.2, p. 45 [43]",
+      "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+      "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, aunque te vacunaras en otro, a partir de la semana 27 y mejor en la 27 o la 28. Si pasa la 28, se sigue recomendando hasta la última semana. Se puede poner el mismo día que la de la gripe o la COVID-19.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Nota 19 de la tabla 1 (p. 6 [3]) y apartado 2.1 «Vacuna frente a gripe», p. 9 [6]",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Instrucción DGSPyOF-1/2026, de la Dirección General de Salud Pública y Ordenación Farmacéutica: «Calendario de vacunaciones e inmunizaciones 2026. Vacunación en personas de grupos de riesgo» (actualización de enero de 2026; firmada el 26/01/2026)",
+     "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Calendario_Vacunacion_Andalucia.pdf",
+     "id": "and-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cualquier trimestre, durante la campaña de otoño-invierno, aunque te vacunaras en otra campaña. Si no te vacunaste en el embarazo, en los 6 meses después del parto. Tus convivientes también la tienen indicada. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Nota 22 de la tabla 1 (p. 6 [3]) y apartado 2.2 «Vacuna frente a COVID-19», p. 9 [6]",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Instrucción DGSPyOF-1/2026, de la Dirección General de Salud Pública y Ordenación Farmacéutica: «Calendario de vacunaciones e inmunizaciones 2026. Vacunación en personas de grupos de riesgo» (actualización de enero de 2026; firmada el 26/01/2026)",
+     "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Calendario_Vacunacion_Andalucia.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 01, novedad 5 (p. 3), y tabla 1 «Grupos diana» (p. 4)",
+      "documento": "Instrucción SGSPPS-3/2026, de la Secretaría General de Salud Pública y Promoción de la Salud: «Vacunación estacional en Andalucía. Campaña de vacunación estacional Andalucía, 2026-2027» (24/09/2026)",
+      "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Vacunacion_Estacional_Andalucia.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Una dosis en cualquier trimestre, mejor en el segundo, aunque hayas pasado la COVID-19 o te hayas vacunado antes (si han pasado al menos 3 meses). Si no te vacunaste en el embarazo, en los 6 meses después del parto. Mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "2 o 3 meses antes de la concepción",
+     "apartado": "Componentes, «2º Visita inicial», puntos 2.3 y 2.3.1, p. 27 [25]; indicador «Prevención de defectos del tubo neural», p. 90 [88]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "fuente_extra": {
+      "apartado": "«Suplementos durante el embarazo», p. 29 [28]",
+      "documento": "Consejería de Salud y Familias: «Documento de salud de la embarazada» (8.ª edición, 2020; el Servicio Andaluz de Salud lo publica como vigente en su web de documentos, entrada de 12/05/2025)",
+      "fuente": "https://www.juntadeandalucia.es/export/drupaljda/PDF_Cartilla_embarazada_2020.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "and-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "400 mcg al día durante los tres primeros meses del embarazo. El documento de salud de la embarazada aconseja empezar 2 o 3 meses antes de la concepción. Con un hijo anterior con defecto del tubo neural, diabetes o tratamiento antiepiléptico, la dosis es mayor: te la indican en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «2º Visita inicial», punto 2.4, p. 27 [25]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-yodo",
+     "linea": false,
+     "nombre": "Yodo",
+     "nota": "Se sugiere un suplemento de yoduro potásico (200 μg al día) solo si con la dieta no llegas a lo recomendado: 3 raciones de leche o lácteos y 2 g de sal yodada al día.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «2º Visita inicial», punto 2.5, p. 27 [25]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-vitamina-d",
+     "linea": false,
+     "nombre": "Vitamina D",
+     "nota": "No se recomienda tomar suplementos de vitamina D de forma rutinaria a todas las embarazadas. Toma solo lo que te indiquen en tu centro de salud.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Componentes, «Visita Semana 24», punto 8.9, p. 45 [43]; anexo 1, punto 9.5, p. 100 [98]",
+     "documento": "Consejería de Salud y Consumo: «Embarazo, parto y puerperio. Proceso asistencial» (4.ª edición, 2024; PDF de 24/03/2025 enlazado desde la página «Proceso asistencial Embarazo, parto y puerperio. 4ª edición» de la Consejería)",
+     "fuente": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/2025.03.24-PA_EMBARAZO_v7.pdf",
+     "id": "and-emb-dormir-boca-arriba",
+     "linea": false,
+     "nombre": "Dormir boca arriba desde la semana 28",
+     "nota": "Después de la semana 28, evita dormir sobre la espalda; usa almohadas o cojines para mantener la postura.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_campanas": [
+    {
+     "apartado": "Tabla 1 «Grupos diana» (p. 4); apartado 03 «Cronograma», tabla 4 («A partir del 1 octubre… Embarazadas y puerperio durante los primeros 6 meses») (p. 8); apartado 04 «Citación y captación» (p. 10); tabla 14, «G.2 Embarazadas» y «G.4 Puerperio» (p. 40)",
+     "campana": "gripe",
+     "documento": "Instrucción SGSPPS-3/2026, de la Secretaría General de Salud Pública y Promoción de la Salud: «Vacunación estacional en Andalucía. Campaña de vacunación estacional Andalucía, 2026-2027» (24/09/2026)",
+     "fin": null,
+     "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Vacunacion_Estacional_Andalucia.pdf",
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-01",
+     "nota": "La campaña empezó el 01/10/2026; la fecha de fin no está publicada. Pide cita en ClicSalud+, la app Salud Andalucía o Salud Responde; si no la consigues, en tu centro de salud.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en los primeros 6 meses del puerperio que no se vacunaron durante el embarazo en esta campaña.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tabla 1 «Grupos diana», columna COVID-19 (p. 4); apartado 03 «Cronograma», tabla 4 (p. 8); apartado 04 «Citación y captación» (p. 10)",
+     "campana": "covid",
+     "documento": "Instrucción SGSPPS-3/2026, de la Secretaría General de Salud Pública y Promoción de la Salud: «Vacunación estacional en Andalucía. Campaña de vacunación estacional Andalucía, 2026-2027» (24/09/2026)",
+     "fin": null,
+     "fuente": "https://www.andavac.es/wp-content/uploads/instrucciones/Instruccion_Vacunacion_Estacional_Andalucia.pdf",
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-01",
+     "nota": "La campaña empezó el 01/10/2026; la fecha de fin no está publicada. Pide cita en ClicSalud+, la app Salud Andalucía o Salud Responde; si no la consigues, en tu centro de salud.",
+     "poblacion": "Embarazadas en cualquier trimestre (preferible el segundo) y en los primeros 6 meses del puerperio.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-dentista",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-anemia-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico",
+    "emb-yodo"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -4646,9 +5244,316 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Entradilla y «Primera visita»: «es recomana que en una dona amb un embaràs normal es faci nou visites prenatals amb la periodicitat següent»",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "id": "cat-emb-numero-visitas",
+     "linea": false,
+     "nombre": "Nueve visitas en un embarazo normal",
+     "nota": "Se recomiendan nueve visitas: antes de la semana 10 y en las semanas 11-13, 16-17, 20-21, 25-26, 29-30, 34-36, 38-40 y 41. La frecuencia depende de las necesidades de cada mujer: el calendario de visitas y pruebas se fija en la primera visita.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Entradilla («Cal realitzar la primera visita abans de les deu primeres setmanes de gestació») y «Primera visita»",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "id": "cat-emb-primera-visita",
+     "nombre": "Primera visita, antes de la semana 10",
+     "nota": "Historia de salud, primera exploración y valoración del riesgo. Te dan el Carnet de la embarazada, para ir anotando lo más importante del embarazo y el parto, y la Guía para la embarazada. Te informan del diagnóstico prenatal y del calendario de ecografías y análisis, y te derivan al odontólogo de tu CAP.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Recomanacions» → «Consulta al Servei d'Odontologia»",
+     "documento": "Departament de Salut, Canal Salut: «Salut bucodental durant l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/salut-bucodental/",
+     "fuente_extra": {
+      "apartado": "«Primera visita» («Es deriva l'embarassada a l'odontòleg de l'equip d'atenció primària»)",
+      "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-dentista",
+     "linea": false,
+     "nombre": "Visita al dentista del CAP",
+     "nota": "Pide cita en el Servicio de Odontología de tu CAP, mejor antes del embarazo; si no, en el segundo trimestre (en el primero hay más náuseas y en el tercero cuesta más estar en el sillón). Los tratamientos largos que no sean urgentes, mejor después del parto.",
+     "preferente": "segundo trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Anomalies congènites» → «Cribratge combinat del primer trimestre» («entre les 11,2 i les 13,6 setmanes») y «Risc del nadó de desenvolupar anomalies cromosòmiques»",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "fuente_extra": {
+      "apartado": "Punto 2, pág. 1 («L'extracció de sang es pot fer entre les setmanes 8 i 13 de gestació»)",
+      "documento": "Agència de Salut Pública de Catalunya: «Consentiment informat per al cribratge d'anomalies cromosòmiques» (modelo del Protocol de cribratge prenatal d'anomalies congènites a Catalunya, versión actualizada en 2020; PDF de febrero de 2021, en catalán; enlazado desde la página «Protocol de cribratge prenatal d'anomalies congènites» de salutpublica.gencat.cat)",
+      "fuente": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/embaras_part_puerperi/protocol_cribratge_prenatal/documents_modificats/04_CONSENTIMENT-INFORMAT-catala.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-cribado-combinado",
+     "nombre": "Cribado combinado del primer trimestre",
+     "nota": "Combina tus datos con un análisis de sangre y la ecografía (translucencia nucal) para conocer el riesgo de anomalías cromosómicas. El análisis de sangre se puede hacer entre las semanas 8 y 13. Según el resultado, te pueden ofrecer la prueba del ADN fetal libre en sangre materna o una prueba invasiva.",
+     "semana_desde": {
+      "dias": 2,
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Anomalies congènites» → «Cribratge del segon trimestre o prova quàdruple» («entre les 14 i 20 setmanes»)",
+     "condicion": "no se ha podido hacer el cribado combinado del primer trimestre",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "fuente_extra": {
+      "apartado": "Punto 3, pág. 1 («entre la 14 i la 18 setmanes de gestació»)",
+      "documento": "Agència de Salut Pública de Catalunya: «Consentiment informat per al cribratge d'anomalies cromosòmiques» (modelo del Protocol de cribratge prenatal d'anomalies congènites a Catalunya, versión actualizada en 2020; PDF de febrero de 2021, en catalán; enlazado desde la página «Protocol de cribratge prenatal d'anomalies congènites» de salutpublica.gencat.cat)",
+      "fuente": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/embaras_part_puerperi/protocol_cribratge_prenatal/documents_modificats/04_CONSENTIMENT-INFORMAT-catala.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-cribado-2t",
+     "nombre": "Cribado del segundo trimestre o prueba cuádruple (si no se hizo el combinado)",
+     "nota": "Un análisis de sangre con marcadores maternos. El modelo de consentimiento del Departamento de Salud lo sitúa entre las semanas 14 y 18.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Visites successives» → «Detecció de» → «Diabetis mellitus»",
+     "condicion": "tienes factores de riesgo (por ejemplo, antecedentes familiares o personales u obesidad)",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "id": "cat-emb-diabetes-1t",
+     "linea": false,
+     "nombre": "Detección de diabetes en el primer trimestre",
+     "nota": "Si tienes factores de riesgo, la detección de la diabetes se hace en el primer trimestre.",
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Visites successives» → «Detecció de» → «Diabetis mellitus» («A la resta de dones, el cribratge de diabetis gestacional es realitza entre les 24 i les 28 setmanes de gestació»)",
+     "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+     "id": "cat-emb-diabetes-24-28",
+     "nombre": "Cribado de diabetes gestacional",
+     "nota": "A las mujeres a las que no se les hizo en el primer trimestre, entre las semanas 24 y 28.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Preámbulo, pág. 1 («a partir de las 27 semanas, preferentemente entre las semanas 27 y 32»); anexo, tabla «Embarazadas – dTpa (18), G», pág. 3, y nota (18), pág. 4",
+     "documento": "Orden SLT/261/2024, de 26 de diciembre, del Departamento de Salud, por la que se actualiza el calendario de vacunaciones sistemáticas. DOGC n.º 9320, de 31/12/2024 (CVE-DOGC-B-24362041-2024); calendario vigente en 2026",
+     "fuente": "https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?documentId=1003286&type=01&language=es_ES",
+     "fuente_extra": {
+      "apartado": "«Com es pot prevenir?» («Les embarassades s'han de vacunar a partir de la setmana 27, preferentment entre les setmanes 27 i 32»)",
+      "documento": "Departament de Salut, Canal Salut: «Tos ferina» (en catalán; fecha de actualización 11/02/2025; consultada el 17/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/t/tos-ferina/",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "A partir de la semana 27, preferentemente entre la 27 y la 32, para proteger a tu bebé de la tos ferina lo antes posible. Sustituye a la dosis de Td de los 40 años.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 32
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Per a qui es recomana la vacuna contra la grip?» («Embarassades o que han donat a llum en els darrers 6 mesos») y «Estic embarassada, m'he de vacunar?» («Les vacunes es poden rebre en qualsevol moment de l'embaràs»)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Departament de Salut, Canal Salut: «Campanya de vacunació de la tardor 2026-2027» (en catalán; fecha de actualización 17/08/2026; consultada el 16/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/v/vacunacions/tardor/",
+     "fuente_extra": {
+      "apartado": "Preámbulo, pág. 2 («Vacuna antigripal (G)… en mujeres embarazadas»); anexo, tabla, fila «Embarazadas», pág. 3",
+      "documento": "Orden SLT/261/2024, de 26 de diciembre, del Departamento de Salud, por la que se actualiza el calendario de vacunaciones sistemáticas. DOGC n.º 9320, de 31/12/2024 (CVE-DOGC-B-24362041-2024); calendario vigente en 2026",
+      "fuente": "https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?documentId=1003286&type=01&language=es_ES",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En cualquier momento del embarazo y también en el puerperio (si has dado a luz en los últimos 6 meses). Se puede poner el mismo día que la de la tos ferina. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Per a qui es recomana la vacuna contra la COVID-19?» («Embarassades») y «Estic embarassada, m'he de vacunar?»",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Departament de Salut, Canal Salut: «Campanya de vacunació de la tardor 2026-2027» (en catalán; fecha de actualización 17/08/2026; consultada el 16/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/v/vacunacions/tardor/",
+     "fuente_extra": {
+      "apartado": "«Persones que s'han de vacunar» («Embarassades») y «Pauta de vacunació» («una única dosi cada any»)",
+      "documento": "Departament de Salut, Canal Salut: «Vacunació contra la COVID-19» (en catalán; fecha de actualización 21/09/2026; consultada el 17/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/c/covid-19/vacunacio/",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "En cualquier momento del embarazo; una dosis por temporada. Se puede poner el mismo día que la de la tos ferina. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Vacunacions» → «Recomanació vacunal durant la gestació» y «Recomanació vacunal prèviament a la gestació»",
+     "documento": "Departament de Salut, Canal Salut: «Prevenció de problemes de salut durant l'embaràs» (en catalán; fecha de actualización 09/12/2025; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/prevencio-problemes-salut/",
+     "id": "cat-emb-contraindicadas",
+     "linea": false,
+     "nombre": "Vacunas que no se ponen en el embarazo",
+     "nota": "La triple vírica (sarampión, rubeola y paperas) y la de la varicela están contraindicadas en el embarazo, y la del virus del papiloma humano (VPH) no se recomienda. Lo ideal es estar protegida antes de quedarte embarazada.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "al menos 1 o 2 meses antes de la concepción",
+     "apartado": "«Recomanacions per a l'alimentació de l'embarassada» («s'aconsella prendre 0,4 mg (400 mcg) d'àcid fòlic almenys 1-2 mesos previs a la concepció i durant els tres primers mesos»)",
+     "documento": "Departament de Salut, Canal Salut: «Alimentació durant l'embaràs» (en catalán; fecha de actualización 01/07/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/alimentacio/",
+     "id": "cat-emb-acido-folico",
+     "linea": false,
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg (400 microgramos) al día desde al menos 1 o 2 meses antes de la concepción y durante los tres primeros meses. Te aconsejarán en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": null,
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Embaràs sense fum» y «Alcohol i altres drogues»",
+     "documento": "Departament de Salut, Canal Salut: «Prevenció de problemes de salut durant l'embaràs» (en catalán; fecha de actualización 09/12/2025; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/prevencio-problemes-salut/",
+     "fuente_extra": {
+      "apartado": "«Visites successives» → «Detecció de» → «Consum de tabac, alcohol i altres drogues»",
+      "documento": "Departament de Salut, Canal Salut: «Control i seguiment de l'embaràs» (en catalán; fecha de actualización 26/06/2024; consultada el 17/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/control-seguiment/",
+      "verificado": "2026-11-17"
+     },
+     "id": "cat-emb-alcohol-tabaco",
+     "nombre": "Alcohol, tabaco y otras drogas",
+     "nota": "Durante el embarazo y la lactancia ningún consumo de alcohol ni de otras drogas es seguro. El embarazo es un buen momento para dejar de fumar y evitar el humo: si necesitas ayuda, pídela a tu equipo. En las visitas te preguntan por el consumo.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguretat alimentària: recomanacions especials durant l'embaràs» («Convé evitar») y «Recomanacions per a l'alimentació de l'embarassada» (sal iodada)",
+     "documento": "Departament de Salut, Canal Salut: «Alimentació durant l'embaràs» (en catalán; fecha de actualización 01/07/2024; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/alimentacio/",
+     "id": "cat-emb-alimentos",
+     "nombre": "Alimentos que evitar según el Departamento de Salud",
+     "nota": "Además de lo de la AESAN, Canal Salut pide evitar los embutidos crudos o poco curados si no están bien cocinados, los patés de línea fría (solo de conserva esterilizada, en lata), el pescado ahumado refrigerado si no está bien cocinado, y el feta, el mascarpone, el requesón y el mató si la etiqueta no dice que son de leche pasteurizada. Sal, muy poca y yodada.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Entradilla («Citomegalovirus») y «Altres infeccions: Citomegalovirus»",
+     "documento": "Departament de Salut, Canal Salut: «Prevenció de problemes de salut durant l'embaràs» (en catalán; fecha de actualización 09/12/2025; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/prevencio-problemes-salut/",
+     "id": "cat-emb-citomegalovirus",
+     "nombre": "Citomegalovirus: higiene con niños pequeños",
+     "nota": "Sobre todo en los 3 primeros meses: lávate las manos con agua y jabón después de ir al baño y de cambiar pañales, limpia las superficies y los juguetes que tengan saliva u orina de niños y no compartas comida, bebida ni cubiertos con ellos.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Viatges»",
+     "documento": "Departament de Salut, Canal Salut: «Prevenció de problemes de salut durant l'embaràs» (en catalán; fecha de actualización 09/12/2025; consultada el 17/11/2026)",
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/e/embaras-part-i-postpart/prevencio-problemes-salut/",
+     "id": "cat-emb-viajes",
+     "nombre": "Viajes largos y vuelos",
+     "nota": "Evita los viajes largos en el primer trimestre y en las últimas semanas. En coche, para cada dos horas a caminar y lleva el cinturón por encima y por debajo de la barriga. Si vas a volar desde la semana 35, pide información a la compañía aérea.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_campanas": [
+    {
+     "apartado": "«Quan em puc vacunar contra la grip i/o la COVID-19?» («La campanya de vacunació començarà el 26 d'octubre, tot i que per a certs grups de risc (per exemple, residències, persones a partir dels 80 anys i infants), l'inici s'avançarà al 5 d'octubre… les vacunes també es poden rebre durant tota la temporada fins al mes de març»); «Per a qui es recomana la vacuna contra la grip?» («Embarassades o que han donat a llum en els darrers 6 mesos»)",
+     "campana": "gripe",
+     "documento": "Departament de Salut, Canal Salut: «Campanya de vacunació de la tardor 2026-2027» (en catalán; fecha de actualización 17/08/2026; consultada el 16/11/2026)",
+     "fin": null,
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/v/vacunacions/tardor/",
+     "fuente_pauta": {
+      "apartado": "«Persones amb risc de complicacions» («Embarassades o que han donat a llum en els darrers 6 mesos»)",
+      "documento": "Departament de Salut, Canal Salut: «Vacunació contra la grip» (en catalán; fecha de actualización 13/08/2026; consultada el 16/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/g/grip/vacunacio/",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-26",
+     "nota": "La campaña empezó el 26/10/2026 (para algunos grupos de riesgo, el 05/10/2026). Se puede poner durante toda la temporada, hasta marzo; no hay una fecha de fin publicada. Cita por La Meva Salut («Cites», «Vacunació»), por citasalut.gencat.cat o en tu CAP.",
+     "poblacion": "Embarazadas y mujeres que han dado a luz en los últimos 6 meses.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Quan em puc vacunar contra la grip i/o la COVID-19?» («La campanya de vacunació començarà el 26 d'octubre, tot i que per a certs grups de risc (per exemple, residències, persones a partir dels 80 anys i infants), l'inici s'avançarà al 5 d'octubre… les vacunes també es poden rebre durant tota la temporada fins al mes de març»); «Per a qui es recomana la vacuna contra la COVID-19?» («Embarassades»)",
+     "campana": "covid",
+     "documento": "Departament de Salut, Canal Salut: «Campanya de vacunació de la tardor 2026-2027» (en catalán; fecha de actualización 17/08/2026; consultada el 16/11/2026)",
+     "fin": null,
+     "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/v/vacunacions/tardor/",
+     "fuente_pauta": {
+      "apartado": "«Persones que s'han de vacunar» y «Pauta de vacunació»",
+      "documento": "Departament de Salut, Canal Salut: «Vacunació contra la COVID-19» (en catalán; fecha de actualización 21/09/2026; consultada el 17/11/2026)",
+      "fuente": "https://canalsalut.gencat.cat/ca/salut-a-z/c/covid-19/vacunacio/",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-26",
+     "nota": "La campaña empezó el 26/10/2026 (para algunos grupos de riesgo, el 05/10/2026). Se puede poner durante toda la temporada, hasta marzo; no hay una fecha de fin publicada. Cita por La Meva Salut («Cites», «Vacunació»), por citasalut.gencat.cat o en tu CAP.",
+     "poblacion": "Embarazadas.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-dentista",
+    "emb-cribado-combinado",
+    "emb-test-cuadruple",
+    "emb-diabetes-24-28",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-contraindicadas",
+    "emb-acido-folico",
+    "emb-alcohol",
+    "emb-tabaco"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -8211,9 +9116,352 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "«Seguimiento del embarazo» (texto inicial) y «Aspectos básicos»",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-numero-visitas",
+     "linea": false,
+     "nombre": "Diez citas entre el centro de salud y el hospital",
+     "nota": "En un embarazo de bajo riesgo, la Comunidad de Madrid reparte las visitas y pruebas en diez citas entre tu centro de salud y tu hospital público de referencia, con un seguimiento mayor de la matrona de Atención Primaria. Puede haber pequeñas diferencias entre hospitales.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Primer trimestre de gestación», «1ª visita» («Recomendable antes de la semana 8»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "fuente_extra": {
+      "apartado": "«¿Cómo puedo solicitar cita con la matrona?»",
+      "documento": "Servicio Madrileño de Salud, Atención Primaria: «Unidades de Atención Específica: Matronas» (consultada el 17/11/2026)",
+      "fuente": "https://www.comunidad.madrid/hospital/atencionprimaria/ciudadanos/unidades-atencion-especifica-matronas",
+      "verificado": "2026-11-17"
+     },
+     "id": "mad-emb-visita-1",
+     "nombre": "1.ª visita: médico de familia y matrona del centro de salud",
+     "nota": "Mejor antes de la semana 8. Historia clínica, valoración del riesgo del embarazo, tensión arterial e índice de masa corporal, revisión de tus vacunas y de la citología si toca, consejos de salud y alimentación (toxoplasma, listeria, Zika, Chagas) y suplementos. Puedes pedir cita con la matrona sin pasar por el médico.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 8
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Primer trimestre de gestación», «2ª visita» («En torno a la semana 8-10»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-2",
+     "nombre": "2.ª visita: obstetricia en el centro de especialidades",
+     "nota": "Con el obstetra en el Centro de Especialidades Periférico: ecografía para datar el embarazo, comprobar el latido y si es múltiple, plan de citas según la última regla y petición de las pruebas del primer trimestre (ecografía y análisis).",
+     "semana_desde": {
+      "semanas": 8
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Primer trimestre de gestación», «3ª visita» («En la semana 12-14»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-3",
+     "nombre": "3.ª visita: ecografía del primer trimestre en el hospital",
+     "nota": "Con el obstetra en la Consulta de Primer Trimestre del hospital: ecografía del primer trimestre y resultado del riesgo de trisomía 21 u otras anomalías. Se valoran los análisis del primer trimestre, sobre todo el test de O'Sullivan (riesgo de diabetes gestacional) y las pruebas de tiroides.",
+     "semana_desde": {
+      "semanas": 12
+     },
+     "semana_hasta": {
+      "semanas": 14
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Segundo trimestre de gestación», «4ª visita» («En la semana 16-18»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-4",
+     "nombre": "4.ª visita: matrona del centro de salud",
+     "nota": "Latido del bebé, tensión arterial, peso, hábitos saludables y vacunas del embarazo (gripe, tétanos y tos ferina).",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "semanas": 18
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Segundo trimestre de gestación», «5ª visita» («En la semana 18-22»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-5",
+     "nombre": "5.ª visita: ecografía del segundo trimestre (morfológica)",
+     "nota": "En la Unidad de Medicina Fetal del hospital: estudio de la anatomía del bebé, marcadores de riesgo de prematuridad, placenta, cordón y líquido amniótico.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Segundo trimestre de gestación», «6ª visita» («En la semana 26-28»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-6",
+     "nombre": "6.ª visita: matrona del centro de salud",
+     "nota": "Resultados de la analítica del segundo trimestre, exploración, tensión arterial y peso.",
+     "semana_desde": {
+      "semanas": 26
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «7ª visita» («En la semana 28-30»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-7",
+     "nombre": "7.ª visita: obstetricia en el centro de especialidades",
+     "nota": "Analítica del segundo trimestre y, si hizo falta, la sobrecarga oral de glucosa; ecografía, exploración y, si eres Rh negativo, la profilaxis anti-D.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «8ª visita» («En la semana 34»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-8",
+     "nombre": "8.ª visita: ecografía del tercer trimestre",
+     "nota": "Con el obstetra en el centro de especialidades: ecografía del tercer trimestre (posición y crecimiento del bebé, placenta y líquido) y petición de la analítica de la semana 36 y del estreptococo del grupo B.",
+     "semana": {
+      "semanas": 34
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «9ª visita» («En la semana 37-38»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-9",
+     "nombre": "9.ª visita: matrona del centro de salud",
+     "nota": "Resultados de la analítica del tercer trimestre y del estreptococo B, exploración, tensión y peso.",
+     "semana_desde": {
+      "semanas": 37
+     },
+     "semana_hasta": {
+      "semanas": 38
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «10ª visita» («En la semana 40»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-visita-10",
+     "nombre": "10.ª visita: obstetricia, semana 40",
+     "nota": "Con el obstetra en el centro de especialidades: registro (monitorización) y ecografía, exploración y planificación del final del embarazo. Te dan el consentimiento de asistencia al parto e inducción y la información de cuándo empieza el parto.",
+     "semana": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «10ª visita» («programar la inducción en semana 41+2 (Máx. 41+6)»)",
+     "condicion": "el parto no ha empezado antes",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-induccion",
+     "nombre": "Si no ha empezado el parto: inducción programada",
+     "nota": "En la visita de la semana 40 se programa la inducción en la semana 41+2 (como muy tarde, 41+6).",
+     "semana_desde": {
+      "dias": 2,
+      "semanas": 41
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 41
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Seguimiento del embarazo», pestaña «Tercer trimestre de gestación», «8ª visita» («Solicitar analítica 3º Trimestre (semana 36)») y «9ª visita»",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "id": "mad-emb-analitica-3t",
+     "nombre": "Analítica del tercer trimestre",
+     "nota": "Te la piden en la visita de la semana 34; los resultados se ven en la de la 37-38.",
+     "semana": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Texto inicial («Antes de la semana 30 de gestación se imparten talleres…»)",
+     "documento": "Comunidad de Madrid, web de Salud: «Atención sanitaria a la mujer embarazada», protocolo de atención al embarazo de bajo riesgo en diez citas (última actualización 07/05/2026; consultada el 17/11/2026)",
+     "fuente": "https://www.comunidad.madrid/salud/atencion-sanitaria-mujer-embarazada",
+     "fuente_extra": {
+      "apartado": "«Aspectos básicos» → «¿Qué hago si confirmo que estoy embarazada?»",
+      "documento": "Comunidad de Madrid, web de Salud: «Cuidados en el embarazo» (última actualización 02/06/2026; consultada el 17/11/2026)",
+      "fuente": "https://www.comunidad.madrid/salud/cuidados-embarazo",
+      "verificado": "2026-11-17"
+     },
+     "id": "mad-emb-educacion-maternal",
+     "nombre": "Talleres de preparación al parto en el centro de salud",
+     "nota": "Antes de la semana 30 se imparten talleres de preparación al parto y de recuperación después del parto: ejercicios, relajación, cuidados del bebé y lactancia. Pregunta a tu matrona por los de tu centro.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 4.3 «dTpa: difteria, tétanos y tosferina acelular de baja carga», pág. 13; y cartel del calendario, columna «Prenatal», nota **, pág. 8",
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Calendario de vacunación e inmunización para toda la vida 2026» (Documento técnico), edición 2026, 46 págs. (BVCM051747)",
+     "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051747.pdf",
+     "fuente_extra": {
+      "apartado": "Texto sobre la vacunación durante el embarazo",
+      "documento": "Comunidad de Madrid, web de Salud: «Tosferina» (última actualización 27/04/2026; consultada el 17/11/2026)",
+      "fuente": "https://www.comunidad.madrid/salud/tosferina",
+      "verificado": "2026-11-17"
+     },
+     "id": "mad-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28, aunque ya te hayas vacunado antes. Protege a tu bebé en sus primeros meses.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Cartel del calendario, columna «Prenatal», nota **, pág. 8; y apartado 16 «Gripe», pág. 34",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Calendario de vacunación e inmunización para toda la vida 2026» (Documento técnico), edición 2026, 46 págs. (BVCM051747)",
+     "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051747.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 3.3, «Grupos de población diana de vacunación antigripal. Temporada 2026-2027», grupo IV, pág. 15; y apartado 3.4, pág. 20 («se puede administrar en cualquier momento del embarazo»)",
+      "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a la gripe estacional. Temporada 2026-2027. Documento técnico», agosto de 2026",
+      "fuente": "https://www.comunidad.madrid/docs/assets/2025/09/22/documento_tecnico_gripe_25-26.pdf?VersionId=57_XaxlOIocVxPHm99FAUxv5GpkPzP0G",
+      "verificado": "2026-11-17"
+     },
+     "id": "mad-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En temporada de gripe, en cualquier trimestre. Si no te vacunaste en el embarazo, también en el puerperio, hasta 6 meses después del parto. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2 «Grupos de población diana para la vacunación», punto 5, pág. 5; y apartados 3 y 4, pág. 6 (vacunas de ARNm)",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Documento técnico de vacunación frente a COVID-19 en la Comunidad de Madrid, temporada 2026-2027», elaborado el 16/09/2026",
+     "fuente": "https://www.comunidad.madrid/docs/2026-10/doc-tecnico-vacunacion-covid-19-temporada-2026-2027.pdf?VersionId=58nYczk.RIceN0TJumEm_roztwBnHPdA",
+     "fuente_extra": {
+      "apartado": "«Lugar de vacunación y gestión de cita» («cita a través de mostrador en centro de salud o consultorio»)",
+      "documento": "Comunidad de Madrid, web de Salud: «Vacunación frente al Coronavirus en la Comunidad de Madrid», campaña 2026-2027 (última actualización 20/10/2026; consultada el 17/11/2026)",
+      "fuente": "https://www.comunidad.madrid/salud/vacunacion-frente-coronavirus-comunidad-madrid",
+      "verificado": "2026-11-17"
+     },
+     "id": "mad-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Para todas las embarazadas, en cualquier trimestre, aunque es preferible el segundo; con vacuna de ARNm. La cita se pide en el mostrador del centro de salud. Va por campañas: mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado 2.1 «Período de vacunación», pág. 5; apartado 2.3 «Escalonamiento», pág. 6; y grupo IV de la población diana, pág. 15",
+     "campana": "gripe",
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a la gripe estacional. Temporada 2026-2027. Documento técnico», agosto de 2026",
+     "fin": "2027-01-31",
+     "fuente": "https://www.comunidad.madrid/docs/assets/2025/09/22/documento_tecnico_gripe_25-26.pdf?VersionId=57_XaxlOIocVxPHm99FAUxv5GpkPzP0G",
+     "fuente_inicio": {
+      "apartado": "Apartado «Campaña de vacunación»",
+      "documento": "Comunidad de Madrid, web de Salud: «Gripe», apartados de la campaña 2026-2027 (consultada el 16/11/2026)",
+      "fuente": "https://www.comunidad.madrid/salud/gripe",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-05",
+     "nota": "La campaña empezó el 05/10/2026 (las dos primeras semanas, para mayores de 60 años y niños; después, el resto de grupos, entre ellos las embarazadas) y está previsto que termine el 31/01/2027, fecha que puede cambiar por motivos epidemiológicos.",
+     "poblacion": "Embarazadas en cualquier trimestre y mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5 «Fecha de inicio de la vacunación», pág. 7; y apartado 2, punto 5, pág. 5",
+     "campana": "covid",
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Documento técnico de vacunación frente a COVID-19 en la Comunidad de Madrid, temporada 2026-2027», elaborado el 16/09/2026",
+     "fin": null,
+     "fuente": "https://www.comunidad.madrid/docs/2026-10/doc-tecnico-vacunacion-covid-19-temporada-2026-2027.pdf?VersionId=58nYczk.RIceN0TJumEm_roztwBnHPdA",
+     "fuente_inicio": {
+      "apartado": "«Campaña de vacunación frente a COVID-19 en la Comunidad de Madrid»",
+      "documento": "Comunidad de Madrid, web de Salud: «Vacunación frente al Coronavirus en la Comunidad de Madrid», campaña 2026-2027 (última actualización 20/10/2026; consultada el 17/11/2026)",
+      "fuente": "https://www.comunidad.madrid/salud/vacunacion-frente-coronavirus-comunidad-madrid",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-05",
+     "nota": "La temporada empezó el 05/10/2026. No tiene fecha de fin: quien aún no se haya puesto la vacuna de la temporada se puede vacunar en cualquier momento del año.",
+     "poblacion": "Todas las embarazadas, en cualquier trimestre (preferible el segundo).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-ecografia-1t",
+    "emb-ecografia-2t",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid"
+   ],
    "escolarizacion": {
     "admision": [
      {
