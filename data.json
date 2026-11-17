@@ -284,6 +284,228 @@
     "verificado": "2026-11-14"
    }
   ],
+  "desarrollo": [
+   {
+    "apartado": "«Calendario de desarrollo infantil de 0 a 18 meses» (Real Patronato sobre Discapacidad), periodo de 0 a 3 meses, pág. 24",
+    "aviso": "Si a los 3 meses no sonríe, no es capaz de fijar la mirada o no sostiene bien la cabeza, consulte a su pediatra.",
+    "descripcion": "Se orientará en su nuevo ambiente a través de los sentidos. Necesita de ti, padre o madre, para poder llegar a conoceros: habladle, cogedle, acariciadle.",
+    "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
+    "edad_desde": {
+     "meses": 0
+    },
+    "edad_hasta": {
+     "meses": 3
+    },
+    "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051708.pdf",
+    "id": "desarrollo-0-3m",
+    "meses": [
+     {
+      "hitos": [
+       "Me paso casi todo el día durmiendo plácidamente.",
+       "Sólo me despierto y lloro si tengo hambre o algo me incomoda.",
+       "Me tranquiliza oír tu voz y aprendo a mirarte.",
+       "Si me pones boca abajo puedo levantar la cabeza unos instantes."
+      ],
+      "meses": 1
+     },
+     {
+      "hitos": [
+       "Estoy más rato despierto y me interesa ver lo que hay a mi alrededor. Los ruidos fuertes me sorprenden.",
+       "Me gusta mirarte a los ojos y si te mueves te seguiré con la mirada.",
+       "Cuando me hables o acaricies te responderé con sonrisas o sonidos.",
+       "Me llaman la atención los objetos móviles y de colores vivos."
+      ],
+      "meses": 2
+     },
+     {
+      "hitos": [
+       "Me gusta mirarme las manos y juego con ellas.",
+       "Si te acercas mucho quizá te tiraré del pelo y te tocaré la cara. Cuando me hables contestaré con sonidos.",
+       "Al cogerme en brazos puedo sostener la cabeza un ratito.",
+       "Boca abajo me sostengo sobre los brazos y levanto la cabeza."
+      ],
+      "meses": 3
+     }
+    ],
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Calendario de desarrollo infantil de 0 a 18 meses» (Real Patronato sobre Discapacidad), periodo de 4 a 6 meses, pág. 25",
+    "aviso": "Si a los 6 meses no tiene interés ni intención de coger objetos o bien no usa alguna de las dos manos, consulte a su pediatra.",
+    "descripcion": "Va ampliando su mundo a través de las vivencias y gracias a la posibilidad de manipular los objetos. Establece un lazo afectivo con las personas que le rodean.",
+    "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
+    "edad_desde": {
+     "meses": 4
+    },
+    "edad_hasta": {
+     "meses": 6
+    },
+    "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051708.pdf",
+    "id": "desarrollo-4-6m",
+    "meses": [
+     {
+      "hitos": [
+       "Me oriento hacia los sonidos y grito para llamar tu atención.",
+       "Reiré a carcajadas cuando juegues conmigo o me hagas cosquillas.",
+       "Al mostrarme un objeto intentaré cogerlo.",
+       "Si me lo pones en la mano seré capaz de sostenerlo y me lo llevaré a la boca."
+      ],
+      "meses": 4
+     },
+     {
+      "hitos": [
+       "Me divierto jugando con mis pies y mis manos. Esto me ayuda porque me enseña a moverme.",
+       "Si me dejas el sonajero al alcance de la mano lo cogeré y lo haré sonar.",
+       "Reconozco a quienes están conmigo.",
+       "Al cogerme en brazos puedo sostener la cabeza erguida un ratito."
+      ],
+      "meses": 5
+     },
+     {
+      "hitos": [
+       "Te contesto con sonidos cuando me hablas.",
+       "Puedo coger fácilmente los juguetes que me dan.",
+       "También me cojo de los pies y así voy descubriendo mi cuerpo.",
+       "Puedo estar tranquilamente boca abajo apoyándome sobre las manos. Puedo voltear."
+      ],
+      "meses": 6
+     }
+    ],
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Calendario de desarrollo infantil de 0 a 18 meses» (Real Patronato sobre Discapacidad), periodo de 7 a 9 meses, pág. 26",
+    "aviso": "Si a los 9 meses no se sostiene sentado/a, no se interesa por mirar o tocar las cosas o no parlotea, consulte a su pediatra.",
+    "descripcion": "Va ampliando su mundo a través de las vivencias y gracias a la posibilidad de manipular los objetos. Establece un lazo afectivo con las personas que le rodean.",
+    "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
+    "edad_desde": {
+     "meses": 7
+    },
+    "edad_hasta": {
+     "meses": 9
+    },
+    "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051708.pdf",
+    "id": "desarrollo-7-9m",
+    "meses": [
+     {
+      "hitos": [
+       "Si me das de comer algo que no me gusta cerraré la boca y no querré comer más.",
+       "Puedo decir ga, ta, da... y me gusta repetirlo.",
+       "Me llaman la atención los objetos y los exploro dándoles vueltas en mis manos.",
+       "Si me sientan, soy capaz de sostenerme un ratito, pero necesito apoyarme delante con las manos para no caerme."
+      ],
+      "meses": 7
+     },
+     {
+      "hitos": [
+       "Lloro porque te has ido de mi lado y me dejas con personas extrañas.",
+       "Si un juguete me gusta me esforzaré por alcanzarlo.",
+       "Me divierte tirar los objetos para ver cómo caen y oír el ruido que hacen.",
+       "Quiero conocer mi entorno y lo intento reptando."
+      ],
+      "meses": 8
+     },
+     {
+      "hitos": [
+       "Me gusta que me cojas y estiro los brazos cuando estás cerca. Puedo palmotear y decir adiós con la mano.",
+       "Sé cuando voy a ir de paseo y esto me gusta. Miro y escucho y voy aprendiendo cosas nuevas.",
+       "Puedo jugar reteniendo un objeto en cada mano y me gusta hacerlos sonar. Ya puedo coger cosas pequeñas.",
+       "Si me sientan puedo permanecer en esa postura sin peligro a que me caiga."
+      ],
+      "meses": 9
+     }
+    ],
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Calendario de desarrollo infantil de 0 a 18 meses» (Real Patronato sobre Discapacidad), periodo de 10 a 12 meses, pág. 27",
+    "aviso": "Si a los 12 meses no es capaz de sostenerse en pie asido a un mueble (aunque no camine), no busca la comunicación con el adulto o no explora los nuevos juguetes, consulte a su pediatra.",
+    "descripcion": "Puede sentarse de forma estable sin necesidad de apoyo. Tiene un gran interés por los juguetes. Con el fin de explorar el entorno buscará algún medio de desplazarse. Progresará en su comunicación gestual y verbal. Empezará a emitir sus primeras palabras.",
+    "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
+    "edad_desde": {
+     "meses": 10
+    },
+    "edad_hasta": {
+     "meses": 12
+    },
+    "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051708.pdf",
+    "id": "desarrollo-10-12m",
+    "meses": [
+     {
+      "hitos": [
+       "Me llaman la atención los objetos desconocidos e intento cogerlos.",
+       "Si veo que me escondes un juguete sabré dónde está e intentaré descubrirlo.",
+       "Cogido de los barrotes de mi cuna puedo ponerme en pie.",
+       "Puedo gatear si me has dejado en el suelo."
+      ],
+      "meses": 10
+     },
+     {
+      "hitos": [
+       "Reconozco cuando me nombran a papá o a mamá y los busco.",
+       "Si me dices “dame” alargándome la mano, me acerco ofreciéndote lo que me pides.",
+       "Al decirme que no, te miraré con sorpresa.",
+       "Me gusta comer sin ayuda y puedo hacerlo con los dedos."
+      ],
+      "meses": 11
+     },
+     {
+      "hitos": [
+       "Os llamaré diciendo papá y mamá y entenderé muchas cosas de las que me digáis.",
+       "Puedo introducir unos objetos dentro de otros y hacer torres simples con cubos grandes.",
+       "Intentaré recorrer la casa con o sin ayuda, gateando o cogiéndome de los muebles.",
+       "¡Cuidado! Abro los cajones para ver lo que hay dentro y si encuentro una cinta tiro de ella para saber lo que hay al final."
+      ],
+      "meses": 12
+     }
+    ],
+    "verificado": "2026-11-17"
+   },
+   {
+    "apartado": "«Calendario de desarrollo infantil de 0 a 18 meses» (Real Patronato sobre Discapacidad), periodo de 14 a 18 meses, pág. 28",
+    "aviso": "Si a los 18 meses aún no camina o desconoce el nombre de algunos objetos o personas familiares, consulte a su pediatra.",
+    "descripcion": "La posibilidad de desplazamiento y la habilidad manual le harán más independiente de las personas adultas y le darán mayor conocimiento del entorno.",
+    "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
+    "edad_desde": {
+     "meses": 14
+    },
+    "edad_hasta": {
+     "meses": 18
+    },
+    "fuente": "https://gestiona3.madrid.org/bvirtual/BVCM051708.pdf",
+    "id": "desarrollo-14-18m",
+    "meses": [
+     {
+      "hitos": [
+       "Me interesarán los juguetes de los otros niños y niñas e intentaré cogérselos.",
+       "Cuando me miro en un espejo me hace gracia ver mi reflejo.",
+       "Me gusta esparcir por el suelo todos mis juguetes.",
+       "Soy capaz de caminar sin apoyo o empujando un cochecito."
+      ],
+      "meses": 14
+     },
+     {
+      "hitos": [
+       "Puedo señalar y nombrar algunos objetos. También conozco partes de mi cuerpo.",
+       "Soy capaz de beber sin ayuda cogiendo la taza con las dos manos. Utilizo la cuchara.",
+       "Me gusta que me leas un cuento y señalaré los dibujos grandes. Puedo pasar páginas.",
+       "Soy capaz de tiraros una pelota y me gusta repetir ese juego."
+      ],
+      "meses": 16
+     },
+     {
+      "hitos": [
+       "Me gusta jugar al escondite y sé ir a buscarte cuando te escondes.",
+       "Ya puedo quitarme alguna pieza de ropa (los zapatos o los calcetines) y ayudarte a vestirme.",
+       "Si me das un papel grande, me gusta hacer garabatos con colores vivos.",
+       "Puedo ponerme en pie sin necesidad de ayuda y agacharme a coger un juguete. Subo las escaleras gateando y sé correr un poquito y saltar un escalón."
+      ],
+      "meses": 18
+     }
+    ],
+    "verificado": "2026-11-17"
+   }
+  ],
   "embarazo": [
    {
     "apartado": "Recomendaciones «Organización de los cuidados prenatales» y «Número de visitas», pág. 24 (PDF 26)",

@@ -925,6 +925,7 @@
       { id: "tramites", nombre: t("Trámites y permisos"), filas: [] },
       { id: "escuela", nombre: t("Escuela"), filas: [] },
       { id: "suplementos", nombre: t("Suplementos"), filas: [] },
+      { id: "desarrollo", nombre: t("Desarrollo"), filas: [] },
     ]);
     var porId = {};
     carriles.forEach(function (c) { porId[c.id] = c; });
@@ -1034,6 +1035,18 @@
         desde: e.meses, hasta: e.hastaMeses, pasado: !!e.pasado, elementos: [],
       }]);
     });
+
+    // Desarrollo (0-18 meses): un tramo por periodo de la fuente, en una sola fila.
+    var periodos = (datos.comunes.desarrollo || []).map(function (p) {
+      var d = enMeses(p.edad_desde), h = enMeses(p.edad_hasta);
+      return {
+        ref: p.id, forma: "barra", desde: d, hasta: h + 1,
+        titulo: d ? t("De {a} a {b} meses", { a: d, b: h }) : t("Hasta los {n} meses", { n: h }),
+        etiqueta: d ? t("{a}-{b} m", { a: d, b: h }) : t("0-{b} m", { b: h }),
+        detalle: p.descripcion, elementos: [],
+      };
+    });
+    if (periodos.length) porId.desarrollo.filas.push(periodos);
 
     // Gripe: una dosis cada temporada otoño-invierno. Las temporadas siguientes a la del
     // evento, hasta los 36 meses, se marcan aparte: con la campaña si está publicada y,
@@ -1276,7 +1289,7 @@
             var x1 = x(mk.desde);
             var abierto = mk.abierto && (c.id === "campanas" || c.id === "emb-vacunas");
             var x2 = abierto && c.id === "campanas" ? Math.min(x(vista.maxMeses), x1 + 2.5 * PX_MES) : x(mk.hasta === null || mk.hasta === undefined ? vista.maxMeses : mk.hasta);
-            var conTexto = ["empezar", "evitar", "tramites", "escuela", "suplementos"].indexOf(c.id) >= 0 || c.id.indexOf("emb-") === 0;
+            var conTexto = ["empezar", "evitar", "tramites", "escuela", "suplementos", "desarrollo"].indexOf(c.id) >= 0 || c.id.indexOf("emb-") === 0;
             var yb = conTexto ? yf + hf - 13 : centro - 7;
             var hb = conTexto ? 9 : 14;
             g.appendChild(s("rect", { x: x1, y: yf + 2, width: Math.max(x2 - x1, 16), height: hf - 4, class: "zona" }));
@@ -1336,6 +1349,7 @@
       item.nodo.addEventListener("click", function () {
         if (activo === item) {
           var destino = document.getElementById("ev-" + item.marca.ref) || document.getElementById(item.marca.ref);
+          if (destino && destino.tagName === "DETAILS") destino.open = true;
           if (destino) destino.scrollIntoView({ behavior: "smooth", block: "center" });
           activo = null;
           detalle.hidden = true;
@@ -1357,6 +1371,15 @@
     if (vista.hoyMeses !== null) {
       desplazable.scrollLeft = Math.max(0, x(vista.hoyMeses) - desplazable.clientWidth / 3);
     }
+  }
+
+  // Abre el periodo de desarrollo de la edad del bebé (y cierra los demás).
+  function abrirDesarrollo(edad) {
+    var actual = null;
+    document.querySelectorAll("details.desarrollo").forEach(function (d) {
+      if (edad >= 0 && edad >= +d.getAttribute("data-desde") && edad < +d.getAttribute("data-hasta") + 1) actual = d;
+    });
+    document.querySelectorAll("details.desarrollo").forEach(function (d) { d.open = d === actual; });
   }
 
   function iniciar() {
@@ -1503,6 +1526,7 @@
       resultado.hidden = false;
       pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value, deEmbarazo), document.getElementById("vista"));
       document.getElementById("vista-nota-embarazo").hidden = modo !== "embarazo";
+      abrirDesarrollo(mesesDesde(n, hoy));
       if (ev && ev.type === "submit" && resultado.scrollIntoView) resultado.scrollIntoView({ block: "start" });
     }
 
