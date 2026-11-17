@@ -1179,11 +1179,16 @@
     return fila.some(function (m) { return m.forma === "punto"; }) ? ALTO_FILA_PUNTO : ALTO_FILA_BARRA;
   }
 
+  // Carriles plegados por la familia (se recuerdan al recalcular; no se guardan en ningún sitio).
+  var ALTO_PLEGADO = 36;
+  var plegados = {};
+
   function altoCarril(c) {
+    if (plegados[c.id]) return ALTO_PLEGADO;
     return c.filas.reduce(function (t, f) { return t + altoFila(f); }, 0);
   }
 
-  function pintarVista(vista, contenedor) {
+  function pintarVista(vista, contenedor, scrollPrevio) {
     contenedor.textContent = "";
     var disponible = contenedor.clientWidth - 100;
     var min = vista.minMeses || 0;
@@ -1200,7 +1205,11 @@
     });
     var alto = ALTO_EJE + carriles.reduce(function (t, c) { return t + altoCarril(c) + SEPARACION; }, 0);
 
-    var etiquetas = el("div", { class: "vista-carriles", "aria-hidden": "true" }, [el("div", { style: "height:" + ALTO_EJE + "px" })]);
+    // El eje (edades y fechas) va en una cabecera aparte que se queda fija arriba al bajar
+    // por la página; se desplaza en horizontal a la vez que la vista.
+    var cab = s("svg", { width: ancho, height: ALTO_EJE, viewBox: "0 0 " + ancho + " " + ALTO_EJE, "aria-hidden": "true" });
+    var cabDesplazable = el("div", { class: "vista-eje-desplazable" }, [cab]);
+    var etiquetas = el("div", { class: "vista-carriles" });
     var desplazable = el("div", { class: "vista-desplazable", tabindex: "0", "aria-label": min < 0 ? t("Línea del tiempo gráfica del embarazo y de 0 a 36 meses; desplázate en horizontal") : t("Línea del tiempo gráfica de 0 a 36 meses; desplázate en horizontal") });
     var detalle = el("div", { class: "vista-detalle", role: "status", hidden: "hidden" });
 
@@ -1225,10 +1234,11 @@
         var mw = (w - semanasTotal) * 7 / 30.4375;
         var conEtiqueta = w % 8 === 0;
         svg.appendChild(s("line", { x1: x(mw), x2: x(mw), y1: ALTO_EJE - (conEtiqueta ? 8 : 4), y2: alto, class: conEtiqueta ? "rejilla" : "rejilla menor" }));
+        cab.appendChild(s("line", { x1: x(mw), x2: x(mw), y1: ALTO_EJE - (conEtiqueta ? 8 : 4), y2: ALTO_EJE, class: conEtiqueta ? "rejilla" : "rejilla menor" }));
         if (conEtiqueta) {
-          svg.appendChild(s("text", { x: x(mw), y: 14, class: "eje-edad", "text-anchor": "middle", texto: t("sem. {n}", { n: w }) }));
+          cab.appendChild(s("text", { x: x(mw), y: 14, class: "eje-edad", "text-anchor": "middle", texto: t("sem. {n}", { n: w }) }));
           var fw = sumarDias(vista.nacimiento, (w - semanasTotal) * 7);
-          svg.appendChild(s("text", { x: x(mw), y: 29, class: "eje-fecha", "text-anchor": "middle", texto: mesCorto(fw.getUTCMonth()) + " " + String(fw.getUTCFullYear()).slice(2) }));
+          cab.appendChild(s("text", { x: x(mw), y: 29, class: "eje-fecha", "text-anchor": "middle", texto: mesCorto(fw.getUTCMonth()) + " " + String(fw.getUTCFullYear()).slice(2) }));
         }
       }
       svg.appendChild(s("rect", { x: x(min), y: ALTO_EJE, width: x(0) - x(min), height: alto - ALTO_EJE, class: "tramo-embarazo" }));
@@ -1237,14 +1247,13 @@
     // Rejilla y eje: edad arriba y, debajo, el mes y el año en que la cumple.
     for (var m = 0; m <= vista.maxMeses; m++) {
       var mayor = m % 3 === 0;
-      svg.appendChild(s("line", {
-        x1: x(m), x2: x(m), y1: ALTO_EJE - (mayor ? 8 : 4), y2: alto,
-        class: m % 12 === 0 ? "rejilla anio" : mayor ? "rejilla" : "rejilla menor",
-      }));
+      var claseRejilla = m % 12 === 0 ? "rejilla anio" : mayor ? "rejilla" : "rejilla menor";
+      svg.appendChild(s("line", { x1: x(m), x2: x(m), y1: ALTO_EJE, y2: alto, class: claseRejilla }));
+      cab.appendChild(s("line", { x1: x(m), x2: x(m), y1: ALTO_EJE - (mayor ? 8 : 4), y2: ALTO_EJE, class: claseRejilla }));
       if (mayor) {
-        svg.appendChild(s("text", { x: x(m), y: 14, class: "eje-edad", "text-anchor": m === 0 && min === 0 ? "start" : "middle", texto: m === 0 && min < 0 ? t("Parto") : etiquetaMeses(m) }));
+        cab.appendChild(s("text", { x: x(m), y: 14, class: "eje-edad", "text-anchor": m === 0 && min === 0 ? "start" : "middle", texto: m === 0 && min < 0 ? t("Parto") : etiquetaMeses(m) }));
         var f = sumarMeses(vista.nacimiento, m);
-        svg.appendChild(s("text", {
+        cab.appendChild(s("text", {
           x: x(m), y: 29, class: "eje-fecha", "text-anchor": m === 0 && min === 0 ? "start" : "middle",
           texto: mesCorto(f.getUTCMonth()) + " " + String(f.getUTCFullYear()).slice(2),
         }));
@@ -1255,12 +1264,21 @@
     var y0 = ALTO_EJE;
     carriles.forEach(function (c, i) {
       var h = altoCarril(c);
+      var plegado = !!plegados[c.id];
       if (i % 2 === 0) svg.appendChild(s("rect", { x: 0, y: y0, width: ancho, height: h, class: "banda" }));
-      etiquetas.appendChild(el("div", { class: "vista-carril c-" + c.id, style: "height:" + h + "px;margin-bottom:" + SEPARACION + "px" }, [
-        el("span", { texto: c.nombre }),
-      ]));
+      var boton = el("button", {
+        type: "button", class: "vista-carril c-" + c.id + (plegado ? " plegado" : ""),
+        style: "height:" + h + "px;margin-bottom:" + SEPARACION + "px",
+        "aria-expanded": String(!plegado),
+        title: plegado ? t("Desplegar") : t("Plegar"),
+      }, [el("span", { texto: c.nombre })]);
+      boton.addEventListener("click", function () {
+        plegados[c.id] = !plegados[c.id];
+        pintarVista(vista, contenedor, desplazable.scrollLeft);
+      });
+      etiquetas.appendChild(boton);
       var yf = y0;
-      c.filas.forEach(function (fila) {
+      (plegado ? [] : c.filas).forEach(function (fila) {
         var hf = altoFila(fila);
         var centro = yf + hf / 2;
         fila.forEach(function (mk) {
@@ -1317,10 +1335,14 @@
       y0 += h + SEPARACION;
     });
 
-    if (min < 0) svg.appendChild(s("line", { x1: x(0), x2: x(0), y1: ALTO_EJE - 8, y2: alto, class: "parto" }));
+    if (min < 0) {
+      svg.appendChild(s("line", { x1: x(0), x2: x(0), y1: ALTO_EJE, y2: alto, class: "parto" }));
+      cab.appendChild(s("line", { x1: x(0), x2: x(0), y1: ALTO_EJE - 8, y2: ALTO_EJE, class: "parto" }));
+    }
     if (vista.hoyMeses !== null) {
       svg.appendChild(s("line", { x1: x(vista.hoyMeses), x2: x(vista.hoyMeses), y1: 34, y2: alto, class: "hoy" }));
-      svg.appendChild(s("text", { x: x(vista.hoyMeses) + 4, y: 42, class: "hoy-texto", texto: t("Hoy") }));
+      cab.appendChild(s("line", { x1: x(vista.hoyMeses), x2: x(vista.hoyMeses), y1: 34, y2: ALTO_EJE, class: "hoy" }));
+      cab.appendChild(s("text", { x: x(vista.hoyMeses) + 4, y: 42, class: "hoy-texto", texto: t("Hoy") }));
     }
 
     function mostrar(item) {
@@ -1363,14 +1385,28 @@
         if (ev.key === "Escape") { detalle.hidden = true; activo = null; }
       });
     });
-    desplazable.addEventListener("scroll", function () { detalle.hidden = true; activo = null; });
+    desplazable.addEventListener("scroll", function () {
+      detalle.hidden = true; activo = null;
+      cabDesplazable.scrollLeft = desplazable.scrollLeft;
+    });
 
+    // El cuerpo empieza debajo del eje: se recorta la franja del eje del dibujo.
+    svg.setAttribute("height", alto - ALTO_EJE);
+    svg.setAttribute("viewBox", "0 " + ALTO_EJE + " " + ancho + " " + (alto - ALTO_EJE));
     desplazable.appendChild(svg);
+    var barra = document.querySelector(".barra");
+    var cabecera = el("div", { class: "vista-eje", style: "top:" + (barra ? barra.offsetHeight : 0) + "px" }, [
+      el("div", { class: "vista-esquina", texto: t("Toca un nombre para plegarlo") }), cabDesplazable,
+    ]);
+    contenedor.appendChild(cabecera);
     contenedor.appendChild(el("div", { class: "vista-marco" }, [etiquetas, desplazable]));
     contenedor.appendChild(detalle);
-    if (vista.hoyMeses !== null) {
+    if (scrollPrevio !== undefined) {
+      desplazable.scrollLeft = scrollPrevio;
+    } else if (vista.hoyMeses !== null) {
       desplazable.scrollLeft = Math.max(0, x(vista.hoyMeses) - desplazable.clientWidth / 3);
     }
+    cabDesplazable.scrollLeft = desplazable.scrollLeft;
   }
 
   // Abre el periodo de desarrollo de la edad del bebé (y cierra los demás).
