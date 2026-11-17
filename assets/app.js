@@ -1438,6 +1438,9 @@
         if (!(comEmb.embarazo || []).length) {
           avisoEmb.textContent = t("En tu comunidad aún no hemos cotejado el programa de seguimiento del embarazo de la consejería: lo que ves es la guía del Ministerio de Sanidad. Tu matrona te dará el calendario de tu centro.");
           avisoEmb.hidden = false;
+        } else if (comEmb.embarazo_aviso) {
+          avisoEmb.textContent = comEmb.embarazo_aviso;
+          avisoEmb.hidden = false;
         } else {
           avisoEmb.hidden = true;
         }

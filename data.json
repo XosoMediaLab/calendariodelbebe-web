@@ -1771,6 +1771,7 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo_aviso": "",
    "embarazo_campanas": [
     {
      "apartado": "Tabla 1 «Grupos diana» (p. 4); apartado 03 «Cronograma», tabla 4 («A partir del 1 octubre… Embarazadas y puerperio durante los primeros 6 meses») (p. 8); apartado 04 «Citación y captación» (p. 10); tabla 14, «G.2 Embarazadas» y «G.4 Puerperio» (p. 40)",
@@ -2563,9 +2564,157 @@
      "verificado": "2026-11-17"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Anexo II «Calendario de vacunación sistemática en población adulta», bloque «Vacunación en mujer embarazada», fila «Difteria-Tétanos-Tosferina» y nota (11), BOA p. 27375 (PDF p. 5)",
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_extra": [
+      {
+       "apartado": "Texto de la página («a partir de la semana 27 de gestación, pero preferentemente en las semanas 27 o 28»)",
+       "documento": "Gobierno de Aragón, Departamento de Sanidad: «Vacunación frente a tosferina» (página actualizada el 08/07/2026, consultada el 17/11/2026)",
+       "fuente": "https://www.aragon.es/-/vacunacion-frente-a-tosferina",
+       "verificado": "2026-11-17"
+      },
+      {
+       "apartado": "Apartado 6.3 «Otras vacunas» (coadministración de gripe, COVID-19 y dTpa en embarazadas), p. 8",
+       "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a COVID-19. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 14 págs.",
+       "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_covid-19_aragon_2026-11-09-pdf",
+       "verificado": "2026-11-17"
+      }
+     ],
+     "id": "ara-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Se puede poner el mismo día que la de la gripe y la de la COVID-19.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo II «Calendario de vacunación sistemática en población adulta», bloque «Vacunación en mujer embarazada», fila «Gripe» y nota (12), BOA p. 27375 (PDF p. 5)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "ORDEN SAN/1023/2024, de 2 de septiembre, por la que se aprueba el calendario sistemático de vacunaciones e inmunizaciones en todas las edades de la vida en la Comunidad Autónoma de Aragón y las recomendaciones de vacunación e inmunización en grupos de riesgo y circunstancias especiales. BOA n.º 179, de 13/09/2024 (CSV BOA20240913018); en vigor desde el 14/09/2024",
+     "fuente": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1350780160909",
+     "fuente_extra": {
+      "apartado": "Apartado 4, punto A.4 (embarazadas y puerperio), p. 6; apartado 5.3 «Vacuna antigripal, embarazo, puerperio y lactancia», p. 9",
+      "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a gripe. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 20 págs.",
+      "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_gripe_aragon_2026-11-09-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "ara-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cada embarazo, en cualquier momento de la gestación, si coincide con la temporada de gripe, aunque te vacunaras en campañas anteriores. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3, punto A.5 («Embarazadas en cualquier trimestre de gestación»), p. 5; apartado 5 (Bimervax: «No usar en embarazadas», p. 6; intervalo mínimo de 3 meses, p. 6; vacunas de ARNm en cualquier trimestre, p. 7)",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a COVID-19. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 14 págs.",
+     "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_covid-19_aragon_2026-11-09-pdf",
+     "id": "ara-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Una dosis en cualquier trimestre del embarazo, con vacuna de ARNm. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "al menos dos meses antes de la gestación",
+     "apartado": "Apartado 1.1 «Recomendaciones nutricionales», «Suplementación farmacológica» → «Folatos», p. 14-15 (PDF p. 16-17)",
+     "documento": "Gobierno de Aragón, Departamento de Sanidad: «Cuídame: orientaciones para el comienzo de la vida» (edición 2024), enlazada desde «Momentos vitales: tener un hijo o hija» de aragon.es",
+     "fuente": "https://www.aragon.es/documents/20127/1650151/Guia_Cuidame_comienzo_vida.pdf",
+     "id": "ara-emb-acido-folico",
+     "linea": false,
+     "nombre": "Ácido fólico",
+     "nota": "Todos los días desde al menos dos meses antes del embarazo y durante los tres primeros meses, siempre bajo supervisión médica: ayuda a prevenir defectos graves del cerebro y de la médula espinal del bebé.",
+     "semana_desde": null,
+     "semana_hasta": null,
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 1.1, «Embarazo y lactancia en mujeres vegetarianas o veganas», p. 16 (PDF p. 18)",
+     "condicion": "sigues una dieta vegetariana o vegana",
+     "documento": "Gobierno de Aragón, Departamento de Sanidad: «Cuídame: orientaciones para el comienzo de la vida» (edición 2024), enlazada desde «Momentos vitales: tener un hijo o hija» de aragon.es",
+     "fuente": "https://www.aragon.es/documents/20127/1650151/Guia_Cuidame_comienzo_vida.pdf",
+     "id": "ara-emb-b12-vegetariana",
+     "linea": false,
+     "nombre": "Vitamina B12 si eres vegetariana o vegana",
+     "nota": "Necesitas tomar vitamina B12 con alimentos enriquecidos y siempre con un suplemento. Pide a tu centro de salud que te ayude a planificar la alimentación.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 1.1, tabla «Recomendaciones por grupos de alimentos durante el embarazo», filas «Pescados y mariscos» y «Bebidas», p. 12-13 (PDF p. 14-15)",
+     "documento": "Gobierno de Aragón, Departamento de Sanidad: «Cuídame: orientaciones para el comienzo de la vida» (edición 2024), enlazada desde «Momentos vitales: tener un hijo o hija» de aragon.es",
+     "fuente": "https://www.aragon.es/documents/20127/1650151/Guia_Cuidame_comienzo_vida.pdf",
+     "id": "ara-emb-alimentos",
+     "nombre": "Cabezas de crustáceos y exceso de café o té",
+     "nota": "Además de lo de la AESAN, el Departamento de Sanidad pide no comer las cabezas de gambas, cigalas, cangrejos y otros crustáceos, por el cadmio, y no pasar de 1 o 2 tazas al día de café, té, mate u otras bebidas con cafeína o teína.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "En Aragón el Departamento de Sanidad no publica un calendario de visitas del embarazo para toda la comunidad: las visitas y pruebas que ves son las de la guía del Ministerio de Sanidad; las vacunas y sus campañas sí son las de Aragón. Tu matrona te dará el calendario de tu centro.",
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado 3 «Cronograma inicial de la campaña», tabla 1 («28 de septiembre: Vacunación a […] mujeres embarazadas […] (se realizará mediante captación activa, no estará disponible la autocitación)»; «Las embarazadas y las personas con alto riesgo no podrán acceder a través de la autocita»), p. 5; apartado 4, punto A.4, p. 6",
+     "campana": "gripe",
+     "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a gripe. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 20 págs.",
+     "fin": null,
+     "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_gripe_aragon_2026-11-09-pdf",
+     "fuente_web": {
+      "apartado": "Texto inicial («Las mujeres embarazadas deben pedir cita con su enfermera o matrona para su vacunación»)",
+      "documento": "Gobierno de Aragón, Departamento de Sanidad: «Vacunación frente a la gripe» (página actualizada el 10/11/2026, consultada el 17/11/2026)",
+      "fuente": "https://www.aragon.es/salud-publica/vacunaciones/gripe",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-09-28",
+     "nota": "Desde el 28/09/2026. Las embarazadas no pueden pedir cita por la autocita de Salud Informa: pídela a tu enfermera o matrona. La fecha de fin no está publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 4 «Cronograma inicial de la campaña» («28 de septiembre: Vacunación a personas residentes en centros residenciales, mujeres embarazadas y trabajadores sanitarios»; «Las embarazadas y las personas de alto riesgo no podrán acceder a través de autocita»), p. 5",
+     "campana": "covid",
+     "documento": "Dirección General de Salud Pública: «Documento técnico / Protocolo. Vacunación frente a COVID-19. Aragón. Temporada 2026/27» (versión de 9 de noviembre de 2026), 14 págs.",
+     "fin": null,
+     "fuente": "https://www.aragon.es/documents/d/guest/protocolo_documento_tecnico_vacunacion_covid-19_aragon_2026-11-09-pdf",
+     "fuente_poblacion": {
+      "apartado": "Apartado A, punto 5 («Embarazadas en cualquier trimestre de gestación»)",
+      "documento": "Departamento de Sanidad: «Personas a las que se recomienda vacunarse frente a COVID-19» (Población diana vacunación COVID-19, temporada 2026-2027; 21/09/2026), 1 pág.",
+      "fuente": "https://www.aragon.es/documents/d/guest/indicaciones_vacunacion_covid-19_aragon_2026-27-pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-09-28",
+     "nota": "Desde el 28/09/2026. Las embarazadas no pueden pedir cita por la autocita de Salud Informa. La fecha de fin no está publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -3350,9 +3499,491 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», visitas 1 a 11 (A a H), págs. 17-23",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "fuente_extra": {
+      "apartado": "«Seguimiento del embarazo: controles durante la gestación», 2 «Cronograma de las visitas» («Se realizan un total de 11 visitas»), p. 62 (PDF 65)",
+      "documento": "Servicio Canario de la Salud: «Preparación a la maternidad y paternidad» (PASAR), noviembre de 2009 (publicado el 10/08/2010 en la página del PASAR)",
+      "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/feced7e9-a458-11df-aeed-9fdc164fb562/GUIAMaternidadLIBRO.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "can-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Calendario de visitas del Servicio Canario de la Salud",
+     "nota": "Once visitas: en tu centro de salud (matrona o medicina de familia) a las semanas 6-10, tres entre la 16 y la 24, a la 28, a la 32, a las 34-36 y dos a las 38-40; y con tocología a las 11-13+6 y, si llegas, a la 41. Algunas se comparten con el hospital.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «A. Visita 1», págs. 17-19",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-1",
+     "nombre": "Primera visita en el centro de salud",
+     "nota": "Con la matrona o tu médico o médica de familia: te abren la cartilla maternal, historia clínica, peso, talla y tensión, y te piden la primera analítica. Te incluyen en los grupos de preparación a la maternidad y paternidad, te envían a salud bucodental y te dan cita con tocología para las semanas 11 a 13+6.",
+     "semana_desde": {
+      "semanas": 6
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «B. Visita 2», p. 19",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-2",
+     "nombre": "Visita con tocología y ecografía del primer trimestre (semanas 11 a 13+6)",
+     "nota": "Tensión y peso, se fija la fecha probable de parto, ecografía y cribado del primer trimestre. Te piden la ecografía de las 20-22 y la analítica de las 24-28.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «C. Visita 3, 4 y 5», p. 20",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visitas-16-24",
+     "nombre": "Tres visitas en el centro de salud (semanas 16 a 24)",
+     "nota": "Tensión, peso, altura del útero y latido del bebé. Se revisa la ecografía de las 20-22, empiezan las sesiones de preparación a la maternidad y paternidad y te hablan de la lactancia.",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "semanas": 24
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «D. Visita 6», págs. 20-21",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-28",
+     "nombre": "Visita de la semana 28",
+     "nota": "Tensión, peso, altura del útero y latido del bebé. Resultados de la analítica del segundo trimestre, control de anemia, vacuna de la tos ferina, anti-D si eres Rh negativo y plan de parto. Te piden la analítica de la semana 36.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «E. Visita 7», p. 21",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-32",
+     "nombre": "Visita de la semana 32 en el centro de salud",
+     "nota": "Tensión, peso, altura del útero y latido del bebé. Te dan la información sobre lactancia y sobre la atención al parto de tu hospital.",
+     "semana": {
+      "semanas": 32
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «F. Visita 8», p. 22",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-34-36",
+     "nombre": "Visita de las semanas 34 a 36",
+     "nota": "En el centro de salud o con tocología: tensión, peso, altura del útero y posición del bebé. Te explican las señales de alarma por las que ir al hospital.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «G. Visita 9-10», págs. 22-23",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visitas-38-40",
+     "nombre": "Dos visitas en el centro de salud (semanas 38 a 40)",
+     "nota": "Exploración, resultados de la analítica del tercer trimestre y del estreptococo B, revisión del plan de parto y señales de parto y de alarma. Te informan de la revisión después del parto para ti y para tu bebé.",
+     "semana_desde": {
+      "semanas": 38
+     },
+     "semana_hasta": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «H. Visita 11», p. 23",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-visita-41",
+     "nombre": "Si llegas a la semana 41: visita con tocología",
+     "nota": "Tensión, exploración y valoración del líquido amniótico. Te ofrecen inducir el parto a partir de la semana 41 y antes de la 42.",
+     "semana": {
+      "semanas": 41
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I, tabla 3 «Control de la gestación de bajo riesgo», «Control en el 1er trimestre (9-10 semanas)», p. 31",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-analitica-1",
+     "nombre": "Analítica del primer trimestre",
+     "nota": "Hemograma, grupo sanguíneo y Rh, glucosa, creatinina, test de Coombs indirecto, serologías de rubeola, sífilis, VIH y hepatitis B, y análisis y cultivo de orina.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Determinaciones analíticas», punto 3 «Cribado de diabetes gestacional», p. 26; tabla 3, observaciones, p. 32",
+     "condicion": "tienes factores de riesgo de diabetes gestacional",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-diabetes-1t",
+     "linea": false,
+     "nombre": "Test de O'Sullivan en el primer trimestre (si tienes factores de riesgo)",
+     "nota": "Por ejemplo, 35 años o más, un IMC de 30 o más, un hijo anterior de 4 kg o más, diabetes gestacional en otro embarazo o un familiar de primer grado con diabetes.",
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «B. Visita 2», p. 19; «Ecografías», «Primer trimestre», p. 29",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre y cribado combinado",
+     "nota": "Con tocología, antes de la semana 14: ecografía con translucencia nucal y análisis de sangre (beta-hCG y PAPP-A) el mismo día, para estimar el riesgo de síndrome de Down, Edwards y Patau.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «B. Visita 2», «Screening bioquímico del primer trimestre», p. 19",
+     "condicion": "no se te pudo hacer el cribado del primer trimestre",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-cribado-2t",
+     "nombre": "Cribado del segundo trimestre (si no se hizo el del primero)",
+     "nota": "Se pide entre las semanas 15 y 16.",
+     "semana_desde": {
+      "semanas": 15
+     },
+     "semana_hasta": {
+      "semanas": 16
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «B. Visita 2» y «C. Visita 3, 4 y 5», págs. 19-20; «Ecografías», «Segundo trimestre», p. 29",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "En la Unidad de Diagnóstico Prenatal, para detectar malformaciones del bebé.",
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «B. Visita 2» («Analítica en semana 24-28»), p. 19; «Determinaciones analíticas», punto 3, p. 26; Anexo I, tabla 3 «Control de la gestación de bajo riesgo», «Control en el 2do trimestre», p. 31",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-analitica-2t",
+     "nombre": "Analítica del segundo trimestre con test de O'Sullivan",
+     "nota": "A todas las embarazadas: test de O'Sullivan (un líquido con 50 g de glucosa y análisis de sangre), hemograma, creatinina, ácido úrico y análisis de orina. Si el O'Sullivan sale alterado, se hace la prueba larga con 100 g.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Determinaciones analíticas», punto 2 «Grupo sanguíneo y Rh, Test de Coombs indirecto», p. 26",
+     "condicion": "eres Rh negativo",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-coombs-26-28",
+     "nombre": "Repetición del test de Coombs si eres Rh negativo",
+     "nota": "Se repite el análisis de anticuerpos para descartar la sensibilización anti-D.",
+     "semana_desde": {
+      "semanas": 26
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «D. Visita 6» («Solicitar analítica de tercer trimestre, para realizar en semana 36»), p. 21; Anexo I, tabla 3 «Control de la gestación de bajo riesgo», «Control en el 3er trimestre», págs. 31-32",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-analitica-3t",
+     "nombre": "Analítica del tercer trimestre",
+     "nota": "Hemograma, creatinina, serología de VIH y análisis de orina.",
+     "semana": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «G. Visita 9-10», p. 23; Anexo I, tabla 3 «Control de la gestación de bajo riesgo», «Control en el 3er trimestre», p. 32",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-estreptococo-b",
+     "nombre": "Cribado del estreptococo del grupo B",
+     "nota": "Una muestra de vagina y recto en la semana 35-36. Si a la 40-41 aún no has dado a luz, puede repetirse.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», introducción («Antes de la semana 38…»), p. 17; «D. Visita 6», p. 21; «G. Visita 9-10», p. 23",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-plan-parto",
+     "nombre": "Plan de parto",
+     "nota": "Lo preparas con tu profesional de referencia desde la visita de la semana 28; antes de la semana 38 deberías tenerlo hecho. Se revisa en las visitas de las semanas 38 a 40.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Actividades a desarrollar», 2.1 «Primer módulo: aconsejable antes de las 20 semanas», p. 18 (PDF 21); «Se aconseja el inicio de las sesiones educativas antes de la 20 semana», p. 17 (PDF 20)",
+     "documento": "Servicio Canario de la Salud: «Preparación a la maternidad y paternidad» (PASAR), noviembre de 2009 (publicado el 10/08/2010 en la página del PASAR)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/feced7e9-a458-11df-aeed-9fdc164fb562/GUIAMaternidadLIBRO.pdf",
+     "id": "can-emb-preparacion-1",
+     "nombre": "Preparación a la maternidad y paternidad: primer módulo",
+     "nota": "Una o dos sesiones en grupo en tu centro de salud, mejor antes de la semana 20, a las que puedes ir con tu pareja o persona de apoyo: cambios del embarazo, alimentación, ejercicio y controles.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 19
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Actividades a desarrollar», 2.2 «Segundo módulo: aconsejable después de las 28 semanas», págs. 18-19 (PDF 21-22)",
+     "documento": "Servicio Canario de la Salud: «Preparación a la maternidad y paternidad» (PASAR), noviembre de 2009 (publicado el 10/08/2010 en la página del PASAR)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/feced7e9-a458-11df-aeed-9fdc164fb562/GUIAMaternidadLIBRO.pdf",
+     "fuente_extra": {
+      "apartado": "«Aspectos clínicos del seguimiento y control del embarazo», «C. Visita 3, 4 y 5» («Inicio de las sesiones de preparación a la maternidad y paternidad»), p. 20",
+      "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+      "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "can-emb-preparacion-2",
+     "nombre": "Preparación a la maternidad y paternidad: segundo módulo",
+     "nota": "Desde la semana 28: de 9 a 12 sesiones, al menos una por semana, de hora y media a dos horas, con ejercicio, respiración y relajación. Parto, puerperio, lactancia, cuidados del bebé y ayudas a la maternidad y la paternidad.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": null,
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Artículo 2, columna «Embarazo y puerperio» de la tabla (p. 4 del PDF [26144]), fila «Tdpa(3)»; nota (3), p. 5 [26145]",
+     "documento": "Orden de 22 de junio de 2026, de la Consejería de Sanidad, por la que se aprueba el nuevo Calendario de Inmunizaciones para todas las edades de la vida en la Comunidad Autónoma de Canarias. BOC n.º 140, de 14/07/2026 (anuncio 2482, boc-a-2026-140-2482)",
+     "fuente": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-140-2482.pdf",
+     "fuente_extra": {
+      "apartado": "Párrafo «En la Comunidad Autónoma de Canarias está indicada la vacunación durante el embarazo (semanas 27 a 36)…»",
+      "documento": "Servicio Canario de la Salud, Dirección General de Salud Pública: «Programa de inmunizaciones» (actualizado el 30/08/2026; consultado el 17/11/2026)",
+      "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/contenidoGenerico.jsp?idDocument=fc7b7e8d-0efd-11de-9de1-998efb13096d&idCarpeta=85902744-c31f-11e9-a8a0-7f273508434f",
+      "verificado": "2026-11-17"
+     },
+     "id": "can-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo a partir de la semana 27, mejor en la 27 o la 28. Te la pone enfermería de tu centro de salud.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Artículo 2, columna «Embarazo y puerperio» de la tabla (p. 4 del PDF [26144]), fila «Gripe(22)»; nota (22), p. 6 [26146]",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Orden de 22 de junio de 2026, de la Consejería de Sanidad, por la que se aprueba el nuevo Calendario de Inmunizaciones para todas las edades de la vida en la Comunidad Autónoma de Canarias. BOC n.º 140, de 14/07/2026 (anuncio 2482, boc-a-2026-140-2482)",
+     "fuente": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-140-2482.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 2.1, tabla 1 «Grupos de vacunación recomendados», p. 3",
+      "documento": "Dirección General de Salud Pública del Servicio Canario de la Salud: «Campaña de vacunación frente a gripe. Temporada 2026-2027» (septiembre de 2026)",
+      "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/d51e311f-ba58-11f1-a38c-b3f8d30d91f2/RecomendacionesVacunacionGRIPE.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "can-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En cualquier trimestre, durante la campaña de otoño-invierno. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Artículo 2, columna «Embarazo y puerperio» de la tabla (p. 4 del PDF [26144]), fila «COVID-19(22)»; nota (22), p. 6 [26146]",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Orden de 22 de junio de 2026, de la Consejería de Sanidad, por la que se aprueba el nuevo Calendario de Inmunizaciones para todas las edades de la vida en la Comunidad Autónoma de Canarias. BOC n.º 140, de 14/07/2026 (anuncio 2482, boc-a-2026-140-2482)",
+     "fuente": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-140-2482.pdf",
+     "fuente_extra": [
+      {
+       "apartado": "Párrafo «…durante la campaña anual (otoño-invierno), también se recomiendan en gestantes las vacunas frente a gripe y covid (en cualquier semana del embarazo)…»",
+       "documento": "Servicio Canario de la Salud, Dirección General de Salud Pública: «Programa de inmunizaciones» (actualizado el 30/08/2026; consultado el 17/11/2026)",
+       "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/contenidoGenerico.jsp?idDocument=fc7b7e8d-0efd-11de-9de1-998efb13096d&idCarpeta=85902744-c31f-11e9-a8a0-7f273508434f",
+       "verificado": "2026-11-17"
+      },
+      {
+       "apartado": "Apartado «Evitar casos graves de gripe y covid-19» (intervalo de tres meses)",
+       "documento": "Gobierno de Canarias, Consejería de Sanidad: «Sanidad inicia hoy la vacunación frente a infecciones respiratorias en los centros de salud de Canarias» (nota de prensa, 19/10/2026)",
+       "fuente": "https://www3.gobiernodecanarias.org/noticias/hemeroteca/sanidad-inicia-hoy-la-vacunacion-frente-a-infecciones-respiratorias-en-los-centros-de-salud-de-canarias/",
+       "verificado": "2026-11-17"
+      }
+     ],
+     "id": "can-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "En cualquier trimestre, durante la campaña de otoño-invierno, por el mayor riesgo de complicaciones en el embarazo. Deja al menos 3 meses desde la última dosis o infección. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "al menos un mes antes de la concepción",
+     "apartado": "«Consulta preconcepcional», «Suplementación farmacológica (profilaxis con ácido fólico)», p. 15",
+     "documento": "Servicio Canario de la Salud, Dirección General de Programas Asistenciales: «Embarazo. Programa de Atención a la Salud Afectivo-Sexual y Reproductiva (PASAR)», diciembre de 2018 (publicado el 25/01/2019 en la página del PASAR, actualizada el 03/06/2024)",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/14aadd67-20a7-11e9-b7bb-c7e6bc506cb9/Embarazo.pdf",
+     "id": "can-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg al día desde al menos un mes antes de la concepción y durante las 12 primeras semanas. Con obesidad (IMC de más de 30), diabetes previa al embarazo, epilepsia en tratamiento o un hijo anterior con defecto del tubo neural, la dosis es mayor: te la indican en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "",
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado 2.1, tabla 1 (p. 3); apartado 5, tabla 8 «Fechas de inicio de campaña» («Resto de población diana: 19 de octubre de 2026»; fin oficial), p. 9",
+     "campana": "gripe",
+     "documento": "Dirección General de Salud Pública del Servicio Canario de la Salud: «Campaña de vacunación frente a gripe. Temporada 2026-2027» (septiembre de 2026)",
+     "fin": "2026-12-31",
+     "fuente": "https://www3.gobiernodecanarias.org/sanidad/scs/content/d51e311f-ba58-11f1-a38c-b3f8d30d91f2/RecomendacionesVacunacionGRIPE.pdf",
+     "fuente_cita": {
+      "apartado": "Entradilla y primer párrafo (cita en el 012); «Población diana de la vacunación frente a la gripe»",
+      "documento": "Gobierno de Canarias, Consejería de Sanidad: «Sanidad inicia hoy la vacunación frente a infecciones respiratorias en los centros de salud de Canarias» (nota de prensa, 19/10/2026)",
+      "fuente": "https://www3.gobiernodecanarias.org/noticias/hemeroteca/sanidad-inicia-hoy-la-vacunacion-frente-a-infecciones-respiratorias-en-los-centros-de-salud-de-canarias/",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "En los centros de salud desde el 19/10/2026, con cita en el 012 (922 470 012 o 928 301 012). Fin oficial el 31/12/2026, ampliable hasta el 31/03/2027 según la situación epidemiológica y las dosis disponibles.",
+     "poblacion": "Embarazadas en cualquier trimestre y puérperas hasta 6 meses después del parto no vacunadas durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Primer párrafo («ha iniciado este lunes, 19 de octubre, la campaña de vacunación estacional frente a infecciones respiratorias»), párrafo sobre la cita para «la gripe, la covid-19 o el virus respiratorio sincital» y apartado «Evitar casos graves de gripe y covid-19»",
+     "campana": "covid",
+     "documento": "Gobierno de Canarias, Consejería de Sanidad: «Sanidad inicia hoy la vacunación frente a infecciones respiratorias en los centros de salud de Canarias» (nota de prensa, 19/10/2026)",
+     "fin": null,
+     "fuente": "https://www3.gobiernodecanarias.org/noticias/hemeroteca/sanidad-inicia-hoy-la-vacunacion-frente-a-infecciones-respiratorias-en-los-centros-de-salud-de-canarias/",
+     "fuente_poblacion": {
+      "apartado": "Artículo 2, columna «Embarazo y puerperio» de la tabla (p. 4 del PDF [26144]); nota (22), p. 6 [26146]",
+      "documento": "Orden de 22 de junio de 2026, de la Consejería de Sanidad, por la que se aprueba el nuevo Calendario de Inmunizaciones para todas las edades de la vida en la Comunidad Autónoma de Canarias. BOC n.º 140, de 14/07/2026 (anuncio 2482, boc-a-2026-140-2482)",
+      "fuente": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-140-2482.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "La campaña frente a infecciones respiratorias empezó en los centros de salud el 19/10/2026; la cita, en el 012 (922 470 012 o 928 301 012). No hay fecha de fin publicada: la vacuna se ofrece también fuera de la temporada.",
+     "poblacion": "Embarazadas en cualquier trimestre (vacunación estacional).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -4301,6 +4932,7 @@
     }
    ],
    "embarazo": [],
+   "embarazo_aviso": "",
    "embarazo_campanas": [],
    "embarazo_sustituye": [],
    "escolarizacion": {
@@ -5232,9 +5864,366 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Controles periódicos antes del parto» y «En todas las visitas se incluirá», p. 44",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Controles del embarazo en el centro de salud",
+     "nota": "Antes del parto, 6 controles: 2 antes de la semana 20, 2 entre las semanas 20 y 28 y 2 a partir de la 28. En cada uno: edad del embarazo, peso, tensión y altura del útero; el latido del bebé desde la semana 16 y sus movimientos desde la 20.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Criterios de calidad: Valoración», p. 43; Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», p. 44, y «Consejos e intervenciones», p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "fuente_extra": {
+      "apartado": "«Visitas», «1ª visita», p. 9 [8]",
+      "documento": "Junta de Castilla y León, Consejería de Sanidad, Dirección General de Salud Pública: «Cartilla de Salud de la Embarazada» (fichero «Guía salud de la embarazada 2012»; depósito legal AB-57-2011), enlazada desde la página «Cartilla de la embarazada» de Ventana abierta a la familia (consultada el 17/11/2026)",
+      "fuente": "https://www.saludcastillayleon.es/ventanafamilias/es/embarazo-parto/seguimiento-embarazo/cartilla-embarazada.ficheros/68851-GUIA%20SALUD%20DE%20LA%20EMBARAZADA%202012.pdf.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cyl-emb-controles-antes-20",
+     "nombre": "Antes de la semana 20: 2 controles",
+     "nota": "En el primero: historia, peso, talla, tensión, vacunas, consumo de tabaco y alcohol y riesgos de tu trabajo. Te informan del diagnóstico prenatal (cribado combinado) y de cómo prevenir los defectos del tubo neural, y te recomiendan ácido fólico y sal yodada.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 19
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», p. 44",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-controles-20-28",
+     "nombre": "Semanas 20 a 28: 2 controles",
+     "nota": "Peso, tensión, altura del útero, latido y movimientos del bebé.",
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», p. 44",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-controles-desde-28",
+     "nombre": "Desde la semana 28: 2 controles",
+     "nota": "Además, te miran la posición del bebé (maniobras de Leopold).",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": null,
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Exploración» («Exploración por la Unidad de Salud Bucodental (derivar en el 1er trimestre)»), p. 43",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "fuente_extra": {
+      "apartado": "«Visitas», «1ª visita» («Captación para el servicio de salud bucodental de la embarazada»), p. 9 [8]",
+      "documento": "Junta de Castilla y León, Consejería de Sanidad, Dirección General de Salud Pública: «Cartilla de Salud de la Embarazada» (fichero «Guía salud de la embarazada 2012»; depósito legal AB-57-2011), enlazada desde la página «Cartilla de la embarazada» de Ventana abierta a la familia (consultada el 17/11/2026)",
+      "fuente": "https://www.saludcastillayleon.es/ventanafamilias/es/embarazo-parto/seguimiento-embarazo/cartilla-embarazada.ficheros/68851-GUIA%20SALUD%20DE%20LA%20EMBARAZADA%202012.pdf.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cyl-emb-dentista",
+     "linea": false,
+     "nombre": "Revisión en la Unidad de Salud Bucodental",
+     "nota": "Te derivan a la Unidad de Salud Bucodental en el primer trimestre.",
+     "preferente": "primer trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Primer trimestre», p. 44; nota (2) «Factores de riesgo que indican necesidad de realizar Test de O´Sullivan», p. 46",
+     "condicion": "tienes factores de riesgo de diabetes gestacional",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-diabetes-1t",
+     "linea": false,
+     "nombre": "Test de O'Sullivan en el primer trimestre (si tienes factores de riesgo)",
+     "nota": "Si tienes obesidad, más de 35 años, diabetes en un embarazo anterior, un familiar de primer grado con diabetes o un hijo anterior muy grande (macrosomía).",
+     "preferente": "primer trimestre",
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Primer trimestre» («Ecografía (entre las semanas 11 y 13)»), p. 44",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre",
+     "nota": "Entre las semanas 11 y 13.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Primer trimestre» («Urocultivo… entre la 12 y la 16 semana de embarazo»), p. 44",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-urocultivo-12-16",
+     "nombre": "Cultivo de orina",
+     "nota": "Al final del primer trimestre, para descartar una infección de orina sin síntomas.",
+     "semana_desde": {
+      "semanas": 12
+     },
+     "semana_hasta": {
+      "semanas": 16
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Segundo trimestre» («Ecografía (entre las semanas 18 y 21)»), p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "Entre las semanas 18 y 21.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 21
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Segundo trimestre» («Test de O´Sullivan (entre las semanas 24 y 28)»), p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-diabetes-24-28",
+     "nombre": "Cribado de diabetes gestacional (test de O'Sullivan)",
+     "nota": "A todas las embarazadas, entre las semanas 24 y 28.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Tratamiento profiláctico», p. 45",
+     "condicion": "eres Rh negativo y no estás sensibilizada",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-anti-d-28-30",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Una dosis entre las semanas 28 y 30.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Tercer trimestre» («Ecografía (entre las semanas 34 y 36)»), p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Entre las semanas 34 y 36.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Tercer trimestre», p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-estreptococo-b",
+     "nombre": "Cribado del estreptococo del grupo B y cultivo de orina",
+     "nota": "Entre las semanas 36 y 38: cultivo de una muestra de vagina y recto y cultivo de orina. Si el de orina sale positivo, no hace falta el de vagina y recto.",
+     "semana_desde": {
+      "semanas": 36
+     },
+     "semana_hasta": {
+      "semanas": 38
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Plan de acción y seguimiento», «Consejos e intervenciones» («Plan de parto y nacimiento (semana 28)»), p. 45",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-plan-parto",
+     "nombre": "Plan de parto y nacimiento",
+     "nota": "En la semana 28 te hablan del plan de parto y nacimiento.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Servicio «Atención a la mujer durante el embarazo», «Consejos e intervenciones» («Educación maternal, paternal y de crianza (2º trimestre)»), p. 45; servicio «Educación maternal, paternal y de la crianza», «Criterios de calidad», p. 48",
+     "documento": "Gerencia Regional de Salud (Sacyl): «Cartera de Servicios de Atención Primaria» (2019), 312 págs.",
+     "fuente": "https://www.saludcastillayleon.es/institucion/es/catalogo-prestaciones/cartera-servicios/cartera-servicios-atencion-primaria.ficheros/1522344-cartera%20de%20servicios%202019.pdf",
+     "id": "cyl-emb-educacion-maternal",
+     "linea": false,
+     "nombre": "Educación maternal, paternal y de crianza",
+     "nota": "Para ti y tu pareja, en el segundo trimestre: embarazo, parto y posparto, ejercicio y masaje perineal, plan de parto, respiración y relajación, cuidados del bebé, lactancia y contacto piel con piel, sillas del coche y prevención de accidentes.",
+     "preferente": "segundo trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo, calendario 2026, fila «Difteria-tétanos-tosferina», columna «Prenatal», y nota 4, pág. 96 del BOCYL (p. 5 del PDF)",
+     "documento": "ORDEN SAN/209/2026, de 3 de marzo, por la que se aprueba el calendario de vacunaciones e inmunizaciones sistemáticas a lo largo de la vida de las personas para la Comunidad de Castilla y León. BOCYL n.º 45, de 06/03/2026 (BOCYL-D-06032026-45-18); con efectos desde el 01/04/2026",
+     "fuente": "https://bocyl.jcyl.es/boletines/2026/03/06/pdf/BOCYL-D-06032026-45-18.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 6.4 «Embarazo y puerperio» (administración concomitante con la dTpa), p. 17",
+      "documento": "Dirección General de Salud Pública: «Campaña de vacunación frente a gripe y COVID-19. Temporada 2026-2027» (instrucción técnica, v1.1), septiembre de 2026, 35 págs.",
+      "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-vacunacion-frente-gripe-covid-19-temporada-2026-202.ficheros/3423312-INSTRUCCION%20TECNICA%20CAMPA%C3%91A%20GRIPE%20Y%20COVID-19%202026-2027_V1.1_sin%20metadata.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cyl-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Se puede poner el mismo día que las de la gripe y la COVID-19 o en otra cita.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo, fila «Gripe», columna «Prenatal», y nota 8 («GRIPE prenatal»), pág. 96 del BOCYL (p. 5 del PDF)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "ORDEN SAN/209/2026, de 3 de marzo, por la que se aprueba el calendario de vacunaciones e inmunizaciones sistemáticas a lo largo de la vida de las personas para la Comunidad de Castilla y León. BOCYL n.º 45, de 06/03/2026 (BOCYL-D-06032026-45-18); con efectos desde el 01/04/2026",
+     "fuente": "https://bocyl.jcyl.es/boletines/2026/03/06/pdf/BOCYL-D-06032026-45-18.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 3.1, grupo 4, p. 9; apartado 6.4 «Embarazo y puerperio», p. 17",
+      "documento": "Dirección General de Salud Pública: «Campaña de vacunación frente a gripe y COVID-19. Temporada 2026-2027» (instrucción técnica, v1.1), septiembre de 2026, 35 págs.",
+      "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-vacunacion-frente-gripe-covid-19-temporada-2026-202.ficheros/3423312-INSTRUCCION%20TECNICA%20CAMPA%C3%91A%20GRIPE%20Y%20COVID-19%202026-2027_V1.1_sin%20metadata.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cyl-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en la temporada de gripe, en cualquier trimestre. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Te la ponen en la consulta de tu matrona del centro de salud. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3.2 «Los grupos diana para la vacunación frente a COVID-19», grupo 5, p. 11; apartado 6.4 «Embarazo y puerperio», p. 17",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Dirección General de Salud Pública: «Campaña de vacunación frente a gripe y COVID-19. Temporada 2026-2027» (instrucción técnica, v1.1), septiembre de 2026, 35 págs.",
+     "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-vacunacion-frente-gripe-covid-19-temporada-2026-202.ficheros/3423312-INSTRUCCION%20TECNICA%20CAMPA%C3%91A%20GRIPE%20Y%20COVID-19%202026-2027_V1.1_sin%20metadata.pdf",
+     "fuente_extra": {
+      "apartado": "Anexo, fila «COVID-19», columna «Prenatal», y nota 10, pág. 96 del BOCYL (p. 5 del PDF)",
+      "documento": "ORDEN SAN/209/2026, de 3 de marzo, por la que se aprueba el calendario de vacunaciones e inmunizaciones sistemáticas a lo largo de la vida de las personas para la Comunidad de Castilla y León. BOCYL n.º 45, de 06/03/2026 (BOCYL-D-06032026-45-18); con efectos desde el 01/04/2026",
+      "fuente": "https://bocyl.jcyl.es/boletines/2026/03/06/pdf/BOCYL-D-06032026-45-18.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "cyl-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Se recomienda a todas las embarazadas, en cualquier trimestre y mejor en el segundo, con vacuna de ARNm. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "",
+   "embarazo_campanas": [
+    {
+     "apartado": "«Información clave de la campaña», p. 2; apartado 2 «Periodo de vacunación», p. 8; apartado 3.1, grupo 4, p. 9; apartado 6.4 «Embarazo y puerperio», p. 17",
+     "campana": "gripe",
+     "documento": "Dirección General de Salud Pública: «Campaña de vacunación frente a gripe y COVID-19. Temporada 2026-2027» (instrucción técnica, v1.1), septiembre de 2026, 35 págs.",
+     "fin": null,
+     "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-vacunacion-frente-gripe-covid-19-temporada-2026-202.ficheros/3423312-INSTRUCCION%20TECNICA%20CAMPA%C3%91A%20GRIPE%20Y%20COVID-19%202026-2027_V1.1_sin%20metadata.pdf",
+     "fuente_inicio": {
+      "apartado": "Apartado «Campaña de vacunación frente a gripe y COVID-19», p. 1 («A partir del 13 de octubre, de forma escalonada, se llevará a cabo la vacunación de las embarazadas…»)",
+      "documento": "Instrucción conjunta de la Dirección General de Salud Pública y la Gerencia Regional de Salud sobre las campañas de vacunación e inmunización frente a enfermedades respiratorias (gripe, COVID-19 y VRS en población infantil), campaña 2026-2027, firmada el 28-29/09/2026",
+      "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-inmunizacion-frente-vrs-nirsevimab-poblacion-17dc04.ficheros/3424493-Instruccion%20CONJUNTA%20campa%C3%B1a%20virus%20respiratorios_GRIPE-COVID-NIRSE%202026-2027_sin%20metadata.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-13",
+     "nota": "Para embarazadas, desde el 13/10/2026 (según las vacunas que tenga cada centro); no hay fecha de fin publicada. Se pone en la consulta de la matrona del centro de salud, en las revisiones o pidiendo cita. Si no te la pusieron durante la campaña, te la recomiendan mientras dure la temporada.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Información clave de la campaña», p. 2; apartado 2, p. 8; apartado 3.2, grupo 5, p. 11; apartado 6.4, p. 17",
+     "campana": "covid",
+     "documento": "Dirección General de Salud Pública: «Campaña de vacunación frente a gripe y COVID-19. Temporada 2026-2027» (instrucción técnica, v1.1), septiembre de 2026, 35 págs.",
+     "fin": null,
+     "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-vacunacion-frente-gripe-covid-19-temporada-2026-202.ficheros/3423312-INSTRUCCION%20TECNICA%20CAMPA%C3%91A%20GRIPE%20Y%20COVID-19%202026-2027_V1.1_sin%20metadata.pdf",
+     "fuente_inicio": {
+      "apartado": "Apartado «Campaña de vacunación frente a gripe y COVID-19», p. 1",
+      "documento": "Instrucción conjunta de la Dirección General de Salud Pública y la Gerencia Regional de Salud sobre las campañas de vacunación e inmunización frente a enfermedades respiratorias (gripe, COVID-19 y VRS en población infantil), campaña 2026-2027, firmada el 28-29/09/2026",
+      "fuente": "https://www.saludcastillayleon.es/profesionales/es/vacunaciones/campana-inmunizacion-frente-vrs-nirsevimab-poblacion-17dc04.ficheros/3424493-Instruccion%20CONJUNTA%20campa%C3%B1a%20virus%20respiratorios_GRIPE-COVID-NIRSE%202026-2027_sin%20metadata.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-13",
+     "nota": "Para embarazadas, desde el 13/10/2026; no hay fecha de fin publicada. Se pone en la consulta de la matrona del centro de salud.",
+     "poblacion": "Todas las embarazadas, en cualquier trimestre (preferible el segundo), y en el puerperio hasta 6 meses después del parto si no se vacunaron.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-dentista",
+    "emb-ecografia-1t",
+    "emb-ecografia-2t",
+    "emb-diabetes-24-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -6380,6 +7369,7 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo_aviso": "",
    "embarazo_campanas": [
     {
      "apartado": "«Quan em puc vacunar contra la grip i/o la COVID-19?» («La campanya de vacunació començarà el 26 d'octubre, tot i que per a certs grups de risc (per exemple, residències, persones a partir dels 80 anys i infants), l'inici s'avançarà al 5 d'octubre… les vacunes també es poden rebre durant tota la temporada fins al mes de març»); «Per a qui es recomana la vacuna contra la grip?» («Embarassades o que han donat a llum en els darrers 6 mesos»)",
@@ -7585,6 +8575,7 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo_aviso": "",
    "embarazo_campanas": [
     {
      "apartado": "«Personas a las que se recomienda la vacunación» → A. «Gripe + COVID19» → «Embarazadas en cualquier trimestre de embarazo»; y → «Gripe» → «Mujeres durante el puerperio»",
@@ -8386,6 +9377,7 @@
     }
    ],
    "embarazo": [],
+   "embarazo_aviso": "",
    "embarazo_campanas": [],
    "embarazo_sustituye": [],
    "escolarizacion": {
@@ -9297,9 +10289,587 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "«Proceso asistencial. Fluxograma», p. 11; «Descrición dos subprocesos asistenciais», p. 12; subproceso 10, p. 32",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Calendario de consultas del Servizo Galego de Saúde",
+     "nota": "Siete consultas prenatales: antes de la semana 10 y hacia las semanas 14-17, 18-23, 24-27, 28-32, 33-36 y 37-40 (estas últimas, cada 2 semanas en tu centro de salud). Si pasas de la semana 40, te siguen en la consulta de obstetricia del hospital.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04 «1ª Consulta prenatal ≤10 semanas de xestación», pp. 19-22",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "fuente_extra": {
+      "apartado": "Subproceso 02, «Recomendar asistencia prenatal precoz (realizar 1ª consulta de embarazo ou prenatal antes das 10 semanas de xestación)», p. 17",
+      "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+      "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-visita-1",
+     "nombre": "Primera consulta prenatal (antes de la semana 10)",
+     "nota": "Calculan tu fecha probable de parto, hacen la historia clínica, tensión, peso e IMC y revisan tus vacunas. Te piden la primera analítica y la ecografía del primer trimestre y te ofrecen el cribado combinado.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 05 «2ª consulta prenatal. 14-17 semanas de xestación», pp. 23-24",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-2",
+     "nombre": "Segunda consulta prenatal (semanas 14 a 17)",
+     "nota": "Peso y resultados: el del cribado combinado y los de la analítica. Te piden la ecografía del segundo trimestre.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "semanas": 17
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 06 «3ª Consulta prenatal. 18-23 semanas de xestación», p. 25",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-3",
+     "nombre": "Tercera consulta prenatal (semanas 18 a 23)",
+     "nota": "Peso, tensión, altura del útero, latido del bebé y proteínas en orina. Te piden la analítica del segundo trimestre.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 23
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 07 «4ª Consulta prenatal. 24-27 semanas de xestación», pp. 26-27",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-4",
+     "nombre": "Cuarta consulta prenatal (semanas 24 a 27)",
+     "nota": "Exploración y resultados de la analítica. Te informan de la vacuna de la tos ferina, de las sesiones de educación maternal, del plan de parto y de la lactancia, y te ofrecen la consulta de anestesia.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 27
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 08 «5ª Consulta prenatal. 28-32 semanas de xestación», pp. 28-29",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-5",
+     "nombre": "Quinta consulta prenatal (semanas 28 a 32)",
+     "nota": "Exploración y posición del bebé. Te piden la analítica del tercer trimestre, la ecografía del tercer trimestre y la consulta de anestesia; si eres Rh negativo, la inmunoglobulina anti-D. Se rellena el plan de parto.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 09 «6ª Consulta prenatal. 33-36 semanas de xestación», pp. 30-31",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-6",
+     "nombre": "Sexta consulta prenatal (semanas 33 a 36)",
+     "nota": "Exploración y posición del bebé y la prueba del estreptococo B. Te explican las señales de rotura de la bolsa y de parto.",
+     "semana_desde": {
+      "semanas": 33
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 10 «7ª visita de control de embarazo. 37-40 semanas de xestación», p. 32",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-7",
+     "nombre": "Consultas de las semanas 37 a 40 (cada 2 semanas)",
+     "nota": "En tu centro de salud, cada 2 semanas: exploración, resultado del estreptococo B y señales de parto. Desde la semana 40 pueden hacerte una monitorización del bebé.",
+     "semana_desde": {
+      "semanas": 37
+     },
+     "semana_hasta": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 10, p. 32 («Derivar á consulta prenatal de obstetricia de hospital de referencia… entre as 40 e 42 semanas»); subproceso 22 «Test fetal non estresante», p. 40; anexo A.5, p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-visita-40-42",
+     "nombre": "Si pasas de la semana 40: consulta de obstetricia del hospital",
+     "nota": "Entre las semanas 40 y 42 te siguen en la consulta de obstetricia de tu hospital de referencia; desde la 40+1 te pueden ofrecer un registro del latido del bebé (monitorización).",
+     "semana_desde": {
+      "semanas": 40
+     },
+     "semana_hasta": {
+      "semanas": 42
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo A.6 «Información para transmitir á usuaria», «Hixiene», p. 57",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "fuente_extra": {
+      "apartado": "«Controles que hace falta realizar durante el embarazo»",
+      "documento": "Consellería de Sanidade y Servicio Gallego de Salud, web Vida Saudable (Xanela aberta á familia): «Revisión de salud y diagnóstico prenatal», de 10/10/2022 (consultada el 17/11/2026)",
+      "fuente": "https://vida-saudable.sergas.gal/cartafol/Embarazo-revision-saude-diagnostico-prenatal?idioma=es",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-dentista",
+     "linea": false,
+     "nombre": "Visita al dentista",
+     "nota": "Cuida tu boca: te derivan a la Unidad de Salud Bucodental. Todas las embarazadas deben hacer una consulta con el dentista en el primer trimestre.",
+     "preferente": "primer trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, «Solicitar analítica» («Preferiblemente extracción de sangue ás 9-10 semanas de xestación»), pp. 20-21; anexo A.5, p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-analitica-1",
+     "nombre": "Primera analítica",
+     "nota": "Mejor entre las semanas 9 y 10; no hace falta ir en ayunas. Hemograma, grupo y Rh, Coombs indirecto a todas, serologías de sífilis, VIH y hepatitis B (rubeola si no consta la vacuna), función del tiroides y cultivo de orina.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, «Solicitar analítica», p. 20; anexo A.8 «Test de O'Sullivan», p. 60",
+     "condicion": "tienes factores de riesgo de diabetes gestacional",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-diabetes-1t",
+     "nombre": "Test de O'Sullivan en la primera analítica (si tienes factores de riesgo)",
+     "nota": "Si tienes un IMC de 30 o más, diabetes en un embarazo anterior, un familiar de primer grado con diabetes o un hijo anterior de 4,5 kg o más. No hace falta ir en ayunas.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, p. 21; subproceso 21 «Ecografías de control», p. 39",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre",
+     "nota": "Entre las semanas 11 y 13+6, idealmente en la 12, después de la analítica: confirma la edad del embarazo y mide la translucencia nucal para el cribado combinado.",
+     "preferente": {
+      "desde": {
+       "semanas": 12
+      },
+      "hasta": {
+       "semanas": 12
+      }
+     },
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, p. 21; subproceso 05, p. 23; subproceso 20 «Detección precoz de alteracións cromosómicas fetais», pp. 34-35 y 38",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-cribado-combinado",
+     "nombre": "Cribado combinado del primer trimestre",
+     "nota": "Se te ofrece: junta un análisis de sangre (PAPP-A y beta-hCG libre) y la translucencia nucal de la ecografía. Si el riesgo sale entre 1/101 y 1/500, el hospital te ofrece el test de ADN fetal en sangre materna; si es de 1/100 o más, una prueba invasiva.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 05, p. 23; subproceso 20, «Cribado do segundo trimestre (CST)», p. 34; anexo A.5, nota 14, p. 51",
+     "condicion": "no se te hizo el cribado combinado del primer trimestre",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-cribado-2t",
+     "nombre": "Cribado del segundo trimestre (si no se hizo el combinado)",
+     "nota": "Un análisis de sangre (doble test: beta-hCG y alfafetoproteína) entre las semanas 14 y 20.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 05, «Solicitar ecografía de segundo trimestre», p. 24; subproceso 21, p. 39; anexo A.5, p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre (morfológica)",
+     "nota": "Entre las semanas 19 y 21, para estudiar la anatomía del bebé, la placenta y el líquido amniótico.",
+     "semana_desde": {
+      "semanas": 19
+     },
+     "semana_hasta": {
+      "semanas": 21
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 06, «Solicitar probas analíticas de segundo trimestre para realizar ás 24 semanas de xestación», p. 25",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-analitica-2t",
+     "nombre": "Analítica del segundo trimestre",
+     "nota": "Hemograma y, si eres Rh negativo, Coombs indirecto. Te la piden en la consulta de las semanas 18 a 23.",
+     "semana": {
+      "semanas": 24
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 06, p. 25; anexo A.8 «Test de O'Sullivan» («A TODAS as xestantes entre as 24-28 semanas»), p. 60; anexo A.5 («excepto < 25 anos sen FR»), p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-diabetes-24-28",
+     "nombre": "Cribado de diabetes gestacional (test de O'Sullivan)",
+     "nota": "Entre las semanas 24 y 28, sin ayunas. Si sale 140 mg/dl o más, te hacen la sobrecarga oral de glucosa. El proceso lo da a todas; su tabla de pruebas lo exceptúa en menores de 25 años sin factores de riesgo.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 08, p. 28; anexo A.5 («28-30 semanas (mellor 28)»), p. 50",
+     "condicion": "eres Rh negativo y no estás sensibilizada (Coombs indirecto negativo)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-anti-d-28-30",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Una dosis entre las semanas 28 y 30, mejor en la 28.",
+     "preferente": {
+      "desde": {
+       "semanas": 28
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 08, «Solicitar ecografía do terceiro trimestre, entre as semanas 32 e 34», p. 28; subproceso 21, p. 39; anexo A.5, p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Entre las semanas 32 y 34: crecimiento y posición del bebé, placenta y líquido amniótico.",
+     "semana_desde": {
+      "semanas": 32
+     },
+     "semana_hasta": {
+      "semanas": 34
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 09, p. 30; anexo A.5, nota 16, p. 52",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-estreptococo-b",
+     "nombre": "Cribado del estreptococo del grupo B",
+     "nota": "Una muestra de vagina y recto. No hace falta si en este embarazo ya salió en la orina o si un hijo anterior tuvo la infección.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Texto de la página (visitas de las 28, 32 y 36-38 semanas)",
+     "documento": "Consellería de Sanidade y Servicio Gallego de Salud, web Vida Saudable (Xanela aberta á familia): «El plan de parto y nacimiento», de 19/01/2021 (consultada el 17/11/2026)",
+     "fuente": "https://vida-saudable.sergas.gal/cartafol/Embarazo-plan-parto?idioma=es",
+     "fuente_extra": {
+      "apartado": "Subproceso 07, p. 27, y subproceso 08 («Cumprimentar a folla resumo… do plan de parto e nacemento»), p. 29",
+      "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+      "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-plan-parto",
+     "nombre": "Plan de parto y nacimiento",
+     "nota": "En la consulta de las 28 semanas dices si quieres hacerlo y te dan el documento; en la de las 32 resuelves dudas y en la de las 36-38 lo revisáis. Queda en tu historia clínica y en el libro de salud de la embarazada.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 07, p. 26; subproceso 08, p. 29; anexo A.6, «Educación maternal prenatal», p. 54",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-educacion-maternal",
+     "nombre": "Educación maternal",
+     "nota": "En la consulta de las semanas 24 a 27 te ofrecen, también a tu pareja, sesiones de grupo de educación maternal antes y después del parto.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 27
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3 «Vacunación frente a la difteria, tétanos y tosferina», tabla y «En mujeres embarazadas», p. 9 [11]; calendario gráfico, columna «Prenatal», p. 1",
+     "documento": "Consellería de Sanidade, Dirección General de Salud Pública: «Calendario de inmunización a lo largo de toda la vida. Instrucción n.º 1/2026», Programa gallego de vacunación, 1 de junio de 2026 (versión en castellano)",
+     "fuente": "https://www.sergas.gal/Saude-publica/Documents/7247/Ins_calendario_inmunizacion_2026_(espan%CC%83ol).pdf",
+     "fuente_extra": {
+      "apartado": "«¿Cuándo me debo vacunar?», p. 2",
+      "documento": "Consellería de Sanidade, Dirección General de Salud Pública: tríptico «Arrima el hombro. Si no es por ti, que sea por él» sobre la vacunación frente a la gripe y la covid-19 en el embarazo (versión en castellano; PDF de 10/11/2026, enlazado como «Tríptico sobre la vacunación en el embarazo» desde la web temática de la gripe)",
+      "fuente": "https://gripe.sergas.gal/Contidos/Documents/93/Trip_vac_grip_emba%20_(Es)1.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Se puede poner el mismo día que las de la gripe y la COVID-19.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado de la gripe, tabla («Mujeres embarazadas: 1 dosis»), p. 21 [23], y «En población adulta», p. 22 [24]",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Consellería de Sanidade, Dirección General de Salud Pública: «Calendario de inmunización a lo largo de toda la vida. Instrucción n.º 1/2026», Programa gallego de vacunación, 1 de junio de 2026 (versión en castellano)",
+     "fuente": "https://www.sergas.gal/Saude-publica/Documents/7247/Ins_calendario_inmunizacion_2026_(espan%CC%83ol).pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 3.1.1, p. 7 [9], y 3.2 («Mujeres durante el puerperio»), p. 10 [12]",
+      "documento": "Consellería de Sanidad, Dirección General de Salud Pública y Dirección General de Asistencia Sanitaria: «Campaña 2026 de vacunación frente a la gripe y la covid-19. Instrucción 3/2026», septiembre de 2026 (versión en castellano)",
+      "fuente": "https://gripe.sergas.gal/Contidos/Documents/82/Instrucion_Gripe-Covid_2026_(Es)_Rev.Ling.DEFINITIVA.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis durante la temporada de gripe, en cualquier momento del embarazo. Si no te vacunaste, en los 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3.1.1 «Por el mayor riesgo de complicaciones…» («Embarazadas en cualquier trimestre de la gestación (vacunación frente a la covid-19 preferiblemente en el 2.° trimestre y solo con vacuna de ARNm)»), p. 7 [9]",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Consellería de Sanidad, Dirección General de Salud Pública y Dirección General de Asistencia Sanitaria: «Campaña 2026 de vacunación frente a la gripe y la covid-19. Instrucción 3/2026», septiembre de 2026 (versión en castellano)",
+     "fuente": "https://gripe.sergas.gal/Contidos/Documents/82/Instrucion_Gripe-Covid_2026_(Es)_Rev.Ling.DEFINITIVA.pdf",
+     "fuente_extra": {
+      "apartado": "«¿Cuándo me debo vacunar?», p. 2",
+      "documento": "Consellería de Sanidade, Dirección General de Salud Pública: tríptico «Arrima el hombro. Si no es por ti, que sea por él» sobre la vacunación frente a la gripe y la covid-19 en el embarazo (versión en castellano; PDF de 10/11/2026, enlazado como «Tríptico sobre la vacunación en el embarazo» desde la web temática de la gripe)",
+      "fuente": "https://gripe.sergas.gal/Contidos/Documents/93/Trip_vac_grip_emba%20_(Es)1.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gal-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "En cualquier trimestre, mejor en el segundo, y solo con vacuna de ARNm. Mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "al menos 1 mes antes de la concepción",
+     "apartado": "Subproceso 04, «Recomendar dieta rica en folatos e suplementación farmacolóxica con ácido fólico», p. 22; subproceso 02, «Prescribir ácido fólico», p. 17; anexo A.5, nota 17, p. 52",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "0,4 a 0,8 mg al día, solo (no en un multivitamínico), desde al menos un mes antes de la concepción hasta la semana 12. Con un embarazo anterior con defecto del tubo neural, un IMC de más de 35, diabetes o algunos antiepilépticos, la dosis es mayor: te la indican en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, «Recomendar un aporte adecuado de iodo…», p. 22; anexo A.6, «Iodo», p. 55; anexo A.5, p. 50",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-yodo",
+     "linea": false,
+     "nombre": "Yodo",
+     "nota": "En Galicia se recomienda a todas un suplemento de 200 mcg de yoduro potásico al día durante el embarazo y la lactancia (y desde antes de quedarte embarazada), además de 2 g al día de sal yodada, 3 raciones de lácteos pasteurizados y pescado o marisco al menos 3 veces por semana.",
+     "semana_desde": null,
+     "semana_hasta": null,
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, «Informar de», p. 22; anexo A.6, «Cafeína», p. 57",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-cafeina",
+     "linea": false,
+     "nombre": "Cafeína: menos de 200 mg al día",
+     "nota": "Toma menos de 200 mg de cafeína al día (unos dos cafés). Hay cafeína en el café, el té, los refrescos de cola, el chocolate y algunas bebidas energéticas.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Subproceso 04, «Informar de», p. 22; anexo A.6, «Citomegalovirus», p. 57",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde (Dirección Xeral de Asistencia Sanitaria): «Consulta preconcepcional e de atención ao embarazo normal. Proceso asistencial», Santiago de Compostela, 2019 (en gallego; PDF de 11/12/2019)",
+     "fuente": "https://extranet.sergas.es/catpb/Docs/cas/Publicaciones/Docs/AtPrimaria/PDF-2769-es.pdf",
+     "id": "gal-emb-citomegalovirus",
+     "linea": false,
+     "nombre": "Citomegalovirus: lávate las manos",
+     "nota": "Evita el contacto con saliva, lágrimas, sangre, semen u orina de personas con citomegalovirus; lávate las manos a menudo y siempre después de cambiar pañales.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "",
+   "embarazo_campanas": [
+    {
+     "apartado": "Portadilla («Inicio de la campaña: 28 de septiembre de 2026. Finalización: 31 de diciembre de 2026»), p. 2; apartado 4 «Fechas de la campaña» y cronograma («A partir del 2 de noviembre: Mujeres durante el embarazo o el puerperio (autocita)»), pp. 11-12 [13-14]; apartado 3.2, p. 10 [12]; apartado 8 «Citación», pp. 30-31 [32-33]",
+     "campana": "gripe",
+     "documento": "Consellería de Sanidad, Dirección General de Salud Pública y Dirección General de Asistencia Sanitaria: «Campaña 2026 de vacunación frente a la gripe y la covid-19. Instrucción 3/2026», septiembre de 2026 (versión en castellano)",
+     "fin": "2026-12-31",
+     "fuente": "https://gripe.sergas.gal/Contidos/Documents/82/Instrucion_Gripe-Covid_2026_(Es)_Rev.Ling.DEFINITIVA.pdf",
+     "fuente_lugar": {
+      "apartado": "«¿Tienes más dudas?» (p. 1) y «¿Quién me va a vacunar?» (p. 2)",
+      "documento": "Consellería de Sanidade, Dirección General de Salud Pública: tríptico «Arrima el hombro. Si no es por ti, que sea por él» sobre la vacunación frente a la gripe y la covid-19 en el embarazo (versión en castellano; PDF de 10/11/2026, enlazado como «Tríptico sobre la vacunación en el embarazo» desde la web temática de la gripe)",
+      "fuente": "https://gripe.sergas.gal/Contidos/Documents/93/Trip_vac_grip_emba%20_(Es)1.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-11-02",
+     "nota": "La campaña empezó el 28/09/2026 y para embarazadas y puérperas, el 02/11/2026; termina el 31/12/2026. Pide cita en tu centro de salud (en persona o por teléfono) o en Sergas Móvil, o con enfermería aprovechando las consultas con tu matrona. Las fechas pueden cambiar según la evolución de la campaña.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Portadilla, p. 2; apartado 3.1.1, p. 7 [9]; apartado 4 y cronograma, pp. 11-12 [13-14]",
+     "campana": "covid",
+     "documento": "Consellería de Sanidad, Dirección General de Salud Pública y Dirección General de Asistencia Sanitaria: «Campaña 2026 de vacunación frente a la gripe y la covid-19. Instrucción 3/2026», septiembre de 2026 (versión en castellano)",
+     "fin": "2026-12-31",
+     "fuente": "https://gripe.sergas.gal/Contidos/Documents/82/Instrucion_Gripe-Covid_2026_(Es)_Rev.Ling.DEFINITIVA.pdf",
+     "fuente_lugar": {
+      "apartado": "«¿Cuándo me debo vacunar?» y «¿Quién me va a vacunar?», p. 2",
+      "documento": "Consellería de Sanidade, Dirección General de Salud Pública: tríptico «Arrima el hombro. Si no es por ti, que sea por él» sobre la vacunación frente a la gripe y la covid-19 en el embarazo (versión en castellano; PDF de 10/11/2026, enlazado como «Tríptico sobre la vacunación en el embarazo» desde la web temática de la gripe)",
+      "fuente": "https://gripe.sergas.gal/Contidos/Documents/93/Trip_vac_grip_emba%20_(Es)1.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-11-02",
+     "nota": "Para embarazadas, desde el 02/11/2026 hasta el 31/12/2026, fin de la campaña. Se puede poner el mismo día que la de la gripe. Las fechas pueden cambiar según la evolución de la campaña.",
+     "poblacion": "Embarazadas en cualquier trimestre (preferible el segundo, con vacuna de ARNm).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-dentista",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-anemia-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico",
+    "emb-yodo"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -9898,9 +11468,584 @@
      "verificado": "2026-11-17"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Apartado «Cronograma», Ficha 9 «Visitas durante la gestación», p. 21",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Calendario de visitas del IB-Salut",
+     "nota": "En un embarazo de riesgo bajo, las visitas mínimas son: la primera con la matrona en tu centro de salud; con obstetricia en el hospital en las semanas 11-13, 20-22 y 36 (las tres, con ecografía) y en la 41-42 si llegas; y con la matrona en las semanas 14-17, 24-26, desde la 29, 34 y 38-40.",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado «Visita del primer trimestre», p. 12, y ficha 3 «Actividades en la visita del primer trimestre», p. 14-16",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-primera-visita",
+     "nombre": "Primera visita con la matrona",
+     "nota": "En tu centro de salud, mejor antes de la semana 10: historia clínica, peso, talla y tensión, revisión de tus vacunas, consejos de alimentación y hábitos, y te piden la primera analítica, la ecografía de la semana 12 y la cita con el dentista. Si empiezas después de la semana 12, el control se considera tardío.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «11-13: ecografía del primer trimestre»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-11-13",
+     "nombre": "Visita con obstetricia y ecografía del primer trimestre (semanas 11 a 13)",
+     "nota": "En el hospital.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «14-17»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-14-17",
+     "nombre": "Visita con la matrona (semanas 14 a 17)",
+     "nota": "En tu centro de salud.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "semanas": 17
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «20-22: ecografía del segundo trimestre»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-20-22",
+     "nombre": "Visita con obstetricia y ecografía del segundo trimestre (semanas 20 a 22)",
+     "nota": "En el hospital.",
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «24-26»; ficha 5 «Actividades en la visita del segundo trimestre», p. 17",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-24-26",
+     "nombre": "Visita con la matrona (semanas 24 a 26)",
+     "nota": "En tu centro de salud. Desde la semana 24 te miden la altura del útero y te explican la importancia de los movimientos del bebé.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 26
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «29-3» (así en la fuente)",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-29",
+     "nombre": "Visita con la matrona (desde la semana 29)",
+     "nota": "En tu centro de salud.",
+     "semana": {
+      "semanas": 29
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «34»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-34",
+     "nombre": "Visita con la matrona (semana 34)",
+     "nota": "En tu centro de salud.",
+     "semana": {
+      "semanas": 34
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «36: ecografía del tercer trimestre»; ficha 7 «Actividades en la visita del tercer trimestre», p. 19",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-36",
+     "nombre": "Visita con obstetricia y ecografía del tercer trimestre (semana 36)",
+     "nota": "En el hospital. Desde la semana 36 también se comprueba la posición del bebé.",
+     "semana": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «38-40»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-visita-38-40",
+     "nombre": "Visita con la matrona (semanas 38 a 40)",
+     "nota": "En tu centro de salud.",
+     "semana_desde": {
+      "semanas": 38
+     },
+     "semana_hasta": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 9 «Visitas durante la gestación», p. 21, fila «41- 42: visita de control i inducción»",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "fuente_extra": {
+      "apartado": "Ficha 14 «Otras prácticas clínicas durante el embarazo», «Atención del embarazo sin complicaciones entre la 41ª y la 42ª semana de la gestación», p. 61",
+      "documento": "Dirección General de Salud Pública y Participación y Servei de Salut de les Illes Balears: «Guía de buenas prácticas en la atención del embarazo, del puerperio y del periodo neonatal en el área de salud maternoinfantil de las Islas Baleares» (2017; revisión de la guía de 2014; ISBN 978-84-694-8470-8)",
+      "fuente": "https://www.caib.es/sites/salut/f/228848",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-visita-41-42",
+     "nombre": "Si llegas a la semana 41: control e inducción en el hospital",
+     "nota": "Visita con obstetricia. A partir de la semana 41 te ofrecen esperar a que el parto empiece solo o inducirlo, con la información necesaria para decidir.",
+     "semana_desde": {
+      "semanas": 41
+     },
+     "semana_hasta": {
+      "semanas": 42
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Actuaciones» → «Primera revisión» (PDF p. 7) y «Derivaciones» (PDF p. 8)",
+     "documento": "Gerencia de Atención Primaria de Mallorca (IB-Salut): «Atención bucodental a las embarazadas en las Islas Baleares» (edición de febrero de 2022, revisión de febrero de 2023; versión en castellano), en Docusalut (hdl.handle.net/20.500.13003/18900)",
+     "fuente": "https://docusalut.com/bitstreams/483ba19f-85bf-4156-8883-0ea481bac1f0/download",
+     "fuente_extra": {
+      "apartado": "Ficha 3, «Solicitud de pruebas y derivaciones» («Derivación al servicio de odontología del primer trimestre»), p. 15",
+      "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+      "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-dentista",
+     "linea": false,
+     "nombre": "Visita al dentista",
+     "nota": "En el primer trimestre te derivan a la unidad de salud bucodental: revisión de la boca, consejos de higiene y alimentación y, si hace falta, limpieza. Si no sigues el embarazo en atención primaria, puedes pedir cita directamente.",
+     "preferente": "primer trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Actuaciones» → «Segunda revisión» (PDF p. 7) y «Resumen de las actuaciones» (PDF p. 8)",
+     "documento": "Gerencia de Atención Primaria de Mallorca (IB-Salut): «Atención bucodental a las embarazadas en las Islas Baleares» (edición de febrero de 2022, revisión de febrero de 2023; versión en castellano), en Docusalut (hdl.handle.net/20.500.13003/18900)",
+     "fuente": "https://docusalut.com/bitstreams/483ba19f-85bf-4156-8883-0ea481bac1f0/download",
+     "id": "bal-emb-dentista-20-28",
+     "nombre": "Segunda revisión bucodental",
+     "nota": "Con la higienista: te tratan lo que necesites de lo que cubre el IB-Salut y, según tu riesgo de caries, flúor y limpieza si te la indicaron.",
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 3, «Solicitud de pruebas y derivaciones» («Analítica y cribado prenatal, preferentemente entre la semana 10 y la 11»), p. 15; ficha 4 «Analítica del primer trimestre», p. 16",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-analitica-1",
+     "nombre": "Primera analítica y cribado prenatal",
+     "nota": "Mejor entre las semanas 10 y 11: hemograma, glucosa, grupo sanguíneo, Rh y Coombs indirecto, serologías de VIH, hepatitis B y sífilis (rubeola si no consta que estés protegida), cultivo de orina, tiroides (TSH) y el análisis del cribado de cromosomopatías y de preeclampsia.",
+     "semana_desde": {
+      "semanas": 10
+     },
+     "semana_hasta": {
+      "semanas": 11
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 4 «Analítica del primer trimestre», apartado «Básica», p. 16",
+     "condicion": "tienes factores de riesgo de diabetes gestacional",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-diabetes-1t",
+     "nombre": "Test de O'Sullivan en el primer trimestre (si tienes factores de riesgo)",
+     "nota": "Entre las semanas 11 y 12 si tuviste diabetes gestacional, tienes más de 35 años o un IMC de más de 30, eres de un grupo étnico de riesgo, has tenido un embarazo gemelar o un bebé de más de 4 kg, o un familiar de primer grado tiene diabetes.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 7 «Diagnóstico prenatal de los defectos congénitos. Cribado de anomalías cromosómicas»: «Ecografía del primer trimestre», p. 50; «Cómo se hace el cribado» y «Cribado del primer trimestre (de la semana 11+0 a la 13+6)», p. 51; «Información de los resultados», p. 52",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre y cribado combinado",
+     "nota": "Confirma el latido, el número de bebés y la edad del embarazo, y mide la translucencia nucal. Con el análisis de sangre (mejor en la semana 10 u 11; vale de la 8 a la 13) se calcula el riesgo de cromosomopatías: si sale intermedio, te ofrecen el test de ADN fetal en sangre; si sale alto, una prueba invasiva.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 8 «Cribado de la disfunción placentaria (preeclampsia)», «Estrategia de cribado», p. 55",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-cribado-preeclampsia",
+     "nombre": "Cribado de preeclampsia",
+     "nota": "A todas las embarazadas, con tu historia, la tensión arterial, una ecografía de las arterias del útero y un análisis de sangre. Si sale riesgo alto, te aconsejarán tomar ácido acetilsalicílico desde antes de la semana 16 hasta la 36.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 7, «Pacientes con control más tardío», p. 52",
+     "condicion": "no se te pudo hacer el cribado del primer trimestre",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-cribado-2t",
+     "nombre": "Cribado del segundo trimestre (si empezaste tarde el control)",
+     "nota": "Un análisis de sangre entre las semanas 13+6 y 19+6, mejor en la 15+1.",
+     "semana_desde": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 19
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 7, «Ecografía de diagnóstico prenatal» («De la semana 20+0 a la 21+6»), p. 50; ficha 5, «Ecografía de la semana 20», p. 17",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "Para ver la anatomía del bebé y su crecimiento.",
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 21
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 6 «Analítica del segundo trimestre», p. 18",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "fuente_extra": {
+      "apartado": "Ficha 10 «Analíticas y serologías», «Grupo sanguíneo, factor Rh y prueba de Coombs indirecta» (repetir los anticuerpos anti-Rh a las Rh negativo «entre las 24 y 28 semanas»), p. 51",
+      "documento": "Dirección General de Salud Pública y Participación y Servei de Salut de les Illes Balears: «Guía de buenas prácticas en la atención del embarazo, del puerperio y del periodo neonatal en el área de salud maternoinfantil de las Islas Baleares» (2017; revisión de la guía de 2014; ISBN 978-84-694-8470-8)",
+      "fuente": "https://www.caib.es/sites/salut/f/228848",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-analitica-2t",
+     "nombre": "Analítica del segundo trimestre y cribado de diabetes gestacional (test de O'Sullivan)",
+     "nota": "El test de O'Sullivan, en general a todas, entre las semanas 24 y 28. La analítica incluye hemograma y glucosa y, si eres Rh negativo, grupo, Rh y Coombs indirecto.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 7 «Actividades en la visita del tercer trimestre», «Solicitud de pruebas» y «Prescripción», p. 19",
+     "condicion": "eres Rh negativo",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-anti-d",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Te dan cita para ponértela entre las semanas 28 y 30.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 30
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 7, «Ecografía del tercer trimestre» («De la semana 35+0 a la 36+6»), p. 50; ficha 7, «Ecografía en la semana 36», p. 19",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Para ver la posición y el crecimiento del bebé, el líquido amniótico y la placenta.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 8 «Analítica del tercer trimestre» y «Excepciones al cribado del estreptococo B», p. 20",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-estreptococo-b",
+     "nombre": "Analítica del tercer trimestre y cribado del estreptococo del grupo B",
+     "nota": "Hemograma, coagulación y VIH, y un cultivo vaginal y rectal entre las semanas 35 y 37. Si sale positivo, te dan antibiótico cuando empiece el parto. No hace falta si ya salió en la orina en este embarazo o si un hijo anterior tuvo la infección.",
+     "semana_desde": {
+      "semanas": 35
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2.2.6 «Plan de parto y nacimiento», recomendaciones, p. 45",
+     "documento": "Dirección General de Salud Pública y Participación y Servei de Salut de les Illes Balears: «Guía de buenas prácticas en la atención del embarazo, del puerperio y del periodo neonatal en el área de salud maternoinfantil de las Islas Baleares» (2017; revisión de la guía de 2014; ISBN 978-84-694-8470-8)",
+     "fuente": "https://www.caib.es/sites/salut/f/228848",
+     "id": "bal-emb-plan-parto",
+     "nombre": "Plan de parto y nacimiento",
+     "nota": "Si quieres, lo preparas con tu matrona, mejor entre las semanas 28 y 32, para entregarlo en el hospital donde vayas a dar a luz. Lo puedes cambiar cuando quieras.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Fila «Difteria-tétano-tosferina», columna «Prenatal» («dTpa (1.1)»), y nota 1.1, p. 1",
+     "documento": "Conselleria de Salut, Dirección General de Salud Pública: «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida. Illes Balears - 2026» (V2, marzo de 2026; versión en castellano), enlazado desde «Calendario común de vacunación a lo largo de toda la vida en las Illes Balears» de la web de Vacunaciones",
+     "fuente": "https://www.caib.es/sites/vacunacions/f/495018",
+     "fuente_extra": {
+      "apartado": "Exposición («entre las semanas 27 y 36, preferentemente en la semana 27-28») y punto 1 de la instrucción, p. 1",
+      "documento": "Instrucción de la directora general de Salud Pública para favorecer la accesibilidad de la vacunación con dTpa durante el embarazo con el objetivo de prevenir los casos graves de tosferina en lactantes (firmada el 31/07/2024)",
+      "fuente": "https://www.caib.es/sites/vacunacions/f/473812",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, entre las semanas 27 y 36, mejor en la 27 o la 28. Es gratuita también en los centros sanitarios privados.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 5 «Población diana a vacunar y grupos de riesgo», «Embarazadas y puérperas», p. 4",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía técnica de vacunación contra la gripe. Illes Balears. Campaña 2026-2027» (V1, 28/09/2026)",
+     "fuente": "https://www.caib.es/sites/vacunacions/f/569361",
+     "fuente_extra": {
+      "apartado": "Anexo 2 «Vacunación», «Vacunas indicadas para todas las embarazadas» («1 dosis durante la temporada gripal (de octubre a marzo), en cualquier trimestre del embarazo»), p. 30",
+      "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+      "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cualquier trimestre del embarazo, durante la campaña. Si no te vacunaste en el embarazo, puedes hacerlo hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3 «Población diana e indicaciones de vacunación», grupo A.5 «Embarazadas», p. 4; apartado 4 (Comirnaty XFG, «Elección principal en embarazadas»; Bimervax «no recomendada en mujeres embarazadas (salvo evaluación de riesgo/beneficio individual)»), p. 4-5; apartado 5, p. 5",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía técnica de vacunación frente a la COVID-19. Illes Balears. Campaña 2026-2027» (elaborada el 13/09/2026; versión V2 de 06/10/2026)",
+     "fuente": "https://www.caib.es/sites/vacunacions/f/480447",
+     "id": "bal-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Una dosis en cualquier trimestre, mejor en el segundo: protege también al bebé en sus primeros meses. En el embarazo se usan vacunas de ARNm. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 2 «Vacunación»: «Observaciones generales sobre las vacunas y el embarazo», p. 30, y «Vacunas contraindicadas (vacunas atenuadas)», p. 32",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-contraindicadas",
+     "linea": false,
+     "nombre": "Vacunas que no se ponen en el embarazo",
+     "nota": "Las vacunas atenuadas: triple vírica, tetravírica, varicela, BCG, fiebre tifoidea oral y gripe intranasal; la de la fiebre amarilla, solo si el riesgo de infección es alto. Si te pusieron alguna sin saber que estabas embarazada, no está justificado interrumpir el embarazo.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "un mes antes de la concepción",
+     "apartado": "Anexo 6 «Suplementación farmacológica durante el embarazo», «Ácido fólico», p. 46",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "fuente_extra": {
+      "apartado": "Ficha 1 «Actividades en la consulta preconcepcional», «Prescripción», p. 11",
+      "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+      "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+      "verificado": "2026-11-17"
+     },
+     "id": "bal-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg al día desde un mes antes de la concepción hasta la semana 12; si no lo tomabas, desde que sepas que estás embarazada. Con riesgo alto de defectos del tubo neural (antecedentes, diabetes, tratamiento antiepiléptico u obesidad) la dosis es de 5 mg: te la indican en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Ficha 3, «Prescripción» («Yodo»), p. 16; anexo 6, «Yodo», p. 48",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-yodo",
+     "linea": false,
+     "nombre": "Yodo",
+     "nota": "Se recomienda un suplemento de 200 µg al día durante todo el embarazo (no si tienes hipertiroidismo). Puedes no tomarlo si tomas 2 o 3 raciones de lácteos al día y sal yodada.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 6, «Calcio», p. 46, y «Hierro», «Vitamina B12» y «Vitamina D», p. 47",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-otros-suplementos",
+     "linea": false,
+     "nombre": "Vitamina B12, vitamina D, hierro y calcio",
+     "nota": "Si sigues una dieta vegetariana o vegana, necesitas suplemento de vitamina B12. La vitamina D, el hierro y el calcio no se toman de forma rutinaria: la vitamina D se valora si no te da bastante el sol, tienes la piel oscura u obesidad.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo 9 «Alimentación segura durante el embarazo»: «Recomendaciones dietéticas generales», p. 58, y «Riesgos de infección», p. 59",
+     "documento": "Servicio de Salud de las Islas Baleares (IB-Salut): «Protocolo de atención y acompañamiento en el embarazo normal» (versión 1, abril de 2025; versión en castellano), en Docusalut, repositorio institucional de la Conselleria de Salut (hdl.handle.net/20.500.13003/24702)",
+     "fuente": "https://docusalut.com/bitstreams/d392a4ae-8904-40aa-ade6-ef0e55905d3a/download",
+     "id": "bal-emb-alimentos",
+     "nombre": "Alimentos que evitar según el IB-Salut",
+     "nota": "Además de lo de la AESAN: evita el café en el primer trimestre y luego toma menos de 200 mg de cafeína al día (2 tazas pequeñas de café); las cabezas de gambas y langostinos y el cuerpo de los cangrejos (cadmio); el hígado, el paté de hígado y el foie gras (exceso de vitamina A); la carne de caza abatida con munición de plomo; las algas, y el agua de pozo o de cisterna si no sabes si es potable.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "",
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado 1 «Introducción» (p. 2); apartado 5, «Embarazadas y puérperas» (p. 4); apartado 6 «Inicio de la campaña y priorización de grupos» («A partir del 19 de octubre, la cita estará abierta para toda la población […] 1. Mujeres embarazadas») (p. 4-5)",
+     "campana": "gripe",
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía técnica de vacunación contra la gripe. Illes Balears. Campaña 2026-2027» (V1, 28/09/2026)",
+     "fin": null,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/569361",
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "Cita abierta desde el 19/10/2026; las embarazadas son el primer grupo prioritario. No hay fecha de fin: se puede vacunar hasta que acabe la temporada de gripe.",
+     "poblacion": "Embarazadas en cualquier trimestre; puérperas hasta 6 meses después del parto que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 3, grupo A.5 (p. 4); apartado 6 «Fecha de inicio de la vacunación» («Las agendas para vacunación COVID-19 estarán disponibles a partir del 19 de octubre para toda la población diana») y apartado 7 (cita en el centro de salud) (p. 6)",
+     "campana": "covid",
+     "documento": "Conselleria de Salut, Servicio de Prevención de la Enfermedad: «Guía técnica de vacunación frente a la COVID-19. Illes Balears. Campaña 2026-2027» (elaborada el 13/09/2026; versión V2 de 06/10/2026)",
+     "fin": null,
+     "fuente": "https://www.caib.es/sites/vacunacions/f/480447",
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "Agendas abiertas desde el 19/10/2026: pide cita en tu centro de salud. La fecha de fin no está publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre (con preferencia el segundo).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-visita-41",
+    "emb-dentista",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-cribado-preeclampsia",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-anemia-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-contraindicadas",
+    "emb-acido-folico",
+    "emb-yodo"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -10843,6 +12988,7 @@
     }
    ],
    "embarazo": [],
+   "embarazo_aviso": "",
    "embarazo_campanas": [],
    "embarazo_sustituye": [],
    "escolarizacion": {
@@ -11893,6 +14039,7 @@
      "verificado": "2026-11-17"
     }
    ],
+   "embarazo_aviso": "",
    "embarazo_campanas": [
     {
      "apartado": "Apartado 2.1 «Período de vacunación», pág. 5; apartado 2.3 «Escalonamiento», pág. 6; y grupo IV de la población diana, pág. 15",
@@ -12579,6 +14726,7 @@
     }
    ],
    "embarazo": [],
+   "embarazo_aviso": "",
    "embarazo_campanas": [],
    "embarazo_sustituye": [],
    "escolarizacion": {
@@ -13362,9 +15510,370 @@
      "verificado": "2026-11-16"
     }
    ],
-   "embarazo": [],
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Tema «¡Enhorabuena, estás embarazada!» («la primera consulta con tu matrona será en tu centro de salud, aproximadamente en la semana 8 desde la fecha de tu última regla. Pide cita previamente»)",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "fuente_extra": {
+      "apartado": "Apartado 5 «Integración del cribado en el circuito asistencial» («En la primera visita de embarazo, generalmente a la semana 8 de embarazo por la matrona…»), p. 21",
+      "documento": "Osakidetza: «Programa de cribado y prevención prenatal de preeclampsia pretérmino», versión 1.0, aprobada por la Comisión el 03/06/2024",
+      "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_preeclamp/es_def/adjuntos/PROGRAMA-DE-CRIBADO-Y-PREVENCION-PRENATAL-DE-PREECLAMPSIA-PRETERMINO-.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "pv-emb-primera-visita",
+     "nombre": "Primera consulta con la matrona del centro de salud",
+     "nota": "Tras el test positivo, pide cita: la primera consulta con tu matrona es hacia la semana 8. Te informa del embarazo y del cribado prenatal, te pide la analítica y te cita para la ecografía de las semanas 11 a 13+6.",
+     "semana": {
+      "semanas": 8
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tema «Salud bucodental en el embarazo» (cita en odontología o higienista de Osakidetza; «limpieza del sarro, preferentemente en el 2º trimestre»)",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "id": "pv-emb-dentista",
+     "linea": false,
+     "nombre": "Cuida tu boca: cita en odontología de Osakidetza",
+     "nota": "Durante el embarazo puedes pedir cita en odontología o con la higienista dental de Osakidetza (di que estás embarazada). La limpieza de boca se hace preferentemente en el segundo trimestre.",
+     "preferente": "segundo trimestre",
+     "tipo": "visita",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Anexo I, documento informativo para la gestante («entre la semana 9 y 11»), p. 129; apartado 2.2 «Pruebas bioquímicas» (8+0 a 13+6, mejor 9-10), p. 13",
+     "documento": "Osakidetza, Dirección General: «Programa de cribado prenatal. Incorporación del ADN-lc», versión 4.1, aprobada por la Comisión el 18/03/2024",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_pre_down/es_def/adjuntos/PROGRAMA-CRIBADO_version4.1.pdf",
+     "fuente_extra": {
+      "apartado": "Preguntas frecuentes, «¿Qué ocurre si mi Rh y el de mi bebé son diferentes?» (grupo y Rh en la analítica del primer trimestre)",
+      "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+      "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+      "verificado": "2026-11-17"
+     },
+     "id": "pv-emb-analitica-1",
+     "nombre": "Analítica del primer trimestre",
+     "nota": "Los análisis del primer control del embarazo, entre las semanas 9 y 11: incluyen el grupo sanguíneo y el Rh y, si aceptas el cribado prenatal, la PAPP-A y la beta-hCG libre. La extracción puede hacerse entre las semanas 8 y 13+6; mejor en la 9 o la 10.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 11
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2.3 «Ecografía del primer trimestre y cálculo de riesgo», p. 13, e «Indicaciones según riesgo», p. 14; anexo I, p. 129",
+     "documento": "Osakidetza, Dirección General: «Programa de cribado prenatal. Incorporación del ADN-lc», versión 4.1, aprobada por la Comisión el 18/03/2024",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_pre_down/es_def/adjuntos/PROGRAMA-CRIBADO_version4.1.pdf",
+     "id": "pv-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre y cribado combinado",
+     "nota": "Entre las semanas 11 y 13+6 (mejor de la 11+6 a la 12+5). Si aceptas el cribado, se combina la translucencia nucal con la analítica y tu edad para estimar el riesgo de síndrome de Down, Edwards y Patau. Con riesgo intermedio se ofrece el test de ADN fetal en sangre materna.",
+     "preferente": {
+      "desde": {
+       "dias": 6,
+       "semanas": 11
+      },
+      "hasta": {
+       "dias": 5,
+       "semanas": 12
+      }
+     },
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Resumen del circuito, p. 9; apartado 3 «Indicaciones y contraindicaciones» («indicado en todas las gestaciones simples»), p. 10; apartado 5, p. 21",
+     "documento": "Osakidetza: «Programa de cribado y prevención prenatal de preeclampsia pretérmino», versión 1.0, aprobada por la Comisión el 03/06/2024",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_preeclamp/es_def/adjuntos/PROGRAMA-DE-CRIBADO-Y-PREVENCION-PRENATAL-DE-PREECLAMPSIA-PRETERMINO-.pdf",
+     "id": "pv-emb-cribado-preeclampsia",
+     "nombre": "Cribado de preeclampsia en la ecografía del primer trimestre",
+     "nota": "Se ofrece en todos los embarazos de un solo bebé: tensión arterial en los dos brazos, doppler de las arterias del útero en la ecografía y la PAPP-A de la analítica. Si sale riesgo alto, te recetan ácido acetilsalicílico (150 mg por la noche) hasta la semana 36.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "dias": 6,
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 2.1 «Captación de la embarazada» y apartado 2.2 «Cribado de segundo trimestre», p. 13",
+     "condicion": "no se te pudo hacer el cribado del primer trimestre",
+     "documento": "Osakidetza, Dirección General: «Programa de cribado prenatal. Incorporación del ADN-lc», versión 4.1, aprobada por la Comisión el 18/03/2024",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_pre_down/es_def/adjuntos/PROGRAMA-CRIBADO_version4.1.pdf",
+     "id": "pv-emb-cribado-2t",
+     "nombre": "Cribado del segundo trimestre (si no se hizo el del primero)",
+     "nota": "Análisis de sangre (beta-hCG libre y alfafetoproteína) entre las semanas 14 y 20.",
+     "semana_desde": {
+      "semanas": 14
+     },
+     "semana_hasta": {
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Apartado 11 «Ecografía morfológica»: 11.1 («se oferta a todas las embarazadas»), p. 81; 11.2 «Citación de las gestantes» y 11.3.1 «Edad gestacional», p. 82",
+     "documento": "Osakidetza, Dirección General: «Programa de cribado prenatal. Incorporación del ADN-lc», versión 4.1, aprobada por la Comisión el 18/03/2024",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_prog_crib_pre_down/es_def/adjuntos/PROGRAMA-CRIBADO_version4.1.pdf",
+     "id": "pv-emb-ecografia-morfologica",
+     "nombre": "Ecografía morfológica",
+     "nota": "Se ofrece a todas: revisa la anatomía y el crecimiento del bebé. Te citan al hacer la ecografía del primer trimestre, alrededor de la semana 20 (entre la 18 y la 21).",
+     "preferente": {
+      "desde": {
+       "semanas": 20
+      },
+      "hasta": {
+       "semanas": 20
+      }
+     },
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 21
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Preguntas frecuentes, «¿Qué es y para qué sirve la prueba de azúcar?»",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "id": "pv-emb-diabetes",
+     "linea": false,
+     "nombre": "Prueba del azúcar (test de O'Sullivan)",
+     "nota": "Se ofrece a todas las embarazadas en el segundo trimestre, y también en el primero si tienes factores de riesgo (35 años o más, obesidad, un familiar de primer grado con diabetes o diabetes en otro embarazo). Tomas un líquido dulce y a la hora te sacan sangre.",
+     "preferente": "segundo trimestre",
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Preguntas frecuentes, «¿Qué ocurre si mi Rh y el de mi bebé son diferentes?»",
+     "condicion": "eres Rh negativo",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "id": "pv-emb-anti-d-28",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Si tu Rh es negativo, se recomienda la gammaglobulina anti-D sobre la semana 28 y, si el bebé es Rh positivo, otra dosis después del parto.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tema «Preparándome para el parto»",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "id": "pv-emb-plan-parto",
+     "linea": false,
+     "nombre": "Registrar tu plan de parto",
+     "nota": "Si haces un plan de parto, puedes registrarlo un mes antes de tu fecha probable de parto en el Servicio de Atención al Paciente de tu hospital, adjuntarlo en tu Carpeta de Salud o entregarlo en el hospital cuando llegue el parto.",
+     "tipo": "prueba",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Vacuna frente a tosferina», p. 5 del PDF",
+     "documento": "Departamento de Salud: Manual de vacunaciones, capítulo 3.2 «Calendario vacunal de la población adulta sana 2026»",
+     "fuente": "https://www.euskadi.eus/contenidos/informacion/manual_vacunaciones/es_def/adjuntos/2026/3.2-Zz-Calendario-vacunal-poblacion-adulta-sana-2026.pdf",
+     "fuente_extra": [
+      {
+       "apartado": "«Indicaciones», «Vacunación durante el embarazo», p. 5 del PDF",
+       "documento": "Departamento de Salud: Manual de vacunaciones, capítulo 4.3 «Tosferina» (PDF de julio de 2026)",
+       "fuente": "https://www.euskadi.eus/contenidos/informacion/manual_vacunaciones/es_def/adjuntos/2026/4.3-TOSFERINA.pdf",
+       "verificado": "2026-11-17"
+      },
+      {
+       "apartado": "«Vacuna de difteria, tétanos, tosferina (dTpa)» y tabla 1, págs. 190-192 (PDF 2-4)",
+       "documento": "Departamento de Salud: Manual de vacunaciones (edición de 2024), capítulo 5 «Vacunación en la embarazada», págs. 189-199 (enlazado hoy desde la página «Manual de vacunaciones» de euskadi.eus)",
+       "fuente": "https://www.euskadi.eus/contenidos/informacion/manual_vacunaciones/es_def/adjuntos/MANUAL-VACUNACIONES-2024-189-199.pdf",
+       "verificado": "2026-11-17"
+      },
+      {
+       "apartado": "«¿Cuándo debo vacunarme?» y «¿Puedo vacunarme frente a la gripe y la tosferina el mismo día?»",
+       "documento": "Departamento de Salud, euskadi.eus: «Vacuna de la tosferina para embarazadas» (última modificación 29/10/2018; consultada el 17/11/2026)",
+       "fuente": "https://www.euskadi.eus/informacion/vacuna-de-la-tosferina-para-embarazadas/web01-a3vacuna/es/",
+       "verificado": "2026-11-17"
+      }
+     ],
+     "id": "pv-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, aunque estés vacunada o hayas pasado la tos ferina: entre las semanas 27 y 36, mejor entre la 27 y la 31. Se puede poner el mismo día que la de la gripe. Está en todos los centros de salud.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 31
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Vacuna de gripe inactivada», p. 190 (PDF 2), y tabla 1, p. 192 (PDF 4)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Departamento de Salud: Manual de vacunaciones (edición de 2024), capítulo 5 «Vacunación en la embarazada», págs. 189-199 (enlazado hoy desde la página «Manual de vacunaciones» de euskadi.eus)",
+     "fuente": "https://www.euskadi.eus/contenidos/informacion/manual_vacunaciones/es_def/adjuntos/MANUAL-VACUNACIONES-2024-189-199.pdf",
+     "id": "pv-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cualquier trimestre, mejor antes de que empiece la temporada de gripe. Si no te vacunaste en el embarazo, en los 6 meses después del parto. Va por campañas: mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Población diana», punto 5 («Embarazadas en cualquier trimestre de gestación, preferiblemente durante el 2º trimestre»), p. 3; «Recomendación», p. 3",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Dirección de Salud Pública y Adicciones, Departamento de Salud: «Estrategia de vacunación COVID-19. Sistema Sanitario de Euskadi. Actualizado en octubre de 2026» (bilingüe; firmada el 09/10/2026)",
+     "fuente": "https://www.euskadi.eus/contenidos/informacion/covid_vac_grupos/es_def/adjuntos/ESTRATEGIA-VACUNACION-COVID-EUSKADI_2026-2027.pdf",
+     "fuente_extra": {
+      "apartado": "«Vacuna COVID-19» (puerperio hasta 6 meses), p. 191 (PDF 3)",
+      "documento": "Departamento de Salud: Manual de vacunaciones (edición de 2024), capítulo 5 «Vacunación en la embarazada», págs. 189-199 (enlazado hoy desde la página «Manual de vacunaciones» de euskadi.eus)",
+      "fuente": "https://www.euskadi.eus/contenidos/informacion/manual_vacunaciones/es_def/adjuntos/MANUAL-VACUNACIONES-2024-189-199.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "pv-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Una dosis en cualquier trimestre, preferiblemente en el segundo, aunque no te hayas vacunado antes; deja al menos 3 meses desde la última dosis o infección. Si no te vacunaste en el embarazo, en los 6 meses después del parto. Mira las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-17"
+    },
+    {
+     "antes": "un mes antes de la concepción",
+     "apartado": "«Anemia y estados carenciales», «Ácido fólico», p. 61 (PDF 3)",
+     "documento": "Departamento de Salud (CEVIME): INFAC, volumen 33, n.º 6, 2025, «Uso de medicamentos en el embarazo»",
+     "fuente": "https://www.euskadi.eus/contenidos/informacion/cevime_infac_2025/es_def/adjuntos/INFAC_Vol_33_6_embarazo.pdf",
+     "fuente_extra": {
+      "apartado": "«Preparándote para el embarazo», págs. 6-7 (PDF 8-9)",
+      "documento": "Departamento de Salud del Gobierno Vasco: «Guía del embarazo, preconcepción, parto y puerperio saludable», 1.ª edición, abril de 2017 (la enlaza hoy el curso «Embarazo» de Osasun Eskola)",
+      "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_embarazo/es_def/adjuntos/Guia-embarazo-preconcepcion-parto-y-puerperio-saludable.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "pv-emb-acido-folico",
+     "linea": false,
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg al día desde un mes antes de la concepción y durante los tres primeros meses. Con antecedentes de defectos del tubo neural, diabetes, obesidad o tratamiento antiepiléptico, la dosis es de 5 mg y se empieza 3 meses antes: te lo indican en tu centro de salud.",
+     "semana_desde": null,
+     "semana_hasta": null,
+     "tipo": "suplemento",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "Tema «Tabaco y alcohol en el embarazo»",
+     "documento": "Osakidetza, Osasun Eskola: curso «Embarazo» (temas «¡Enhorabuena, estás embarazada!», última actualización 17/06/2024; «Tabaco y alcohol en el embarazo», «Preparándome para el parto», «Salud bucodental en el embarazo» y «Preguntas frecuentes»; consultado el 17/11/2026)",
+     "fuente": "https://osasuneskola.osakidetza.eus/es/medialib/html/embarazo",
+     "fuente_extra": {
+      "apartado": "«Tabaco, alcohol y otras drogas», págs. 36-37 (PDF 38-39)",
+      "documento": "Departamento de Salud del Gobierno Vasco: «Guía del embarazo, preconcepción, parto y puerperio saludable», 1.ª edición, abril de 2017 (la enlaza hoy el curso «Embarazo» de Osasun Eskola)",
+      "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_embarazo/es_def/adjuntos/Guia-embarazo-preconcepcion-parto-y-puerperio-saludable.pdf",
+      "verificado": "2026-11-17"
+     },
+     "id": "pv-emb-alcohol-tabaco",
+     "nombre": "Alcohol, tabaco y otras drogas",
+     "nota": "Con el alcohol, el único consumo seguro en el embarazo es cero. Es un buen momento para dejar de fumar y evitar el humo de otras personas; en tu centro de salud te pueden ayudar. Si consumes otras drogas, busca ayuda profesional cuanto antes.",
+     "tipo": "evitar",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Revisiones y cuidados médicos», p. 38 (PDF 40)",
+     "documento": "Departamento de Salud del Gobierno Vasco: «Guía del embarazo, preconcepción, parto y puerperio saludable», 1.ª edición, abril de 2017 (la enlaza hoy el curso «Embarazo» de Osasun Eskola)",
+     "fuente": "https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_embarazo/es_def/adjuntos/Guia-embarazo-preconcepcion-parto-y-puerperio-saludable.pdf",
+     "id": "pv-emb-pediatra",
+     "linea": false,
+     "nombre": "Pregunta qué pediatra tendrá tu bebé",
+     "nota": "En el último trimestre, pregunta en tu centro de salud qué pediatra corresponde a tu bebé y cómo se pide la primera consulta. Lleva siempre contigo la cartilla de la embarazada.",
+     "tipo": "tramite",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_aviso": "",
+   "embarazo_campanas": [
+    {
+     "apartado": "Exposición de motivos, último grupo de la lista («Mujeres embarazadas en cualquier trimestre…»), p. 2; resuelvo primero (inicio el 5 de octubre de 2026), p. 2, y segundo (fin el 31 de diciembre de 2026), p. 3",
+     "campana": "gripe",
+     "documento": "Resolución de 28 de septiembre de 2026, del director de Salud Pública y Adicciones, por la que se establece el comienzo de la campaña de vacunación frente a la gripe, temporada 2026-2027. BOPV n.º 199, de 19/10/2026 (2026/4370)",
+     "fin": "2026-12-31",
+     "fuente": "https://www.euskadi.eus/bopv2/datos/2026/10/2604370a.pdf",
+     "fuente_cita": {
+      "apartado": "Apartado «Más opciones para vacunarse» y lista de grupos",
+      "documento": "Gobierno Vasco: «Osakidetza inicia la campaña de vacunación frente a la gripe y la Covid-19 con el lema \"cuidarte también es cuidar\"» (nota de prensa, 05/10/2026)",
+      "fuente": "https://www.euskadi.eus/gobierno-vasco/-/noticia/2026/osakidetza-inicia-campana-vacunacion-frente-gripe-y-covid-19-lema-cuidarte-tambien-es-cuidar/",
+      "verificado": "2026-11-17"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-05",
+     "nota": "La campaña empezó el 05/10/2026 y está previsto que termine el 31/12/2026, fecha que puede cambiar por razones epidemiológicas. Pide cita en la web o la app de Osakidetza, en tu centro de salud o en el 900 20 30 50.",
+     "poblacion": "Mujeres embarazadas en cualquier trimestre de gestación y mujeres durante el puerperio (hasta los 6 meses tras el parto) que no se hayan vacunado durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    },
+    {
+     "apartado": "«Población diana», punto 5, p. 3; «La vacunación estará disponible hasta que finalice la temporada estacional», p. 4",
+     "campana": "covid",
+     "documento": "Dirección de Salud Pública y Adicciones, Departamento de Salud: «Estrategia de vacunación COVID-19. Sistema Sanitario de Euskadi. Actualizado en octubre de 2026» (bilingüe; firmada el 09/10/2026)",
+     "fin": null,
+     "fuente": "https://www.euskadi.eus/contenidos/informacion/covid_vac_grupos/es_def/adjuntos/ESTRATEGIA-VACUNACION-COVID-EUSKADI_2026-2027.pdf",
+     "fuente_cita": {
+      "apartado": "«¿A quién está dirigida?» y «¿Cómo solicitar cita?»",
+      "documento": "Departamento de Salud, euskadi.eus: «Campaña de vacunación 2026-2027» (COVID-19; última modificación 21/10/2026; consultada el 17/11/2026)",
+      "fuente": "https://www.euskadi.eus/campana-vacunacion-covid/web01-a3txerto/es/",
+      "verificado": "2026-11-17"
+     },
+     "fuente_inicio": {
+      "apartado": "Primer párrafo («han iniciado hoy… la campaña general de vacunación frente a la gripe y la COVID-19»), fecha de publicación 05/10/2026",
+      "documento": "Gobierno Vasco: «Osakidetza inicia la campaña de vacunación frente a la gripe y la Covid-19 con el lema \"cuidarte también es cuidar\"» (nota de prensa, 05/10/2026)",
+      "fuente": "https://www.euskadi.eus/gobierno-vasco/-/noticia/2026/osakidetza-inicia-campana-vacunacion-frente-gripe-y-covid-19-lema-cuidarte-tambien-es-cuidar/",
+      "verificado": "2026-11-17"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-05",
+     "nota": "La campaña de gripe y COVID-19 empezó el 05/10/2026. No hay fecha de fin publicada: la vacuna está disponible hasta que termine la temporada. Pide cita en tu centro de salud o en el 900 20 30 50.",
+     "poblacion": "Embarazadas en cualquier trimestre de gestación, preferiblemente en el segundo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-17"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-visita-1",
+    "emb-dentista",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-cribado-preeclampsia",
+    "emb-test-cuadruple",
+    "emb-ecografia-2t",
+    "emb-diabetes-24-28",
+    "emb-anti-d-28-30",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico",
+    "emb-alcohol",
+    "emb-tabaco"
+   ],
    "escolarizacion": {
     "admision": [
      {
