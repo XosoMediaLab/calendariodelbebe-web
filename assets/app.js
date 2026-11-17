@@ -12,6 +12,32 @@
   "use strict";
 
   var DIA_MS = 86400000;
+
+  // ---------- Textos (castellano por defecto; otra lengua con usarTextos) ----------
+  // Cada texto visible pasa por t("plantilla", {variable: valor}). Las traducciones salen de
+  // i18n/<lengua>.json a través de build.py; sin traducción se queda el castellano.
+  var TEXTOS = {};
+
+  function usarTextos(textos) {
+    TEXTOS = textos || {};
+  }
+
+  // Catalán: el artículo se apostrofa ante las fechas del día 1 y del 11 («de l'01/10/2026»).
+  // Las mismas reglas están en i18n/__init__.py (APOSTROFAR).
+  function apostrofar(s) {
+    if (TEXTOS._lengua !== "ca") return s;
+    return s.replace(/\b([Dd])el (0?1|11)\//g, "$1e l'$2/")
+      .replace(/\b([Pp])el (0?1|11)\//g, "$1er l'$2/")
+      .replace(/\b([Aa])l (0?1|11)\//g, "$1 l'$2/")
+      .replace(/\bel (0?1|11)\//g, "l'$1/")
+      .replace(/\bEl (0?1|11)\//g, "L'$1/");
+  }
+
+  function t(plantilla, v) {
+    var s = Object.prototype.hasOwnProperty.call(TEXTOS, plantilla) ? TEXTOS[plantilla] : plantilla;
+    return apostrofar(v ? s.replace(/\{(\w+)\}/g, function (_, k) { return String(v[k]); }) : s);
+  }
+  var tr = t; // para funciones con una variable local «t»
   var EDAD_MAXIMA_MESES = 36;
   var AVISO =
     "Orientativo. No sustituye al pediatra ni a la enfermera de tu centro de salud, " +
@@ -88,40 +114,40 @@
   // ---------- Textos de edad ----------
 
   function textoEdad(edad) {
-    if (edad.dias === 0) return "al nacer";
-    if (edad.horas !== undefined) return "a partir de las " + edad.horas + " horas de vida";
-    if (edad.dias !== undefined) return edad.dias + (edad.dias === 1 ? " día" : " días");
-    if (edad.semanas !== undefined) return edad.semanas + (edad.semanas === 1 ? " semana" : " semanas");
+    if (edad.dias === 0) return t("al nacer");
+    if (edad.horas !== undefined) return t("a partir de las {n} horas de vida", { n: edad.horas });
+    if (edad.dias !== undefined) return t(edad.dias === 1 ? "{n} día" : "{n} días", { n: edad.dias });
+    if (edad.semanas !== undefined) return t(edad.semanas === 1 ? "{n} semana" : "{n} semanas", { n: edad.semanas });
     var m = edad.meses;
-    if (m >= 24 && m % 12 === 0) return m / 12 + " años";
-    return m + (m === 1 ? " mes" : " meses");
+    if (m >= 24 && m % 12 === 0) return t("{n} años", { n: m / 12 });
+    return t(m === 1 ? "{n} mes" : "{n} meses", { n: m });
   }
 
   function textoRango(desde, hasta) {
     if (desde.horas !== undefined && hasta.horas !== undefined) {
-      return "entre las " + desde.horas + " y las " + hasta.horas + " horas de vida";
+      return t("entre las {a} y las {b} horas de vida", { a: desde.horas, b: hasta.horas });
     }
     if (desde.semanas !== undefined && hasta.semanas !== undefined) {
-      return "entre la " + desde.semanas + ".ª y la " + hasta.semanas + ".ª semana";
+      return t("entre la {a}.ª y la {b}.ª semana", { a: desde.semanas, b: hasta.semanas });
     }
     if (desde.meses >= 24 && desde.meses % 12 === 0 && hasta.meses % 12 === 0) {
-      return "entre los " + desde.meses / 12 + " y los " + hasta.meses / 12 + " años";
+      return t("entre los {a} y los {b} años", { a: desde.meses / 12, b: hasta.meses / 12 });
     }
     if (desde.meses !== undefined && hasta.meses !== undefined) {
-      return "entre los " + desde.meses + " y los " + hasta.meses + " meses";
+      return t("entre los {a} y los {b} meses", { a: desde.meses, b: hasta.meses });
     }
-    return "entre " + edadCorta(desde) + " y " + edadCorta(hasta);
+    return t("entre {a} y {b}", { a: edadCorta(desde), b: edadCorta(hasta) });
   }
 
   // «las 6 semanas», «los 12 meses», «los 8 años», «el nacimiento»…
   function edadCorta(edad) {
-    if (edad.horas === 0 || edad.dias === 0) return "el nacimiento";
-    if (edad.horas !== undefined) return "las " + edad.horas + " horas";
-    if (edad.dias !== undefined) return "los " + edad.dias + " días";
-    if (edad.semanas !== undefined) return edad.semanas === 1 ? "la primera semana" : "las " + edad.semanas + " semanas";
+    if (edad.horas === 0 || edad.dias === 0) return t("el nacimiento");
+    if (edad.horas !== undefined) return t("las {n} horas", { n: edad.horas });
+    if (edad.dias !== undefined) return t("los {n} días", { n: edad.dias });
+    if (edad.semanas !== undefined) return edad.semanas === 1 ? t("la primera semana") : t("las {n} semanas", { n: edad.semanas });
     var m = edad.meses;
-    if (m >= 24 && m % 12 === 0) return "los " + m / 12 + " años";
-    return "los " + m + " meses";
+    if (m >= 24 && m % 12 === 0) return t("los {n} años", { n: m / 12 });
+    return t("los {n} meses", { n: m });
   }
 
   // ---------- Línea del tiempo ----------
@@ -158,13 +184,13 @@
     if (referencia > limite) return null;
     var temporada = temporadaDe(referencia);
     var c = campanaPublicada(campanas, "gripe", temporada);
-    var nota = vacuna.nota + " Las fechas de cada campaña las publica " + aut + " en otoño.";
+    var nota = vacuna.nota + " " + t("Las fechas de cada campaña las publica {aut} en otoño.", { aut: aut });
     var evento = {
       id: "gripe-" + temporada,
       tipo: "campaña",
-      titulo: "Gripe: campaña " + temporada,
+      titulo: t("Gripe: campaña {temporada}", { temporada: temporada }),
       fecha: seisMeses,
-      edadTexto: "desde los 6 meses, cada temporada",
+      edadTexto: t("desde los 6 meses, cada temporada"),
       elementos: [elementoVacuna(vacuna)],
       nota: nota,
       fechaConocida: false,
@@ -178,22 +204,22 @@
       var inicio = desdeISO(c.inicio);
       var fin = c.fin ? desdeISO(c.fin) : null;
       if (fin && seisMeses > fin) {
-        evento.campana = "La campaña " + temporada + " termina el " + formatear(fin) +
-          ", antes de que cumpla 6 meses: le tocará la siguiente.";
+        evento.campana = t("La campaña {temporada} termina el {fin}, antes de que cumpla 6 meses: le tocará la siguiente.", { temporada: temporada, fin: formatear(fin) });
         evento.fecha = seisMeses;
-        evento.titulo = "Gripe: campaña siguiente a la " + temporada;
+        evento.titulo = t("Gripe: campaña siguiente a la {temporada}", { temporada: temporada });
       } else {
         evento.fecha = seisMeses > inicio ? seisMeses : inicio;
         evento.fechaConocida = true;
-        evento.campana = "Campaña " + temporada + ": desde el " + formatear(inicio) +
-          (fin ? " hasta el " + formatear(fin) : " (fecha de fin sin publicar)") +
-          (seisMeses > inicio ? ". Puede vacunarse desde que cumple 6 meses." : ".");
+        evento.campana = (fin
+          ? t("Campaña {temporada}: desde el {inicio} hasta el {fin}.", { temporada: temporada, inicio: formatear(inicio), fin: formatear(fin) })
+          : t("Campaña {temporada}: desde el {inicio} (fecha de fin sin publicar).", { temporada: temporada, inicio: formatear(inicio) })) +
+          (seisMeses > inicio ? " " + t("Puede vacunarse desde que cumple 6 meses.") : "");
         evento.fuenteCampana = citaDe(c);
         evento.notaCampana = c.nota;
         evento.fin = fin;
       }
     } else {
-      evento.campana = "La campaña " + temporada + " aún no está publicada: " + aut + " publica las fechas en otoño.";
+      evento.campana = t("La campaña {temporada} aún no está publicada: {aut} publica las fechas en otoño.", { temporada: temporada, aut: aut });
     }
     return evento;
   }
@@ -210,9 +236,9 @@
     var evento = {
       id: "vrs",
       tipo: "campaña",
-      titulo: "VRS (bronquiolitis): anticuerpo monoclonal",
+      titulo: t("VRS (bronquiolitis): anticuerpo monoclonal"),
       fecha: nacimiento,
-      edadTexto: "lactantes, según la campaña",
+      edadTexto: t("lactantes, según la campaña"),
       elementos: [elementoVacuna(vacuna)],
       nota: vacuna.nota,
       fechaConocida: false,
@@ -220,11 +246,11 @@
     if (aplicable) {
       var inicio = desdeISO(aplicable.inicio);
       evento.id = "vrs-" + aplicable.temporada;
-      evento.titulo = "VRS (bronquiolitis): campaña " + aplicable.temporada;
+      evento.titulo = t("VRS (bronquiolitis): campaña {temporada}", { temporada: aplicable.temporada });
       evento.fecha = nacimiento > inicio ? nacimiento : inicio;
       evento.fechaConocida = true;
-      evento.campana = "Campaña " + aplicable.temporada + ": " + aplicable.poblacion +
-        " Empezó el " + formatear(inicio) + (aplicable.fin ? "" : "; la fecha de fin no está publicada") + ".";
+      evento.campana = t("Campaña {temporada}:", { temporada: aplicable.temporada }) + " " + aplicable.poblacion + " " +
+        (aplicable.fin ? t("Empezó el {inicio}.", { inicio: formatear(inicio) }) : t("Empezó el {inicio}; la fecha de fin no está publicada.", { inicio: formatear(inicio) }));
       evento.fuenteCampana = citaDe(aplicable);
       evento.notaCampana = aplicable.nota;
       evento.fin = aplicable.fin ? desdeISO(aplicable.fin) : null;
@@ -239,15 +265,14 @@
       }
     }
     if (ultima && nacimiento > ultima) {
-      evento.campana = "La campaña que le corresponde aún no está publicada: " + aut + " la publica antes del otoño.";
+      evento.campana = t("La campaña que le corresponde aún no está publicada: {aut} la publica antes del otoño.", { aut: aut });
       return evento;
     }
     // Nacido antes de la primera campaña publicada: su temporada ya no está en la web de la
     // comunidad. No se inventan reglas: se remite a la cartilla.
     evento.id = "vrs-anterior";
-    evento.titulo = "VRS (bronquiolitis): campaña de su temporada";
-    evento.campana = "Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web " +
-      (aut.indexOf("el ") === 0 ? "del " + aut.slice(3) : "de " + aut) + ". Si se le puso, figura en la cartilla.";
+    evento.titulo = t("VRS (bronquiolitis): campaña de su temporada");
+    evento.campana = t("Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web {de_aut}. Si se le puso, figura en la cartilla.", { de_aut: aut.indexOf("el ") === 0 ? t("del") + " " + aut.slice(3) : t("de") + " " + aut });
     return evento;
   }
 
@@ -274,7 +299,7 @@
           citas[clave] = {
             id: clave,
             tipo: "vacunas",
-            titulo: "Vacunas de los " + textoEdad(v.edad),
+            titulo: t("Vacunas de los {edad}", { edad: textoEdad(v.edad) }),
             fecha: f,
             edadTexto: textoEdad(v.edad),
             meses: v.edad.meses,
@@ -299,8 +324,8 @@
         });
       } else if (v.tipo === "campaña") {
         var ev = v.campana === "gripe"
-          ? eventoGripe(v, com.campanas, nacimiento, hoy, com.autoridad || "la consejería")
-          : eventoVRS(v, com.campanas, nacimiento, com.autoridad || "la consejería");
+          ? eventoGripe(v, com.campanas, nacimiento, hoy, com.autoridad || t("la consejería"))
+          : eventoVRS(v, com.campanas, nacimiento, com.autoridad || t("la consejería"));
         if (ev) eventos.push(ev);
       }
     });
@@ -342,7 +367,7 @@
         titulo: r.nombre,
         fecha: fechaEdad(nacimiento, r.edad_hasta), // en un trámite importa el final del plazo
         fechaDesde: fechaEdad(nacimiento, r.edad_desde),
-        edadTexto: enMeses(r.edad_desde) === 0 ? "hasta " + edadCorta(r.edad_hasta) : textoRango(r.edad_desde, r.edad_hasta),
+        edadTexto: enMeses(r.edad_desde) === 0 ? t("hasta {edad}", { edad: edadCorta(r.edad_hasta) }) : textoRango(r.edad_desde, r.edad_hasta),
         meses: enMeses(r.edad_desde),
         hastaMeses: enMeses(r.edad_hasta),
         rango: true,
@@ -430,12 +455,13 @@
       eventos.push({
         id: a.id,
         tipo: "escuela",
-        titulo: "Admisión curso " + a.curso + ": " + nivel,
+        titulo: t("Admisión curso {curso}: {nivel}", { curso: a.curso, nivel: nivel }),
         fecha: desde,
-        edadTexto: "solicitudes del " + formatear(desde) + " al " + formatear(hasta),
-        elementos: [{ id: a.id, nombre: "Admisión curso " + a.curso, nota: a.nota, fuente: citaDe(a) }],
+        edadTexto: t("solicitudes del {desde} al {hasta}", { desde: formatear(desde), hasta: formatear(hasta) }),
+        elementos: [{ id: a.id, nombre: t("Admisión curso {curso}", { curso: a.curso }), nota: a.nota, fuente: citaDe(a) }],
         fechaConocida: true,
         admision: true,
+        curso: a.curso,
       });
     });
     var segundo = esc.etapas.filter(function (r) { return r.id === "infantil-segundo-ciclo"; })[0];
@@ -445,10 +471,9 @@
         tipo: "escuela",
         titulo: segundo.nombre,
         fecha: fechaEdad(nacimiento, segundo.edad_desde),
-        edadTexto: "desde los 3 años",
+        edadTexto: t("desde los 3 años"),
         elementos: [{ id: segundo.id, nombre: segundo.nombre, nota: segundo.nota, fuente: citaDe(segundo) }],
-        campana: "Qué curso le toca y cuándo se pide plaza se fija cada año en la resolución de " +
-          "admisión del " + (com.boletin || "boletín oficial") + "; la de su curso aún no está publicada.",
+        campana: t("Qué curso le toca y cuándo se pide plaza se fija cada año en la resolución de admisión del {boletin}; la de su curso aún no está publicada.", { boletin: com.boletin || t("boletín oficial") }),
         fechaConocida: false,
       });
     }
@@ -515,19 +540,19 @@
 
   function descripcionEvento(e) {
     var lineas = [];
-    if (e.rango) lineas.push("Edad: " + e.edadTexto + ".");
+    if (e.rango) lineas.push(t("Edad: {edad}.", { edad: e.edadTexto }));
     if (e.campana) lineas.push(e.campana);
     e.elementos.forEach(function (el) {
       var t = "• " + el.nombre;
-      if (el.calendarioAnterior) t += " (con el calendario anterior: consulta la cartilla)";
-      if (el.soloSi) t += " (solo si " + el.soloSi + ")";
+      if (el.calendarioAnterior) t += " " + tr("(con el calendario anterior: consulta la cartilla)");
+      if (el.soloSi) t += " " + tr("(solo si {condicion})", { condicion: el.soloSi });
       if (el.nota) t += ". " + el.nota;
       lineas.push(t);
-      lineas.push("  Fuente: " + el.fuente.documento + ", " + el.fuente.apartado + ". " + el.fuente.fuente);
-      if (el.calculadora) lineas.push("  Calculadora: " + el.calculadora);
+      lineas.push("  " + tr("Fuente:") + " " + el.fuente.documento + ", " + el.fuente.apartado + ". " + el.fuente.fuente);
+      if (el.calculadora) lineas.push("  " + tr("Calculadora:") + " " + el.calculadora);
     });
     if (e.nota) lineas.push(e.nota);
-    lineas.push(AVISO);
+    lineas.push(t(AVISO));
     return lineas.join("\n");
   }
 
@@ -541,12 +566,12 @@
       "PRODID:-//Calendario del Bebé//Línea del tiempo//ES",
       "CALSCALE:GREGORIAN",
       "METHOD:PUBLISH",
-      "X-WR-CALNAME:Calendario del bebé",
+      "X-WR-CALNAME:" + t("Calendario del bebé"),
     ];
     eventos.forEach(function (e) {
       if (!e.fechaConocida || e.tipo === "suplemento") return;
       if (desde && e.fecha < desde) return;
-      var titulo = e.tipo === "aep" ? "Recomendación AEP: " + e.titulo : e.titulo;
+      var titulo = e.tipo === "aep" ? t("Recomendación AEP:") + " " + e.titulo : e.titulo;
       lineas.push(
         "BEGIN:VEVENT",
         "UID:" + e.id + "@" + dominio,
@@ -572,20 +597,20 @@
   function enlaceGoogle(e) {
     if (!e.fechaConocida || e.pasado || e.enCurso || e.diaNacimiento || e.tipo === "suplemento") return null;
     if (e.tipo === "cribado") return null; // en la maternidad; su fecha delataría la de nacimiento
-    var titulo = (e.tipo === "aep" ? "Recomendación AEP: " : "") + e.titulo +
+    var titulo = (e.tipo === "aep" ? t("Recomendación AEP:") + " " : "") + e.titulo +
       (e.rango ? " (" + e.edadTexto + ")" : "");
     var detalles = [];
     if (e.campana) detalles.push(e.campana);
     e.elementos.forEach(function (x) {
-      detalles.push("• " + x.nombre + (x.soloSi ? " (solo si " + x.soloSi + ")" : "") +
-        (x.calendarioAnterior ? " (con el calendario anterior: consulta la cartilla)" : ""));
+      detalles.push("• " + x.nombre + (x.soloSi ? " " + t("(solo si {condicion})", { condicion: x.soloSi }) : "") +
+        (x.calendarioAnterior ? " " + t("(con el calendario anterior: consulta la cartilla)") : ""));
     });
     var fuentes = [];
     e.elementos.forEach(function (x) {
       if (fuentes.indexOf(x.fuente.fuente) < 0) fuentes.push(x.fuente.fuente);
     });
-    detalles.push("Fuente: " + fuentes.join(" "));
-    detalles.push(AVISO);
+    detalles.push(t("Fuente:") + " " + fuentes.join(" "));
+    detalles.push(t(AVISO));
     return "https://calendar.google.com/calendar/render?action=TEMPLATE" +
       "&text=" + encodeURIComponent(titulo) +
       "&dates=" + aFechaICS(e.fecha) + "/" + aFechaICS(sumarDias(e.fecha, 1)) +
@@ -599,6 +624,9 @@
   // La alimentación va por edades, nunca por fechas.
 
   var MESES_CORTOS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+  function mesCorto(i) {
+    return t(MESES_CORTOS[i]);
+  }
 
   function mesesDesde(nacimiento, f) {
     return diasEntre(nacimiento, f) / 30.4375;
@@ -606,13 +634,13 @@
 
   function etiquetaMeses(m) {
     if (m === 0) return "0";
-    if (m % 12 === 0) return m / 12 + (m === 12 ? " año" : " años");
-    return m + " m";
+    if (m % 12 === 0) return t(m === 12 ? "{n} año" : "{n} años", { n: m / 12 });
+    return t("{n} m", { n: m });
   }
 
   function marcaDeEvento(e, nacimiento) {
     var m = mesesDesde(nacimiento, e.fecha);
-    var detalle = (e.fechaConocida ? (e.tipo === "revision" || e.tipo === "cribado" ? "Hacia el " : "A partir del ") + formatear(e.fecha) : "Fecha sin publicar") +
+    var detalle = (e.fechaConocida ? t(e.tipo === "revision" || e.tipo === "cribado" ? "Hacia el {fecha}" : "A partir del {fecha}", { fecha: formatear(e.fecha) }) : t("Fecha sin publicar")) +
       " · " + e.edadTexto;
     return {
       ref: e.id,
@@ -646,15 +674,17 @@
       var g = grupos[k];
       var nombres = g.nombres.join(" · ");
       var edad = tipo === "lactancia"
-        ? (g.desde === 0 ? "Hasta los " + g.hasta + " meses"
-          : "Desde los " + g.desde + " meses hasta los " + (g.hasta % 12 === 0 && g.hasta >= 24 ? g.hasta / 12 + " años" : g.hasta + " meses") + (g.abiertaArriba ? " o más" : ""))
+        ? (g.desde === 0 ? t("Hasta los {n} meses", { n: g.hasta })
+          : (g.hasta % 12 === 0 && g.hasta >= 24
+            ? t("Desde los {a} meses hasta los {b} años", { a: g.desde, b: g.hasta / 12 })
+            : t("Desde los {a} meses hasta los {b} meses", { a: g.desde, b: g.hasta })) + (g.abiertaArriba ? " " + t("o más") : ""))
         : tipo === "evitar"
-        ? "Evitar hasta los " + (g.hasta >= 24 && g.hasta % 12 === 0 ? g.hasta / 12 + " años" : g.hasta + " meses")
-        : g.hasta !== null ? "Entre los " + g.desde + " y los " + g.hasta + " meses" : "Desde los " + g.desde + " meses";
+        ? (g.hasta >= 24 && g.hasta % 12 === 0 ? t("Evitar hasta los {n} años", { n: g.hasta / 12 }) : t("Evitar hasta los {n} meses", { n: g.hasta }))
+        : g.hasta !== null ? t("Entre los {a} y los {b} meses", { a: g.desde, b: g.hasta }) : t("Desde los {n} meses", { n: g.desde });
       return {
         ref: "alimentacion-" + g.ids[0],
         titulo: nombres,
-        detalle: edad + " (orientativo, cada bebé va a su ritmo)",
+        detalle: edad + " " + t("(orientativo, cada bebé va a su ritmo)"),
         desde: g.desde,
         hasta: g.hasta,
         abierto: g.hasta === null || g.abiertaArriba,
@@ -689,14 +719,14 @@
       if (inicio > limite) break;
       fila.push({
         ref: gripe.id,
-        titulo: "Gripe: campaña " + temporada,
+        titulo: t("Gripe: campaña {temporada}", { temporada: temporada }),
         detalle: c
-          ? "Campaña " + temporada + " desde el " + formatear(inicio)
-          : "Temporada otoño-invierno " + temporada + ": fechas sin publicar. Una dosis por temporada.",
+          ? t("Campaña {temporada} desde el {inicio}", { temporada: temporada, inicio: formatear(inicio) })
+          : t("Temporada otoño-invierno {temporada}: fechas sin publicar. Una dosis por temporada.", { temporada: temporada }),
         desde: mesesDesde(nacimiento, inicio),
         forma: "punto",
         sinFecha: !c,
-        corto: "Gripe " + temporada,
+        corto: t("Gripe {temporada}", { temporada: temporada }),
         elementos: [],
       });
     }
@@ -706,15 +736,15 @@
     var max = EDAD_MAXIMA_MESES;
     var hoyMeses = mesesDesde(nacimiento, hoy);
     var carriles = [
-      { id: "revisiones", nombre: "Revisiones y cribados", filas: [[]] },
-      { id: "vacunas", nombre: "Vacunas", filas: [[]] },
-      { id: "campanas", nombre: "Campañas", filas: [[]] },
-      { id: "aep", nombre: "Recomendación AEP", filas: [[]] },
-      { id: "empezar", nombre: "Leche y comida", filas: [] },
-      { id: "evitar", nombre: "Comer: evitar", filas: [] },
-      { id: "tramites", nombre: "Trámites y permisos", filas: [] },
-      { id: "escuela", nombre: "Escuela", filas: [] },
-      { id: "suplementos", nombre: "Suplementos", filas: [] },
+      { id: "revisiones", nombre: t("Revisiones y cribados"), filas: [[]] },
+      { id: "vacunas", nombre: t("Vacunas"), filas: [[]] },
+      { id: "campanas", nombre: t("Campañas"), filas: [[]] },
+      { id: "aep", nombre: t("Recomendación AEP"), filas: [[]] },
+      { id: "empezar", nombre: t("Leche y comida"), filas: [] },
+      { id: "evitar", nombre: t("Comer: evitar"), filas: [] },
+      { id: "tramites", nombre: t("Trámites y permisos"), filas: [] },
+      { id: "escuela", nombre: t("Escuela"), filas: [] },
+      { id: "suplementos", nombre: t("Suplementos"), filas: [] },
     ];
     var porId = {};
     carriles.forEach(function (c) { porId[c.id] = c; });
@@ -734,7 +764,7 @@
         }
         porId.vacunas.filas[0].push(marca);
       } else if (e.tipo === "campaña") {
-        marca.corto = e.id === "vrs-anterior" ? "VRS · su temporada: mira la cartilla" : e.id.indexOf("vrs") === 0 ? "VRS" : "Gripe";
+        marca.corto = e.id === "vrs-anterior" ? t("VRS · su temporada: mira la cartilla") : e.id.indexOf("vrs") === 0 ? "VRS" : t("Gripe");
         if (e.fechaConocida) {
           marca.forma = "barra";
           marca.hasta = e.fin ? mesesDesde(nacimiento, e.fin) : null;
@@ -775,7 +805,7 @@
       if (e.tipo !== "tramite") return;
       var marca = {
         ref: e.id, titulo: e.titulo, forma: "barra",
-        detalle: "Hasta el " + formatear(e.fecha) + " · " + e.edadTexto,
+        detalle: t("Hasta el {fecha}", { fecha: formatear(e.fecha) }) + " · " + e.edadTexto,
         desde: mesesDesde(nacimiento, e.fechaDesde), hasta: e.hastaMeses,
         pasado: !!e.pasado, elementos: [],
       };
@@ -785,7 +815,7 @@
           registro.hasta = Math.max(registro.hasta, marca.hasta);
           return;
         }
-        marca.titulo = "Inscripción en el Registro Civil";
+        marca.titulo = t("Inscripción en el Registro Civil");
         registro = marca;
       }
       porId.tramites.filas.push([marca]);
@@ -808,7 +838,7 @@
         if (e.tipo !== "escuela") return;
         var m = marcaDeEvento(e, nacimiento);
         m.forma = "punto";
-        m.corto = e.admision ? "Admisión " + e.titulo.split(":")[0].replace("Admisión curso ", "") : "Cole · curso sin publicar";
+        m.corto = e.admision ? t("Admisión {curso}", { curso: e.curso }) : t("Cole · curso sin publicar");
         puntos.push(m);
       });
       if (puntos.length) porId.escuela.filas.push(puntos);
@@ -819,8 +849,8 @@
       if (e.tipo !== "suplemento") return;
       porId.suplementos.filas.push([{
         ref: e.id, forma: "barra",
-        titulo: e.titulo + (e.elementos[0].soloSi ? " (si " + e.elementos[0].soloSi + ")" : ""),
-        detalle: e.edadTexto + ". El producto y la dosis te los indica el pediatra.",
+        titulo: e.titulo + (e.elementos[0].soloSi ? " " + t("(si {condicion})", { condicion: e.elementos[0].soloSi }) : ""),
+        detalle: e.edadTexto + ". " + t("El producto y la dosis te los indica el pediatra."),
         desde: e.meses, hasta: e.hastaMeses, pasado: !!e.pasado, elementos: [],
       }]);
     });
@@ -865,41 +895,41 @@
   }
 
   function enlaceFuente(f) {
-    return el("a", { href: f.fuente, rel: "noopener", target: "_blank", texto: "Fuente" }, []);
+    return el("a", { href: f.fuente, rel: "noopener", target: "_blank", texto: t("Fuente") }, []);
   }
 
   function textoFecha(e) {
-    if (!e.fechaConocida) return "Fecha sin publicar";
+    if (!e.fechaConocida) return t("Fecha sin publicar");
     // Las citas las fija el centro de salud: la fecha es la primera posible, no la de la cita.
-    if (e.tipo === "tramite") return "Hasta el " + formatear(e.fecha);
-    if (e.tipo === "suplemento") return "Del " + formatear(e.fecha) + " al " + formatear(e.fechaHasta);
-    if (e.admision) return "Desde el " + formatear(e.fecha);
-    return (e.tipo === "revision" || e.tipo === "cribado" ? "Hacia el " : "A partir del ") + formatear(e.fecha);
+    if (e.tipo === "tramite") return t("Hasta el {fecha}", { fecha: formatear(e.fecha) });
+    if (e.tipo === "suplemento") return t("Del {desde} al {hasta}", { desde: formatear(e.fecha), hasta: formatear(e.fechaHasta) });
+    if (e.admision) return t("Desde el {fecha}", { fecha: formatear(e.fecha) });
+    return t(e.tipo === "revision" || e.tipo === "cribado" ? "Hacia el {fecha}" : "A partir del {fecha}", { fecha: formatear(e.fecha) });
   }
 
   function textoDias(e) {
     if (!e.fechaConocida) return "";
-    if (e.enCurso) return "campaña en curso";
+    if (e.enCurso) return t("campaña en curso");
     if (e.dias === 0) return "hoy";
-    if (e.dias > 0) return "dentro de " + e.dias + (e.dias === 1 ? " día" : " días");
+    if (e.dias > 0) return t(e.dias === 1 ? "dentro de {n} día" : "dentro de {n} días", { n: e.dias });
     return "";
   }
 
   function detalleRevision(x) {
     return el("p", { class: "nota" }, [
-      x.soloSi ? el("strong", { texto: "Solo si " + x.soloSi + ". " }) : null,
+      x.soloSi ? el("strong", { texto: t("Solo si {condicion}.", { condicion: x.soloSi }) + " " }) : null,
       x.nota ? x.nota + " " : "",
       enlaceFuente(x.fuente),
       x.calculadora ? " · " : null,
-      x.calculadora ? el("a", { href: x.calculadora, rel: "noopener", target: "_blank", texto: "Calcúlalo con tus fechas en calendariohabil.com" }) : null,
+      x.calculadora ? el("a", { href: x.calculadora, rel: "noopener", target: "_blank", texto: t("Calcúlalo con tus fechas en calendariohabil.com") }) : null,
     ]);
   }
 
   function pintarEvento(e) {
     var lista = el("ul", {}, e.elementos.map(function (x) {
       var extra = [];
-      if (x.calendarioAnterior) extra.push(el("strong", { texto: " Con el calendario anterior: consulta la cartilla." }));
-      if (x.soloSi) extra.push(" (solo si " + x.soloSi + ")");
+      if (x.calendarioAnterior) extra.push(el("strong", { texto: " " + t("Con el calendario anterior: consulta la cartilla.") }));
+      if (x.soloSi) extra.push(" " + t("(solo si {condicion})", { condicion: x.soloSi }));
       return el("li", {}, [
         el("span", { class: "nombre", texto: x.nombre }),
         x.siglas ? " (" + x.siglas + ")" : "",
@@ -920,7 +950,7 @@
       e.notaCampana ? el("p", { class: "nota", texto: e.notaCampana }) : null,
       ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ? detalleRevision(e.elementos[0]) : lista,
       enlaceGoogle(e) ? el("p", { class: "google" }, [
-        el("a", { href: enlaceGoogle(e), target: "_blank", rel: "noopener noreferrer", texto: "Añadir a Google Calendar" }),
+        el("a", { href: enlaceGoogle(e), target: "_blank", rel: "noopener noreferrer", texto: t("Añadir a Google Calendar") }),
       ]) : null,
     ]);
   }
@@ -964,10 +994,10 @@
     var alto = ALTO_EJE + carriles.reduce(function (t, c) { return t + altoCarril(c) + SEPARACION; }, 0);
 
     var etiquetas = el("div", { class: "vista-carriles", "aria-hidden": "true" }, [el("div", { style: "height:" + ALTO_EJE + "px" })]);
-    var desplazable = el("div", { class: "vista-desplazable", tabindex: "0", "aria-label": "Línea del tiempo gráfica de 0 a 36 meses; desplázate en horizontal" });
+    var desplazable = el("div", { class: "vista-desplazable", tabindex: "0", "aria-label": t("Línea del tiempo gráfica de 0 a 36 meses; desplázate en horizontal") });
     var detalle = el("div", { class: "vista-detalle", role: "status", hidden: "hidden" });
 
-    var svg = s("svg", { width: ancho, height: alto, viewBox: "0 0 " + ancho + " " + alto, role: "group", "aria-label": "Vacunas, revisiones, campañas y alimentación de 0 a 36 meses" });
+    var svg = s("svg", { width: ancho, height: alto, viewBox: "0 0 " + ancho + " " + alto, role: "group", "aria-label": t("Vacunas, revisiones, campañas y alimentación de 0 a 36 meses") });
     var defs = s("defs");
     defs.appendChild(s("pattern", { id: "rayado-evitar", width: "6", height: "6", patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" }, [
       s("rect", { width: "6", height: "6", fill: "#fbe3e2" }),
@@ -993,7 +1023,7 @@
         var f = sumarMeses(vista.nacimiento, m);
         svg.appendChild(s("text", {
           x: x(m), y: 29, class: "eje-fecha", "text-anchor": m === 0 ? "start" : "middle",
-          texto: MESES_CORTOS[f.getUTCMonth()] + " " + String(f.getUTCFullYear()).slice(2),
+          texto: mesCorto(f.getUTCMonth()) + " " + String(f.getUTCFullYear()).slice(2),
         }));
       }
     }
@@ -1026,7 +1056,7 @@
               g.appendChild(s("text", {
                 x: x(mk.desde) + (aLaIzquierda ? -12 : 12), y: centro + 4, class: "texto-barra",
                 "text-anchor": aLaIzquierda ? "end" : "start",
-                texto: mk.corto + (mk.sinFecha && c.id !== "escuela" && mk.corto.indexOf("cartilla") < 0 ? " · sin publicar" : ""),
+                texto: mk.corto + (mk.sinFecha && c.id !== "escuela" && mk.corto.indexOf(t("cartilla")) < 0 ? " · " + t("sin publicar") : ""),
               }));
             }
           } else {
@@ -1049,7 +1079,7 @@
             } else if (mk.corto) {
               g.appendChild(s("text", {
                 x: x2 + 5, y: centro + 4, class: "texto-barra",
-                texto: mk.corto + (abierto ? " · fin sin publicar" : ""),
+                texto: mk.corto + (abierto ? " · " + t("fin sin publicar") : ""),
               }));
             }
           }
@@ -1063,7 +1093,7 @@
 
     if (vista.hoyMeses !== null) {
       svg.appendChild(s("line", { x1: x(vista.hoyMeses), x2: x(vista.hoyMeses), y1: 34, y2: alto, class: "hoy" }));
-      svg.appendChild(s("text", { x: x(vista.hoyMeses) + 4, y: 42, class: "hoy-texto", texto: "Hoy" }));
+      svg.appendChild(s("text", { x: x(vista.hoyMeses) + 4, y: 42, class: "hoy-texto", texto: t("Hoy") }));
     }
 
     function mostrar(item) {
@@ -1075,7 +1105,7 @@
         detalle.appendChild(el("ul", {}, mk.elementos.map(function (n) { return el("li", { texto: n }); })));
       }
       if (document.getElementById("ev-" + mk.ref) || document.getElementById(mk.ref)) {
-        detalle.appendChild(el("em", { texto: "Toca otra vez para ir al detalle con la fuente." }));
+        detalle.appendChild(el("em", { texto: t("Toca otra vez para ir al detalle con la fuente.") }));
       }
       detalle.hidden = false;
       var caja = item.nodo.getBoundingClientRect();
@@ -1119,6 +1149,7 @@
     var nodoDatos = document.getElementById("datos");
     if (!nodoDatos) return;
     var datos = JSON.parse(nodoDatos.textContent);
+    usarTextos(datos.textos);
     var form = document.getElementById("formulario");
     var entrada = document.getElementById("nacimiento");
     var comunidad = document.getElementById("comunidad");
@@ -1137,12 +1168,12 @@
       var n = desdeISO(entrada.value);
       error.textContent = "";
       if (!n) {
-        error.textContent = "Escribe una fecha válida.";
+        error.textContent = t("Escribe una fecha válida.");
         resultado.hidden = true;
         return;
       }
       if (n < sumarMeses(hoy, -EDAD_MAXIMA_MESES) || n > sumarMeses(hoy, 9)) {
-        error.textContent = "La fecha ha de ser de los últimos 36 meses o de los próximos 9.";
+        error.textContent = t("La fecha ha de ser de los últimos 36 meses o de los próximos 9.");
         resultado.hidden = true;
         return;
       }
@@ -1152,7 +1183,7 @@
       nodoProximo.textContent = "";
       enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e)); });
       if (p) nodoProximo.appendChild(pintarEvento(p));
-      else nodoProximo.appendChild(el("p", { texto: "No queda nada con fecha en el calendario oficial hasta los 36 meses." }));
+      else nodoProximo.appendChild(el("p", { texto: t("No queda nada con fecha en el calendario oficial hasta los 36 meses.") }));
       var avisoCom = document.getElementById("aviso-comunidad");
       var aviso = datos.comunidades[comunidad.value].aviso_revisiones || "";
       avisoCom.textContent = aviso;
@@ -1200,7 +1231,7 @@
       var ics = generarICS(actuales, { desde: hoyLocal() });
       var blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
       var url = URL.createObjectURL(blob);
-      var a = el("a", { href: url, download: "calendario-bebe.ics" });
+      var a = el("a", { href: url, download: t("calendario-bebe.ics") });
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -1457,6 +1488,8 @@
     plegar: plegar,
     generarICS: generarICS,
     AVISO: AVISO,
+    usarTextos: usarTextos,
+    t: t,
     calcularPresupuesto: calcularPresupuesto,
     formatearEuros: formatearEuros,
     generarCSV: generarCSV,

@@ -66,6 +66,9 @@ a:hover { color: var(--acento-oscuro); text-decoration-thickness: 2px; }
 .sellos { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: 1.1rem 0 1.4rem; }
 .sellos li { background: rgba(255, 255, 255, .75); border: 1px solid var(--borde); border-radius: 999px; padding: .2rem .7rem; font-size: .86rem; font-weight: 600; color: var(--acento-oscuro); }
 .sellos li::before { content: "✓ "; color: var(--acento); }
+.idiomas { margin: .8rem 0 0; font-size: .92rem; }
+.idiomas a { display: inline-block; background: #fff; border: 1px solid var(--borde); border-radius: 999px; padding: .15rem .8rem; font-weight: 600; color: var(--acento-oscuro); text-decoration: none; }
+.idiomas a::before { content: "🌐 "; }
 
 main { max-width: var(--ancho); margin: 0 auto; padding: 1.5rem 1rem 1rem; }
 
