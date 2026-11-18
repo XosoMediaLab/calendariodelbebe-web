@@ -409,3 +409,7 @@ button.vista-carril:focus-visible { outline: 2px solid var(--texto); outline-off
   .vista-esquina { flex-basis: 4.7rem; font-size: .6rem; }
   button.vista-carril { font-size: .7rem; padding: 0 .3rem; }
 }
+/* Lema bajo el nombre: «del embarazo a los 3 años». */
+.logo span { display: inline-flex; flex-direction: column; line-height: 1.1; }
+.logo .lema { font-size: .68rem; font-weight: 600; color: var(--suave); letter-spacing: .01em; }
+.pie .logo .lema { color: inherit; opacity: .75; }

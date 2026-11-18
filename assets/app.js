@@ -1570,7 +1570,8 @@
     botonNacido.addEventListener("click", function () { ponerModo("nacido"); });
     botonEmbarazo.addEventListener("click", function () { ponerModo("embarazo"); });
     referencia.addEventListener("change", function () { ponerModo(modo); });
-    ponerModo("nacido");
+    // Desde las páginas del embarazo se llega con #embarazada (sin ninguna fecha en la URL).
+    ponerModo(location.hash === "#embarazada" ? "embarazo" : "nacido");
     entrada.addEventListener("change", calcular);
     comunidad.addEventListener("change", calcular);
 
