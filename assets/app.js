@@ -1418,6 +1418,33 @@
     document.querySelectorAll("details.desarrollo").forEach(function (d) { d.open = d === actual; });
   }
 
+  // RECORDAR: inicio. Único sitio donde la web guarda algo, y solo si la familia marca
+  // «Recordar mis datos» (decidido por Josep el 19/11/2026). Se guarda en el almacenamiento
+  // local de su navegador; nunca sale del dispositivo ni va en la URL.
+  var CLAVE_RECORDAR = "calendariodelbebe.recordar";
+  function almacen() {
+    try { return window.localStorage; } catch (err) { return null; }
+  }
+  function leerRecordado() {
+    var a = almacen();
+    if (!a) return null;
+    try {
+      var r = JSON.parse(a.getItem(CLAVE_RECORDAR) || "null");
+      return r && /^\d{4}-\d{2}-\d{2}$/.test(r.fecha) ? r : null;
+    } catch (err) { return null; }
+  }
+  function guardarRecordado(r) {
+    var a = almacen();
+    if (!a) return;
+    try { a.setItem(CLAVE_RECORDAR, JSON.stringify(r)); } catch (err) { /* sin espacio o bloqueado */ }
+  }
+  function olvidarRecordado() {
+    var a = almacen();
+    if (!a) return;
+    try { a.removeItem(CLAVE_RECORDAR); } catch (err) { /* bloqueado */ }
+  }
+  // RECORDAR: fin.
+
   function iniciar() {
     var nodoDatos = document.getElementById("datos");
     if (!nodoDatos) return;
@@ -1438,6 +1465,12 @@
     var actuales = null;
     var deEmbarazo = [];
     var modo = "nacido";
+    var recordar = document.getElementById("recordar");
+    var recordado = document.getElementById("recordado");
+    var borrado = document.getElementById("borrado");
+    // En el widget (dentro de otra web) no se ofrece: allí no se guarda nada.
+    var puedeRecordar = recordar && !document.body.classList.contains("widget") && almacen();
+    if (recordar && !puedeRecordar) recordar.closest("p").hidden = true;
 
     var hoy = hoyLocal();
 
@@ -1559,6 +1592,11 @@
         nodo.id = "ev-" + e.id;
         aep.appendChild(nodo);
       });
+      if (puedeRecordar && recordar.checked) {
+        guardarRecordado({ fecha: entrada.value, modo: modo, referencia: referencia.value, comunidad: comunidad.value });
+        recordado.hidden = false;
+        borrado.hidden = true;
+      }
       resultado.hidden = false;
       pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value, deEmbarazo), document.getElementById("vista"));
       document.getElementById("vista-nota-embarazo").hidden = modo !== "embarazo";
@@ -1570,8 +1608,36 @@
     botonNacido.addEventListener("click", function () { ponerModo("nacido"); });
     botonEmbarazo.addEventListener("click", function () { ponerModo("embarazo"); });
     referencia.addEventListener("change", function () { ponerModo(modo); });
-    // Desde las páginas del embarazo se llega con #embarazada (sin ninguna fecha en la URL).
-    ponerModo(location.hash === "#embarazada" ? "embarazo" : "nacido");
+    // Datos recordados en este navegador (solo si la familia lo pidió): se rellenan y se calcula.
+    var guardado = puedeRecordar ? leerRecordado() : null;
+    if (guardado) {
+      recordar.checked = true;
+      if (comunidad.querySelector('option[value="' + guardado.comunidad + '"]')) comunidad.value = guardado.comunidad;
+      if (guardado.referencia === "fur" || guardado.referencia === "fpp") referencia.value = guardado.referencia;
+      entrada.value = guardado.fecha;
+      ponerModo(guardado.modo === "embarazo" ? "embarazo" : "nacido");
+    } else {
+      // Desde las páginas del embarazo se llega con #embarazada (sin ninguna fecha en la URL).
+      ponerModo(location.hash === "#embarazada" ? "embarazo" : "nacido");
+    }
+    if (puedeRecordar) {
+      recordar.addEventListener("change", function () {
+        if (recordar.checked) {
+          if (entrada.value && !resultado.hidden) calcular();
+        } else {
+          olvidarRecordado();
+          recordado.hidden = true;
+        }
+      });
+      document.getElementById("olvidar").addEventListener("click", function () {
+        olvidarRecordado();
+        recordar.checked = false;
+        recordado.hidden = true;
+        entrada.value = "";
+        resultado.hidden = true;
+        borrado.hidden = false;
+      });
+    }
     entrada.addEventListener("change", calcular);
     comunidad.addEventListener("change", calcular);
 

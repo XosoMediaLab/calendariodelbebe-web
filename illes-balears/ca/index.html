@@ -74,9 +74,13 @@
           <option value="illes-balears" selected>Illes Balears</option>
         </select>
       </p>
+      <p class="recordar"><label class="casilla"><input type="checkbox" id="recordar"> Recordar les meves dades en aquest mòbil o ordinador</label>
+        <span class="nota">Si la marques, la data, la comunitat i si és embaràs o naixement es desen només en aquest navegador (no s'envien enlloc) i la pròxima vegada veuràs el teu calendari directament. Les pots esborrar quan vulguis. <a href="../../privacidad/#recordar">Com funciona</a></span></p>
       <p class="formulario-boton"><button type="submit">Veure el calendari</button></p>
+      <p id="recordado" class="recordado" hidden>Les teves dades estan desades en aquest navegador. <button type="button" id="olvidar" class="boton-secundario">Oblidar les meves dades</button></p>
+      <p id="borrado" class="recordado" hidden role="status">Hem esborrat les teves dades d'aquest navegador.</p>
       <p id="error" class="error" role="alert"></p>
-      <p class="privacidad">La data no es guarda ni s'envia: tot es calcula al teu navegador.</p>
+      <p class="privacidad">La data no s'envia enlloc: tot es calcula al teu navegador. Només s'hi desa si marques «Recordar».</p>
     </form>
     <div class="ilustracion" aria-hidden="true">
       <svg viewBox="0 0 360 380" xmlns="http://www.w3.org/2000/svg">

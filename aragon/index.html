@@ -86,9 +86,13 @@
           <option value="ceuta" disabled>Ceuta (próximamente)</option>
         </select>
       </p>
+      <p class="recordar"><label class="casilla"><input type="checkbox" id="recordar"> Recordar mis datos en este móvil u ordenador</label>
+        <span class="nota">Si la marcas, la fecha, la comunidad y si es embarazo o nacimiento se guardan solo en este navegador (no se envían a ningún sitio) y la próxima vez verás tu calendario directamente. Puedes borrarlos cuando quieras. <a href="../privacidad/#recordar">Cómo funciona</a></span></p>
       <p class="formulario-boton"><button type="submit">Ver el calendario</button></p>
+      <p id="recordado" class="recordado" hidden>Tus datos están guardados en este navegador. <button type="button" id="olvidar" class="boton-secundario">Olvidar mis datos</button></p>
+      <p id="borrado" class="recordado" hidden role="status">Hemos borrado tus datos de este navegador.</p>
       <p id="error" class="error" role="alert"></p>
-      <p class="privacidad">La fecha no se guarda ni se envía: todo se calcula en tu navegador.</p>
+      <p class="privacidad">La fecha no se envía a ningún sitio: todo se calcula en tu navegador. Solo se guarda en él si marcas «Recordar».</p>
     </form>
     <div class="ilustracion" aria-hidden="true">
       <svg viewBox="0 0 360 380" xmlns="http://www.w3.org/2000/svg">

@@ -459,3 +459,12 @@ main h2 { margin-top: 2.2rem; }
   .inicio .cabecera-dentro > .sellos { order: 5; margin: .9rem 0 0; }
   .inicio .cabecera-dentro > .formulario { margin-top: .9rem; }
 }
+/* «Recordar mis datos» (opcional, desmarcado). */
+.formulario .recordar { grid-column: 1 / -1; margin: 0 0 .8rem; }
+.formulario .recordar .casilla { display: flex; align-items: center; gap: .5rem; font-weight: 700; font-size: .95rem; margin: 0 0 .2rem; cursor: pointer; }
+.formulario .recordar input { width: 1.15rem; height: 1.15rem; padding: 0; accent-color: var(--acento); flex: none; }
+.formulario .recordar .nota { display: block; font-size: .84rem; line-height: 1.45; }
+.formulario .recordado { grid-column: 1 / -1; background: var(--acento-claro); border-radius: 10px; padding: .5rem .8rem; font-size: .9rem; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; }
+.formulario .recordado[hidden] { display: none; }
+.formulario .recordado button { width: auto; font-size: .88rem; padding: .35rem .9rem; }
+.widget .recordar, .widget .recordado { display: none; }
