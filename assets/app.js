@@ -1089,7 +1089,7 @@
   }
 
   function enlaceFuente(f) {
-    return el("a", { href: f.fuente, rel: "noopener", target: "_blank", texto: t("Fuente") }, []);
+    return el("a", { class: "fuente", href: f.fuente, rel: "noopener", target: "_blank", texto: t("Fuente") }, []);
   }
 
   function textoFecha(e) {

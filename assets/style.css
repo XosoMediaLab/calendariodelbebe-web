@@ -421,3 +421,41 @@ details.fase > summary { cursor: pointer; font-weight: 700; font-size: 1.05rem; 
 details.comunidad-mes { background: #fff; border: 1px solid var(--borde); border-radius: 8px; padding: .5rem .9rem; margin: .5rem 0; }
 details.comunidad-mes summary { cursor: pointer; }
 details.comunidad-mes h3, details.comunidad-mes h4 { margin: .8rem 0 .3rem; font-size: 1rem; }
+
+/* ---------- Lavado de cara (19/11/2026) ---------- */
+/* Enlaces «Fuente»: discretos, como etiqueta, para que el texto respire. */
+a.fuente { display: inline-block; font-size: .78rem; font-weight: 600; line-height: 1.4; padding: 0 .5rem; border-radius: 999px; background: var(--acento-claro); color: var(--acento-oscuro); text-decoration: none; vertical-align: .08em; white-space: nowrap; }
+a.fuente:hover { background: var(--acento); color: #fff; }
+a.fuente::after { content: " ↗"; font-size: .7rem; }
+/* Aviso de salud: visible pero más compacto. */
+.aviso { font-size: .9rem; line-height: 1.5; padding: .65rem .9rem .65rem 2.4rem; position: relative; }
+.aviso::before { content: "i"; position: absolute; left: .75rem; top: .7rem; width: 1.15rem; height: 1.15rem; border-radius: 50%; background: var(--aviso-borde); color: #fff; font: 700 .78rem/1.15rem Georgia, serif; text-align: center; }
+/* Tarjetas y títulos con más aire. */
+main h2 { margin-top: 2.2rem; }
+.cta { border: 1px solid #cfe9e3; }
+/* Portada: ilustración a la derecha en pantallas anchas. */
+.ilustracion { display: none; }
+@media (min-width: 62rem) {
+  .inicio .cabecera-dentro { max-width: 72rem; display: grid; grid-template-columns: minmax(0, 40rem) minmax(0, 1fr); column-gap: 3rem; }
+  .inicio .cabecera-dentro > * { grid-column: 1; }
+  .inicio .cabecera-dentro > .ilustracion { display: block; grid-column: 2; grid-row: 1 / span 6; align-self: center; }
+  .ilustracion svg { width: 100%; max-width: 24rem; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 18px 30px rgba(29, 42, 51, .08)); }
+}
+/* Móvil: menú en dos filas (todo a la vista) y la calculadora más arriba. */
+@media (max-width: 40rem) {
+  .menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: .25rem; }
+  .menu a { text-align: center; padding: .35rem .2rem; background: rgba(255, 255, 255, .6); border: 1px solid var(--borde); }
+  .menu a[aria-current="page"] { border-color: var(--acento); }
+  h1 { font-size: 1.65rem; }
+  .intro { font-size: 1rem; }
+  .cabecera-dentro { padding: 1.3rem 1rem 1.2rem; }
+  .inicio .cabecera-dentro { padding-top: 1.4rem; padding-bottom: 1.4rem; }
+  .sellos { margin: .7rem 0 .9rem; gap: .3rem; }
+  .sellos li { font-size: .76rem; padding: .1rem .55rem; }
+  .barra { position: static; }
+}
+@media (max-width: 40rem) {
+  .inicio .cabecera-dentro { display: flex; flex-direction: column; }
+  .inicio .cabecera-dentro > .sellos { order: 5; margin: .9rem 0 0; }
+  .inicio .cabecera-dentro > .formulario { margin-top: .9rem; }
+}
