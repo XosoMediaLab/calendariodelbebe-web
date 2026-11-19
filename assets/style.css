@@ -468,3 +468,8 @@ main h2 { margin-top: 2.2rem; }
 .formulario .recordado[hidden] { display: none; }
 .formulario .recordado button { width: auto; font-size: .88rem; padding: .35rem .9rem; }
 .widget .recordar, .widget .recordado { display: none; }
+/* Pie: compartir y donaciones. */
+.pie .compartir, .pie .donar { font-size: .92rem; color: #d6e6e3; }
+.pie .compartir a { display: inline-block; margin: .2rem .35rem 0 0; padding: .15rem .7rem; border: 1px solid rgba(255, 255, 255, .35); border-radius: 999px; text-decoration: none; font-weight: 600; }
+.pie .compartir a:hover { background: rgba(255, 255, 255, .12); }
+@media print { .pie .compartir, .pie .donar { display: none; } }
