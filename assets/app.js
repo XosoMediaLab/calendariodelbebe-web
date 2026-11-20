@@ -1124,7 +1124,7 @@
     ]);
   }
 
-  function pintarEvento(e) {
+  function pintarEvento(e, compacto) {
     var lista = el("ul", {}, e.elementos.map(function (x) {
       var extra = [];
       if (x.calendarioAnterior) extra.push(el("strong", { texto: " " + t("Con el calendario anterior: consulta la cartilla.") }));
@@ -1146,14 +1146,88 @@
         " · " + e.edadTexto + (textoDias(e) ? " · " + textoDias(e) : ""),
       ]),
       el("h3", { texto: e.titulo }),
+    ].concat(compacto ? [
+      resumenEvento(e),
+      e.campana ? el("p", { class: "campana-texto", texto: e.campana }) : null,
+      el("details", { class: "mas" }, [el("summary", { texto: t("Ver detalle y fuente") })].concat(cuerpoEvento(e, lista))),
+    ] : cuerpoEvento(e, lista)));
+  }
+
+  function esDeUnSoloDato(e) {
+    return ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ||
+      (e.tipo === "embarazo" && e.subtipo !== "campaña");
+  }
+
+  function cuerpoEvento(e, lista) {
+    return [
       e.campana ? el("p", { class: "campana-texto" }, [e.campana, e.fuenteCampana ? " " : "", e.fuenteCampana ? enlaceFuente(e.fuenteCampana) : null]) : null,
       e.notaCampana ? el("p", { class: "nota", texto: e.notaCampana }) : null,
-      ["revision", "cribado", "tramite", "escuela", "suplemento"].indexOf(e.tipo) >= 0 ||
-        (e.tipo === "embarazo" && e.subtipo !== "campaña") ? detalleRevision(e.elementos[0]) : lista,
+      esDeUnSoloDato(e) ? detalleRevision(e.elementos[0]) : lista,
       enlaceGoogle(e) ? el("p", { class: "google" }, [
         el("a", { href: enlaceGoogle(e), target: "_blank", rel: "noopener noreferrer", texto: t("Añadir a Google Calendar") }),
       ]) : null,
-    ]);
+    ];
+  }
+
+  // Una línea con lo esencial (los nombres de las vacunas), para la tarjeta plegada.
+  function resumenEvento(e) {
+    if (esDeUnSoloDato(e) || e.elementos.length < 2) return null;
+    return el("p", { class: "resumen-evento", texto: e.elementos.map(function (x) { return x.nombre.split(" (")[0]; }).join(" · ") });
+  }
+
+  // Abre una tarjeta plegada (y el «Ya pasado» que la contiene) para llegar a su detalle.
+  function abrirTarjeta(tarjeta) {
+    var d = tarjeta.querySelector && tarjeta.querySelector("details.mas");
+    if (d) d.open = true;
+    var p = tarjeta.closest && tarjeta.closest("li.pasados details");
+    if (p) p.open = true;
+  }
+
+  // Lista de tarjetas compactas; lo ya pasado, plegado al principio.
+  function pintarLista(nodo, eventos) {
+    nodo.textContent = "";
+    var pasados = eventos.filter(function (e) { return e.pasado; });
+    if (pasados.length) {
+      var caja = el("li", { class: "pasados" }, [el("details", {}, [
+        el("summary", { texto: t("Ya pasado ({n})", { n: pasados.length }) }),
+        el("ol", { class: "linea" }, pasados.map(function (e) {
+          var n = pintarEvento(e, true);
+          n.id = "ev-" + e.id;
+          return n;
+        })),
+      ])]);
+      nodo.appendChild(caja);
+    }
+    eventos.filter(function (e) { return !e.pasado; }).forEach(function (e) {
+      var n = pintarEvento(e, true);
+      n.id = "ev-" + e.id;
+      nodo.appendChild(n);
+    });
+  }
+
+  // Resumen vertical para el móvil: lo que queda, en una línea cada cosa. Tocar lleva a la tarjeta.
+  function pintarResumen(nodo, eventos, hoy) {
+    nodo.textContent = "";
+    var futuros = eventos.filter(function (e) { return !e.pasado && e.tipo !== "aep" && e.tipo !== "suplemento"; });
+    futuros.sort(function (a, b) { return a.fecha - b.fecha; });
+    var anio = null;
+    futuros.forEach(function (e) {
+      var y = e.fecha.getFullYear();
+      if (y !== anio) {
+        anio = y;
+        nodo.appendChild(el("li", { class: "resumen-anio", texto: String(y) }));
+      }
+      var clases = "resumen-fila " + (e.tipo === "campaña" ? "campana" : e.tipo) + (e.subtipo ? " " + (e.subtipo === "campaña" ? "campana" : e.subtipo) : "");
+      var a = el("a", { href: "#ev-" + e.id }, [
+        el("span", { class: "resumen-fecha", texto: formatear(e.fecha).slice(0, 5) }),
+        el("span", { class: "resumen-titulo", texto: e.titulo }),
+      ]);
+      a.addEventListener("click", function () {
+        var tarjeta = document.getElementById("ev-" + e.id);
+        if (tarjeta) abrirTarjeta(tarjeta);
+      });
+      nodo.appendChild(el("li", { class: clases }, [a]));
+    });
   }
 
   // ---------- Vista gráfica (dibujo) ----------
@@ -1372,7 +1446,10 @@
         if (activo === item) {
           var destino = document.getElementById("ev-" + item.marca.ref) || document.getElementById(item.marca.ref);
           if (destino && destino.tagName === "DETAILS") destino.open = true;
-          if (destino) destino.scrollIntoView({ behavior: "smooth", block: "center" });
+          if (destino) {
+            abrirTarjeta(destino);
+            destino.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
           activo = null;
           detalle.hidden = true;
           return;
@@ -1463,6 +1540,7 @@
     var referencia = document.getElementById("referencia");
     var bloqueEmbarazo = document.getElementById("bloque-embarazo");
     var actuales = null;
+    var ultimaVista = null;
     var deEmbarazo = [];
     var modo = "nacido";
     var recordar = document.getElementById("recordar");
@@ -1536,75 +1614,53 @@
         } else {
           avisoEmb.hidden = true;
         }
-        var lineaEmb = document.getElementById("linea-embarazo");
-        lineaEmb.textContent = "";
-        deEmbarazo.forEach(function (e) {
-          var nodo = pintarEvento(e);
-          nodo.id = "ev-" + e.id;
-          lineaEmb.appendChild(nodo);
-        });
+        pintarLista(document.getElementById("linea-embarazo"), deEmbarazo);
       }
       actuales = construirLinea(n, datos, comunidad.value, hoy);
       var nodoProximo = document.getElementById("proximo");
       nodoProximo.textContent = "";
       var siguienteEmb = null;
       deEmbarazo.forEach(function (e) {
-        if (e.enCurso) nodoProximo.appendChild(pintarEvento(e));
+        if (e.enCurso) nodoProximo.appendChild(pintarEvento(e, true));
         else if (!siguienteEmb && e.fecha >= hoy && !e.elementos[0].soloSi) siguienteEmb = e;
       });
       var p = proximo(actuales, hoy);
-      if (siguienteEmb) nodoProximo.appendChild(pintarEvento(siguienteEmb));
+      if (siguienteEmb) nodoProximo.appendChild(pintarEvento(siguienteEmb, true));
       else {
-        enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e)); });
-        if (p) nodoProximo.appendChild(pintarEvento(p));
+        enCurso(actuales).forEach(function (e) { nodoProximo.appendChild(pintarEvento(e, true)); });
+        if (p) nodoProximo.appendChild(pintarEvento(p, true));
         else nodoProximo.appendChild(el("p", { texto: t("No queda nada con fecha en el calendario oficial hasta los 36 meses.") }));
       }
       var avisoCom = document.getElementById("aviso-comunidad");
       var aviso = datos.comunidades[comunidad.value].aviso_revisiones || "";
       avisoCom.textContent = aviso;
       avisoCom.hidden = !aviso;
-      var linea = document.getElementById("linea");
-      linea.textContent = "";
       var aparte = { aep: 1, tramite: 1, escuela: 1, suplemento: 1 };
-      actuales.filter(function (e) { return !aparte[e.tipo]; }).forEach(function (e) {
-        var nodo = pintarEvento(e);
-        nodo.id = "ev-" + e.id;
-        linea.appendChild(nodo);
-      });
-      var lineaTramites = document.getElementById("linea-tramites");
-      lineaTramites.textContent = "";
-      actuales.filter(function (e) { return e.tipo === "tramite" || e.tipo === "escuela"; }).forEach(function (e) {
-        var nodo = pintarEvento(e);
-        nodo.id = "ev-" + e.id;
-        lineaTramites.appendChild(nodo);
-      });
-      var lineaSup = document.getElementById("linea-suplementos");
-      lineaSup.textContent = "";
-      actuales.filter(function (e) { return e.tipo === "suplemento"; }).forEach(function (e) {
-        var nodo = pintarEvento(e);
-        nodo.id = "ev-" + e.id;
-        lineaSup.appendChild(nodo);
-      });
-      var aep = document.getElementById("linea-aep");
-      aep.textContent = "";
-      actuales.filter(function (e) { return e.tipo === "aep"; }).forEach(function (e) {
-        var nodo = pintarEvento(e);
-        nodo.id = "ev-" + e.id;
-        aep.appendChild(nodo);
-      });
+      pintarLista(document.getElementById("linea"), actuales.filter(function (e) { return !aparte[e.tipo]; }));
+      pintarLista(document.getElementById("linea-tramites"), actuales.filter(function (e) { return e.tipo === "tramite" || e.tipo === "escuela"; }));
+      pintarLista(document.getElementById("linea-suplementos"), actuales.filter(function (e) { return e.tipo === "suplemento"; }));
+      pintarLista(document.getElementById("linea-aep"), actuales.filter(function (e) { return e.tipo === "aep"; }));
+      pintarResumen(document.getElementById("resumen-movil"), deEmbarazo.concat(actuales.filter(function (e) { return e.tipo !== "tramite" || !e.pasado; })), hoy);
       if (puedeRecordar && recordar.checked) {
         guardarRecordado({ fecha: entrada.value, modo: modo, referencia: referencia.value, comunidad: comunidad.value });
         recordado.hidden = false;
         borrado.hidden = true;
       }
       resultado.hidden = false;
-      pintarVista(construirVista(actuales, datos, n, hoy, comunidad.value, deEmbarazo), document.getElementById("vista"));
+      ultimaVista = construirVista(actuales, datos, n, hoy, comunidad.value, deEmbarazo);
+      pintarVista(ultimaVista, document.getElementById("vista"));
       document.getElementById("vista-nota-embarazo").hidden = modo !== "embarazo";
       abrirDesarrollo(mesesDesde(n, hoy));
       if (ev && ev.type === "submit" && resultado.scrollIntoView) resultado.scrollIntoView({ block: "start" });
     }
 
     form.addEventListener("submit", calcular);
+    var verGrafico = document.getElementById("ver-grafico");
+    // En pantallas anchas el gráfico va abierto; en el móvil, plegado tras el resumen.
+    if (verGrafico && window.matchMedia && window.matchMedia("(min-width: 40.01rem)").matches) verGrafico.open = true;
+    if (verGrafico) verGrafico.addEventListener("toggle", function () {
+      if (verGrafico.open && ultimaVista) pintarVista(ultimaVista, document.getElementById("vista"));
+    });
     botonNacido.addEventListener("click", function () { ponerModo("nacido"); });
     botonEmbarazo.addEventListener("click", function () { ponerModo("embarazo"); });
     referencia.addEventListener("change", function () { ponerModo(modo); });

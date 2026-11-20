@@ -128,10 +128,16 @@
 
   <section id="resultado" hidden>
     <p id="semana-actual" class="semana-actual" hidden></p>
+    <nav class="saltos" aria-label="Apartados del calendario">
+      <a href="#h-vistazo">De un vistazo</a><a href="#h-linea">Citas</a><a href="#h-tramites">Trámites</a><a href="#h-desarrollo">Desarrollo</a><a href="#h-anadir">Añadir a tu calendario</a>
+    </nav>
     <h2>Lo próximo</h2>
     <div id="proximo" class="proximo"></div>
 
-    <h2>De un vistazo</h2>
+    <h2 id="h-vistazo">De un vistazo</h2>
+    <ol id="resumen-movil" class="resumen-movil"></ol>
+    <details id="ver-grafico" class="ver-grafico">
+      <summary>Ver el gráfico de 0 a 36 meses (mejor con el móvil en horizontal)</summary>
     <p id="vista-nota-embarazo" class="nota" hidden>A la izquierda de la línea del parto, tu embarazo por semanas (desde la última regla); a la derecha, el calendario del bebé desde la fecha probable de parto.</p>
     <div id="vista" class="vista"></div>
     <ul class="vista-leyenda">
@@ -142,6 +148,7 @@
       <li><span class="ley-flecha"></span> Sigue después de los 36 meses</li>
     </ul>
     <p class="nota">Toca o pasa por encima de un punto o una barra para ver qué es; tócalo otra vez para ir al detalle con su fuente. La alimentación va por edades orientativas, no por fechas.</p>
+    </details>
 
     <div id="bloque-embarazo" hidden>
       <h2>Tu embarazo, semana a semana</h2>
@@ -195,12 +202,12 @@
     </div>
 
 
-    <h2>Línea del tiempo (0-36 meses)</h2>
+    <h2 id="h-linea">Línea del tiempo (0-36 meses)</h2>
     <p class="nota">Las fechas son la primera en que toca cada cita según la edad; el día concreto te lo da tu centro de salud. Lo ya pasado aparece atenuado.</p>
     <p id="aviso-comunidad" class="aviso" hidden></p>
     <ol id="linea" class="linea"></ol>
 
-    <h2>Trámites, permisos y escuela</h2>
+    <h2 id="h-tramites">Trámites, permisos y escuela</h2>
     <p class="nota">En los trámites, la fecha es el final del plazo.</p>
     <ol id="linea-tramites" class="linea"></ol>
     <h3>Sin plazo fijo</h3>
@@ -219,7 +226,7 @@
 <li><strong>Pasta de dientes con flúor</strong>. En cuanto salgan los dientes, cepíllalos con un cepillo infantil y pasta de 1000 ppm de flúor: hasta los 3 años, un barrillo de pasta, en el cepillado de la noche el primer año y después de las comidas desde el año; a partir de los 3 años, la cantidad de un guisante. <a class="fuente" href="https://www.san.gva.es/documents/d/salut-publica/cartilla-salud-infantil-esp_r4" title="Conselleria de Sanidad, Cartilla de Salud Infantil 2024 (castellano), enlazada desde la página del Programa de Supervisión de la Salud Infantil. «Cuida la salud de su boca y dientes», págs. 14-15. Verificado el 16/11/2026." rel="noopener" target="_blank">Fuente</a></li>
     </ul>
 
-    <h2>Desarrollo de 0 a 18 meses</h2>
+    <h2 id="h-desarrollo">Desarrollo de 0 a 18 meses</h2>
     <p class="nota">Orientativo: cada bebé va a su ritmo y es normal que haga algunas cosas antes y otras después. Los bebés prematuros quedan fuera: su desarrollo lo sigue el pediatra. Ante cualquier duda, pregunta a tu pediatra o a la enfermera en la revisión. Del «Calendario de desarrollo infantil» del Real Patronato sobre Discapacidad. Toca un periodo para verlo.</p>
     <details class="desarrollo" id="desarrollo-0-3m" data-desde="0" data-hasta="3">
       <summary>Hasta los 3 meses</summary>
@@ -281,7 +288,7 @@
     <p class="aviso-aep">Recomendación de la AEP, no incluida en el calendario de tu comunidad; consúltalo con tu pediatra.</p>
     <ol id="linea-aep" class="linea"></ol>
 
-    <h2>Añadir a tu calendario</h2>
+    <h2 id="h-anadir">Añadir a tu calendario</h2>
     <p><button type="button" id="descargar-ics">Descargar el calendario (.ics)</button></p>
     <p class="nota">El archivo se crea en tu navegador y no pasa por ningún servidor. Incluye las citas que quedan por venir, con su fuente y el aviso. En Apple Calendar y Outlook, ábrelo con doble clic; en Google Calendar, desde el ordenador: Configuración → Importar y exportar → Importar. También puedes añadir cada cita por separado con su enlace «Añadir a Google Calendar»: ese enlace lleva a Google la fecha de la cita (nunca la de nacimiento).</p>
   </section>
@@ -299,6 +306,8 @@
   <section class="completo">
     <h2>Calendario completo de Aragón por edades</h2>
     <p class="cta">También puedes verlo <a href="../aragon/meses/">mes a mes, de 0 a 36 meses</a>.</p>
+    <details class="completo-plegado">
+      <summary>Ver todo por edades: embarazo, vacunas, revisiones, trámites, alimentación y fuentes</summary>
 
     <h3>Embarazo: semana a semana</h3>
     <p class="nota">La fecha probable de parto es el primer día de tu última regla más 40 semanas. Lo normal es dar a luz entre la semana 38 y la 42: la fecha te la ajustan en la ecografía. <a class="fuente" href="https://ingesa.sanidad.gob.es/dam/jcr:165412ee-c778-42a2-9c0e-c4a5948aea76/Guiacuidadosembarazo.pdf" title="Instituto Nacional de Gestión Sanitaria (INGESA, Ministerio de Sanidad), Hospital Universitario de Ceuta: Guía de cuidados en el embarazo. Consejos de su matrona (2011; NIPO 865-11-012-7). Apartado 3 «Duración y diagnóstico del embarazo», págs. 15-16. Verificado el 17/11/2026." rel="noopener" target="_blank">Fuente</a></p>
@@ -528,6 +537,7 @@
 <li><a href="https://ingesa.sanidad.gob.es/dam/jcr:165412ee-c778-42a2-9c0e-c4a5948aea76/Guiacuidadosembarazo.pdf" rel="noopener" target="_blank">Instituto Nacional de Gestión Sanitaria (INGESA, Ministerio de Sanidad), Hospital Universitario de Ceuta: Guía de cuidados en el embarazo. Consejos de su matrona (2011; NIPO 865-11-012-7)</a></li>
 <li><a href="https://www.aragon.es/documents/d/guest/indicaciones_vacunacion_covid-19_aragon_2026-27-pdf" rel="noopener" target="_blank">Departamento de Sanidad: «Personas a las que se recomienda vacunarse frente a COVID-19» (Población diana vacunación COVID-19, temporada 2026-2027; 21/09/2026), 1 pág.</a></li>
     </ul>
+    </details>
   </section>
   <p class="firma">Elaborado por <a href="../como-verificamos/#quien">XosoMediaLab</a> con las fuentes oficiales enlazadas en cada dato. Datos cotejados con las fuentes el 17/11/2026. <a href="../como-verificamos/">Cómo lo hacemos</a>.</p>
 </main>
