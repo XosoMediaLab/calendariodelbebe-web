@@ -5157,10 +5157,267 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Apartado «Embarazo» → «Si ya estás embarazada» («Acude cuanto antes a tu Centro de Salud…»; «Si todo evoluciona normalmente 8 o 10 consultas suelen ser suficientes… La frecuencia de las visitas es mayor al final de la gestación»)",
+     "documento": "Consejería de Salud de Cantabria, Salud de las mujeres: «Embarazo, Parto y Nacimiento» (consultada el 21/11/2026)",
+     "fuente": "https://www.scsalud.es/embarazo-parto-y-nacimiento-ciudadania",
+     "fuente_extra": {
+      "apartado": "«¿Cuántas visitas de embarazo tendré que realizar?» («entre 8 o 10 visitas suelen ser suficientes»), p. 4 del PDF",
+      "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cartilla de Salud del Embarazo» (Orden SAN/35/2007, BOC n.º 242, de 14/12/2007; actualizada por Resolución publicada en el BOC n.º 134, de 10/07/2018), «Actualizada diciembre 2019»",
+      "fuente": "https://www.scsalud.es/documents/d/guest/10-754-cartilla-salud-embarazo-2019-web-1?download=true",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-numero-visitas",
+     "linea": false,
+     "nombre": "Entre 8 y 10 consultas en todo el embarazo",
+     "nota": "Si todo va bien, suelen bastar entre 8 y 10 consultas, más seguidas al final del embarazo. Las lleva la matrona o tu médico o médica de familia del centro de salud; si aparece alguna complicación, te remiten al hospital. Pide cita en tu centro de salud en cuanto sepas que estás embarazada.",
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Controles durante el embarazo» → «¿En qué consisten estos controles?» → «Primera Consulta Prenatal», p. 42",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cuidados de Salud durante el embarazo», 10.ª edición, agosto de 2020 (D.L. SA-11-2007; PDF de 03/2022)",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-648-guia-salud-embarazo-2022_02-1?download=true",
+     "id": "cnt-emb-cartilla",
+     "linea": false,
+     "nombre": "Cartilla de Salud del Embarazo",
+     "nota": "En la primera consulta te dan la Cartilla de Salud del Embarazo, donde se apunta todo lo importante de tu embarazo. Llévala a cada consulta y al hospital cuando ingreses para el parto.",
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «¿Cómo se puede conocer durante el embarazo si el bebé tiene una anomalía cromosómica?» («Este análisis se realiza alrededor de las 10 semanas de gestación»; «en la ecografía de control del primer trimestre entre las 11 y 13 semanas de gestación») y «¿Qué es el estudio de ADN fetal en sangre materna?»",
+     "documento": "Consejería de Salud de Cantabria, Salud de las mujeres: «Embarazo, Parto y Nacimiento» (consultada el 21/11/2026)",
+     "fuente": "https://www.scsalud.es/embarazo-parto-y-nacimiento-ciudadania",
+     "fuente_extra": {
+      "apartado": "«¿A quién va a ofrecerse la prueba combinada del primer trimestre?» y «¿En qué consiste…?» (análisis «alrededor de las 10 semanas», translucencia nucal «entre las 11 y 13 semanas»), p. 5 del PDF",
+      "documento": "Consejería de Sanidad de Cantabria: «Programa de Detección Prenatal de Anomalías Cromosómicas. Guía para las embarazadas» (D.L. SA-513-2012; PDF de 10/2020)",
+      "fuente": "https://www.scsalud.es/documents/d/guest/10-753-prog-anom-cromosomicas-copia-1?download=true",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-cribado-combinado",
+     "nombre": "Prueba combinada del primer trimestre (cribado de anomalías cromosómicas)",
+     "nota": "Se ofrece a todas las embarazadas en el primer trimestre: un análisis de sangre hacia la semana 10, con la analítica del primer control, y la medida de la translucencia nucal en la ecografía de las semanas 11 a 13. Si sale riesgo alto, te ofrecen el estudio de ADN fetal en sangre materna o la amniocentesis.",
+     "semana_desde": {
+      "semanas": 10
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «¿Cómo se puede conocer durante el embarazo si el bebé tiene una anomalía cromosómica?» («la ecografía de control del primer trimestre entre las 11 y 13 semanas de gestación»)",
+     "documento": "Consejería de Salud de Cantabria, Salud de las mujeres: «Embarazo, Parto y Nacimiento» (consultada el 21/11/2026)",
+     "fuente": "https://www.scsalud.es/embarazo-parto-y-nacimiento-ciudadania",
+     "fuente_extra": {
+      "apartado": "«¿Para qué sirven las ecografías que me van a realizar?» («se aconseja la realización de 3 ecografías»; la primera «entre las 11-14 semanas»), p. 5 del PDF",
+      "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cartilla de Salud del Embarazo» (Orden SAN/35/2007, BOC n.º 242, de 14/12/2007; actualizada por Resolución publicada en el BOC n.º 134, de 10/07/2018), «Actualizada diciembre 2019»",
+      "fuente": "https://www.scsalud.es/documents/d/guest/10-754-cartilla-salud-embarazo-2019-web-1?download=true",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre",
+     "nota": "Es la primera de las 3 ecografías de un embarazo normal: confirma que todo va bien y la edad del embarazo, y en ella se mide la translucencia nucal.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "«¿Para qué sirven las ecografías que me van a realizar?» («La segunda ecografía, se realiza alrededor de las 20 semanas»), p. 5 del PDF",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cartilla de Salud del Embarazo» (Orden SAN/35/2007, BOC n.º 242, de 14/12/2007; actualizada por Resolución publicada en el BOC n.º 134, de 10/07/2018), «Actualizada diciembre 2019»",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-754-cartilla-salud-embarazo-2019-web-1?download=true",
+     "id": "cnt-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "Alrededor de la semana 20. Sirve sobre todo para comprobar que no hay malformaciones.",
+     "semana": {
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "«¿Para qué sirven las ecografías que me van a realizar?» («La tercera ecografía, se realiza alrededor de las 34 semanas»; «un mayor número de ecografías NO mejora el pronóstico»), p. 5 del PDF",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cartilla de Salud del Embarazo» (Orden SAN/35/2007, BOC n.º 242, de 14/12/2007; actualizada por Resolución publicada en el BOC n.º 134, de 10/07/2018), «Actualizada diciembre 2019»",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-754-cartilla-salud-embarazo-2019-web-1?download=true",
+     "id": "cnt-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Alrededor de la semana 34: comprueba que el bebé crece bien, su posición y dónde está la placenta. En un embarazo normal, hacer más ecografías no mejora los resultados.",
+     "semana": {
+      "semanas": 34
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "«¿Qué tipo de análisis me van a ofrecer y para qué sirven?» («Citología cervical, sólo se realizará durante la gestación si no se ha realizado previamente o si han trascurrido cinco o más años desde la anterior»), p. 5 del PDF",
+     "condicion": "no te la has hecho nunca o hace 5 años o más de la última",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cartilla de Salud del Embarazo» (Orden SAN/35/2007, BOC n.º 242, de 14/12/2007; actualizada por Resolución publicada en el BOC n.º 134, de 10/07/2018), «Actualizada diciembre 2019»",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-754-cartilla-salud-embarazo-2019-web-1?download=true",
+     "id": "cnt-emb-citologia",
+     "linea": false,
+     "nombre": "Citología, solo si te toca",
+     "nota": "En el embarazo solo se hace la citología si no te la habías hecho antes o si han pasado cinco años o más desde la anterior.",
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Prepararse para la Maternidad y Paternidad» («El desarrollo de este Programa lo lleva a cabo la matrona en el Centro de Salud a través de sesiones grupales»)",
+     "documento": "Consejería de Salud de Cantabria, Salud de las mujeres: «Embarazo, Parto y Nacimiento» (consultada el 21/11/2026)",
+     "fuente": "https://www.scsalud.es/embarazo-parto-y-nacimiento-ciudadania",
+     "fuente_extra": {
+      "apartado": "«¿Qué es el Programa de Preparación para la Maternidad y Paternidad?», p. 43, y tabla «Contenido de las Sesiones» («La realización de las sesiones está condicionada a las características de la población de cada Zona de Salud»), p. 44",
+      "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cuidados de Salud durante el embarazo», 10.ª edición, agosto de 2020 (D.L. SA-11-2007; PDF de 03/2022)",
+      "fuente": "https://www.scsalud.es/documents/d/guest/10-648-guia-salud-embarazo-2022_02-1?download=true",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-preparacion",
+     "linea": false,
+     "nombre": "Programa de Preparación para la Maternidad y Paternidad",
+     "nota": "Lo da la matrona de tu centro de salud en sesiones de grupo, a las que puede ir tu pareja: cambios y cuidados del embarazo, el parto, el contacto piel con piel, la lactancia, el puerperio y los cuidados del bebé. Las sesiones dependen de cada zona de salud.",
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Visor del calendario común 2026, columna «PRE NATAL», ventana que se abre al pulsar la fila «Difteria, tétanos, tosferina (DTPa, dTpa, Td)» → «Prenatal (dTpa)» («Una dosis de dTpa en cada embarazo a partir de la 27 semana de gestación»)",
+     "documento": "Consejería de Salud del Gobierno de Cantabria, Portal de Vacunación: «Calendario común de vacunación e inmunización a lo largo de la vida en Cantabria 2026» (visor enlazado en «Calendarios de vacunación → Calendario común»; consultado el 17/11/2026)",
+     "fuente": "https://www.scsalud.es/portal-de-vacunacion",
+     "id": "cnt-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27. Protege a tu bebé en sus primeros meses.",
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Visor del calendario común 2026, columna «PRE NATAL», ventana que se abre al pulsar la fila «Gripe» → «Prenatal» («En temporada de gripe se vacunará a embarazadas en cualquier trimestre de gestación»)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Consejería de Salud del Gobierno de Cantabria, Portal de Vacunación: «Calendario común de vacunación e inmunización a lo largo de la vida en Cantabria 2026» (visor enlazado en «Calendarios de vacunación → Calendario común»; consultado el 17/11/2026)",
+     "fuente": "https://www.scsalud.es/portal-de-vacunacion",
+     "fuente_extra": {
+      "apartado": "Apartado 2.1, punto 4 («Todas las embarazadas en cualquier trimestre de gestación y mujeres durante el puerperio (hasta los 6 meses tras el parto y que no se hayan vacunado durante el embarazo)»), p. 4 del PDF; apartado 3.1 a) (Flucelvax en «Mujeres embarazadas»), p. 5 del PDF",
+      "documento": "Dirección General de Salud Pública (Consejería de Salud de Cantabria): «Campaña de vacunación frente a la gripe 2026-2027», septiembre de 2026 (firmado el 22/09/2026)",
+      "fuente": "https://www.scsalud.es/documents/20117/179286/PROTOCOLO%20CAMPA%C3%91A%20VACUNACION%20GRIPE%202026-2027.report.pdf/d9f6e6c2-64f6-bebb-4e19-0abbe4da7b43",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En temporada de gripe, en cualquier trimestre del embarazo. Si no te vacunaste en el embarazo, puedes hacerlo hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Grupo 5 («Se recomienda la vacunación en todas las embarazadas… La administración se puede realizar en cualquier trimestre de gestación, aunque es preferible durante el 2º trimestre») y «Recomendaciones de vacunación» (ARNm en embarazadas; una sola dosis; intervalo de al menos 3 meses), p. 2",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Dirección General de Salud Pública (Cantabria): «Instrucción de la Dirección General de Salud Pública sobre vacunación frente a COVID-19» (temporada 2026-2027; firmada el 24/09/2026)",
+     "fuente": "https://www.scsalud.es/documents/20117/179286/INSTRUCCION%20COVID-19%202026-2027%20V2.docx.report%20(1).pdf/643c7dcf-e47c-c8f0-31a8-1de49510caae",
+     "id": "cnt-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Se recomienda a todas las embarazadas: una dosis en cualquier trimestre, mejor en el segundo, con vacuna de ARNm. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Protege también al bebé en sus primeros meses.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "antes": "al menos 1 mes antes de quedarte embarazada",
+     "apartado": "«¿Cuándo debe iniciarse la toma de ácido fólico?», «¿Qué cantidad de ácido fólico tengo que tomar?», «¿Durante cuánto tiempo se debe mantener la suplementación?», p. 1, y recuadro «RECUERDA», p. 2",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: tríptico «Prevención de defectos congénitos mediante la toma de ácido fólico» (noviembre de 2017)",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-662-triptico-acido-folico-web-2017-1?download=true",
+     "fuente_extra": {
+      "apartado": "Apartado «Embarazo» → «Si estáis planificando un embarazo» («toma de un suplemento de ácido fólico al menos 1 mes antes de la concepción»)",
+      "documento": "Consejería de Salud de Cantabria, Salud de las mujeres: «Embarazo, Parto y Nacimiento» (consultada el 21/11/2026)",
+      "fuente": "https://www.scsalud.es/embarazo-parto-y-nacimiento-ciudadania",
+      "verificado": "2026-11-21"
+     },
+     "id": "cnt-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "0,4 mg al día desde al menos un mes antes del embarazo hasta la semana 12; no hace falta seguir después. Si te quedas embarazada sin haberlo empezado, empieza cuanto antes. Si has tenido un hijo o un aborto con defecto del tubo neural, tienes diabetes u obesidad o tomas medicación antiepiléptica, la dosis es de 5 mg: te la indica tu médico o médica.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Alimentación saludable», «Para realizar una dieta saludable durante el embarazo» («Reduce al mínimo la ingesta de productos de casquería, como por ejemplo el hígado»; «Se recomienda no sobrepasar las dos tazas de café o té negro al día. Evita otro tipo de bebidas estimulantes»), p. 27",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cuidados de Salud durante el embarazo», 10.ª edición, agosto de 2020 (D.L. SA-11-2007; PDF de 03/2022)",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-648-guia-salud-embarazo-2022_02-1?download=true",
+     "id": "cnt-emb-cafe-casqueria",
+     "nombre": "Más de dos tazas de café o té al día, y casquería",
+     "nota": "Además de lo de la AESAN, la Consejería aconseja no pasar de dos tazas de café o té negro al día, evitar otras bebidas estimulantes y reducir al mínimo la casquería, como el hígado.",
+     "tipo": "evitar",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Suplementos de vitaminas y minerales» → «Suplemento de Yodo» («No deben usarse los antisépticos yodados, como la povidona yodada, en el embarazo, la lactancia y en el recién nacido»), p. 30",
+     "documento": "Consejería de Sanidad de Cantabria, Dirección General de Salud Pública: «Cuidados de Salud durante el embarazo», 10.ª edición, agosto de 2020 (D.L. SA-11-2007; PDF de 03/2022)",
+     "fuente": "https://www.scsalud.es/documents/d/guest/10-648-guia-salud-embarazo-2022_02-1?download=true",
+     "id": "cnt-emb-povidona",
+     "nombre": "Antisépticos con yodo (povidona yodada)",
+     "nota": "No uses antisépticos yodados, como la povidona yodada, en el embarazo, la lactancia ni en el recién nacido: tanto yodo puede afectar al tiroides del bebé.",
+     "tipo": "evitar",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_aviso": "En Cantabria la Consejería de Salud publica el número de consultas, las tres ecografías y la prueba combinada del primer trimestre, pero no la semana de cada consulta: las visitas y las demás pruebas por semanas son las de la guía del Ministerio de Sanidad. Tu matrona te dará las fechas de tu centro de salud.",
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado 1.1 «Inicio y final de la campaña» («A partir del 12 de octubre se dirigirá a la población diana recomendada»; «Final de la campaña: 31 de marzo de 2027»), pp. 2-3 del PDF; apartado 2.1 «Población diana», punto 4, p. 4 del PDF",
+     "campana": "gripe",
+     "documento": "Dirección General de Salud Pública (Consejería de Salud de Cantabria): «Campaña de vacunación frente a la gripe 2026-2027», septiembre de 2026 (firmado el 22/09/2026)",
+     "fin": "2027-03-31",
+     "fuente": "https://www.scsalud.es/documents/20117/179286/PROTOCOLO%20CAMPA%C3%91A%20VACUNACION%20GRIPE%202026-2027.report.pdf/d9f6e6c2-64f6-bebb-4e19-0abbe4da7b43",
+     "fuente_web": {
+      "apartado": "Recuadro «Pedir cita» («Contacta con tu centro de salud»; «Acude a tu centro de salud») y «Enlace interactivo con los grupos de población para Gripe 2026-27» («Mujeres embarazadas en cualquier trimestre de gestación y mujeres durante el puerperio»)",
+      "documento": "Consejería de Salud de Cantabria, Portal de Vacunación: «Gripe y COVID», temporada 2026-27, con el «Enlace interactivo con los grupos de población para Gripe 2026-27» y la «Guía informativa de inmunización frente a la gripe en población infantil para padres 2026-27» (consultada el 17/11/2026)",
+      "fuente": "https://www.scsalud.es/campana-de-inmunizacion-gripe-covid",
+      "verificado": "2026-11-21"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-12",
+     "nota": "Del 12/10/2026 al 31/03/2027. Pide cita en tu centro de salud.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Inicio de la vacunación» («La temporada de vacunación 2026-2027 se iniciará a partir del 28 de septiembre. Se podrá vacunar en cualquier momento del año a las personas a las que se recomienda la vacunación y que no se les haya administrado aún la vacuna adaptada de la temporada»), p. 3; grupo 5, p. 2",
+     "campana": "covid",
+     "documento": "Dirección General de Salud Pública (Cantabria): «Instrucción de la Dirección General de Salud Pública sobre vacunación frente a COVID-19» (temporada 2026-2027; firmada el 24/09/2026)",
+     "fin": null,
+     "fuente": "https://www.scsalud.es/documents/20117/179286/INSTRUCCION%20COVID-19%202026-2027%20V2.docx.report%20(1).pdf/643c7dcf-e47c-c8f0-31a8-1de49510caae",
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-09-28",
+     "nota": "Desde el 28/09/2026. Si aún no te has puesto la vacuna de esta temporada, te la pueden poner en cualquier momento del año.",
+     "poblacion": "Todas las embarazadas, en cualquier trimestre.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-ecografia-2t",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico"
+   ],
    "escolarizacion": {
     "admision": [],
     "etapas": [
@@ -15599,10 +15856,76 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Anexo II «Calendario vacunal del adulto 2026», fila «Tos ferina (dTpa)» («1 dosis en embarazadas en el tercer trimestre»), pág. 4168",
+     "documento": "Ciudad Autónoma de Melilla, Consejería de Políticas Sociales y Salud Pública: Orden n.º 3567, de 9 de diciembre de 2025, relativa a la actualización del calendario vacunal infantil y adultos 2026 (anexo II: «Calendario vacunal del adulto 2026»). BOME n.º 6335, de 12/12/2025, pág. 4168 (BOME-A-2025-1322)",
+     "fuente": "https://bomemelilla.es/bome/descargar/BOME-A-2025-1322.pdf",
+     "id": "mel-emb-dtpa",
+     "linea": false,
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en el embarazo, en el tercer trimestre. Protege a tu bebé en sus primeros meses. Pregunta a tu matrona cuándo te toca.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Anexo II «Calendario vacunal del adulto 2026», fila «Gripe» («1 dosis en embarazadas en cualquier trimestre de gestación y en el puerperio hasta los 6 meses si no vacunadas»), pág. 4168",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Ciudad Autónoma de Melilla, Consejería de Políticas Sociales y Salud Pública: Orden n.º 3567, de 9 de diciembre de 2025, relativa a la actualización del calendario vacunal infantil y adultos 2026 (anexo II: «Calendario vacunal del adulto 2026»). BOME n.º 6335, de 12/12/2025, pág. 4168 (BOME-A-2025-1322)",
+     "fuente": "https://bomemelilla.es/bome/descargar/BOME-A-2025-1322.pdf",
+     "id": "mel-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en cualquier trimestre del embarazo, en temporada de gripe. Si no te vacunaste en el embarazo, puedes hacerlo hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_aviso": "En Melilla no se publica un calendario de visitas del embarazo propio: las visitas y pruebas que ves son las de la guía del Ministerio de Sanidad, del que depende el INGESA. Las vacunas de la tos ferina y la gripe y las fechas de las campañas son las de la Ciudad Autónoma. Tu matrona te dará el calendario de tu centro de salud.",
+   "embarazo_campanas": [
+    {
+     "apartado": "«Fecha de inicio: 19 de octubre de 2026. Fecha fin: 19 de diciembre de 2026»",
+     "campana": "gripe",
+     "documento": "Ciudad Autónoma de Melilla, web (Actividades de Políticas Sociales y Salud Pública): «Campaña de vacunación contra la Gripe y el Covid-19 2026-2027» (fecha de actualización 26/10/2026; consultada el 17/11/2026)",
+     "fin": "2026-12-19",
+     "fuente": "https://www.melilla.es/melillaPortal/contenedor.jsp?seccion=s_fact_d4_v1.jsp&contenido=35525&nivel=1400&tipo=2&language=es&temas=si&evento=1",
+     "fuente_poblacion": {
+      "apartado": "Anexo II, fila «Gripe», pág. 4168",
+      "documento": "Ciudad Autónoma de Melilla, Consejería de Políticas Sociales y Salud Pública: Orden n.º 3567, de 9 de diciembre de 2025, relativa a la actualización del calendario vacunal infantil y adultos 2026 (anexo II: «Calendario vacunal del adulto 2026»). BOME n.º 6335, de 12/12/2025, pág. 4168 (BOME-A-2025-1322)",
+      "fuente": "https://bomemelilla.es/bome/descargar/BOME-A-2025-1322.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "Campaña de vacunación frente a la gripe y la COVID-19 del 19/10/2026 al 19/12/2026. La Ciudad no publica dónde se pone: pregunta en tu centro de salud.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron (calendario del adulto de Melilla 2026).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Título «Campaña de vacunación contra la Gripe y el Covid-19 2026-2027» y «Fecha de inicio: 19 de octubre de 2026. Fecha fin: 19 de diciembre de 2026»",
+     "campana": "covid",
+     "documento": "Ciudad Autónoma de Melilla, web (Actividades de Políticas Sociales y Salud Pública): «Campaña de vacunación contra la Gripe y el Covid-19 2026-2027» (fecha de actualización 26/10/2026; consultada el 17/11/2026)",
+     "fin": "2026-12-19",
+     "fuente": "https://www.melilla.es/melillaPortal/contenedor.jsp?seccion=s_fact_d4_v1.jsp&contenido=35525&nivel=1400&tipo=2&language=es&temas=si&evento=1",
+     "fuente_poblacion": {
+      "apartado": "Apartado 3 «Grupos de población diana», punto 5, págs. 5-6",
+      "documento": "Ministerio de Sanidad: Recomendaciones de vacunación frente a COVID-19 2026-2027, España (aprobado por la Comisión de Salud Pública el 11/06/2026)",
+      "fuente": "https://www.sanidad.gob.es/areas/promocionPrevencion/vacunaciones/gripe_covid19/docs/recomendacionesVacunacionCovid19_2026_2027.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-19",
+     "nota": "Campaña de vacunación frente a la gripe y la COVID-19 del 19/10/2026 al 19/12/2026. La Ciudad no detalla la población ni dónde se pone: pregunta en tu centro de salud.",
+     "poblacion": "Embarazadas, en cualquier trimestre (recomendación del Ministerio de Sanidad 2026-2027).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-dtpa",
+    "emb-gripe"
+   ],
    "escolarizacion": {
     "admision": [
      {
