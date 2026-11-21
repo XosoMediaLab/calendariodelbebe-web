@@ -11121,7 +11121,7 @@
   },
   "galicia": {
    "autoridad": "la Consellería",
-   "aviso_revisiones": "En Galicia no hemos podido cotejar la guía oficial de salud infantil: solo mostramos la primera revisión. Las edades de las demás te las da tu centro de salud.",
+   "aviso_revisiones": "",
    "boletin": "DOG",
    "campanas": [
     {
@@ -11891,20 +11891,140 @@
    "nombre": "Galicia",
    "revisiones": [
     {
-     "apartado": "«Es importante para la promoción de la salud del neonato»: «Se informará sobre las revisiones pediátricas ambulatorias, que dependiendo de la situación del paciente pueden empezar entre la 1ª y 2ª semana de vida» (p. 2)",
-     "documento": "SERGAS, Área Sanitaria de Santiago de Compostela e Barbanza: «Cuidados generales de promoción de la salud y prevención de patología en el recién nacido» (documento del Servicio de Neonatología, PDF de agosto de 2017)",
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF), y cap. 1 «Avaliación do/da recentemente nado/a en atención primaria», apartado 1.4 «Recomendacións», pág. 28 (28 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
      "edad_desde": {
-      "semanas": 1
+      "dias": 7
      },
      "edad_hasta": {
-      "semanas": 2
+      "dias": 15
      },
-     "fuente": "https://xxisantiago.sergas.gal/DXerais/1131/Cuidados%20promoci%C3%B3n%20salud%20y%20prevenci%C3%B3n%20enfermedades.pdf",
-     "id": "revision-1-2-semanas",
-     "nombre": "Primera revisión con el pediatra del centro de salud",
-     "nota": "Tras el alta, las revisiones en el centro de salud pueden empezar entre la 1.ª y la 2.ª semana de vida, según cada caso. Pide cita en tu centro de salud.",
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-7-15-dias",
+     "nombre": "Control de salud de los 7-15 días",
+     "nota": "La guía del Sergas pide además que la primera valoración tras el alta se haga en el centro de salud antes de que termine la primera semana de vida: pide cita al salir de la maternidad.",
      "tipo": "rango",
-     "verificado": "2026-11-16"
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 1
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-1m",
+     "nombre": "Control de salud del mes",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 2
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-2m",
+     "nombre": "Control de salud de los 2 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 4
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-4m",
+     "nombre": "Control de salud de los 4 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 6
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-6m",
+     "nombre": "Control de salud de los 6 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 9
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-9m",
+     "nombre": "Control de salud de los 9 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 12
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-12m",
+     "nombre": "Control de salud de los 12 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 18
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-18m",
+     "nombre": "Control de salud de los 18 meses",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad": {
+      "meses": 24
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-2a",
+     "nombre": "Control de salud de los 2 años",
+     "nota": "",
+     "tipo": "edad",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Introdución: controles del módulo de pediatría de IANUS («Na actualidade o módulo de pediatría na historia clínica electrónica (IANUS) inclúe 14 controis»), pág. 19 (19 del PDF)",
+     "documento": "Xunta de Galicia, Consellería de Sanidade, Servizo Galego de Saúde, Dirección Xeral de Asistencia Sanitaria: «Guía de saúde infantil: actividades preventivas e de promoción da saúde en pediatría de atención primaria», Santiago de Compostela, 2020 (en gallego)",
+     "edad_desde": {
+      "meses": 36
+     },
+     "edad_hasta": {
+      "meses": 48
+     },
+     "fuente": "https://runa.sergas.gal/xmlui/bitstream/handle/20.500.11940/13421/Guia_saude_infantil.pdf",
+     "id": "revision-3-4a",
+     "nombre": "Control de salud de los 3-4 años",
+     "nota": "",
+     "tipo": "rango",
+     "verificado": "2026-11-21"
     }
    ],
    "tramites": [],
@@ -15304,7 +15424,7 @@
    "nombre": "Comunidad de Madrid",
    "revisiones": [
     {
-     "apartado": "«Consejos de salud», pág. 33 impresa (35 del PDF)",
+     "apartado": "«Consejos de salud»: «Se recomienda que la primera revisión en el centro de salud se realice a las 48-72 horas tras el alta hospitalaria y, en todo caso, antes de finalizar la primera semana de vida», pág. 33 impresa (35 del PDF)",
      "documento": "Consejería de Sanidad: «Documento de Salud Infantil» (cartilla), edición enero de 2026, última revisión diciembre de 2025 (BVCM051708)",
      "edad_desde": {
       "horas": 48
@@ -15317,7 +15437,7 @@
      "nombre": "Primera revisión en el centro de salud",
      "nota": "A las 48-72 horas del alta de la maternidad y, en todo caso, antes de que termine la primera semana de vida. Pide cita en tu centro de salud.",
      "tipo": "rango",
-     "verificado": "2026-11-16"
+     "verificado": "2026-11-21"
     }
    ],
    "tramites": [],
