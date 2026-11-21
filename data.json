@@ -5361,7 +5361,24 @@
      "verificado": "2026-11-17"
     }
    ],
-   "tramites": [],
+   "tramites": [
+    {
+     "apartado": "Anexo, «Reconocimiento de asistencia sanitaria y solicitud de tarjeta sanitaria» (páginas 21-22 del documento; 23-24 del PDF)",
+     "documento": "Servicio Cántabro de Salud, Grupo Motor de Trabajo Social Sanitario: «Guía informativa para el asesoramiento sobre derechos sociales vinculados al embarazo y al nacimiento» (versión 1; elaborada el 16/01/2025, revisada el 24/02/2025 y aprobada el 04/07/2025)",
+     "edad_desde": {
+      "dias": 0
+     },
+     "edad_hasta": {
+      "meses": 1
+     },
+     "fuente": "https://www.scsalud.es/documents/20117/1035179/Gu%C3%ADa_Informativa_Derechos_Sociales_Embarazo.pdf/a6bf4a62-d1cb-ec3a-df1b-abd29d5a2655",
+     "id": "tarjeta-sanitaria",
+     "nombre": "Tarjeta sanitaria del bebé: alta en el INSS en su primer mes",
+     "nota": "Al nacer, el bebé tiene reconocida la asistencia sanitaria de forma temporal durante un mes. En ese mes, pide en el INSS que lo reconozca como beneficiario de uno de los progenitores (por su web, sin certificado digital, o con cita), con el certificado literal de nacimiento y el DNI de ese progenitor. Después lleva al centro de salud el documento de beneficiario y el certificado de empadronamiento para obtener la tarjeta sanitaria y la asignación definitiva de pediatra.",
+     "tipo": "rango",
+     "verificado": "2026-11-21"
+    }
+   ],
    "vacunas": [
     {
      "apartado": "Tabla del calendario 2026, página 1 del visor: fila «Hepatitis B», columna «0 meses» (HB)",
