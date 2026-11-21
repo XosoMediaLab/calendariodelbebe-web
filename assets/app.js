@@ -224,7 +224,7 @@
     return evento;
   }
 
-  function eventoVRS(vacuna, campanas, nacimiento, aut) {
+  function eventoVRS(vacuna, campanas, nacimiento, aut, deAut) {
     var aplicable = null;
     for (var i = 0; i < campanas.length; i++) {
       var c = campanas[i];
@@ -272,7 +272,7 @@
     // comunidad. No se inventan reglas: se remite a la cartilla.
     evento.id = "vrs-anterior";
     evento.titulo = t("VRS (bronquiolitis): campaña de su temporada");
-    evento.campana = t("Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web {de_aut}. Si se le puso, figura en la cartilla.", { de_aut: aut.indexOf("el ") === 0 ? t("del") + " " + aut.slice(3) : t("de") + " " + aut });
+    evento.campana = t("Las reglas de la campaña de VRS de su temporada ya no están publicadas en la web {de_aut}. Si se le puso, figura en la cartilla.", { de_aut: deAut });
     return evento;
   }
 
@@ -325,7 +325,7 @@
       } else if (v.tipo === "campaña") {
         var ev = v.campana === "gripe"
           ? eventoGripe(v, com.campanas, nacimiento, hoy, com.autoridad || t("la consejería"))
-          : eventoVRS(v, com.campanas, nacimiento, com.autoridad || t("la consejería"));
+          : eventoVRS(v, com.campanas, nacimiento, com.autoridad || t("la consejería"), com.de_autoridad || t("de la consejería"));
         if (ev) eventos.push(ev);
       }
     });
