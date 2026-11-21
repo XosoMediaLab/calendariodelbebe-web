@@ -9606,10 +9606,440 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Párrafo inicial («Estas son las visitas de seguimiento en el embarazo normal que se realizan, de manera general, en el Servicio Extremeño de Salud. Pueden variar de un área de salud a otra»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Servicio 303 «Seguimiento de la mujer embarazada», actuación 303-1, p. 45 impresa (p. 48 del PDF)",
+      "documento": "Servicio Extremeño de Salud: «Cartera de Servicios de Atención Primaria», volumen I, bloque 3 «Atención a la mujer», servicio 300 «Cuidados prenatales y atención al puerperio» (aprobada por el Decreto 175/2008, de 1 de agosto, DOE n.º 153, de 07/08/2008; PDF de octubre de 2009)",
+      "fuente": "https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/CARTERA_DE_SERVICIOS__AP_SES.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-calendario-visitas",
+     "linea": false,
+     "nombre": "Revisiones del embarazo en el Servicio Extremeño de Salud",
+     "nota": "Visitas con la matrona o el médico de familia en tu centro de salud y con el obstetra en la consulta de obstetricia. Es el calendario general del SES: puede variar de un área de salud a otra. Como mínimo, una visita en el centro de salud antes de la semana 20, otra entre la 20 y la 28 y dos a partir de la 28.",
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 8-9»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Servicio 302 «Captación y valoración de la mujer embarazada», actuación 302-1 («antes de la duodécima semana»), p. 43 impresa (p. 46 del PDF)",
+      "documento": "Servicio Extremeño de Salud: «Cartera de Servicios de Atención Primaria», volumen I, bloque 3 «Atención a la mujer», servicio 300 «Cuidados prenatales y atención al puerperio» (aprobada por el Decreto 175/2008, de 1 de agosto, DOE n.º 153, de 07/08/2008; PDF de octubre de 2009)",
+      "fuente": "https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/CARTERA_DE_SERVICIOS__AP_SES.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-captacion",
+     "nombre": "Primera visita en el centro de salud",
+     "nota": "Con la matrona o el médico de familia: te abren la historia, te piden la analítica del primer trimestre, te dan las primeras recomendaciones y te derivan a la consulta de obstetricia.",
+     "semana_desde": {
+      "semanas": 8
+     },
+     "semana_hasta": {
+      "semanas": 9
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 12-14»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-obstetricia-12-14",
+     "nombre": "Primera visita en la consulta de obstetricia",
+     "nota": "Tensión y peso, resultados de la analítica, ecografía y test combinado. Según el hemograma te recetarán o no hierro. Te dan el volante para la ecografía morfológica de la semana 20.",
+     "semana_desde": {
+      "semanas": 12
+     },
+     "semana_hasta": {
+      "semanas": 14
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 16»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Servicio 303, actuación 303-2 («A partir de la 16 semana se determinará el latido fetal mediante auscultación»), p. 45 impresa (p. 48 del PDF)",
+      "documento": "Servicio Extremeño de Salud: «Cartera de Servicios de Atención Primaria», volumen I, bloque 3 «Atención a la mujer», servicio 300 «Cuidados prenatales y atención al puerperio» (aprobada por el Decreto 175/2008, de 1 de agosto, DOE n.º 153, de 07/08/2008; PDF de octubre de 2009)",
+      "fuente": "https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/CARTERA_DE_SERVICIOS__AP_SES.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-matrona-16",
+     "nombre": "Visita con la matrona",
+     "nota": "Seguimiento en tu centro de salud. Desde la semana 16 te escuchan el latido del bebé.",
+     "semana": {
+      "semanas": 16
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 20»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-obstetricia-20",
+     "nombre": "Visita con el obstetra y ecografía morfológica",
+     "nota": "Ecografía morfológica (crecimiento del bebé y de la placenta, edad del embarazo y malformaciones), tensión y peso. Te piden la analítica de la semana 24-25, con el test de O'Sullivan, y el Coombs de la 27-28 si eres Rh negativo.",
+     "semana": {
+      "semanas": 20
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 24-26»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-matrona-24-26",
+     "nombre": "Visita con la matrona",
+     "nota": "Te revisan las vacunas, te recomiendan ir a la educación maternal y te informan del plan de parto y de la donación de sangre de cordón.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 26
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 28»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-obstetricia-28",
+     "nombre": "Visita con el obstetra",
+     "nota": "Control con ecografía. Te piden la consulta con anestesia para la epidural y te revisan la vacuna del tétanos y la difteria.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 34-36», «Consulta de matrona en atención primaria»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-matrona-34-36",
+     "nombre": "Visita con la matrona",
+     "nota": "Tensión, peso, altura del útero, latido del bebé y la toma para el estreptococo del grupo B.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 40»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-obstetricia-40",
+     "nombre": "Visita con el obstetra",
+     "nota": "Monitores, peso y tensión. Si el embarazo se alarga, te programan el ingreso en el hospital para la semana 41 y media.",
+     "semana": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartados «¿Qué debo hacer para prevenir?» y «Programa de Salud Bucodental en embarazadas (D.G. Asistencia Sanitaria. SES)» («Protocolo»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Salud bucodental en el embarazo» (22/03/2018; apartado «Programa de Salud Bucodental en embarazadas (D.G. Asistencia Sanitaria. SES)»; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido56d1.html?content=salud-bucodental-embarazo",
+     "id": "ext-emb-dentista",
+     "linea": false,
+     "nombre": "Programa de salud bucodental para embarazadas",
+     "nota": "Ve al dentista en cuanto sepas que estás embarazada. Te puede derivar quien lleva tu embarazo o puedes pedirlo tú. Suelen ser 3 revisiones antes del parto (la segunda, en el segundo trimestre) y 1 dos meses después.",
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 9-10»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Servicio 302, actuación 302-3 (estudio analítico de la primera visita), p. 43 impresa (p. 46 del PDF)",
+      "documento": "Servicio Extremeño de Salud: «Cartera de Servicios de Atención Primaria», volumen I, bloque 3 «Atención a la mujer», servicio 300 «Cuidados prenatales y atención al puerperio» (aprobada por el Decreto 175/2008, de 1 de agosto, DOE n.º 153, de 07/08/2008; PDF de octubre de 2009)",
+      "fuente": "https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/CARTERA_DE_SERVICIOS__AP_SES.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-analitica-1t",
+     "nombre": "Analítica del primer trimestre",
+     "nota": "Análisis de sangre (con el cribado bioquímico de cromosomopatías, el grupo y el Rh) y cultivo de orina, tensión y peso. Citología si no te la has hecho en los 3 años anteriores.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 12-14» («Se realiza eco, apertura de historia clínica, resultados de analítica y test combinado»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre y test combinado",
+     "nota": "En tu primera visita de obstetricia, entre las semanas 12 y 14.",
+     "semana_desde": {
+      "semanas": 12
+     },
+     "semana_hasta": {
+      "semanas": 14
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 20»",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-ecografia-2t",
+     "nombre": "Ecografía morfológica",
+     "nota": "En la semana 20, con el obstetra.",
+     "semana": {
+      "semanas": 20
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 20» («Se solicita la analítica para la semana 24-25»; «Entrega del volante de la analítica para realización de test de O'Sullivan»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Servicio 303, actuación 303-3 (analítica del 2.º y 3.er trimestre con test de O'Sullivan), p. 45 impresa (p. 48 del PDF)",
+      "documento": "Servicio Extremeño de Salud: «Cartera de Servicios de Atención Primaria», volumen I, bloque 3 «Atención a la mujer», servicio 300 «Cuidados prenatales y atención al puerperio» (aprobada por el Decreto 175/2008, de 1 de agosto, DOE n.º 153, de 07/08/2008; PDF de octubre de 2009)",
+      "fuente": "https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/CARTERA_DE_SERVICIOS__AP_SES.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-analitica-24-25",
+     "nombre": "Analítica del segundo trimestre y test de O'Sullivan",
+     "nota": "Análisis de sangre con el test de O'Sullivan (cribado de diabetes del embarazo), a todas las embarazadas.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 25
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 20» («Se solicitará también el test de Coombs indirecto para la semana 27-28 si el Rh de la futura mamá es negativo»)",
+     "condicion": "eres Rh negativo",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-coombs-27-28",
+     "nombre": "Test de Coombs indirecto si eres Rh negativo",
+     "nota": "Análisis de anticuerpos entre las semanas 27 y 28.",
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 28» («“Vacuna” gammaglobulina antiD intramuscular, en las gestantes Rh negativo si el test de Coombs indirecto es negativo»)",
+     "condicion": "eres Rh negativo y el test de Coombs indirecto es negativo",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-anti-d-28",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Una inyección en el músculo en la visita de la semana 28.",
+     "semana": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 34-36» («Se realiza la toma de muestra vagino-rectal para la detección del Streptococo agalactiae»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "id": "ext-emb-estreptococo-b",
+     "nombre": "Cribado del estreptococo del grupo B",
+     "nota": "Toma de una muestra de vagina y recto en la consulta de la matrona.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Semana 34-36», «Consulta de obstetricia» («Ecografía para control del crecimiento fetal»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+     "fuente_extra": {
+      "apartado": "Tabla, columna «34-36» («OBSTETRA», «ECOGRAFIA»)",
+      "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Calendario embarazo» (tabla descargable enlazada como «Calendario revisiones embarazo para descargar»; fichero «calendario embarazo 2019», PDF de 12/06/2020)",
+      "fuente": "https://saludextremadura.ses.es/filescms/ventanafamilia/uploaded_files/CustomContentResources/calendario%20embarazo%202019.odt.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "En la consulta de obstetricia, para comprobar cómo crece el bebé.",
+     "semana_desde": {
+      "semanas": 34
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartados «¿Quién debe informarme?» y «¿Cuándo debo elaborarlo?» («entorno a las 28-34 semas de gestación»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Plan de parto» (02/03/2018; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenidoc7df.html?content=plan-parto",
+     "id": "ext-emb-plan-parto",
+     "nombre": "Plan de parto",
+     "nota": "Se recomienda prepararlo hacia las semanas 28 a 34, con ayuda de tu matrona, y presentarlo en tu hospital en una de las últimas revisiones o al llegar al parto.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 34
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Párrafos 1 («Suele realizarse a partir de las 22 semanas de gestación») y 3 («se imparten por la matrona en los Centros de Salud»)",
+     "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Clases de preparación al parto» (25/05/2018; consultado el 21/11/2026)",
+     "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenidof683.html?content=clases-preparacion-parto",
+     "fuente_extra": {
+      "apartado": "Apartado «Semana 24-26» («Ya se recomienda el acudir a las reuniones de Educación Maternal»)",
+      "documento": "Servicio Extremeño de Salud, Ventana Abierta a la Familia: «Revisiones de salud durante el embarazo» (12/06/2020; consultado el 21/11/2026)",
+      "fuente": "https://saludextremadura.ses.es/ventanafamilia/contenido5bfc.html?content=revisiones-salud-embarazo",
+      "verificado": "2026-11-21"
+     },
+     "id": "ext-emb-preparacion-parto",
+     "nombre": "Clases de preparación al parto",
+     "nota": "Las da la matrona en tu centro de salud, normalmente a partir de la semana 22: pregúntale cuándo empiezan y dónde. En la visita de la semana 24-26 te las recomienda.",
+     "semana_desde": {
+      "semanas": 22
+     },
+     "semana_hasta": null,
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Anexo I, apartado 2 «Difteria, tétanos, tosferina (DTPa, dTpa, Td)» → «Prenatal (dTpa)», DOE p. 5035 (p. 4 del PDF)",
+     "documento": "Resolución de 20 de enero de 2026, de la Consejera de Salud y Servicios Sociales, por la que se actualiza el calendario común de vacunaciones e inmunizaciones a lo largo de toda la vida de la Comunidad Autónoma de Extremadura, el calendario de vacunación e inmunización específica en menores y adolescentes con condiciones de riesgo y el calendario de vacunación específica en personas adultas con condiciones de riesgo. DOE n.º 18, de 28/01/2026 (2026060202); efectos desde su publicación",
+     "fuente": "https://doe.juntaex.es/pdfs/doe/2026/180o/26060202.pdf",
+     "id": "ext-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Protege a tu bebé en sus primeros meses.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Anexo I, apartado 12 «Gripe» → «Prenatal», DOE p. 5038 (p. 7 del PDF)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Resolución de 20 de enero de 2026, de la Consejera de Salud y Servicios Sociales, por la que se actualiza el calendario común de vacunaciones e inmunizaciones a lo largo de toda la vida de la Comunidad Autónoma de Extremadura, el calendario de vacunación e inmunización específica en menores y adolescentes con condiciones de riesgo y el calendario de vacunación específica en personas adultas con condiciones de riesgo. DOE n.º 18, de 28/01/2026 (2026060202); efectos desde su publicación",
+     "fuente": "https://doe.juntaex.es/pdfs/doe/2026/180o/26060202.pdf",
+     "id": "ext-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En la temporada de gripe, en cualquier trimestre. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_aviso": "En Extremadura las visitas y pruebas que ves son el calendario general que publica el Servicio Extremeño de Salud, que puede variar de un área de salud a otra: tu matrona te dará las fechas de tu centro.",
+   "embarazo_campanas": [
+    {
+     "apartado": "Párrafos 1 («comienza a partir de mañana jueves, día 15, la campaña de vacunación general»), 4 (coadministración gripe y COVID) y 5 («finalizará el 31 de enero de 2027, pudiéndose prolongar hasta el mes de febrero»); apartado «Vacunación gripe» («Esta campaña incluye la vacunación de […] embarazadas»)",
+     "campana": "gripe",
+     "documento": "Junta de Extremadura, nota de prensa de 14/10/2026: «El SES comienza mañana la campaña de vacunación frente a los virus respiratorios en los centros de salud»",
+     "fin": "2027-01-31",
+     "fuente": "https://www.juntaex.es/w/vacunas-gripe-y-covid",
+     "fuente_poblacion": {
+      "apartado": "Anexo I, apartado 12 «Gripe» → «Prenatal», DOE p. 5038 (p. 7 del PDF)",
+      "documento": "Resolución de 20 de enero de 2026, de la Consejera de Salud y Servicios Sociales, por la que se actualiza el calendario común de vacunaciones e inmunizaciones a lo largo de toda la vida de la Comunidad Autónoma de Extremadura, el calendario de vacunación e inmunización específica en menores y adolescentes con condiciones de riesgo y el calendario de vacunación específica en personas adultas con condiciones de riesgo. DOE n.º 18, de 28/01/2026 (2026060202); efectos desde su publicación",
+      "fuente": "https://doe.juntaex.es/pdfs/doe/2026/180o/26060202.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-15",
+     "nota": "En tu centro de salud o consultorio desde el 15/10/2026 hasta el 31/01/2027; puede alargarse a febrero según la situación de la gripe. Se puede poner el mismo día que la de la COVID-19.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Párrafos 1, 4 y 5; apartado «Vacunación COVID-19» («Esta vacuna está recomendada a […] embarazadas»)",
+     "campana": "covid",
+     "documento": "Junta de Extremadura, nota de prensa de 14/10/2026: «El SES comienza mañana la campaña de vacunación frente a los virus respiratorios en los centros de salud»",
+     "fin": "2027-01-31",
+     "fuente": "https://www.juntaex.es/w/vacunas-gripe-y-covid",
+     "fuente_calendario": {
+      "apartado": "Anexo I, apartado 13 «COVID 19» («Según recomendaciones especificadas en la Circular Gripe-COVID correspondiente a cada temporada»), DOE p. 5039 (p. 8 del PDF)",
+      "documento": "Resolución de 20 de enero de 2026, de la Consejera de Salud y Servicios Sociales, por la que se actualiza el calendario común de vacunaciones e inmunizaciones a lo largo de toda la vida de la Comunidad Autónoma de Extremadura, el calendario de vacunación e inmunización específica en menores y adolescentes con condiciones de riesgo y el calendario de vacunación específica en personas adultas con condiciones de riesgo. DOE n.º 18, de 28/01/2026 (2026060202); efectos desde su publicación",
+      "fuente": "https://doe.juntaex.es/pdfs/doe/2026/180o/26060202.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-15",
+     "nota": "En tu centro de salud o consultorio desde el 15/10/2026 hasta el 31/01/2027; puede alargarse a febrero. Se puede poner el mismo día que la de la gripe.",
+     "poblacion": "Embarazadas.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-dentista",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -13220,10 +13650,202 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
+   "embarazo": [
+    {
+     "apartado": "Apartado «Citas para las ECOGRAFÍAS», «Primera consulta» («Hay que hacerla entre las semanas 11 y 13 de embarazo. Mejor en la semana 12»), p. 14 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "fuente_extra": {
+      "apartado": "Párrafo 1 (cribado de primer trimestre y de preeclampsia con «datos ecográficas recogidos en la semana 12 de gestación»)",
+      "documento": "Rioja Salud, Actualidad (12/01/2023): «Laboratorio y Obstetricia introducen novedades en el cribado prenatal»",
+      "fuente": "https://www.riojasalud.es/institucion/actualidad/2023/01/laboratorio-y-obstetricia-introducen-novedades-en-el-cribado-prenatal",
+      "verificado": "2026-11-21"
+     },
+     "id": "rio-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre",
+     "nota": "Entre las semanas 11 y 13, mejor en la 12. Coincide con tu primera consulta de ginecología.",
+     "preferente": {
+      "desde": {
+       "semanas": 12
+      },
+      "hasta": {
+       "semanas": 12
+      }
+     },
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Citas para las ECOGRAFÍAS», «Segunda consulta», p. 14 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "id": "rio-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "Entre las semanas 20 y 22, mejor en la 21.",
+     "preferente": {
+      "desde": {
+       "semanas": 21
+      },
+      "hasta": {
+       "semanas": 21
+      }
+     },
+     "semana_desde": {
+      "semanas": 20
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Citas para las ECOGRAFÍAS», «Tercera consulta», p. 14 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "id": "rio-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "Entre las semanas 33 y 35, mejor en la 34. Coincide con tu tercera consulta de ginecología.",
+     "preferente": {
+      "desde": {
+       "semanas": 34
+      },
+      "hasta": {
+       "semanas": 34
+      }
+     },
+     "semana_desde": {
+      "semanas": 33
+     },
+     "semana_hasta": {
+      "semanas": 35
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Citas para la consulta de GINECOLOGÍA», «Primera consulta», p. 15 del PDF; indicación de llevarlo a la consulta, p. 2 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "id": "rio-emb-ginecologia-1",
+     "nombre": "Primera consulta de ginecología",
+     "nota": "Entre las semanas 12 y 13, el mismo día de la primera ecografía. Lleva siempre a ginecología el cuadernillo «Información para la embarazada».",
+     "semana_desde": {
+      "semanas": 12
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Citas para la consulta de GINECOLOGÍA», «Segunda consulta» («La cita es unos días después de que te hagan análisis»), p. 15 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "id": "rio-emb-ginecologia-2",
+     "nombre": "Segunda consulta de ginecología",
+     "nota": "Entre las semanas 25 y 27, unos días después de hacerte los análisis.",
+     "semana_desde": {
+      "semanas": 25
+     },
+     "semana_hasta": {
+      "semanas": 27
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Citas para la consulta de GINECOLOGÍA», «Tercera consulta», p. 15 del PDF",
+     "documento": "Gobierno de La Rioja (Rioja Salud): «Información para la embarazada», cuadernillo en lectura fácil adaptado por Plena Inclusión La Rioja (código LR 466-2022, mayo de 2022), enlazado como «El embarazo y las pruebas diagnósticas» en la Escuela de Salud → «Embarazo, parto y postparto» de riojasalud.es (consultada el 21/11/2026)",
+     "fuente": "https://www.riojasalud.es/files/content/ciudadanos/escuela-salud/cuida-tu-salud/embarazo-lactancia/2022_LIBRO_Informacion_embarazada-LF.pdf",
+     "id": "rio-emb-ginecologia-3",
+     "nombre": "Tercera consulta de ginecología",
+     "nota": "Entre las semanas 33 y 35, el mismo día de la tercera ecografía.",
+     "semana_desde": {
+      "semanas": 33
+     },
+     "semana_hasta": {
+      "semanas": 35
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Difteria, Tetanos, Tosferina» → «Embarazo (dTpa)», p. 1 del PDF",
+     "documento": "Gobierno de La Rioja, Programa de Vacunas: «Calendario de inmunización a lo largo de toda la vida», cuadríptico para profesionales (2024)",
+     "fuente": "https://www.riojasalud.es/files/content/salud-publica-consumo/epidemiologia/vacunaciones/Cuadr%C3%ADptico%20Calendario%20de%20inmunizacion%20a%20lo%20largo%20de%20toda%20la%20vida%20de%20La%20Rioja%20para%20profesionales.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado «Actualmente, las recomendaciones son las siguientes» (puntos 1, 3 y 4) y párrafo siguiente (administración por matronas o DUE de los centros de salud), p. 1",
+      "documento": "Consejería de Salud y Políticas Sociales, Dirección General de Salud Pública, Consumo y Cuidados (Servicio de Epidemiología y Prevención Sanitaria): «Vacunación frente a la tosferina en el embarazo en la Comunidad Autónoma de La Rioja» (junio de 2024)",
+      "fuente": "https://www.riojasalud.es/files/content/salud-publica-consumo/epidemiologia/vacunaciones/vacunacion_tosferina_embarazadas.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "rio-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28. Si pasa la 28 sin ponértela, se sigue recomendando hasta la última semana. Te la pone la matrona o la enfermera de tu centro de salud.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Gripe» → «Embarazo» («Se administrará 1 dosis a las embarazadas en cualquier trimestre de gestación»), p. 1 del PDF",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Gobierno de La Rioja, Programa de Vacunas: «Calendario de inmunización a lo largo de toda la vida», cuadríptico para profesionales (2024)",
+     "fuente": "https://www.riojasalud.es/files/content/salud-publica-consumo/epidemiologia/vacunaciones/Cuadr%C3%ADptico%20Calendario%20de%20inmunizacion%20a%20lo%20largo%20de%20toda%20la%20vida%20de%20La%20Rioja%20para%20profesionales.pdf",
+     "fuente_extra": {
+      "apartado": "Apartado 2 «Población diana», punto A.4, p. 7; apartado 6.4 «Coadministración con otras vacunas» («En embarazadas, también será compatible con la vacuna de la tosferina (dTpa)»), p. 12",
+      "documento": "Consejería de Salud y Políticas Sociales, Dirección General de Salud Pública, Consumo y Cuidados: «Vacunación frente a la gripe en La Rioja. Campaña 2026-2027» (protocolo, octubre de 2026)",
+      "fuente": "https://www.riojasalud.es/files/content/salud-publica-consumo/epidemiologia/vacunaciones/Protocolo%20Campa%C3%B1a%20vacunacion%20GRIPE%202026-2027.pdf",
+      "verificado": "2026-11-21"
+     },
+     "id": "rio-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Una dosis en la temporada de gripe, en cualquier trimestre. Si no te vacunaste en el embarazo, hasta 6 meses después del parto. Se puede poner el mismo día que la de la tos ferina. Pregunta a tu matrona las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    },
+    {
+     "apartado": "Apartado «Campaña de vacunación frente a COVID-19 (2026-2027)», 1 «Población diana», punto 5, p. 5; 2 «Vacuna» (ARNm en embarazadas; intervalo mínimo de 3 meses), p. 6",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Consejería de Salud y Políticas Sociales, Dirección General de Salud Pública, Consumo y Cuidados (Servicio de Epidemiología y Prevención Sanitaria): «Vacunación frente a COVID-19 en La Rioja. Campaña 2026-2027» (protocolo, octubre de 2026)",
+     "fuente": "https://www.riojasalud.es/files/content/salud-publica-consumo/epidemiologia/vacunaciones/Protocolo%20Campa%C3%B1a%20vacunacion%20Covid%202026-2027.pdf",
+     "id": "rio-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Se recomienda a todas las embarazadas, en cualquier trimestre y mejor en el segundo, con vacuna de ARNm. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Pregunta a tu matrona las fechas de la campaña.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-21"
+    }
+   ],
+   "embarazo_aviso": "En La Rioja no está publicado un calendario completo de visitas del embarazo: las ecografías y las consultas de ginecología que ves son las del cuadernillo de Rioja Salud, y las visitas del centro de salud y las demás pruebas, las de la guía del Ministerio de Sanidad. Las vacunas son las de La Rioja. Tu matrona te dará el calendario de tu centro.",
    "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo_sustituye": [
+    "emb-ecografia-1t",
+    "emb-ecografia-2t",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -16928,5 +17550,5 @@
    ]
   }
  },
- "ultima_revision": "2026-11-17"
+ "ultima_revision": "2026-11-21"
 }
