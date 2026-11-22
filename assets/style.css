@@ -522,3 +522,5 @@ main h2 { margin-top: 2.2rem; }
 .completo-plegado > summary { cursor: pointer; display: block; font-weight: 700; color: var(--acento-oscuro); background: var(--acento-claro); border: 1px solid #cfe9e3; border-radius: 12px; padding: .7rem 1rem; margin: .6rem 0 1rem; }
 .evento .campana-texto { margin: .15rem 0; }
 @media print { .completo-plegado > summary { display: none; } }
+.lista-comunidades { grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+.por-comunidad { margin-top: 2rem; }
