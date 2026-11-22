@@ -1572,6 +1572,21 @@
       if (entrada.value) calcular();
     }
 
+    function cargarComunidad(id, archivo) {
+      var fallo = function () {
+        error.textContent = t("No se han podido cargar los datos de esa comunidad. Comprueba la conexión y vuelve a intentarlo.");
+        resultado.hidden = true;
+      };
+      if (!window.fetch) return fallo();
+      fetch(archivo).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      }).then(function (c) {
+        datos.comunidades[id] = c;
+        calcular();
+      }).catch(fallo);
+    }
+
     function calcular(ev) {
       if (ev) ev.preventDefault();
       hoy = hoyLocal();
@@ -1590,6 +1605,12 @@
           ? t("La última regla ha de ser de las últimas 42 semanas.")
           : t("La fecha probable de parto ha de estar entre hoy y dentro de 42 semanas. Si ya ha nacido, elige «Ya ha nacido».");
         resultado.hidden = true;
+        return;
+      }
+      // Los datos de las demás comunidades no van en la página: se cargan al elegirlas.
+      var elegida = datos.comunidades[comunidad.value];
+      if (elegida && elegida.archivo) {
+        cargarComunidad(comunidad.value, elegida.archivo);
         return;
       }
       var n = modo === "embarazo" && referencia.value === "fur" ? fppDesdeFUR(f, datos) : f;
