@@ -536,3 +536,18 @@ main h2 { margin-top: 2.2rem; }
 .boton-album { display: inline-block; padding: .55rem 1rem; background: var(--acento); color: #fff; font-weight: 700; border-radius: 999px; text-decoration: none; }
 .boton-album:hover { background: var(--acento-oscuro); }
 @media (max-width: 34rem) { .album, .album-corto { grid-template-columns: 1fr; } .album-corto img { max-width: 12rem; } }
+.apoya { order: 3; white-space: nowrap; padding: .35rem .7rem; border: 1px solid var(--borde); border-radius: 999px; color: var(--suave); text-decoration: none; font-weight: 600; font-size: .9rem; }
+.apoya:hover { border-color: #e3b341; background: #fff8e6; color: var(--texto); }
+.firma-estudio { margin-top: .75rem; font-size: .9rem; }
+.firma-estudio a { display: inline-flex; align-items: center; gap: .4rem; color: inherit; opacity: .9; text-decoration: none; }
+.firma-estudio a:hover { opacity: 1; text-decoration: underline; }
+@media (max-width: 40rem) {
+  .apoya { order: 0; margin-left: auto; padding: .3rem .55rem; font-size: 1rem; }
+  .apoya span { display: none; }
+}
+@media (min-width: 60rem) {
+  .barra-dentro { flex-wrap: nowrap; }
+  .barra .logo { flex-shrink: 0; white-space: nowrap; }
+  .menu a { padding: .4rem .5rem; }
+  .apoya { font-size: .85rem; padding: .3rem .6rem; }
+}
