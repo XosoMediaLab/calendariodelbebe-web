@@ -524,3 +524,7 @@ main h2 { margin-top: 2.2rem; }
 @media print { .completo-plegado > summary { display: none; } }
 .lista-comunidades { grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
 .por-comunidad { margin-top: 2rem; }
+.apoyo { margin: 1.5rem 0; padding: 1rem 1.2rem; background: #fff8e6; border: 1px solid #f0d98c; border-radius: 12px; }
+.apoyo p { margin: .3rem 0; }
+.boton-donar { display: inline-block; padding: .55rem 1rem; background: #e3b341; color: #1d2a33; font-weight: 700; border-radius: 999px; text-decoration: none; }
+.boton-donar:hover { background: #d9a52a; }
