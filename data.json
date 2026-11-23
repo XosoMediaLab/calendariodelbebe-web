@@ -17856,10 +17856,562 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Apartado 4.4.2 b «Valoración del riesgo obstétrico» («Los embarazos de bajo riesgo o normales realizarán el seguimiento en Atención Primaria»), p. 119; Apartado 4.4.3 «Control y seguimiento del embarazo normal», visitas primera a novena y «A partir de la semana 40 la gestante es controlada por el/la obstetra», pp. 123-133; apartado 4.7 «Flujograma», p. 158",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Carpeta «Documentos para profesionales»: «Programa integral de atención a la mujer (PIAM)»",
+      "documento": "Servicio Murciano de Salud, Programa Primeros 1000 días de vida y más: página «Atención a la maternidad», carpeta «Documentos para profesionales», que enlaza el PIAM como único documento (consultada el 23/11/2026)",
+      "fuente": "https://www.murciasalud.es/web/programa-primeros-1000-dias-de-vida/atencion-a-la-maternidad",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-numero-visitas",
+     "linea": false,
+     "nombre": "Nueve visitas en todo el embarazo",
+     "nota": "Si tu embarazo es de bajo riesgo, lo sigues en tu centro de salud con la matrona y tu médico o médica de familia, con tres visitas a obstetricia para las ecografías. Son nueve visitas; desde la semana 40 te controla el obstetra del hospital. Te dan la Cartilla Maternal en la primera visita.",
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.2 «Captación» (comprobar el embarazo, valoración del riesgo y «Solicitud de 1ª analítica (a realizar en la 10ª semana)»), pp. 118-123; Anexo II «Perfiles analíticos del embarazo» («Captación de 5 a 10 semanas»), p. 168",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-captacion",
+     "nombre": "Captación en el centro de salud",
+     "nota": "En cuanto tengas el test de embarazo positivo, pide cita en tu centro de salud. Te valoran los riesgos, te piden la primera analítica y te recomiendan el ácido fólico y el yodo.",
+     "semana_desde": {
+      "semanas": 5
+     },
+     "semana_hasta": {
+      "semanas": 10
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «a. Primera visita (9-11 semanas) – (Matrona/ón y médico/a de familia, si procede)», pp. 123-126",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-1",
+     "nombre": "Primera visita con la matrona",
+     "nota": "Con la matrona (y tu médico o médica de familia, si hace falta): te abren la Cartilla Maternal, peso, talla y tensión, fecha probable de parto, resultados de la primera analítica, consejos de alimentación, cuidado de la boca y cómo evitar la toxoplasmosis. Te citan para la ecografía de las semanas 11 a 13 y para la siguiente visita, hacia la 16-18.",
+     "semana_desde": {
+      "semanas": 9
+     },
+     "semana_hasta": {
+      "semanas": 11
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «b. Segunda visita (11 y 13 semanas) – (Obstetricia)», p. 127",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-2",
+     "nombre": "Visita de obstetricia y ecografía del primer trimestre",
+     "nota": "En la consulta de obstetricia: ecografía del primer trimestre, información del cribado combinado y repaso de la analítica y de la cartilla. Si todo va bien, sigues en tu centro de salud. Te dan cita para la ecografía de las semanas 18 a 22.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «c. Tercera visita (16-18 semanas) – (Matrona/ón)», pp. 127-128",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-3",
+     "nombre": "Visita con la matrona",
+     "nota": "Peso, tensión, latido del bebé y dudas. Te piden la analítica del segundo trimestre, con el test de O'Sullivan para las semanas 24 a 28.",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "semanas": 18
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «d. Cuarta visita (18-22 semanas) – (Obstetricia)», p. 128",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-4",
+     "nombre": "Visita de obstetricia y ecografía del segundo trimestre",
+     "nota": "Ecografía del segundo trimestre y repaso de la analítica y la cartilla. Te dan cita para la ecografía del tercer trimestre y vuelves a tu centro de salud.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «e. Quinta visita (24-28 semanas) – (Matrona/ón y médico/a de familia, si procede)», pp. 128-130",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-5",
+     "nombre": "Visita con la matrona",
+     "nota": "Peso, tensión, altura del útero, latido y movimientos del bebé. Resultados de la analítica y del O'Sullivan, señales de parto antes de tiempo y te apuntan a la educación maternal.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «g. Sexta visita (29 semanas) – (Matrona/ón)», p. 130",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-6",
+     "nombre": "Visita con la matrona",
+     "nota": "Tensión, peso, posición del bebé y altura del útero, repaso de la dieta y educación maternal. Te informan del plan de parto.",
+     "semana": {
+      "semanas": 29
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «h. Séptima visita (32-36 semanas) – (Obstetricia)», p. 131",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-7",
+     "nombre": "Visita de obstetricia y ecografía del tercer trimestre",
+     "nota": "Ecografía del tercer trimestre y repaso de la analítica y la cartilla. Vuelves a tu centro de salud.",
+     "semana_desde": {
+      "semanas": 32
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «i. Octava visita (36-37 semanas) – (Matrona/ón)», pp. 131-132",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-8",
+     "nombre": "Visita con la matrona",
+     "nota": "Tensión, peso, latido y movimientos del bebé. Te piden la analítica del tercer trimestre y la matrona te toma la muestra del estreptococo B. Te citan para el monitor de la semana 40.",
+     "semana_desde": {
+      "semanas": 36
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», «k. Novena visita (39-40 semanas) – (Matrona/ón y obstetra, si procede)» y «l. A partir de la semana 40 la gestante es controlada por el/la obstetra», pp. 132-133",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-visita-9",
+     "nombre": "Visita de la semana 39-40",
+     "nota": "Con la matrona (y el obstetra, si hace falta): monitor en la semana 40 y repaso de cuándo ir al hospital, el parto y el alivio del dolor, la lactancia y la visita después del parto. Desde la semana 40 te controla el obstetra del hospital.",
+     "semana_desde": {
+      "semanas": 39
+     },
+     "semana_hasta": {
+      "semanas": 40
+     },
+     "tipo": "visita",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.2 d «Pruebas y recomendaciones» («Solicitud de 1ª analítica (a realizar en la 10ª semana)»), pp. 120-121; Anexo II «Perfiles analíticos del embarazo», «1ª analítica o analítica del primer trimestre», p. 168",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-analitica-1",
+     "nombre": "Analítica del primer trimestre",
+     "nota": "Hacia la semana 10: hemograma, glucosa, tiroides (TSH), grupo y Rh, anticuerpos (Coombs indirecto), serologías de sífilis, rubeola, hepatitis B y VIH, orina y urocultivo, y el análisis del cribado combinado. Chagas si tú o tu madre venís de Latinoamérica, y test de O'Sullivan si tienes riesgo de diabetes gestacional.",
+     "semana": {
+      "semanas": 10
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.2 d («determinación de la PAPP-A y fracción libre de la β-hCG alrededor de la semana 10 de gestación»), p. 121; apartado 4.4.3 b «Segunda visita (11 y 13 semanas)» («Informar sobre cribado combinado de primer trimestre»; «La información del resultado del cribado combinado se realizará según la disponibilidad de cada área»), p. 127",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Anexo I, apartado 3.3.5.1 (test combinado y ADN fetal libre como prueba de segunda línea)",
+      "documento": "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud (texto consolidado, última actualización publicada el 31/07/2026)",
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-16212",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-cribado-combinado",
+     "nombre": "Cribado combinado del primer trimestre",
+     "nota": "Un análisis de sangre (beta-hCG y PAPP-A) hacia la semana 10, con la primera analítica, y la ecografía de las semanas 11 a 13. En la consulta de obstetricia te lo explican y te dan el consentimiento informado; el resultado se da según cada área de salud. Si sale riesgo alto, la sanidad pública ofrece el test de ADN fetal en sangre materna.",
+     "semana_desde": {
+      "semanas": 10
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», a «Primera visita» («Citar el primer control ecográfico: Se realiza entre la 11 y 13 semanas de gestación»), p. 126, y b «Segunda visita», p. 127",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-ecografia-1t",
+     "nombre": "Ecografía del primer trimestre",
+     "nota": "La primera de las tres ecografías del embarazo, en la consulta de obstetricia. Te la cita tu centro de salud.",
+     "semana_desde": {
+      "semanas": 11
+     },
+     "semana_hasta": {
+      "semanas": 13
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», c «Tercera visita» («Solicitar 2ª analítica (2º trimestre)»), pp. 127-128; Anexo II, «2ª analítica o analítica del segundo trimestre (de 16 a 18 semanas)», p. 168",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-analitica-2",
+     "nombre": "Analítica del segundo trimestre",
+     "nota": "Te la piden en la visita de las semanas 16 a 18: hemograma, creatinina, ácido úrico, bilirrubina, transaminasas y orina; si eres Rh negativo, también el Coombs indirecto.",
+     "semana_desde": {
+      "semanas": 16
+     },
+     "semana_hasta": {
+      "semanas": 18
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», b «Segunda visita» («Dar cita a la embarazada para la ecografía del segundo trimestre (18-22 semanas de gestación)»), p. 127, y d «Cuarta visita», p. 128",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-ecografia-2t",
+     "nombre": "Ecografía del segundo trimestre",
+     "nota": "En la consulta de obstetricia. Te explican lo que han visto en la ecografía.",
+     "semana_desde": {
+      "semanas": 18
+     },
+     "semana_hasta": {
+      "semanas": 22
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Anexo II, «2ª analítica…», «Por defecto se realizan: Test de O´Sullivan (para realizar en la semana 24-28 de gestación)», p. 168; apartado 4.4.3 c «Tercera visita», p. 128, y e «Quinta visita» (valoración del test y TOG), pp. 129-130",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Apartado 4.4.2 d, punto 6 («Test de O`Sullivan en la primera visita si la gestante tiene riesgo de diabetes gestacional»), p. 121",
+      "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+      "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-diabetes-24-28",
+     "nombre": "Cribado de diabetes gestacional (test de O'Sullivan)",
+     "nota": "A todas las embarazadas: una prueba de sobrecarga con 50 g de glucosa en las semanas 24 a 28. Si sale alta, te piden una segunda prueba más larga. Si tienes riesgo de diabetes gestacional (obesidad, diabetes gestacional previa, familiares de primer grado con diabetes…), también te la hacen en el primer trimestre.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.2 d, 1.ª analítica, punto 1 («Si la mujer es Rh negativa y la prueba es negativa, repetir cada 4 semanas a partir de las 24 semanas de gestación»), p. 120",
+     "condicion": "eres Rh negativo y la primera prueba salió negativa",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-coombs-rh",
+     "nombre": "Anticuerpos (Coombs indirecto) si eres Rh negativo",
+     "nota": "Se repite el análisis de anticuerpos cada 4 semanas desde la semana 24.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": null,
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», a «Primera visita», punto 4 («entre las semanas 28-34. Se aplica dosis única de 300 mcg»), p. 126, y e «Quinta visita» («programar la administración de la inmunoglobulina anti-D entre las semanas 28 y 34»), p. 130",
+     "condicion": "eres Rh negativo y el Coombs indirecto es negativo",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-anti-d",
+     "nombre": "Inmunoglobulina anti-D si eres Rh negativo",
+     "nota": "Una dosis única de inmunoglobulina anti-D entre las semanas 28 y 34. Te la programan en la visita de las semanas 24 a 28.",
+     "semana_desde": {
+      "semanas": 28
+     },
+     "semana_hasta": {
+      "semanas": 34
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», g «Sexta visita (29 semanas)» («Información sobre el Plan de Parto»), p. 130; apartado 4.4.4, sesión «4. Parto» («Confeccionar su plan de parto»), p. 136",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-plan-parto",
+     "nombre": "Plan de parto",
+     "nota": "En la visita de la semana 29 la matrona te informa del plan de parto; en la educación maternal aprendes a hacer el tuyo.",
+     "semana": {
+      "semanas": 29
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», d «Cuarta visita» («Citar para ecografía del tercer trimestre (32-36 semanas)»), p. 128, y h «Séptima visita (32-36 semanas)», p. 131",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-ecografia-3t",
+     "nombre": "Ecografía del tercer trimestre",
+     "nota": "La tercera ecografía, en la consulta de obstetricia. Te la citan en la visita de las semanas 18 a 22.",
+     "semana_desde": {
+      "semanas": 32
+     },
+     "semana_hasta": {
+      "semanas": 36
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», i «Octava visita (36-37 semanas)» («Solicitar 3ª analítica (3º trimestre)»; «Advertir a la mujer que venga a recoger los resultados analíticos en una semana»), pp. 131-132; k «Novena visita», p. 133",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Anexo II, «3ª analítica o analítica del tercer trimestre (de 34 a 38 semanas)», p. 168",
+      "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+      "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-analitica-3",
+     "nombre": "Analítica del tercer trimestre",
+     "nota": "Te la piden en la visita de las semanas 36 y 37: hemograma, glucosa, hepatitis B, VIH, orina, pruebas de coagulación y, si hay riesgo, sífilis. Recoges los resultados a la semana y los llevas pegados a la cartilla.",
+     "semana_desde": {
+      "semanas": 36
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», i «Octava visita (36-37 semanas)», 3.ª analítica, punto 7 («Cultivo recto-vaginal del Estreptococo Agalactiae (la/el matrona/ón ha de recoger la muestra para este cultivo)») y valoración («si es positivo se recomienda profilaxis intraparto»), pp. 131-132",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-estreptococo-b",
+     "nombre": "Cultivo del estreptococo del grupo B",
+     "nota": "La matrona te toma una muestra de la vagina y el recto con la analítica del tercer trimestre. Si sale positivo, en el parto te dan un tratamiento preventivo para proteger al bebé.",
+     "semana_desde": {
+      "semanas": 36
+     },
+     "semana_hasta": {
+      "semanas": 37
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.3 «Control y seguimiento del embarazo normal», i «Octava visita» («Citar para monitor sobre la semana 40») y k «Novena visita (39-40 semanas)» («Realización de monitor en la semana 40»; «Remitir a obstetricia para valorar monitor si este no es satisfactorio»), pp. 131-133",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-monitor-40",
+     "nombre": "Monitor (registro del latido del bebé)",
+     "nota": "En la semana 40 te hacen un registro del latido del bebé; si no sale bien, te ve el obstetra.",
+     "semana": {
+      "semanas": 40
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.4 «Educación maternal y preparación al parto (responsabilidad de Atención Primaria: Matronas/es)», pp. 134-137; apartado 4.4.3 e «Quinta visita (24-28 semanas)» («Incluir en los cursos de educación maternal»), p. 129",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Apartado 4.4.3 l («El Consentimiento Informado de anestesia epidural tiene que facilitarlo el Servicio de Anestesia del área correspondiente, en la Educación Maternal previa a la semana 40»), p. 133",
+      "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+      "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-educacion-maternal",
+     "nombre": "Educación maternal y preparación al parto",
+     "nota": "La da la matrona de tu centro de salud y te apuntan en la visita de las semanas 24 a 28; puede ir tu pareja. Sesiones sobre los cambios del embarazo, el vínculo con el bebé, el parto y el plan de parto, la lactancia, los cuidados del bebé, gimnasia y relajación. Antes de la semana 40 te dan allí el consentimiento de la epidural.",
+     "semana_desde": {
+      "semanas": 24
+     },
+     "semana_hasta": {
+      "semanas": 28
+     },
+     "tipo": "prueba",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Anexo 4 «Calendario de vacunación en mujeres embarazadas», p. 22869 (p. 10 del PDF), «Difteria-Tétanos-Tosferina acelular» → «dTpa(1)», nota (1) («En cada embarazo e idealmente entre las semanas 27 y 32»)",
+     "documento": "Orden de 21 de septiembre de 2026 de la Consejería de Salud, relativa al calendario de vacunaciones e inmunizaciones 2026 para todas las edades de la vida de la Comunidad Autónoma de la Región de Murcia, así como para grupos y situaciones de riesgo y para situaciones especiales. BORM n.º 225, de 29/09/2026, págs. 22860-22877 (NPE A-290926-4705)",
+     "fuente": "https://www.borm.es/services/anuncio/ano/2026/numero/4705/pdf",
+     "id": "mur-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, idealmente entre las semanas 27 y 32. Protege a tu bebé en sus primeros meses.",
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": {
+      "semanas": 32
+     },
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Anexo 4 «Calendario de vacunación en mujeres embarazadas», p. 22869 (p. 10 del PDF), «Gripe» → «Gripe(2)», nota (2) («Embarazadas durante la temporada gripal independientemente del momento de la gestación»)",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Orden de 21 de septiembre de 2026 de la Consejería de Salud, relativa al calendario de vacunaciones e inmunizaciones 2026 para todas las edades de la vida de la Comunidad Autónoma de la Región de Murcia, así como para grupos y situaciones de riesgo y para situaciones especiales. BORM n.º 225, de 29/09/2026, págs. 22860-22877 (NPE A-290926-4705)",
+     "fuente": "https://www.borm.es/services/anuncio/ano/2026/numero/4705/pdf",
+     "fuente_extra": {
+      "apartado": "Apartado A «Población diana», fila «Embarazadas» («Vacunación sistemática en cualquier trimestre (en caso de no vacunación durante la gestación, se incluye a las mujeres en los 6 1os meses del puerperio)»), pp. 6-7; apartado B.7.7 «Vacuna antigripal, embarazo y puerperio», pp. 37-39",
+      "documento": "Consejería de Salud, Dirección General de Salud Pública y Adicciones (Servicio de Prevención y Protección de la Salud): «Vacunación estacional frente a infecciones respiratorias (gripe y COVID-19). Temporada 2026-2027», protocolo de septiembre de 2026",
+      "fuente": "https://www.murciasalud.es/documents/5435832/13432310/Protocolo+campa%C3%B1a+de+gripe+y+COVID-19+2026-2027.pdf/d22f361c-c9f4-abd0-08af-02d55f7cac9a?t=1793806789866",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "En temporada de gripe, en cualquier momento del embarazo. Si no te vacunaste en el embarazo, puedes hacerlo hasta 6 meses después del parto. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Anexo 4 «Calendario de vacunación en mujeres embarazadas», p. 22869 (p. 10 del PDF), «COVID-19» → «COVID-19 ARNm(3)», nota (3) («La administración se debe hacer siempre con vacuna de ARN mensajero (ARNm) en cualquier trimestre de la gestación, aunque es preferible durante el 2º trimestre»)",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Orden de 21 de septiembre de 2026 de la Consejería de Salud, relativa al calendario de vacunaciones e inmunizaciones 2026 para todas las edades de la vida de la Comunidad Autónoma de la Región de Murcia, así como para grupos y situaciones de riesgo y para situaciones especiales. BORM n.º 225, de 29/09/2026, págs. 22860-22877 (NPE A-290926-4705)",
+     "fuente": "https://www.borm.es/services/anuncio/ano/2026/numero/4705/pdf",
+     "fuente_extra": {
+      "apartado": "Apartado A, fila «Embarazadas» (COVID-19: «Vacunación sistemática en cualquier trimestre»), p. 6; apartado C.7.5 «Vacunación estacional frente a COVID-19 en el embarazo», pp. 59-60; apartado C.7.8 (intervalo de «al menos, 3 meses»), p. 63",
+      "documento": "Consejería de Salud, Dirección General de Salud Pública y Adicciones (Servicio de Prevención y Protección de la Salud): «Vacunación estacional frente a infecciones respiratorias (gripe y COVID-19). Temporada 2026-2027», protocolo de septiembre de 2026",
+      "fuente": "https://www.murciasalud.es/documents/5435832/13432310/Protocolo+campa%C3%B1a+de+gripe+y+COVID-19+2026-2027.pdf/d22f361c-c9f4-abd0-08af-02d55f7cac9a?t=1793806789866",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Una dosis de la temporada con vacuna de ARNm, en cualquier trimestre, mejor en el segundo. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Protege también al bebé en sus primeros meses.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    },
+    {
+     "antes": "al menos 1 mes antes de quedarte embarazada",
+     "apartado": "Apartado 4.4.1 «Atención preconcepcional», «Actividades preventivas», punto 3 «Suplementación periconcepcional con folatos» («Debe comenzar al menos un mes antes de la concepción y continuar durante las primeras 10-12 semanas»; «entre 0.4 y 0.8 mg al día»), p. 117",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "fuente_extra": {
+      "apartado": "Apartado 4.4.2 d, «Recomendar: 1. Profilaxis con ácido fólico» (riesgo de DTN: «epilepsia, diabetes mellitus, obesidad –IMC > 35-, antecedentes de gestación de DTN»; bajo riesgo: «0’4 a 0’8 mg/día de ácido fólico, en los 3 primeros meses del embarazo»), pp. 122-123",
+      "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+      "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+      "verificado": "2026-11-23"
+     },
+     "id": "mur-emb-acido-folico",
+     "nombre": "Ácido fólico",
+     "nota": "De 0,4 a 0,8 mg al día desde al menos un mes antes del embarazo y durante las primeras 10 a 12 semanas. Si tienes más riesgo de que el bebé tenga un defecto del tubo neural (epilepsia, diabetes, obesidad importante o un embarazo anterior con ese defecto), la dosis es mayor: te la indica tu médico o médica.",
+     "semana_desde": null,
+     "semana_hasta": {
+      "semanas": 12
+     },
+     "tipo": "suplemento",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.4.2 d, «Recomendar: 3. Profilaxis con yodo» («200 µg/día de yodo, durante los 3 primeros meses del embarazo»), p. 123; apartado 4.4.1, «Actividades preventivas», punto 4 («Se recomienda el uso de sal iodada»), p. 117",
+     "documento": "Consejería de Sanidad y Política Social de la Región de Murcia y Servicio Murciano de Salud: «Programa Integral de Atención a la Mujer (PIAM)», primera edición, diciembre de 2012 (ISBN 978-84-96994-86-7), subprograma 4 «Atención al embarazo, parto y puerperio», págs. 107-168; enlazado como documento para profesionales en «Atención a la maternidad» del Programa Primeros 1000 días de vida y más (murciasalud.es, consultado el 23/11/2026)",
+     "fuente": "https://www.murciasalud.es/documents/d/programa-primeros-1000-dias-de-vida/programa-integral-de-atencion-a-la-mujer-piam?download=true",
+     "id": "mur-emb-yodo",
+     "linea": false,
+     "nombre": "Yodo",
+     "nota": "200 µg de yodo al día durante los tres primeros meses del embarazo. Usa también sal yodada.",
+     "tipo": "suplemento",
+     "verificado": "2026-11-23"
+    }
+   ],
+   "embarazo_aviso": "En la Región de Murcia las visitas y pruebas que ves son las del Programa Integral de Atención a la Mujer del Servicio Murciano de Salud (2012), el último que se ha publicado; las vacunas y sus campañas son las de 2026. Tu matrona te dará las fechas de tu centro de salud.",
+   "embarazo_campanas": [
+    {
+     "apartado": "Apartado A «Población diana», fila «Embarazadas», pp. 6-7; apartado B.5, cronograma («18 de septiembre. Comienzo de la campaña de vacunación antigripal en el resto de los grupos de población diana [...] priorizando siempre que sea posible a la población de 70 años o más, gestantes y población pediátrica»; «A finales de noviembre o a lo largo del mes de diciembre»), pp. 23-24; apartado B.6 «Citación», pp. 25-26",
+     "campana": "gripe",
+     "documento": "Consejería de Salud, Dirección General de Salud Pública y Adicciones (Servicio de Prevención y Protección de la Salud): «Vacunación estacional frente a infecciones respiratorias (gripe y COVID-19). Temporada 2026-2027», protocolo de septiembre de 2026",
+     "fin": null,
+     "fuente": "https://www.murciasalud.es/documents/5435832/13432310/Protocolo+campa%C3%B1a+de+gripe+y+COVID-19+2026-2027.pdf/d22f361c-c9f4-abd0-08af-02d55f7cac9a?t=1793806789866",
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-09-18",
+     "nota": "Desde el 18/09/2026, con prioridad para las embarazadas. Pide cita por teléfono o en el mostrador de tu centro de salud (si tienes mutua o seguro privado, en tu clínica). Sin fecha de fin publicada.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en los 6 primeros meses después del parto que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado A, fila «Embarazadas», p. 6; apartado B.5, cronograma («18 de septiembre [...] así como administración de dosis estacional de vacuna frente a COVID-19 en aquellas personas que también la tengan recomendada, priorizando [...] gestantes»), p. 23; apartado B.6 «Citación», pp. 25-26; apartado C.7.8 («Se podrá vacunar en cualquier momento del año a las personas que no se les haya administrado aún la vacuna adaptada de la temporada»), p. 63",
+     "campana": "covid",
+     "documento": "Consejería de Salud, Dirección General de Salud Pública y Adicciones (Servicio de Prevención y Protección de la Salud): «Vacunación estacional frente a infecciones respiratorias (gripe y COVID-19). Temporada 2026-2027», protocolo de septiembre de 2026",
+     "fin": null,
+     "fuente": "https://www.murciasalud.es/documents/5435832/13432310/Protocolo+campa%C3%B1a+de+gripe+y+COVID-19+2026-2027.pdf/d22f361c-c9f4-abd0-08af-02d55f7cac9a?t=1793806789866",
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-09-18",
+     "nota": "Desde el 18/09/2026, junto con la de la gripe y con prioridad para las embarazadas. Si aún no te has puesto la vacuna de esta temporada, te la pueden poner en cualquier momento del año. Pide cita por teléfono o en el mostrador de tu centro de salud.",
+     "poblacion": "Todas las embarazadas, en cualquier trimestre.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-23"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-numero-visitas",
+    "emb-visita-1",
+    "emb-visita-11-13",
+    "emb-visita-16-17",
+    "emb-visita-20-21",
+    "emb-visita-25-26",
+    "emb-visita-29-30",
+    "emb-visita-34-36",
+    "emb-visita-38-40",
+    "emb-analitica-1",
+    "emb-ecografia-1t",
+    "emb-cribado-combinado",
+    "emb-ecografia-2t",
+    "emb-anti-rh-24-28",
+    "emb-diabetes-24-28",
+    "emb-anemia-28",
+    "emb-anti-d-28-30",
+    "emb-estreptococo-b",
+    "emb-plan-parto",
+    "emb-preparacion-nacimiento",
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid",
+    "emb-acido-folico",
+    "emb-yodo"
+   ],
    "escolarizacion": {
     "admision": [
      {
