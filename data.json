@@ -6335,10 +6335,153 @@
     }
    ],
    "de_autoridad": "de la Consejería",
-   "embarazo": [],
-   "embarazo_aviso": "",
-   "embarazo_campanas": [],
-   "embarazo_sustituye": [],
+   "embarazo": [
+    {
+     "apartado": "Apartado 4.1 «Vacunación frente a Tosferina» («a partir de la semana 27 de gestación, preferiblemente en las semanas 27 o 28, con el objetivo de proteger al neonato frente a la tosferina en los 2-3 primeros meses de vida»; «Si pasada la semana 28 de gestación aún no se hubiera administrado la vacuna dTpa, se sigue recomendando su administración incluso hasta la última semana de gestación e incluso en el postparto»; «La vacuna se administrará en cada embarazo, independientemente del antecedente de vacunación previa»), p. 6",
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Calendario de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha, 2026. Documento técnico» (abril de 2026)",
+     "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/20260410_documento_tecnico_calendario_sistematico_2026.pdf",
+     "fuente_extra": {
+      "apartado": "Anexo «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha», columna «Prenatal», fila «Difteria-Tétanos-Tosferina» («dTpa»), DOCM p. 38426 (p. 3 del PDF)",
+      "documento": "Resolución de 14/11/2025, de la Dirección General de Salud Pública, por la que se actualiza el calendario de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha. DOCM n.º 227, de 24/11/2025 (NID 2025/8833); efectos desde el 01/01/2026",
+      "fuente": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2025/11/24/pdf/2025_8833.pdf&tipo=rutaDocm",
+      "verificado": "2026-11-23"
+     },
+     "id": "clm-emb-dtpa",
+     "nombre": "Tos ferina (dTpa)",
+     "nota": "Una dosis en cada embarazo, a partir de la semana 27 y mejor en la 27 o la 28, aunque te vacunaras en un embarazo anterior. Si pasada la semana 28 aún no te la has puesto, se sigue recomendando hasta la última semana del embarazo e incluso después del parto. Protege a tu bebé en sus 2 o 3 primeros meses.",
+     "preferente": {
+      "desde": {
+       "semanas": 27
+      },
+      "hasta": {
+       "semanas": 28
+      }
+     },
+     "semana_desde": {
+      "semanas": 27
+     },
+     "semana_hasta": null,
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Apartado 4.2 «Vacunación frente a Gripe Estacional» («Se recomienda la vacunación frente a la gripe durante la campaña de vacunación estacional»; «Puede administrarse en cualquier trimestre de la gestación»; «También se recomienda la vacunación antigripal en los primeros 6 meses tras el parto, en caso de que no se hayan vacunado durante la gestación»; «Puede administrarse el mismo día que la vacuna dTpa»), p. 6",
+     "campana": "gripe",
+     "cualquier_trimestre": true,
+     "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Calendario de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha, 2026. Documento técnico» (abril de 2026)",
+     "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/20260410_documento_tecnico_calendario_sistematico_2026.pdf",
+     "fuente_extra": [
+      {
+       "apartado": "Anexo «Calendario sistemático de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha», columna «Prenatal», fila «Gripe» («Gripe anual»), DOCM p. 38426 (p. 3 del PDF)",
+       "documento": "Resolución de 14/11/2025, de la Dirección General de Salud Pública, por la que se actualiza el calendario de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha. DOCM n.º 227, de 24/11/2025 (NID 2025/8833); efectos desde el 01/01/2026",
+       "fuente": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2025/11/24/pdf/2025_8833.pdf&tipo=rutaDocm",
+       "verificado": "2026-11-23"
+      },
+      {
+       "apartado": "Grupos de población diana de la gripe, apartado a), punto 5 («Embarazadas en cualquier trimestre de gestación. En caso de que no se hubiese vacunado durante el embarazo, podrá vacunarse hasta los 6 meses tras el parto»), p. 5",
+       "documento": "Instrucción 1/2026 de la Dirección General de Salud Pública y la Dirección General de Cuidados y Calidad (SESCAM), de 15/09/2026, sobre la campaña de vacunación frente a gripe y COVID en Castilla-La Mancha (actualizada a 25/09/2026)",
+       "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/instruccion_1-2026_gripe_y_covid-19.pdf",
+       "verificado": "2026-11-23"
+      },
+      {
+       "apartado": "Apartado 1, población diana, punto 4 («siendo preferente su administración durante el embarazo»), p. 3 del PDF; coadministración («En embarazadas, puede coadministrarse con las vacunas dTpa y COVID-19»), p. 12 del PDF",
+       "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a gripe y COVID-19 en Castilla-La Mancha. Temporada 2026-2027. Documento técnico» (15/09/2026)",
+       "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/documento_tecnico_vacuna_gripe_y_covid_2026-2027.pdf",
+       "verificado": "2026-11-23"
+      },
+      {
+       "apartado": "«¿Cuándo debo vacunarme?» («En cualquier trimestre de gestación y durante el periodo de la campaña de vacunación»)",
+       "documento": "SESCAM, web de Sanidad de Castilla-La Mancha: «¿Debo vacunarme si estoy embarazada?» (apartado «Frente a la gripe protégete»; consultada el 23/11/2026)",
+       "fuente": "https://sanidad.castillalamancha.es/ciudadanos/protege-tu-salud/frente-la-gripe-protegete/debo-vacunarme-si-estoy-embarazada",
+       "verificado": "2026-11-23"
+      }
+     ],
+     "id": "clm-emb-gripe",
+     "nombre": "Gripe",
+     "nota": "Durante la campaña de gripe, en cualquier trimestre del embarazo. Si no te vacunaste en el embarazo, puedes hacerlo hasta 6 meses después del parto. Se puede poner el mismo día que la de la tos ferina o la de la COVID-19. Mira las fechas de la campaña.",
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "Grupos de población a los que se recomienda la vacunación frente a COVID-19, apartado a), punto 5 «Embarazadas» («Se recomienda la vacunación en todas las embarazadas, con vacuna de ARNm»; «se puede realizar en cualquier trimestre de gestación, aunque es preferible durante el 2º trimestre»), p. 7; «A las personas que tengan indicación de vacunación frente a gripe y COVID-19, se les administrará ambas vacunas el mismo día», p. 8",
+     "campana": "covid",
+     "cualquier_trimestre": true,
+     "documento": "Instrucción 1/2026 de la Dirección General de Salud Pública y la Dirección General de Cuidados y Calidad (SESCAM), de 15/09/2026, sobre la campaña de vacunación frente a gripe y COVID en Castilla-La Mancha (actualizada a 25/09/2026)",
+     "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/instruccion_1-2026_gripe_y_covid-19.pdf",
+     "fuente_extra": [
+      {
+       "apartado": "Apartado 2, población diana, punto 5 «Embarazadas», p. 17 del PDF; vacunas de ARNm en embarazadas y de proteínas recombinantes no, p. 18 del PDF; apartado 2.3 A) 3 (intervalo de al menos 3 meses desde la última dosis o infección), p. 22 del PDF; apartado 2.3 B) 2 (una sola dosis desde los 5 años), p. 23 del PDF",
+       "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a gripe y COVID-19 en Castilla-La Mancha. Temporada 2026-2027. Documento técnico» (15/09/2026)",
+       "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/documento_tecnico_vacuna_gripe_y_covid_2026-2027.pdf",
+       "verificado": "2026-11-23"
+      },
+      {
+       "apartado": "Apartado 4.3 «Otras vacunas durante el embarazo» («se recomienda la vacunación frente a la Covid-19 en embarazadas en cualquier trimestre de gestación»), p. 7",
+       "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Calendario de vacunaciones e inmunizaciones a lo largo de toda la vida en Castilla-La Mancha, 2026. Documento técnico» (abril de 2026)",
+       "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/20260410_documento_tecnico_calendario_sistematico_2026.pdf",
+       "verificado": "2026-11-23"
+      }
+     ],
+     "id": "clm-emb-covid",
+     "nombre": "COVID-19",
+     "nota": "Se recomienda a todas las embarazadas: una dosis de vacuna de ARNm en cualquier trimestre, mejor en el segundo. Deben pasar al menos 3 meses desde la última dosis o desde que pasaste la COVID-19. Protege también al bebé en sus primeros meses. Te la pueden poner el mismo día que la de la gripe.",
+     "preferente": "segundo trimestre",
+     "tipo": "vacuna",
+     "verificado": "2026-11-23"
+    }
+   ],
+   "embarazo_aviso": "En Castilla-La Mancha la Consejería de Sanidad no publica un calendario de visitas del embarazo para toda la comunidad: las visitas y pruebas que ves son las de la guía del Ministerio de Sanidad; las vacunas y sus campañas sí son las de Castilla-La Mancha. Tu matrona te dará el calendario de tu centro de salud.",
+   "embarazo_campanas": [
+    {
+     "apartado": "«Aspectos principales de la campaña 2026-2027»: «Inicio de la campaña […] Población general: se adelanta al 7 de octubre de 2026 (en lugar del 15 de octubre inicialmente previsto)» y «La vacunación frente a la gripe finalizará el 31 de marzo de 2027 (esta fecha puede ser retrasada en función de la situación epidemiológica)», p. 1; población diana a), punto 5, p. 5",
+     "campana": "gripe",
+     "documento": "Instrucción 1/2026 de la Dirección General de Salud Pública y la Dirección General de Cuidados y Calidad (SESCAM), de 15/09/2026, sobre la campaña de vacunación frente a gripe y COVID en Castilla-La Mancha (actualizada a 25/09/2026)",
+     "fin": "2027-03-31",
+     "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/instruccion_1-2026_gripe_y_covid-19.pdf",
+     "fuente_lugar": {
+      "apartado": "«seguidamente el 7 de octubre se da comienzo a la vacunación en el resto de la población y se prolongará hasta finales del próximo mes de marzo»; cita por la app Mi Salud Digital, la web o el teléfono del centro; «Lugar de vacunación: Centro de salud o consultorio local»",
+      "documento": "SESCAM, web de Sanidad de Castilla-La Mancha: «Cuándo y dónde vacunarse» (campaña de vacunación frente a la gripe 2026/2027; consultada el 22/11/2026)",
+      "fuente": "https://sanidad.castillalamancha.es/ciudadanos/protege-tu-salud/frente-la-gripe-protegete/cuando-donde-vacunarse",
+      "verificado": "2026-11-23"
+     },
+     "fuente_protocolo": {
+      "apartado": "Apartado 1.10 «Periodo de campaña» («el 7 de octubre de 2026 para el resto de población diana, y se dará por concluida el 31 de marzo de 2027»), p. 13 del PDF",
+      "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a gripe y COVID-19 en Castilla-La Mancha. Temporada 2026-2027. Documento técnico» (15/09/2026)",
+      "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/documento_tecnico_vacuna_gripe_y_covid_2026-2027.pdf",
+      "verificado": "2026-11-23"
+     },
+     "id": "gripe-embarazo-2026-2027",
+     "inicio": "2026-10-07",
+     "nota": "Del 07/10/2026 al 31/03/2027 (el final puede retrasarse según cómo vaya la epidemia). En tu centro de salud o consultorio local, con cita por la app Mi Salud Digital, la web del SESCAM o por teléfono.",
+     "poblacion": "Embarazadas en cualquier trimestre; mujeres en el puerperio (hasta 6 meses después del parto) que no se vacunaron durante el embarazo.",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-23"
+    },
+    {
+     "apartado": "«Aspectos principales de la campaña 2026-2027»: «Inicio de la campaña […] Población general: se adelanta al 7 de octubre de 2026» y «La vacunación frente a COVID-19 no tiene fecha de cierre, para que las personas con indicación de vacunación y que no hayan recibido la vacuna adaptada, puedan recibirla», p. 1; grupo a) 5 «Embarazadas», p. 7; anexo, fila «Gestantes y puerperio» (COVID-19: «Si (preferiblemente 2º trimestre)»), p. 10",
+     "campana": "covid",
+     "documento": "Instrucción 1/2026 de la Dirección General de Salud Pública y la Dirección General de Cuidados y Calidad (SESCAM), de 15/09/2026, sobre la campaña de vacunación frente a gripe y COVID en Castilla-La Mancha (actualizada a 25/09/2026)",
+     "fin": null,
+     "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/instruccion_1-2026_gripe_y_covid-19.pdf",
+     "fuente_protocolo": {
+      "apartado": "Apartado 2.4 «Periodo de campaña» («Se podrá vacunar en cualquier momento del año a las personas que no se les haya administrado aún la vacuna y tengan indicada la administración de ésta»), p. 25 del PDF",
+      "documento": "Consejería de Sanidad, Dirección General de Salud Pública: «Vacunación frente a gripe y COVID-19 en Castilla-La Mancha. Temporada 2026-2027. Documento técnico» (15/09/2026)",
+      "fuente": "https://sanidad.castillalamancha.es/sites/sescam.castillalamancha.es/files/documentos/pdf/20261001/documento_tecnico_vacuna_gripe_y_covid_2026-2027.pdf",
+      "verificado": "2026-11-23"
+     },
+     "id": "covid-embarazo-2026-2027",
+     "inicio": "2026-10-07",
+     "nota": "Desde el 07/10/2026, sin fecha de cierre: si aún no te has puesto la vacuna de esta temporada, te la pueden poner en cualquier momento. Pide cita en tu centro de salud.",
+     "poblacion": "Todas las embarazadas, en cualquier trimestre (mejor en el segundo).",
+     "temporada": "2026-2027",
+     "verificado": "2026-11-23"
+    }
+   ],
+   "embarazo_sustituye": [
+    "emb-dtpa",
+    "emb-gripe",
+    "emb-covid"
+   ],
    "escolarizacion": {
     "admision": [
      {
@@ -19715,5 +19858,5 @@
    ]
   }
  },
- "ultima_revision": "2026-11-22"
+ "ultima_revision": "2026-11-23"
 }
