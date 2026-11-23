@@ -528,3 +528,11 @@ main h2 { margin-top: 2.2rem; }
 .apoyo p { margin: .3rem 0; }
 .boton-donar { display: inline-block; padding: .55rem 1rem; background: #e3b341; color: #1d2a33; font-weight: 700; border-radius: 999px; text-decoration: none; }
 .boton-donar:hover { background: #d9a52a; }
+.album { display: grid; grid-template-columns: minmax(0, 15rem) 1fr; gap: 1rem 1.25rem; align-items: center; margin: 1.5rem 0; padding: 1rem; background: var(--superficie); border: 1px solid var(--borde); border-radius: 14px; box-shadow: var(--sombra); }
+.album img { width: 100%; height: auto; border-radius: 10px; display: block; }
+.album p { margin: .3rem 0; }
+.album-titulo { font-size: 1.1rem; }
+.album-corto { grid-template-columns: minmax(0, 8rem) 1fr; }
+.boton-album { display: inline-block; padding: .55rem 1rem; background: var(--acento); color: #fff; font-weight: 700; border-radius: 999px; text-decoration: none; }
+.boton-album:hover { background: var(--acento-oscuro); }
+@media (max-width: 34rem) { .album, .album-corto { grid-template-columns: 1fr; } .album-corto img { max-width: 12rem; } }
