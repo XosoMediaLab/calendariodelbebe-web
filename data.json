@@ -5419,7 +5419,34 @@
     "emb-acido-folico"
    ],
    "escolarizacion": {
-    "admision": [],
+    "admision": [
+     {
+      "apartado": "Entradilla («hasta el próximo 29 de abril») y párrafo 1.º («inicia hoy el procedimiento ordinario de escolarización en Infantil, Primaria, Secundaria Obligatoria y Bachillerato para el curso 2026/2027, con la apertura del plazo de entrega de solicitudes, que se extenderá hasta el próximo 29 de abril»; fecha del comunicado «Santander- 22.04.2026»); párrafo 2.º (presencial en el centro de primera opción o en www.cantabria.es/yedra); apartado «Criterios de baremación», párrafo 5.º («quedan exceptuadas las familias solicitantes de plaza en 1º Ciclo de Educación Infantil (aulas de uno y dos años)»)",
+      "ciclo": "primer",
+      "curso": "2026-2027",
+      "documento": "Gobierno de Cantabria, Consejería de Educación, Formación Profesional y Universidades: comunicado «Abierto el plazo de solicitud de plaza para el proceso ordinario de escolarización del curso 2026/2027» (Santander, 22/04/2026; consultado el 23/11/2026)",
+      "fuente": "https://www.cantabria.es/web/comunicados/w/abierto-el-plazo-de-solicitud-de-plaza-para-el-proceso-ordinario-de-escolarizaci%C3%B3n-del-curso-2026/2027",
+      "id": "admision-primer-ciclo-2026-2027",
+      "niveles": {},
+      "nota": "Proceso ordinario de escolarización de la Consejería de Educación (Infantil y Primaria en centros sostenidos con fondos públicos): solicitud en el centro elegido en primera opción o por la plataforma Yedra, del 22/04/2026 al 29/04/2026. En el primer ciclo (aulas de uno y dos años), si no se obtiene plaza no se puede pedir la admisión complementaria de junio. En otras escuelas infantiles, pregunta en la propia escuela.",
+      "solicitudes_desde": "2026-04-22",
+      "solicitudes_hasta": "2026-04-29",
+      "verificado": "2026-11-23"
+     },
+     {
+      "apartado": "Entradilla («hasta el próximo 29 de abril») y párrafo 1.º («inicia hoy el procedimiento ordinario de escolarización en Infantil, Primaria, Secundaria Obligatoria y Bachillerato para el curso 2026/2027, con la apertura del plazo de entrega de solicitudes, que se extenderá hasta el próximo 29 de abril»; fecha del comunicado «Santander- 22.04.2026»); párrafos 2.º a 5.º (centro de primera opción o Yedra; solicitud gratuita; una única solicitud con hasta 6 centros); apartado «Criterios de baremación»: sorteo «el 12 de mayo», listas provisionales «el 21 de mayo», reclamaciones «al 27 de mayo», listas definitivas «el 5 de junio», solicitud complementaria «entre los días 10 y 15 de junio» y matrícula en Infantil y Primaria «del 10 al 19 de junio»",
+      "ciclo": "segundo",
+      "curso": "2026-2027",
+      "documento": "Gobierno de Cantabria, Consejería de Educación, Formación Profesional y Universidades: comunicado «Abierto el plazo de solicitud de plaza para el proceso ordinario de escolarización del curso 2026/2027» (Santander, 22/04/2026; consultado el 23/11/2026)",
+      "fuente": "https://www.cantabria.es/web/comunicados/w/abierto-el-plazo-de-solicitud-de-plaza-para-el-proceso-ordinario-de-escolarizaci%C3%B3n-del-curso-2026/2027",
+      "id": "admision-segundo-ciclo-2026-2027",
+      "niveles": {},
+      "nota": "Cole (segundo ciclo de Educación Infantil) en centros públicos y concertados: una sola solicitud, gratuita, en el centro elegido en primera opción (se pueden ordenar hasta 6 centros) o por la plataforma Yedra, del 22/04/2026 al 29/04/2026. Sorteo de desempates el 12/05/2026; listas provisionales el 21/05/2026 (reclamaciones hasta el 27/05/2026) y definitivas el 05/06/2026. Si no se obtiene plaza, solicitud complementaria del 10/06/2026 al 15/06/2026 en la Consejería. Matrícula en Infantil y Primaria del 10/06/2026 al 19/06/2026.",
+      "solicitudes_desde": "2026-04-22",
+      "solicitudes_hasta": "2026-04-29",
+      "verificado": "2026-11-23"
+     }
+    ],
     "etapas": [
      {
       "apartado": "Artículos 12.3 y 14.1",
